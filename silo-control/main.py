@@ -13,8 +13,10 @@ import threading
 import time
 from typing import Optional
 
-from config import PLC_IP, PLC_RACK, PLC_SLOT
+from config import PLC_IP, PLC_RACK, PLC_SLOT, ENABLE_TMS_BRIDGE, SENSOR_SOURCE
 from core.plc_interface import SiloPLC, SensorReading, MotorStatus
+from core.tms6000_provider import Tms6000Provider
+from core.tms_bridge_service import TmsBridgeService
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -258,6 +260,16 @@ def main() -> None:
         print("    • Que PLCSIM/TIA tenga el proyecto cargado y en RUN.")
         sys.exit(1)
 
+    bridge: TmsBridgeService | None = None
+    if SENSOR_SOURCE == "tms" and ENABLE_TMS_BRIDGE:
+        provider = Tms6000Provider()
+        bridge = TmsBridgeService(plc=plc, provider=provider)
+        bridge.start()
+    elif SENSOR_SOURCE == "sim":
+        print("  [SENSORS] Modo SIM activo. Ejecuta simulate_temperatures.py en paralelo.")
+    elif SENSOR_SOURCE == "none":
+        print("  [SENSORS] SENSOR_SOURCE='none': DB1 usara valores que existan en PLC.")
+
     # 3. Evento compartido entre hilos para coordinar la salida
     stop_event = threading.Event()
 
@@ -273,6 +285,8 @@ def main() -> None:
         stop_event.set()
 
     # 5. Limpieza ordenada
+    if bridge is not None:
+        bridge.stop()
     print("  Desconectando del PLC...")
     plc.disconnect()
     print("  Monitor S7-1515-2 PN terminado.\n")
