@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\koapesystem\\Desktop\\KOAPESYSTEM\\PLC\\entorno\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+        "C:\\Users\\koapesystem\\Desktop\\KOAPESYSTEM\\PLC\\entorno\\Lib\\site-packages"
+    ]
+}
