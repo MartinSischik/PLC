@@ -1,0 +1,820 @@
+
+Edición 	05/2022
+MANUAL DE PRODUCTO
+SIMATIC
+S7-1500 / ET 200MP
+Módulo de entradas digitales 
+DI 32x24VDC HF (6ES7521-1BL00-0AB0)
+support.industry.siemens.com
+
+
+
+
+SIMATIC
+S7-1500/ET 200MP
+Módulo de entradas digitales 
+DI 32x24VDC HF
+(6ES7521-1BL00-0AB0)
+Manual de producto
+05/2022
+A5E03485937-AH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notas jurídicas
+Filosofía en la señalización de advertencias y peligros
+Este manual contiene las informaciones necesarias para la seguridad personal así como para la prevención de da­ños materiales. Las informaciones para su seguridad personal están resaltadas con un triángulo de advertencia; las informaciones para evitar únicamente daños materiales no llevan dicho triángulo. De acuerdo al grado de peligro las consignas se representan, de mayor a menor peligro, como sigue.
+
+
+
+Si se dan varios niveles de peligro se usa siempre la consigna de seguridad más estricta en cada caso. Si en una consigna de seguridad con triángulo de advertencia de alarma de posibles daños personales, la misma consigna puede contener también una advertencia sobre posibles daños materiales.
+Personal cualificado
+El producto/sistema tratado en esta documentación sólo deberá ser manejado o manipulado por personal cualificado para la tarea encomendada y observando lo indicado en la documentación correspondiente a la mis­ma, particularmente las consignas de seguridad y advertencias en ella incluidas. Debido a su formación y experien­cia, el personal cualificado está en condiciones de reconocer riesgos resultantes del manejo o manipulación de di­chos productos/sistemas y de evitar posibles peligros.
+Uso previsto de los productos de Siemens
+Considere lo siguiente:
+Marcas registradas
+Todos los nombres marcados con ® son marcas registradas de Siemens AG. Los restantes nombres y designaciones contenidos en el presente documento pueden ser marcas registradas cuya utilización por terceros para sus propios fines puede violar los derechos de sus titulares.
+Exención de responsabilidad
+Hemos comprobado la concordancia del contenido de esta publicación con el hardware y el software descritos. Sin embargo, como es imposible excluir desviaciones, no podemos hacernos responsable de la plena concordancia. El contenido de esta publicación se revisa periódicamente; si es necesario, las posibles correcciones se incluyen en la siguiente edición.
+
+Postfach 48 48 
+90026 NÜRNBERG 
+ALEMANIA
+
+
+Prólogo
+Finalidad de la documentación
+El presente manual de producto complementa el manual de sistema S7-1500/ET 200MP ().
+En este manual de sistema se describen las funciones que afectan a los sistemas de forma generalizada.
+La información contenida en el presente manual de producto y en los manuales de sistema y de funciones permite poner en marcha los sistemas.
+Cambios con respecto a la versión anterior
+Con respecto a la versión anterior del manual de producto, se han realizado los siguientes cambios:
+•El modo de operación Contaje permite el modo isócrono. En los datos técnicos, la frecuencia de contaje aumentó de 3 kHz a 6 kHz.
+•Nuevos términos de licencia y notas de copyright del software código abierto
+•Nuevos datos técnicos
+Convenciones
+CPU: El término "CPU" se refiere en lo sucesivo tanto a los módulos centrales del sistema de automatización S7-1500 como a los módulos de interfaz del sistema de periferia 
+descentralizada ET 200MP.
+STEP 7: Para designar el software de configuración y programación, en la presente documentación se utiliza "STEP 7" como sinónimo de todas las versiones de "STEP 7 (TIA Portal)".
+Modo de operación DI: DI 32x24VDC HF como módulo de entradas digitales con 32 entradas digitales (canales 0 a 31).
+Modo de operación Contaje: DI 32x24VDC HF como módulo de entradas digitales con 2 contadores (canales 0 y 1) y 30 entradas digitales (canales 2 a 31).
+Preste atención también a las notas marcadas del modo siguiente:
+NOTA
+Una nota contiene información importante relativa al producto descrito en la documentación, al manejo de dicho producto o a aquella parte de la documentación a la que debe prestarse especial atención.
+
+
+
+Prólogo
+Reciclaje y eliminación
+Para un reciclaje y una eliminación ecológicos de los equipos usados, rogamos dirigirse a un centro certificado de recogida de material electrónico y eliminarlos conforme a las normativas vigentes en su país.
+Siemens ofrece productos y soluciones con funciones de seguridad industrial con el objetivo de hacer más seguro el funcionamiento de instalaciones, sistemas, máquinas y redes.
+Para proteger las instalaciones, los sistemas, las máquinas y las redes contra de amenazas cibernéticas, es necesario implementar (y mantener continuamente) un concepto de seguridad industrial integral que esté conforme al estado del arte. Los productos y las soluciones de Siemens constituyen una parte de este concepto.
+Los clientes son responsables de impedir el acceso no autorizado a sus instalaciones, sistemas, máquinas y redes. Dichos sistemas, máquinas y componentes solo deben estar conectados a la red corporativa o a Internet cuando y en la medida que sea necesario y siempre que se hayan tomado las medidas de protección adecuadas (p. ej. cortafuegos y segmentación de la red). 
+Para obtener información adicional sobre las medidas de seguridad industrial que podrían ser implementadas, por favor visite (https://www.siemens.com/industrialsecurity).
+Los productos y las soluciones de Siemens están sometidos a un desarrollo constante con el fin de hacerlos más seguros. Siemens recomienda expresamente realizar actualizaciones en cuanto estén disponibles y utilizar únicamente las últimas versiones de los productos. El uso de versiones de los productos anteriores o que ya no sean soportadas y la falta de aplicación de las nuevas actualizaciones, puede aumentar el riesgo de amenazas cibernéticas. 
+Para mantenerse informado de las actualizaciones de productos, recomendamos que se suscriba al Siemens Industrial Security RSS Feed en (https://www.siemens.com/cert).
+Software de código abierto
+En el firmware del producto descrito se utiliza software de código abierto. El software de código abierto se entrega de forma gratuita. Nos hacemos responsables del Producto descrito, incluido el software de código abierto que contiene, de acuerdo con las condiciones vigentes para el Producto. Declinamos cualquier responsabilidad derivada del uso del software de código abierto más allá del flujo del programa previsto para nuestro producto, asícomo cualquier responsabilidad derivada de los daños causados por modificaciones del software.
+Por motivos legales estamos obligados a publicar las condiciones de licencia y las notas copyright en el texto original. Lea al respecto la información correspondiente en Internet.
+
+
+
+Índice
+
+
+
+
+
+Información básica
+Información de productos
+Los manuales de producto contienen una descripción sintetizada de la información específica
+técnicos.
+Ejemplos:
+•	Manuales de producto de las CPU 
+de los módulos, como características, esquemas de conexiones, curvas características o datos
+•	Manuales de producto de los módulos de interfaz
+•	Manuales de producto de los módulos digitales
+•	Manuales de producto de los módulos analógicos
+•	Manuales de producto de los módulos de comunicación
+•	Manuales de producto de los módulos tecnológicos
+•	Manuales de producto de los módulos de alimentación
+Módulo de entradas digitales DI 32x24VDC HF (6ES7521-1BL00-0AB0)
+Manual de producto, 05/2022, A5E03485937-AH 	7
+
+
+Guía de la documentación de S7-1500/ET 200MP
+1.2 Documentación técnica de SIMATIC
+Información general
+Información del producto
+Los cambios y ampliaciones de los manuales se documentan en una información del producto. La información del producto tiene un carácter más vinculante que el manual de producto y el manual de sistema. 
+Encontrará la información del producto actualizada de los sistemas S7-1500 y ET 200MP en Internet. ()
+Manual Collection S7-1500/ET 200MP
+La Manual Collection contiene la documentación completa del sistema de automatización SIMATIC S7‑1500 y del sistema de periferia descentralizada ET 200MP recogida en un archivo.
+Comparativa de SIMATIC S7-1500 en cuanto a lenguajes de programación
+La comparativa contiene una relación de las instrucciones y funciones que se pueden emplear con qué familias de controladores. 
+La información se completa con documentos adicionales de SIMATIC. Encontrará estos documentos y su utilización en los siguientes enlaces y códigos QR.
+Industry Online Support completa las posibilidades de obtener información sobre todos los temas. Asimismo, los ejemplos de aplicación lo ayudan a resolver tareas de automatización.
+Sinopsis de la documentación técnica de SIMATIC
+Aquí encontrará una vista general de la documentación sobre SIMATIC disponible en SIOS:
+
+
+
+
+Guía de la documentación de S7-1500/ET 200MP
+1.3 Herramientas de soporte
+En el siguiente vídeo le enseñaremos cómo encontrar la vista general directamente en SIOS y cómo utilizar SIOS en su dispositivo móvil: 
+	Acceso rápido a la documentación técnica de los productos de automatización a 	través de un vídeo (https://support.industry.siemens.com/cs/es/es/view/109780491)
+Vídeo de YouTube: Siemens Automation Products - Technical Documentation at a Glance ()
+mySupport
+Con mySupport podrá sacar el máximo partido al Industry Online Support. 
+Ejemplos de aplicación
+Los ejemplos de aplicación le asisten con diferentes herramientas y ejemplos a la hora de resolver las tareas de automatización. Los ejemplos muestran siempre soluciones en las que interactúan varios componentes del sistema sin centrarse en productos concretos.
+Las herramientas descritas a continuación lo ayudarán en todas las etapas: desde la planificación hasta el análisis de la instalación, pasando por la puesta en marcha.
+
+
+
+Guía de la documentación de S7-1500/ET 200MP
+1.3 Herramientas de soporte
+TIA Selection Tool
+TIA Selection Tool lo ayudará a seleccionar, configurar y pedir equipos para Totally Integrated Automation (TIA). 
+Como sucesor de SIMATIC Selection Tools agrupa en una sola herramienta los configuradores ya conocidos para los sistemas de automatización.
+TIA Selection Tool permite generar una lista de pedido completa a partir de la selección o configuración de productos realizada.
+SIMATIC Automation Tool 
+SIMATIC Automation Tool permite llevar a cabo tareas de puesta en marcha y servicio técnico como operaciones masivas en distintas estaciones SIMATIC S7, independientemente del TIA Portal. 
+SIMATIC Automation Tool ofrece numerosas funciones:
+•Escaneado de una red de instalación PROFINET/Ethernet e identificación de todas las CPU conectadas
+•Asignación de direcciones (IP, subred, Gateway) y nombre de equipo (dispositivo PROFINET) a una CPU
+•Transferencia al módulo de la fecha y la hora convertida a hora UTC de la programadora o el PC
+PRONETA
+SIEMENS PRONETA (análisis de red PROFINET) es una herramienta de puesta en marcha y diagnóstico para redes PROFINET. PRONETA Basic cuenta con dos funciones centrales:
+•"Análisis de red", que ofrece una sinopsis rápida de la topología PROFINET. Sirve para realizar modificaciones de parámetros (por ejemplo, en los nombre y las direcciones IP de los equipos).  Además, permite comparar la configuración real con una instalación de referencia de manera rápida y cómoda.
+•"Test IO", que permite comprobar, con facilidad y rapidez, el cableado y la configuración de los módulos de una instalación, incluida la documentación de los resultados del test.
+
+
+
+Guía de la documentación de S7-1500/ET 200MP
+1.3 Herramientas de soporte
+SIEMENS PRONETA Professional ofrece funciones adicionales como producto bajo licencia.
+Permite una gestión de activos sencilla en redes PROFINET y asiste a los operadores de instalaciones de automatización en la adquisición automatizada de datos de los componentes utilizados por medio de numerosas funciones:
+•	La interfaz de usuario (API) proporciona un punto de acceso a la célula de automatización 	para automatizar las funciones de escaneo vía MQTT o por línea de comandos.
+•	Con el diagnóstico PROFIenergy, es posible detectar rápidamente y, en caso necesario, 	modificar el modo de pausa o la disponibilidad para el funcionamiento actuales en los 	equipos compatibles con PROFIenergy.
+•	El asistente de juego de datos ayuda a los desarrolladores de PROFINET a leer y escribir 	juegos de datos PROFINET acíclicos de forma rápida y sencilla, sin necesidad de PLC ni 	ingeniería.
+Encontrará SIEMENS PRONETA Professional en Internet: (https://www.siemens.com/proneta-)
+SINETPLAN
+SINETPLAN, el Siemens Network Planner, es una ayuda para planificadores de sistemas y redes de automatización basados en PROFINET. La herramienta facilita, incluso en la fase de planificación, el dimensionamiento profesional y anticipativo de la instalación PROFINET. SINETPLAN ayuda también a optimizar la red, así como a aprovechar al máximo los recursos en la red y planificar reservas. De esta forma se evitan problemas en la puesta en marcha o fallos durante el funcionamiento productivo antes de iniciar la aplicación programada. Esto aumenta la disponibilidad de la producción y contribuye a mejorar la seguridad de operación.
+Resumen de las ventajas
+•	Optimización de la red mediante el cálculo puerto a puerto de las cargas de red.
+•	Mayor disponibilidad de producción mediante escaneo online y verificación de las 	instalaciones existentes
+•	Transparencia antes de la puesta en marcha mediante la importación y simulación de 	proyectos STEP 7 existentes
+•	Eficiencia mediante la protección duradera de las inversiones existentes y el 	aprovechamiento óptimo de los recursos
+
+
+
+Descripción del producto 	2 
+2.1 	Características
+Referencia:
+6ES7521-1BL00-0AB0
+Vista del módulo
+
+Figura 2-1  Vista del módulo DI 32x24VDC HF
+Características
+El módulo tiene las siguientes características técnicas:
+•32 entradas digitales, con aislamiento galvánico en grupos de 16
+–	De ellas, los canales 0 y 1 opcionalmente con función de contaje
+•Tensión nominal de entrada 24 V DC
+•Retardo a la entrada parametrizable: 0,05 ms … 20 ms
+•Diagnóstico parametrizable (por canal)
+•Alarma de proceso parametrizable (por canal)
+•Adecuado para interruptores y detectores de proximidad a 2, 3 o 4 hilos
+•Hardware compatible con el módulo de entradas digitales DI 16x24VDC HF
+(6ES7521-1BH00-0AB0)
+
+
+
+Descripción del producto
+2.1 Características
+El módulo soporta las siguientes funciones:
+Tabla 2-1  Dependencias de la versión con las funciones del módulo
+* Condición para la función de contaje: módulo de interfaz IM 155-5 a partir de la versión de firmware V3.0 o CPU S7-15XX a partir de la versión de firmware V1.7
+El módulo puede configurarse con STEP 7 (TIA Portal) y con un archivo GSD.
+Compatibilidad
+La tabla siguiente muestra la compatibilidad de los módulos y las dependencias entre la versión de hardware (FS) y la versión de firmware (FW) utilizada:
+Modo isócrono
+Al utilizar los siguientes módulos de entradas digitales, preste atención a que los módulos de entradas digitales tengan la siguiente versión de firmware (FW) o superior. En otro caso puede producirse un jitter muy elevado en la aplicación. 
+
+
+
+Descripción del producto
+2.2 Funciones
+Accesorios
+Los siguientes accesorios se suministran con el módulo y también pueden pedirse como repuesto:
+•Tiras rotulables
+•Conectores en U
+•Puerta frontal universal
+Otros componentes
+Los siguientes componentes deben pedirse por separado: 
+Conector frontal incl. puentes y bridas para cables
+Encontrará más información sobre los accesorios en el manual de sistema S7-1500/ET 200MP (https://support.industry.siemens.com/cs/ww/es/view/59191792).
+2.2 	Funciones
+2.2.1 	Contaje
+Introducción
+A partir de la versión de firmware V2.1.0 del módulo existe la posibilidad de utilizar los canales 0 y 1 en el modo de operación "Contaje". Los demás canales se utilizan como entradas estándar (modo de operación DI).
+Cuando los canales 0 y 1 no se utilizan en el modo de operación "Contaje" pueden utilizarse también como entradas digitales. Los canales 0 y 1 solo pueden utilizarse como entradas de contaje conjuntamente.
+Al contar, los flancos de la entrada digital se registran y evalúan en correspondencia, p. ej.:
+•Para contar piezas sueltas hasta un límite máximo
+•Para aplicaciones con operaciones de contaje repetitivas
+Referencia
+Encontrará los principios básicos e información complementaria relacionada con la función
+Contaje con los canales 0 y 1
+La función de contaje se controla desde las direcciones de periferia del módulo. Dichas direcciones también se denominan interfaz de control (direcciones de salida) e interfaz de realimentación (direcciones de entrada); consulte el capítulo Espacio de direcciones, modo de
+
+
+
+Descripción del producto
+2.2 Funciones
+Si se parametrizan los canales 0 y 1 para el contaje, existen las posibilidades siguientes:
+•	En caso de rebasar por exceso un límite de contaje, el comportamiento se determina:
+–parando el contaje
+–continuando el contaje.
+•	El bit STS_DQ (bit de la interfaz de realimentación) señaliza que el valor de contaje se
+encuentra en uno de los rangos siguientes, según sea la parametrización:
+–Entre el valor de comparación y el límite superior de contaje.
+–Entre el valor de comparación y el límite inferior de contaje.
+•	Es posible parametrizar una alarma de proceso cuando se produce un evento de
+comparación para DQ.
+•	Los límites de contaje y los valores de comparación para el contaje pueden definirse entre
+0 y 4294967295 (232-1).
+•	Es posible especificar para el contaje valores de arranque o valores de carga predefinidos
+por el programa de usuario.
+El sentido de contaje es siempre adelante.
+Referencia
+Encontrará ejemplos sobre el contaje con los canales 0 y 1 en el capítulo Ejemplos de contaje
+(Página 31)
+
+
+
+Conexión 	3 
+En el presente capítulo encontrará el esquema de principio del módulo y diferentes opciones
+de conexión.
+Encontrará información sobre cómo cablear el conector frontal, apantallar el cable, etc. en el
+manual de sistema S7-1500/ET 200MP
+(), capítulo Conexión.
+Esquema eléctrico y esquema de principio
+La figura siguiente muestra la forma de conectar el módulo y la asignación de los canales a
+las direcciones (desde byte de entrada a hasta byte de entrada d). Los canales 0 y 1 pueden
+parametrizarse para el contaje. Los canales 2 a 31 pueden seguir utilizándose como entradas
+digitales.
+		
+	
+①	Bus de fondo 	CHx 	Canal o LED de estado de canal (verde/rojo)
+xL+ 	Tensión de alimentación de 24 V DC 	RUN 	LED indicador de estado (verde)
+xM 	Masa 	ERROR 	LED indicador de error (rojo)
+PWR LED de tensión de alimentación POWER (ver­
+de)
+Figura 3-1  Esquema de principio y asignación de conexiones
+
+
+
+Conexión
+Conexión de una resistencia a los contactos del sensor
+Para detectar una rotura de hilo es necesario que, aun estando abiertos los contactos del sensor, fluya suficiente corriente de polarización. Por tanto, conecte a los contactos del sensor una resistencia de 25 kΩ ... 45 kΩ con 0,25 W.
+
+Figura 3-2  Conexión de una resistencia a los contactos del sensor 
+Sugerencia: Utilización de los puentes
+Si desea suministrar a los dos grupos de carga el mismo potencial (sin aislamiento galvánico), utilice los puentes suministrados con el conector frontal. De este modo se evita tener que cablear un borne con dos conductores.
+Proceda del siguiente modo:
+1. Aplique la tensión de alimentación de 24 V DC a los bornes 19 y 20.
+2. Coloque los puentes entre los bornes 19 y 39 (xL+) y entre los bornes 20 y 40 (xM).
+3. Utilice los bornes 39 y 40 para conectar en cadena el potencial con el siguiente módulo.
+Figura 3-3  Utilización de los puentes
+NOTA
+Tenga en cuenta que no debe sobrepasarse la máx. intensidad conducible de 8 A por puente.
+
+
+
+Parametrización y direccionamiento 	4 
+4.1 	Parámetros
+Parámetros del DI 32x24VDC HF
+Al parametrizar el módulo con STEP 7, se especifican las características del módulo mediante diferentes parámetros. Los parámetros ajustables dependen de si el módulo funciona en modo estándar o en modo de contaje. Encontrará los parámetros en el capítulo Parámetros del modo de operación DI  (Página 18) o en el capítulo Parámetros del modo de operación Contaje  (Página 19). El rango efectivo de los parámetros ajustables depende del tipo de configuración. Son posibles las siguientes configuraciones:
+•Operación centralizada con una CPU S7-1500
+•Operación descentralizada con PROFINET IO en un sistema ET 200MP
+•Operación descentralizada con PROFIBUS DP en un sistema ET 200MP
+Al reparametrizar el módulo en el programa de usuario, los parámetros se transfieren al módulo mediante juegos de datos  con la instrucción WRREC (reparametrización en RUN); consulte el capítulo Parametrización y estructura de los registros de parámetros  (Página 45) 
+4.1.1 	Parámetros del modo de operación DI
+Parámetros del DI 32x24VDC HF en el modo de operación DI
+En la tabla siguiente encontrará los parámetros del "Modo de operación DI". Dichos parámetros son aplicables a los canales 0 a 31. 
+Tabla 4-1  Parámetros ajustables y su ajuste predeterminado en el modo de operación DI
+
+
+
+
+
+Parametrización y direccionamiento
+4.1 Parámetros
+*    Si habilita el diagnóstico para varios canales, en caso de fallo de la tensión de alimentación recibirá una avalancha de avi­sos, puesto que cada canal habilitado detectará este fallo.
+Puede evitar la avalancha de avisos habilitando el diagnóstico solo para un canal.
+** Al reparametrizar en RUN, el rango efectivo puede ajustarse para cada canal.
+*** En la configuración de 4 x 8 canales pueden configurarse como máximo 16 alarmas de proceso (canales 0 a 15).
+4.1.2 Explicación de los parámetros del modo de operación DI
+Falta tensión de alimentación L+
+Habilitación del diagnóstico cuando no hay tensión de alimentación L+ o es insuficiente.
+Rotura de hilo
+Habilitación del diagnóstico cuando hay una interrupción en el cable hacia el sensor.
+Retardo a la entrada
+Este parámetro permite suprimir fluctuaciones anómalas en una señal. Los cambios de la señal solo se detectan cuando permanecen estables durante más tiempo que el retardo a la entrada ajustado.
+Alarma de proceso
+Determina si una alarma de proceso está desactivada o con cuál de los eventos siguientes se genera una alarma de proceso:
+
+
+
+Parametrización y direccionamiento
+4.1 Parámetros
+4.1.3 	Parámetros del modo de operación Contaje
+Parámetros del DI 32x24VDC HF Count en el modo de operación Contaje
+Si el módulo debe utilizarse para contar, hay que parametrizarlo como DI 32x24VDC HF Count. En este caso, para los canales 0 y 1 son posibles los siguientes ajustes de parámetros. Para los canales 2 a 31 rigen los mismos ajustes de parámetros que para el DI 32x24VDC HF, consulte el capítulo Parámetros del modo de operación DI  (Página 18).
+Tabla 4-2  Parámetros ajustables y su ajuste predeterminado en el modo de operación Contaje
+
+
+
+
+
+Parametrización y direccionamiento
+4.1 Parámetros
+*    Si se habilita el diagnóstico para varios canales, en caso de fallo de la tensión de alimentación recibirá una avalancha de avisos, puesto que cada canal habilitado detectará
+ este fallo. Puede evitar la avalancha de avisos habilitando el diagnóstico solo para un canal.
+**  El valor de comparación o de arranque debe ser menor o igual al valor del límite superior de contaje.
+4.1.4 Explicación de los parámetros del modo de operación Contaje
+Falta tensión de alimentación L+
+Habilitación del diagnóstico cuando no hay tensión de alimentación L+ o es insuficiente.
+Rotura de hilo
+Habilitación del diagnóstico cuando hay una interrupción en el cable hacia el sensor.
+Retardo a la entrada
+Este parámetro permite suprimir fluctuaciones anómalas en una señal. Los cambios de la señal solo se detectan cuando permanecen estables durante más tiempo que el retardo a la entrada ajustado.
+Alarma de proceso
+Determina si se genera una alarma de proceso o no cuando se produce el evento "Ocurrido evento de comparación para DQ" (flanco ascendente con STS_DQ).
+
+
+
+Parametrización y direccionamiento
+4.1 Parámetros
+Activar salida DQ
+Con este parámetro se define el comportamiento del bit STS_DQ en la interfaz de 
+realimentación. El bit se puede asignar en el programa de usuario con una salida de 
+hardware, por ejemplo; consulte Espacio de direcciones, modo de operación Contaje  (Página 27).
+Selección de flancos
+Con este parámetro se determina con qué flanco se cuenta.
+Puede escoger entre las siguientes opciones:
+•Con flanco ascendente
+•Con flanco descendente
+•Con flanco ascendente y descendente
+Límite superior de contaje
+Con este parámetro se limita el rango de contaje. Puede introducirse un valor hasta 4294967295 (232 -1).
+Valor de comparación 
+Con este parámetro se determina el valor de contaje con el que se conmuta la salida digital DQ (bit STS_DQ de la interfaz de realimentación) sobre la base del evento de comparación seleccionado.
+Valor de arranque
+Con este parámetro se determina el valor con el que empieza el contaje y se continúa ante determinados eventos. Debe cumplirse la condición siguiente:
+Límite inferior de contaje < = valor de arranque < = límite superior de contaje
+Comportamiento al rebasar un límite de contaje
+Con este parámetro se define el comportamiento en caso de rebase por exceso de un límite de contaje.
+
+
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+
+En STEP 7, el módulo puede configurarse de diferentes maneras (ver la tabla siguiente). En función de la configuración se asignan direcciones adicionales/diferentes en la memoria imagen de proceso de las entradas. 
+Las letras "a a d" están grabadas en el módulo. P. ej., "IB a" significa byte de entrada "a" de la dirección de inicio del módulo.
+Posibles configuraciones del DI 32x24VDC HF
+El módulo puede configurarse con STEP 7 (TIA Portal) o con un archivo GSD. 
+Si el módulo se configura mediante un archivo GSD, encontrará las configuraciones bajo diversos nombres abreviados/nombres de módulo.
+Son posibles las configuraciones siguientes:
+Tabla 4-3  Configuraciones posibles 
+Información de calidad (Quality Information, QI)
+Las opciones siguientes siempre tienen activada la información de calidad:
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+Cada canal tiene asignado un bit adicional de información de calidad. El bit de información de calidad indica si el valor digital leído es válido. (0 = el valor es erróneo). 
+4.2.1 	Espacio de direcciones del modo de operación DI
+Espacio de direcciones en la configuración como DI 32x24VDC HF QI de 32 canales
+La figura siguiente muestra la asignación del espacio de direcciones en la configuración como módulo de 32 canales con información de calidad. La dirección inicial del módulo puede asignarse libremente. Las direcciones de los canales se derivan de dicha dirección inicial.
+
+
+
+
+
+
+
+Figura 4-1  Espacio de direcciones en la configuración como DI 32x24VDC HF QI de 32 canales
+Espacio de direcciones en la configuración como DI 32x24VDC HF S QI de 4 x 8 canales
+En la configuración como módulo de 4 x 8 canales, los canales del módulo se reparten entre cuatro submódulos. Estos submódulos pueden asignarse a diferentes controladores IO si el módulo se utiliza en un Shared Device.
+El número de controladores IO depende del módulo de interfaz utilizado. Lea las indicaciones del manual de producto que corresponda al módulo de interfaz.
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+A diferencia de la configuración como módulo de 1 x 32 canales, cada uno de los cuatro submódulos posee una dirección inicial que se puede asignar libremente.
+
+
+
+
+
+
+
+Figura 4-2  Espacio de direcciones en la configuración como DI 32x24VDC HF S QI de 4 x 8 canales
+Espacio de direcciones en la configuración como DI 32x24VDC HF MSI de 1 x 32 canales
+En la configuración del módulo de 1 x 32 canales (Shared Input interna del módulo, MSI), los canales 0 a 31 del módulo se copian en hasta 4 submódulos. Por lo tanto, los canales 0 a 31 tienen valores de entrada idénticos en los distintos submódulos. Estos submódulos pueden asignarse a hasta cuatro controladores IO si el módulo se utiliza en un Shared Device. Cada controlador IO puede tener acceso de lectura a los mismos canales.
+El número de controladores IO depende del módulo de interfaz utilizado. Lea las indicaciones del manual de producto que corresponda al módulo de interfaz.
+Información de calidad (Quality Information, QI)
+El significado de la información de calidad depende del submódulo en cuestión. 
+En el submódulo 1 (= submódulo base), la información de calidad 0 indica que el valor es erróneo.
+En los submódulos 2 a 4 (= submódulo MSI), la información de calidad 0 indica que el valor es erróneo o que el submódulo base todavía no está parametrizado (no listo para funcionar).
+
+
+
+Parametrización y direccionamiento 
+4.2 Espacio de direcciones
+La figura siguiente muestra la asignación del espacio de direcciones con los submódulos 1 y 2 y la información de calidad.
+
+
+
+
+
+
+
+
+
+
+
+Figura 4-3  Espacio de direcciones en la configuración como DI 32x24VDC HF MSI de 1 x 32 canales con información de calidad
+
+
+
+Parametrización y direccionamiento 
+	4.2 Espacio de direcciones
+La figura siguiente muestra la asignación del espacio de direcciones con los submódulos 3 y 4 y la información de calidad.
+
+
+
+
+
+
+
+
+
+
+
+Figura 4-4  Espacio de direcciones en la configuración como DI 32x24VDC HF MSI de 1 x 32 canales con información de calidad
+Referencia
+Encontrará información sobre la funcionalidad Shared Input/Shared Output (MSI/MSO) interna del módulo en el manual de funciones PROFINET con STEP 7 V15
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+4.2.2 	Espacio de direcciones, modo de operación Contaje
+Espacio de direcciones en la configuración como DI 32x24VDC Count de 1 x 32 canales
+El espacio de direcciones de los canales 0 y 1 que se utilizan para el contaje consta de la interfaz de control y la interfaz de realimentación. La función de contaje se controla 
+directamente mediante estas dos interfaces. Con la parametrización adecuada se dispara una alarma de proceso. 
+Cuando el módulo se utiliza en el "modo de operación Contaje" (canales 0 y 1) ocupa las siguientes áreas de direcciones:
+•16 bytes en la memoria imagen de proceso de las salidas (interfaz de control).
+•24 bytes en la memoria imagen de proceso de las entradas (interfaz de realimentación).
+Interfaz de control
+La figura siguiente muestra la asignación de direcciones del módulo en la memoria imagen de proceso de las salidas. La interfaz de control se utiliza, p. ej., para arrancar el contador o establecer su valor. El bit de control "SW-Gate" abre y cierra la puerta software del canal correspondiente.
+
+
+
+Figura 4-5  Asignación del espacio de direcciones de la interfaz de control del DI 32x24VDC Count (bytes 0 a 7)
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+
+
+
+Figura 4-6  Asignación del espacio de direcciones de la interfaz de control del DI 32x24VDC Count (bytes 8 a 15)
+Interfaz de realimentación
+La figura siguiente muestra la asignación de direcciones del módulo en la memoria imagen de proceso de las entradas. La interfaz de realimentación para los contadores (canales 0 y 1) empieza a partir del byte de entrada x+8.
+
+
+
+Parametrización y direccionamiento 
+4.2 Espacio de direcciones
+El programa de usuario recibe a través de la interfaz de realimentación valores de contaje actuales e información de estado del módulo.
+
+
+
+
+
+
+
+
+
+
+Figura 4-7  Asignación del espacio de direcciones de la interfaz de realimentación del DI 32x24VDC Count (bytes 0 a 15)
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+
+
+
+Figura 4-8  Asignación del espacio de direcciones de la interfaz de realimentación del DI 32x24VDC Count (bytes 16 a 23)
+4.2.3 Ejemplos de contaje
+En este capítulo encontrará ejemplos relacionados con el comportamiento del contador y la forma de definirlo. Las propiedades del contador se definen en la parametrización. 
+Comportamiento al rebasar un límite de contaje - parar contaje 
+El apartado siguiente describe el efecto del parámetro "Comportamiento al rebasar un límite de contaje = parar contaje". Para controlar el contador se utilizan los bits del byte de control de la interfaz de control; consulte el capítulo Espacio de direcciones, modo de operación Contaje  (Página 27)
+El contaje empieza con el valor de contaje actual (en el byte de control se activa SW-GATE). Secuencia de bits en el byte de control de la interfaz de control 0000 1000.
+Una vez rebasado por exceso el límite superior de contaje, el contaje se cancela (parar contaje), el valor de contaje salta al límite inferior de contaje = 0. El bit STS_GATE se desactiva.
+Para volver a iniciar el contaje debe desactivarse y seguidamente activarse el bit SW_GATE mediante la interfaz de control. 
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+El byte de control de la interfaz de control determina si el contaje se reinicia con el valor actual del contador o con el valor de arranque.
+Secuencia de bits en el byte de control de la interfaz de control: 
+•Bits 0 a 2 = "000" Arrancar con el valor de contaje actual
+•Bits 0 a 2 = "010" Arrancar con el valor de arranque
+Si el bit SW_GATE del byte de control de la interfaz de control se desactiva antes de alcanzar el límite superior de contaje, el contaje se detiene.
+La figura siguiente muestra a modo de ejemplo el principio para parar el contaje en caso de rebase por exceso de un límite de contaje.
+
+
+
+
+Figura 4-9  Principio: parar contaje
+Comportamiento al rebasar un límite de contaje - continuar contaje 
+El apartado siguiente describe el efecto del parámetro "Comportamiento al rebasar un límite de contaje = continuar contaje". Para controlar el contador se utilizan los bits del byte de control de la interfaz de control; consulte el capítulo Espacio de direcciones, modo de operación Contaje  (Página 27), apartado Interfaz de control.
+El contaje empieza con el valor de contaje actual (en el byte de control se activa SW-GATE). Secuencia de bits en el byte de control de la interfaz de control 0000 1000.
+Una vez rebasado por exceso el límite superior de contaje, el valor de contaje salta al límite inferior de contaje = 0 y el contaje continúa.
+Si el bit SW_GATE del byte de control de la interfaz de control se desactiva antes de alcanzar el límite superior de contaje, el contaje se detiene.
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+La figura siguiente muestra a modo de ejemplo el principio para continuar el contaje en caso de rebase por exceso de un límite de contaje.
+
+
+
+
+Figura 4-10  Principio: continuar contaje
+Activar salida DQ - Comportamiento del bit STS_DQ
+El apartado siguiente muestra el comportamiento del bit STS_DQ con la parametrización "Activar salida DQ = entre valor de comparación y límite superior de contaje".
+El bit STS_DQ se pone a 1, 
+cuando el valor de comparación < = valor de contaje < = límite superior de contaje.
+Opcionalmente es posible habilitar una alarma de proceso mediante parametrización. Dicha alarma se genera con el parámetro Flanco ascendente del bit STS_DQ.
+La figura siguiente muestra a modo de ejemplo el comportamiento del bit STS_DQ entre el valor de comparación y el límite superior de contaje.
+
+
+Figura 4-11  Comportamiento del bit STS_DQ y la alarma de proceso
+El apartado siguiente muestra el comportamiento del bit STS_DQ con la parametrización "Activar salida DQ = entre límite inferior de contaje y valor de comparación".
+El bit STS_DQ se pone a 1, 
+cuando el límite inferior de contaje < = valor de contaje < = valor de comparación. 
+
+
+
+Parametrización y direccionamiento
+4.2 Espacio de direcciones
+Opcionalmente es posible habilitar una alarma de proceso mediante parametrización. Dicha alarma se genera con el parámetro Flanco ascendente del bit STS_DQ.
+La figura siguiente muestra a modo de ejemplo el comportamiento del bit STS_DQ entre el límite inferior de contaje y el valor de comparación.
+
+
+Figura 4-12  Comportamiento del bit STS_DQ y la alarma de proceso
+Límites de contaje 
+Los límites de contaje definen el rango de valores que utiliza el valor de contaje. Los límites de contaje se pueden parametrizar y modificar durante el funcionamiento mediante el programa de usuario. 
+Límite superior de contaje ajustable: 4294967295 (232 -1).
+Límite inferior de contaje (no ajustable): 0
+Es posible continuar o finalizar las operaciones de contaje al rebasarse un límite de contaje (cierre de puerta automático); consulte el parámetro "Comportamiento al rebasar un límite de contaje".
+Valor de arranque/Valor de carga
+El valor de arranque se define durante la parametrización con STEP 7 (TIA Portal). El valor de carga se puede modificar mediante el programa de usuario. Ambos valores debe estar comprendidos entre el límite inferior de contaje y el límite superior de contaje.
+Valores de comparación
+Para cada canal se especifica un valor de comparación que permite controlar el bit de realimentación STS_DQ independientemente del programa de usuario. Cuando el valor de contaje actual cumple con la condición de comparación parametrizada, se activa el bit de realimentación STS_DQ. El bit de realimentación STS_DQ puede emplearse para controlar una salida digital de un módulo de salidas digitales. 
+Los valores de comparación se pueden parametrizar y modificar durante el funcionamiento mediante el programa de usuario con el juego de parámetros 0/1. 
+Control de puerta
+La apertura y el cierre de la puerta software (SW-GATE) definen la ventana de tiempo en la que se capturan las señales de contaje. La puerta software se controla mediante el programa de usuario. 
+
+
+
+Parametrización y direccionamiento 
+	4.2 Espacio de direcciones
+Referencia
+Encontrará más información sobre la funcionalidad de contaje en el manual de funciones S7-1500, ET 200MP, ET 200SP Contaje, medición y lectura de posición 
+().
+
+
+
+Alarmas y avisos de diagnóstico 	5 
+5.1 	Indicadores de estado y error
+Indicadores LED
+La siguiente figura muestra los indicadores LED (indicadores de estado y error) de DI 32x24VDC HF.
+
+Figura 5-1  LED del módulo DI 32x24VDC HF
+Significado de los indicadores LED
+En las tablas siguientes se explica el significado de los indicadores de estado y error. Las soluciones para los avisos de diagnóstico se indican en el capítulo Avisos de diagnóstico (Página 39).
+
+
+
+Alarmas y avisos de diagnóstico 
+5.2 Alarmas
+LED RUN y ERROR
+Tabla 5-1  Indicadores de estado y errorRUN y ERROR
+
+
+Alarmas y avisos de diagnóstico
+5.2 Alarmas
+Encontrará información detallada sobre el evento de error en el bloque de organización de
+errores, con la instrucción "RALRM" (leer información adicional de alarma) y en la ayuda en
+pantalla de STEP 7.
+Alarma de diagnóstico
+El módulo genera una alarma de diagnóstico con los siguientes eventos:
+•Falta tensión de alimentación L+
+•Rotura de hilo
+•Error de parametrización
+Alarma de proceso
+El módulo genera una alarma de proceso con los siguientes eventos:
+•Flanco ascendente
+•Flanco descendente
+•Flanco ascendente y descendente
+•Ocurrido evento de comparación para DQ (solo en el "modo de operación Contaje")
+El canal del módulo que ha originado la alarma de proceso se registra en la información de
+arranque del bloque de organización. La figura siguiente muestra la asignación de los bits de
+la palabra doble de datos locales 8.
+
+Figura 5-2  Información de arranque del bloque de organización
+Estructura de la información adicional de alarma
+Tabla 5-4  Estructura del USI = W#16#0001
+
+
+
+
+
+Alarmas y avisos de diagnóstico
+5.3 Avisos de diagnóstico
+
+Avisos de diagnóstico
+Con cada evento de diagnóstico se emite un aviso de diagnóstico y en el módulo parpadea el ERROR-LED. Los avisos de diagnóstico pueden leerse, por ejemplo, en el búfer de diagnóstico de la CPU. Los códigos de error pueden evaluarse mediante el programa de usuario.
+Si el módulo se utiliza de forma descentralizada en un sistema ET 200MP con PROFIBUS DP, se pueden leer datos de diagnóstico con la instrucción RDREC o RD_REC a través de los juegos de datos 0 y 1. Encontrará la estructura de los juegos de datos en Internet, en el "Manual de producto Módulo de interfaz IM 155-5 DP ST (6ES7155-5BA00-0AB0)".
+Tabla 5-5  Avisos de diagnóstico, su significado y soluciones posibles
+* Si se produce un fallo de tensión de alimentación estando pendiente un diagnóstico de rotura de hilo, la información de ca­lidad mostrará brevemente un valor incorrecto.
+
+
+
+Datos técnicos 	6 
+Datos técnicos del DI 32x24VDC HF
+La tabla siguiente contiene los datos técnicos (versión de 05/2022). Encontrará una hoja de datos técnicos, diariamente actualizada, en Internet 
+().
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+Tolerancias del retardo a la entrada parametrizable
+Tabla 6-1  Tolerancias del retardo a la entrada parametrizable
+
+
+
+
+
+Croquis acotado 	A 
+Este anexo incluye el croquis acotado del módulo montado en un perfil soporte, así como un croquis acotado con tapa frontal abierta. Deben tenerse en cuenta las dimensiones al montar en armarios, salas de equipos, etc.
+
+Figura A-1  Croquis acotado del módulo DI 32x24VDC HF
+Figura A-2  Croquis acotado del módulo DI 32x24VDC HF, vista lateral con tapa frontal abierta
+
+
+
+Registros de parámetros 	B 
+B.1 Parametrización y estructura de los registros de parámetros
+Los juegos de datos del módulo tienen la misma estructura, independientemente de que se configure el módulo con PROFIBUS DP o PROFINET IO.
+Dependencias en la configuración con un archivo GSD
+Al configurar el módulo con archivo GSD hay que tener en cuenta que los ajustes de algunos parámetros están interrelacionados. El módulo comprueba la plausibilidad de los parámetros una vez que estos se transfieren al módulo. 
+Modo de operación DI: no hay dependencias. Los distintos parámetros pueden combinarse entre sí sin restricciones.
+Modo de operación Contaje: los parámetros dependientes de otros figuran en la siguiente tabla: 
+Tabla B-1  Dependencias de los parámetros en la configuración con un archivo GSD
+Parametrización en el programa de usuario
+La parametrización del módulo se puede modificar en RUN (p. ej., es posible modificar los valores para el retardo a la entrada de canales concretos sin que ello repercuta en los demás canales).
+Modificación de parámetros en RUN
+Los parámetros se transfieren al módulo mediante los juegos de datos 0 a 31 con la instrucción WRREC. Los parámetros configurados con STEP 7 no cambian en la CPU, es decir, los parámetros configurados con STEP 7 vuelven a ser válidos tras un arranque.
+El módulo comprueba la plausibilidad de los parámetros una vez que estos han sido transferidos.
+Parámetro de salida STATUS
+Si se producen errores al transferir los parámetros con la instrucción WRREC, el módulo sigue funcionando con la parametrización utilizada hasta entonces. El parámetro de salida STATUS contiene no obstante el código de error correspondiente. 
+La instrucción WRREC y los códigos de error se describen en la ayuda en pantalla de STEP 7.
+Funcionamiento del módulo aguas abajo de un módulo de interfaz PROFIBUS DP
+Cuando el módulo funciona aguas abajo de un IM PROFIBUS DP, los juegos de parámetros 0 y 1 no se pueden leer. Con los juegos de parámetros 0 y 1 leídos se emiten los juegos de datos de diagnóstico 0 y 1. Puede obtener información adicional en el manual de producto del
+
+
+
+Registros de parámetros
+B.2 Estructura de los juegos de parámetros en modo de operación DI
+módulo de interfaz PROFIBUS DP, capítulo Alarmas en Internet
+(http://support.automation.siemens.com/WW/view/es/78324181).
+B.2 	Estructura de los juegos de parámetros en modo de operación DI
+Asignación de juego de datos y canal
+En la configuración de 1 x 32 canales, los parámetros se encuentran en los juegos de datos 0
+a 31 y tienen la siguiente asignación: 
+•Juego de datos 0 para canal 0
+•Juego de datos 1 para canal 1
+•…
+•Juego de datos 30 para canal 30
+•Juego de datos 31 para canal 31
+En la configuración de 4 x 8 canales, el módulo consta de 4 submódulos de ocho canales cada
+uno. Los parámetros para los canales se encuentran en los juegos de datos 0 a 7 y tienen la
+siguiente asignación:
+•Juegos de datos 0 a 7 para canales 0 a 7 (submódulo 1)
+•Juegos de datos 0 a 7 para canales 8 a 15 (submódulo 2)
+•Juegos de datos 0 a 7 para canales 16 a 23 (submódulo 3)
+•Juegos de datos 0 a 7 para canales 24 a 31 (submódulo 4)
+Al transferir los juegos de datos, debe direccionarse el submódulo correspondiente.
+Estructura de un juego de datos en modo de operación DI
+La figura siguiente muestra como ejemplo la estructura del juego de datos 0 para el canal 0.
+En el caso de los canales 1 a 31, la estructura es idéntica. Los valores de los bytes 0 y 1 son
+fijos y no deben modificarse.
+
+
+
+Registros de parámetros
+B.3 Estructura de los juegos de parámetros en modo de operación Contaje
+Los parámetros se activan poniendo a "1" el bit correspondiente.
+
+
+
+
+Figura B-1  Estructura del juego de datos 0: bytes 0 a 3
+Asignación de juego de datos y canal
+En la configuración de 1 x 32 canales, los parámetros se encuentran en los juegos de datos 0
+a 31 y tienen la siguiente asignación: 
+•	Juego de datos 0 para canal 0 con función de contaje
+•	Juego de datos 1 para canal 1 con función de contaje
+•	Juego de datos 2 para canal 2 (misma estructura que en modo de operación DI)
+•	…
+•	Juego de datos 30 para canal 30 (misma estructura que en modo de operación DI)
+•	Juego de datos 31 para canal 31 (misma estructura que en modo de operación DI)
+Estructura del juego de datos 0 en el modo de operación Contaje
+La figura siguiente muestra como ejemplo la estructura del juego de datos 0 para el canal 0.
+En el caso del canal 1, la estructura es idéntica y los valores están en el juego de datos 1.
+
+
+
+Registros de parámetros 
+B.3 Estructura de los juegos de parámetros en modo de operación Contaje
+Los valores de los bytes 0 y 1 son fijos y no deben modificarse. Los parámetros se activan poniendo a "1" el bit correspondiente. 
+
+
+
+
+Figura B-2  Estructura del juego de datos 0: bytes 0 a 4
+
+
+
+Registros de parámetros
+B.3 Estructura de los juegos de parámetros en modo de operación Contaje
+
+
+
+
+
+
+
+
+Figura B-3  Estructura del juego de datos 0: bytes 5 a 17
+Tenga en cuenta que, si se modifican los parámetros de contaje, el contador se parará y se pondrá al valor de arranque.
+La modificación de los parámetros "Diagnósticos" y "Alarmas de proceso" no afecta al contador.
+Estructura de los juegos de datos 2 a 31
+La estructura de los juegos de datos 2 a 31 para los canales 2 a 31 es idéntica a la del modo de operación DI; consulte el capítulo Estructura de los juegos de parámetros en modo de operación DI  (Página 46), figura Estructura del juego de datos 0: bytes 0 a 3.
+

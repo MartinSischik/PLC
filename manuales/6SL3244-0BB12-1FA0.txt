@@ -1,0 +1,31 @@
+
+
+Data sheet for SINAMICS Control unit CU240E-2 PN
+Figure similar
+Remarks :
+
+Operating voltage via
+
+
+Standard digital inputs
+Fail-safe digital inputs
+Digital outputs
+
+
+
+
+Ambient temperature
+
+
+Signal cable
+
+
+
+Dimensions
+
+
+
+
+
+
+

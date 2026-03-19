@@ -1,0 +1,333 @@
+
+Installation and User Manual TMS6000 AgroLog Crop Monitoring System
+
+Table of Content
+
+
+
+When installing the Netlinks we recommend focusing on short cable length. Use UTP
+cable for interconnecting Netlinks to Netcontrollers. Use one twisted pair for “A” (blue)
+
+
+
+Introduction
+General System Description
+AgroLog is the new generation of agricultural monitoring software from Supertech Agroline (SA). The new solution provides value by utilizing recent technological developments within IoT (Internet of Things), artificial intelligence and cloud computing, to provide advanced analysis, control and recommendations on agricultural production.
+Before starting the installation
+This manual describes important points of caution regarding installation and maintenance. It is important to read and understand this manual before installing and operating the system.
+Work out an installation plan before starting the installation of the AgroLog Crop Monitoring System.
+This is an ATEX system, please verify that the model/type-no. on the certification labels are as ordered. The certification labels are placed on the components.
+Be aware of the excessive pull from the Sensor Lines in the roof construction. For further information on this subject we advise to contact the silo supplier.
+Safety by installation and service
+Service and installation may only be performed by qualified persons. The customer and the installing person/engineer/company are responsible to meet all national and international requirements and regulations regarding electrical installation, ATEX and all procedures given in this manual.
+Approval according to 2014/34/EU (ATEX)
+The AgroLog Crop Monitoring System TMS5000/6000 is examined and approved by TÜV for use in Potentially Explosive Atmospheres: 
+EU-Type Examination Certificate “TÜV CY 16 ATEX 0205760 X”.
+The safety of the AgroLog Crop Monitoring System is based on Intrinsic Safety.
+
+
+
+The Netlink and Sensor Lines are only Intrinsic Safe when used in connection with the AgroLog Netcontroller NC6000.
+Directions for use
+The AgroLog Crop Monitoring System is designed for use in grain silos and grain bulk storage and is not allowed to be used for any other purposes without permission from the manufacturer.
+It is not allowed to make technical changes to any of the components and installation must be made according to this manual.
+Subject to technical changes.
+Special Conditions for Safe Use
+Only suitable certified cable entries may be used.
+All barriers must be subject to routine testing as outlined in EN 60079-11:2012 cl. 11.11.
+
+
+
+AgroLog TMS6000 system overview
+The system is based on the following components which will be reviewed below:
+💧AgroLog Netcontroller NC6000
+💧AgroLog Netlink NC6000
+💧AgroLog Sensor Lines SL3000 or SL5000
+The system also includes a Gateway and depending on system requirements the system may also include RS485 Interface modules, weather station and external alarm modules etc.
+To meet the requirement for an intrinsic safe system, the system must be planned and calculated according to the safety information given for the different components in this manual.
+
+
+
+
+
+AgroLog Netcontroller NC6000
+General description
+The AgroLog Netcontroller is an Associated Apparatus for use only in safe areas.
+The AgroLog Netcontroller is the interface between the PC (hosting the AgroLog PC software) in the safe area and the AgroLog Netlink and the AgroLog Sensor Line in the hazardous area. The AgroLog Netcontroller has a built-in safety barrier.
+One AgroLog Netcontroller can connect up to 4 groups of Netlinks and AgroLog 
+Netcontrollers can be connected in chains. One AgroLog Netcontroller can connect up to 400 temperature sensors.
+The AgroLog Netcontroller is powered from a 230V AC, 50 Hz main power supply and protected by an enclosure with an ingress protection of IP66.
+Marking
+The certification label with the following data is placed on the enclosure of the AgroLog Netcontroller
+
+The certification may not be removed.
+Safety information
+The AgroLog Netcontroller NC6000 is designed to be used in safe areas only.
+Components working in hazardous areas have to be explosion protected and separated from equipment in non-hazardous areas.
+Terminals for ground connection are placed at the metal house enclosure. Grounding is not necessary for the system to work but depends on national regulations.
+
+
+
+For ATEX environments it is only allowed to connect the AgroLog Netcontroller NC6000 to components to which the system is approved for.
+The safety information for the Netcontroller NC6000:
+💧Uo: 7,88 V
+💧Io: 170 mA
+💧Po: 1,3 W
+💧Co: 114 μF
+💧Lo: 5 mH
+💧Lo/Ro: 108 μH/ohm
+💧Operating temperature: -20°C - +40°C
+
+
+
+AgroLog Netlink NL6000
+General description
+The AgroLog Netlink is for use in Zone 21/22.
+The AgroLog Netlink is the interface between the AgroLog Sensor Line and the AgroLog Netcontroller NC6000.
+One AgroLog Netlink can connect up to 4 groups of sensor lines with up to 50 sensors in each group.
+Several AgroLog Netlinks can be connected in chains. The AgroLog Netlink is protected by an enclosure with an ingress protection of IP66
+Marking
+The certification label with the following data is placed on the enclosure of the AgroLog Netlink:
+
+The certification label may not be removed.
+Safety information
+The AgroLog Netlink is designed for use in Zone 21/22 according to the ATEX directive, classified to be a hazardous area due to presence of combustible dust. Components working in this area have to be explosion protected and separated from equipment in non-hazardous areas.
+The explosion protection of the Netlink is realized by the Safety Barrier built into the AgroLog Netcontroller NC5000 making the Sensor Lines and the Netlink intrinsic safe.
+Terminals for ground connection are placed at the metal house enclosure. Grounding is not necessary for the system to work but depends on national regulations.
+For ATEX environment it is only allowed to connect the AgroLog Netlink to components to which the system is approved for.
+Version UK 2.0.1 - 13022023 	Page: 8/25
+
+
+The safety information for the Netlink NL6000:
+💧Ui: 7,88 V
+💧Ii: 214 mA
+💧Pi: 1,3 W
+💧Ci: ~4,4μF
+💧Li: ~0 H
+💧Operating temperature: -20°c - +40°c
+
+
+
+AgroLog Sensor Line SL3000/SL5000
+General description
+The AgroLog Sensor Lines are for use in Zone 20/21/22.
+The sensor lines have sensors in different levels at intervals of 2 or 3 meter (standard –other intervals can be ordered) over the entire length of the cable.
+The sensors are inside the sensor line. The line is a steel reinforced hollow cable with an outer sheet of special antistatic plastic compound (conduit cable).
+The Sensor Line has a suspension head designed for different fixings outside the silo either on the roof or on the catwalk or inside the silo with a hanging bracket.
+The sensor line hangs down inside the silo (Zone 20) into the stored grain in the entire height of the silo.
+Important: To avoid the Sensor Lines moving towards the walls of the silo during filling, we recommend fastening the bottom end of the Sensor Lines to the floor of the silo. 
+For security reasons the tensile strength of the fastening must be less than 30 kg.
+The conduit cable exists in different dimensions: 
+The SL3000 (thin version) for silos up to 50 Meters in height and the SL5000 (thick version) for silos from 51 Meters in height and up.
+Marking
+The certification label with the following data is placed on the suspension head of the Sensor line:
+
+The certification label may not be removed.
+
+
+
+
+Sensor suspension with certification labels.
+Safety information
+The Sensor Line is designed for use in Zone 20/21/22 according to the ATEX directive, classified as a hazardous area due to presence of combustible dust.
+Components working in this area have to be explosion protected and separated from equipment in non-hazardous areas.
+The explosion protection of the Sensor Line is realized by the Safety Barrier built into the AgroLog Netcontroller NC6000, making the Sensor Lines and the Netlink intrinsic safe. Terminals for ground connection are placed at the metal house enclosure. Grounding is not necessary for the system to work but depends on national regulations.
+For ATEX environments it is only allowed to connect the Sensor Line to components which the system is approved for.
+The safety information for the Sensor Lines:
+💧Ui: 7,88 V
+💧Ii: 214 mA
+💧Pi: 1,3 W
+💧Ci: ~4,4μF
+💧Li: ~0 H
+💧T: 150°c
+💧Operating temperature: -20°c - +40°c
+
+
+
+Maintenance and repair
+The units should periodically be cleaned from excessive layers of dust.
+The AgroLog Netcontroller contains a fuse to maintain safety even by internal damage or if
+the system is connected to voltage outside its nominal value.
+
+
+
+Electrical installation of the AgroLog TMS6000
+System
+IMPORTANT: It is the responsibility of the owner/user that the system is planned, calculated and installed according to international/national regulations, ATEX regulations and classification of zones and safety information.
+Cables must be effectively clamped to prevent pulling or twisting and must be protected against risk of any mechanical damage.
+Calculating the maximum capacity on a sensor interface
+The AgroLog system is based on Intrinsic Safety which means that some parameters must be calculated to make sure that the system is safe.
+The relevant parameters for the components in the system can be found earlier in this manual.
+Before installing the system, it must be ascertained that the capacity of the components and cable mounted on one Netcontroller sensor interface does not exceed the allowed value.
+Example: 
+In a system 4 Netlinks are connected to one sensor interface on the Netcontroller. Assuming that the maximum length of the interconnecting cable is 100m.
+The Netcontroller has a Co = 114 μF for a sensor interface.
+One Netlink NL6000 has a Cin = 4,4 μF.
+The cable type is twisted pair with a capacitance of 50 nF/m.
+This gives the following calculation of total attached capacity (Ctot): 
+Ctot = ((Number of Netlinks) X (Netlink Cin)) + ((Cable length) X (Cable capacitance/m)) Ctot = (4 x 4,4 μF) + (100 x 50 nF) = 22,6 μF.
+Conclusion: 
+The system is safe regarding the total capacity as Ctot (22,6 μF) is less than Co (114 μF).
+General information about wiring and connections
+Keep wiring between AgroLog Netcontroller, Netlinks and Sensor Lines as short as possible.
+Any Sensor Line can be connected to any Netlink/port and any Netlink to any Netcontroller-port, but the system has to be reconfigured after any changes of the connections.
+Follow the instructions in the chapter Configuration of the System.
+The cables of intrinsically safe (IS) circuits shall be coloured or marked light blue and kept segregated from other non-IS cables, either by spatial separation, or by physical barriers
+Version UK 2.0.1 - 13022023 	Page: 13/25
+
+
+such as armouring, conduits, metallic partitions or separate cable trays. Similarly, cable trunking or raceways within cabinets and cubicles, or for cable runs within the plant may be coloured light blue to identify their duty to carry cables of intrinsically safe circuits.
+Routing cable from one zone to another zone makes it necessary to use appropriate ATEX approved cable glands.
+For full details of requirements, the relevant standards and national regulations must be consulted.
+In order to have a reliable system use an unshielded twisted pair cable for connections between Sensor Lines, Netlinks and Netcontroller.
+We suggest that you use one/two twisted pairs in a UTP cable (Ethernet cable) as this is well-defined, inexpensive and worldwide available.
+For connections to Sensor Lines use the two wires in one twisted pair and let all other wires be unconnected.
+For connections from Netcontroller to Netlink use the two wires in one twisted pair, one wire from another twisted pair and let all other wires be unconnected.
+Example of cable: UTP 4x2awg24 Cat5E for indoor use, UTP4x2xawg24 Cat5PE for outdoor use or similar.
+Note: It is important to use unshielded cable and keep the cable distance as short as possible to have a reliable system.
+The cable glands supplied with the system for the 230 V mains cable can be used with cable diameters of 5 to 8 mm.
+For all other connections the supplied cable glands can be used with cable diameters of 3,5 to 6 mm.
+To connect the Sensor Line to the UTP-cable we recommend the use of insulation displacement connector ICD.
+
+
+
+Example of ICD-connector:
+💧3M Scotchlok type UY-2 (two way connector)
+💧3M Scotchlok type UR-2 (three way connector)
+Do not cut the blue and red wire in the Sensor Lines to a length shorter than 200 mm.
+When using an ICD-connector, the correct tool must be used.
+The Knipex 975001 is an example of a proper tool for compressing the ICD-connectors.
+
+Important: Do not try to measure the impedance of the Sensor Lines using ohmmeter, continuity tester, isolation tester etc. as this can damage the digital sensors.
+A normal multimeter with a high measuring impedance is the only device not damaging the sensors.
+Checklist before applying power
+Wiring must be made according to the wiring diagram and other installation specifications.
+Cable glands must be tightened accordingly to meet protection requirements.
+Unused cable glands must be replaced with approved blanking elements. Enclosures must be closed.
+Gateway power supply must be a 5V DC capable of supplying a minimum of 3A.
+
+
+
+Wiring diagram - basic system
+
+Installing the Sensor Lines
+Each Sensor Line is marked with a Sensor Line number.
+By installation of the Sensor Lines in the silos it is important that each Sensor Line is mounted in the correct silo according to the enclosed documents for the specific system.
+A sketch marking the position of the Sensor Lines in the silo can be useful information for later use.
+Connect the Sensor Lines to the Netlink terminals (“Sensor Lines Connections” J3-J6). There are no specific requirements for which Sensor Line that connects to which Netlink.
+The only thing to take into consideration is to have as short cable length as possible. Use one twisted pair to each Sensor Line.
+
+
+
+
+One Sensor Line connected to a Netlink, unused cable glands are replaced with stopping plugs
+NB: For simplicity all pictures are shown with very short cable length.
+Max two Sensor Lines can be daisy chained and connected to one Netlink terminal (J3-J6).
+Up to 8 Sensor Lines (max. 160 sensors) can be connected to one Netlink. The Sensor Lines must be evenly distributed on all four Netlink terminals (J3-J6).
+Two Sensor Lines daisy chained
+
+
+
+Installing the Netlink
+One Netlink connected to one Netcontroller
+Up to 16 Netlinks can be connected to one Netcontroller.
+The Netlinks must be evenly distributed on the Netcontroller terminals (J1-J4).
+We recommend distributing the number of Netlinks equally on the Netcontroller terminals. One Netcontroller can control up to 400 Temperature Sensors. The Netlinks can be daisy chained.
+
+Installing the Netcontroller
+
+
+
+The Netcontroller must be
+The Netcontrollers can be daisy chained.
+
+Two Netcontrollers daisy chained
+
+
+
+
+Gateway box with 5V power supply
+AgroLog Software Setup
+The AgroLog Crop Monitoring System is a cloud-based software for all types of platforms. For on-premise software please see the document 
+AgroLog On-Premise Installation Manual Appendix
+NOTE: This chapter only covers the installation of the system. For instructions on how to use the software please consult the on-line manual 
+
+Requirements
+AgroLog can be used on all types of devices, ex. mobile phones, tablets, Ipads and computers with a browser.
+All you need is a browser ex. We recommend Google Chrome
+Logging In
+When you have purchased a system, you will get a login and password, both of which can be found on the front of the manual.
+Supertech Agroline recommends that the password be changed on the first possible occasion for security reasons.
+Version UK 2.0.1 - 13022023 	Page: 20/25
+
+
+Initial setup of hardware 
+When you have a login and finished the procedure of creating a password you will see this as
+your first login:
+
+Select Device Admin in the “AgroLog Dashboard” menu or use the below icon on a smaller
+screen.
+
+Select your “SMS” (Silo-Monitoring-System), then “Config” then “SMS SETUP WIZARD”
+
+
+
+
+Select comport (typical ttyS1) and then “NEXT”:
+
+Gateway will now search for any attached netcontroller, if none is detected then go back and
+select other comport, if it detect the correct numbers of controllers then press “NEXT”:
+
+
+
+
+Press “RECONFIGURE ALL” and status should change to “configuring”.
+Attention! Don’t close the setup wizard until configuring process will be ended, it may take 30 minutes.
+Press “FINISH” when the status has changed to “done”
+
+
+
+
+Appendix – Troubleshooting Guide
+Introduction
+The purpose of this guide is to help users to perform diagnostics and troubleshooting on the AgroLog TMS6000 system.
+In case of problems with the system please review the relevant chapters in this guide. By using this guide most problems can be solved.
+The most common problems are:
+💧 Cables connecting Sensor Lines and Netlink.
+-	Check that the cables are properly seated in the terminal box
+-	Check that the cable ends have been de-isolated so there’s connection between cable 	and terminal box 
+	Check that the wires are attached in the right order-
+-
+	Ensure that the cables used for the system are unshielded twisted pair as described 	in the manual.
+-	Ensure that the cable lengths are as short as possible.
+-	Exactly two wires in one twisted pair are used and all other wires are unconnected in 	the cables between Netlink and Sensor Lines.
+💧 Cables connecting Netlink and Netcontroller.
+	-	See above “Cables connecting Sensor Lines and Netlink”💧 Cables connecting Netcontroller and Gateway-box.
+	-	See above “Cables connecting Sensor Lines and Netlink”💧 Cable connecting Gateway-box to the local network (LAN).
+	-	See above “Cables connecting Sensor Lines and Netlink”💧 Power cable to the Netcontroller.
+-	Make sure the cable is properly seated in the socket.
+-	Make sure the socket is on.
+Inspect the cable for physical damage.-
+Make sure that:
+💧 The cables used for the system are unshielded twisted pair as described in the manual.💧 The cable distances are as short as possible to have a reliable system.
+💧 Exactly two wires in one twisted pair are used and all other wires are unconnected in the cables between Netlink and Sensor Lines.
+💧 Wiring between Netcontroller and Netlink is correct: Exactly two wires in one twisted pair are used for “A” and “B.
+These are the most common problems, especially the cables connecting the Sensor Lines and the Netlink.
+
+
+
+Using the LED’s for RS485 communication diagnostic
+There are three LED’s on the Netcontroller printed circuit board. To be able to see these LED’s the lid on the Netcontroller has to be removed. 
+Only authorized persons are allowed to do this.
+Warning: 
+Risk of death - do not touch the printed circuit board or any components on it as they can carry high voltage.
+The green LED marked “ON” is on when the Netcontroller is turned on. If the LED is off check the connection to the mains power.
+The green LED marked “RX” flashes when the Netcontroller receives a command from the PC.
+The red LED marked “TX” flashes when the Netcontroller sends a message to the PC.
+In normal operation the yellow LED marked “SENSOR” flashes whenever a Sensor is scanned for its temperature.
+During Reconfiguration the yellow “SENSOR” LED flashes whenever a Sensor address is mapped.
+If the Yellow “SENSOR” LED never flashes, the system has not been (re)configured.
+This guide did not solve the problem
+If this guide did not solve the problem please contact the local supplier with a detailed description of the problem
+In general, we do not support problems related to the PC and the operating system or connection to the local network - Please contact your local it-administrator.
+

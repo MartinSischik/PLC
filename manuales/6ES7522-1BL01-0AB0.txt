@@ -1,0 +1,646 @@
+
+
+
+
+
+SIMATIC 
+S7-1500/ET 200MP 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF 
+(6ES7522-1BL01-0AB0) 
+Manual de producto 
+06/2018 
+A5E35683519-AC 
+
+___________________ ___________________ ___________________ ___________________ ___________________ ___________________ ___________________ 
+
+
+
+Notas jurídicas 
+Filosofía en la señalización de advertencias y peligros 
+Este manual contiene las informaciones necesarias para la seguridad personal así como para la prevención de daños materiales. Las informaciones para su seguridad personal están resaltadas con un triángulo de advertencia; las informaciones para evitar únicamente daños materiales no llevan dicho triángulo. De acuerdo al grado de peligro las consignas se representan, de mayor a menor peligro, como sigue. 
+
+
+
+Si se dan varios niveles de peligro se usa siempre la consigna de seguridad más estricta en cada caso. Si en una consigna de seguridad con triángulo de advertencia de alarma de posibles daños personales, la misma consigna puede contener también una advertencia sobre posibles daños materiales. 
+Personal cualificado 
+El producto/sistema tratado en esta documentación sólo deberá ser manejado o manipulado por personal cualificado para la tarea encomendada y observando lo indicado en la documentación correspondiente a la misma, particularmente las consignas de seguridad y advertencias en ella incluidas. Debido a su formación y experiencia, el personal cualificado está en condiciones de reconocer riesgos resultantes del manejo o manipulación de dichos productos/sistemas y de evitar posibles peligros. 
+Uso previsto de los productos de Siemens 
+Considere lo siguiente: 
+Marcas registradas 
+Todos los nombres marcados con ® son marcas registradas de Siemens AG. Los restantes nombres y designaciones contenidos en el presente documento pueden ser marcas registradas cuya utilización por terceros para sus propios fines puede violar los derechos de sus titulares. 
+Exención de responsabilidad 
+Hemos comprobado la concordancia del contenido de esta publicación con el hardware y el software descritos. Sin embargo, como es imposible excluir desviaciones, no podemos hacernos responsable de la plena concordancia. El contenido de esta publicación se revisa periódicamente; si es necesario, las posibles correcciones se incluyen en la siguiente edición. 
+
+
+
+Prólogo 
+Finalidad de la documentación 
+ema S7-1500/ET 200MP . 
+En este manual de sistema se describen las funciones que afectan a los sistemas de forma generalizada. 
+La información contenida en el presente manual de producto y en los manuales de sistema y de funciones permite poner en marcha los sistemas. 
+Cambios con respecto a la versión anterior 
+Con respecto a la versión anterior del manual de producto, se ha realizado el siguiente cambio: 
+●Nuevos términos de licencia e indicaciones de copyright del software código abierto 
+●A partir de la versión V1.1.0 del firmware, el módulo tiene un contador de ciclos de 	conmutación. 
+Convenciones 
+El término "CPU" se refiere en lo sucesivo tanto a los módulos centrales del sistema de automatización S7-1500 como a los módulos de interfaz del sistema de periferia descentralizada ET 200MP. 
+Preste atención también a las notas marcadas del modo siguiente: 
+Nota 
+Una nota contiene información importante relativa al producto descrito en la documentación, al manejo de dicho producto o a aquella parte de la documentación a la que debe prestarse especial atención. 
+Reciclaje y eliminación 
+Para un reciclaje y una eliminación ecológicos de los equipos usados, rogamos dirigirse a un centro certificado de recogida de material electrónico y eliminarlos conforme a las normativas vigentes en su país. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 3
+
+
+Prólogo 
+Información de seguridad 
+Siemens ofrece productos y soluciones con funciones de seguridad industrial con el objetivo de hacer más seguro el funcionamiento de instalaciones, sistemas, máquinas y redes. 
+Para proteger las instalaciones, los sistemas, las máquinas y las redes de amenazas cibernéticas, es necesario implementar (y mantener continuamente) un concepto de seguridad industrial integral que sea conforme a la tecnología más avanzada. Los productos y las soluciones de Siemens constituyen únicamente una parte de este concepto. 
+El cliente es responsable de impedir el acceso no autorizado a sus instalaciones, sistemas, máquinas y redes. Los sistemas, las máquinas y los componentes solo deben estar conectados a la red corporativa o a Internet cuando y en la medida que sea necesario y siempre que se hayan tomado las medidas de protección adecuadas (p. ej. uso de cortafuegos y segmentación de la red). 
+Adicionalmente, deberán observarse las recomendaciones de Siemens en cuanto a las medidas de ps información sobre seguridad industrial en . 
+Los productos y las soluciones de Siemens están sometidos a un desarrollo constante con el fin de mejorar todavía más su seguridad. Siemens recomienda expresamente realizar actualizaciones en cuanto estén disponibles y utilizar únicamente las últimas versiones de los productos. El uso de versiones anteriores o que ya no se soportan puede aumentar el riesgo de amenazas cibernéticas. 
+Para mantenerse informado de las actualizaciones de productos, recomendamos que se  Feed en 
+. 
+Software de código abierto 
+En el firmware de los módulos de E/S se utiliza software de código abierto. El software de código abierto se entrega de forma gratuita. Nos hacemos responsables del Producto descrito, incluido el software de código abierto que contiene, de acuerdo con las condiciones vigentes para el Producto. Declinamos cualquier responsabilidad derivada del uso del software de código abierto más allá del flujo del programa previsto para nuestro producto, así como cualquier responsabilidad derivada de los daños causados por modificaciones del software. 
+Por motivos legales estamos obligados a publicar las condiciones de licencia y las notas ternet 
+. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+4 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Índice 
+Prólogo ................................................................................................................................................... 3 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 5
+
+
+Guía de la documentación 	1 
+La documentación del sistema de automatización SIMATIC S7-1500 y del sistema de periferia descentralizada SIMATIC ET 200MP se divide en tres partes. 
+Esta división le permite acceder específicamente al contenido deseado. 
+
+Información básica 
+En el manual de sistema y el Getting Started (primeros pasos) se describen detalladamente la configuración, montaje, cableado y puesta en marcha de los sistemas SIMATIC S7-1500 y ET 200MP. La Ayuda en pantalla de STEP 7 le asiste en la configuración y programación. 
+Información de dispositivos 
+Los manuales de producto contienen una descripción sintética de la información específica de los módulos, como características, esquemas de conexiones, curvas características o datos técnicos. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+6 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Guía de la documentación 
+Información general 
+En los manuales de funciones encontrará descripciones detalladas sobre temas generales relacionados con los sistemas SIMATIC S7-1500 y ET 200MP, p. ej., diagnóstico, comunicación, control de movimiento, servidor web, OPC UA. 
+ . 
+En la información del producto se documentan los cambios y ampliaciones de los manuales. 
+ de Internet . 
+Manual Collection S7-1500/ET 200MP 
+La Manual Collection contiene la documentación completa del sistema de automatización SIMATIC S7-1500 y del sistema de periferia descentralizada ET 200MP recogida en un archivo. 
+
+. 
+Comparativa de SIMATIC S7-1500 para lenguajes de programación 
+La comparativa ofrece una visión de conjunto de las instrucciones y funciones que se pueden emplear con qué familias de controladores. 
+
+. 
+"mySupport" 
+Con "mySupport", su área de trabajo personal, podrá aprovechar al máximo el Industry Online Support. 
+En "mySupport" se pueden guardar filtros, favoritos y etiquetas, solicitar datos CAx y elaborar una librería personal en el área Documentación. Asimismo, en las consultas que realice con el Support Request (solicitud de soporte), este ya estará cumplimentado con sus datos, y en todo momento podrá ver una relación de las solicitudes pendientes. 
+Para usar todas las funciones de "m 
+Encontrará "mySupport" en Internet . 
+"mySupport": "Documentación" 
+En "MySupport", bajo "Documentación", se pueden combinar manuales completos o partes de ellos para elaborar un manual propio. 
+Este manual se puede exportar como archivo PDF o a un formato editable. 
+
+. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 7
+
+
+Guía de la documentación 
+"mySupport": "Datos CAx" 
+En el área "Datos CAx" de "mySupport" puede acceder a datos de producto actualizados para su sistema CAx o CAe. 
+Con solo unos clics configurará su propio paquete de descarga. 
+Puede elegir lo siguiente: 
+●Imágenes de producto, croquis acotados 2D, modelos 3D, esquemas de conexiones, archivos de macros EPLAN 
+●Manuales, curvas características, instrucciones de uso, certificados 
+●Datos característicos de productos 
+
+. 
+Ejemplos de aplicación 
+Los ejemplos de aplicación le asisten con diferentes herramientas y ejemplos a la hora de resolver las tareas de automatización. Las soluciones de los ejemplos interactúan siempre con varios componentes del sistema sin centrarse en productos concretos. 
+
+. 
+TIA Selection Tool 
+TIA Selection Tool permite seleccionar, configurar y pedir aparatos (dispositivos) para Totally Integrated Automation (TIA). 
+Es el sucesor de SIMATIC Selection Tool y recoge en una misma herramienta los configuradores de automatización ya conocidos. 
+TIA Selection Tool permite generar un lista de pedido completa a partir de la selección o configuración de productos realizada. 
+
+. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+8 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Guía de la documentación 
+SIMATIC Automation Tool 
+SIMATIC Automation Tool permite realizar tareas de puesta en marcha y servicio técnico como operación masiva simultáneamente en distintas estaciones SIMATIC S7, independientemente del TIA Portal. 
+Resumen de funciones: 
+●Escanear la red y crear una tabla que represente los dispositivos accesibles de la red. ●Hacer parpadear los LED de los dispositivos o pantallas HMI para facilitar su localización ●Cargar direcciones (IP, subred, pasarela) en un dispositivo 
+●Cargar el nombre PROFINET (nombre de estación) en un dispositivo 
+●Pasar una CPU al estado operativo RUN o STOP 
+●Ajustar la hora de una CPU a la hora actual de la programadora o PC 
+●Cargar un programa nuevo en una CPU o un dispositivo HMI 
+●Cargar desde la CPU, cargar en la CPU o borrar datos de recetas de una CPU 
+●Cargar desde la CPU o borrar datos de registros de datos de una CPU 
+●Crear una copia de seguridad de los datos en un archivo de backup o restaurarlos desde 	este para CPU y dispositivos HMI 
+●Cargar datos de mantenimiento desde una CPU 
+●Leer el búfer de diagnóstico de una CPU 
+●Realizar un borrado total de la memoria de una CPU 
+●Restablecer la configuración de fábrica de dispositivos 
+●Cargar una actualización del firmware en un dispositivo 
+
+. 
+PRONETA 
+	SIEMENS PRONETA ("análisis de red PROFINET") permite analizar la red de la instalación 	durante la puesta en marcha. PRONETA cuenta con dos funciones centrales: 
+	●La vista topológica general escanea automáticamente la red PROFINET y todos los 		componentes conectados a ella. 
+●La comprobación E/S permite comprobar rápidamente el cableado y la configuración de 	los módulos de una instalación. 
+
+. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 9
+
+
+Guía de la documentación 
+SINETPLAN 
+SINETPLAN, el Siemens Network Planner, es una ayuda para planificadores de 
+instalaciones y redes de automatización basada en PROFINET. La herramienta facilita, incluso en la fase de planificación, el dimensionamiento profesional y anticipativo de la instalación de PROFINET. SINETPLAN le ayuda también a optimizar la red así como a aprovechar al máximo los recursos en la red y planificar reservas. De esta forma se evitan problemas en la puesta en marcha o fallos durante el funcionamiento productivo antes de iniciar la aplicación programada. Esto aumenta la disponibilidad de la producción y contribuye a mejorar la seguridad de operación. 
+Resumen de las ventajas 
+●Optimización de la red mediante el cálculo puerto a puerto de las cargas de red. 
+●Mayor disponibilidad de producción mediante escaneo online y verificación de las instalaciones existentes 
+●Transparencia antes de la puesta en marcha mediante la importación y simulación de proyectos STEP 7 existentes 
+●Eficiencia mediante la protección a largo plazo de las inversiones existentes y el aprovechamiento óptimo de los recursos 
+Encontrará SINETPLAN en Internet . 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+10 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Descripción del producto 	2 
+2.1 	Características 
+Referencia 
+6ES7522-1BL01-0AB0 
+Vista del módulo 
+
+Figura 2-1 	Vista del módulo DQ 32x24VDC/0.5A HF 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	11
+
+
+Descripción del producto 
+2.1 Características 
+Características 
+		El módulo tiene las siguientes características técnicas: 
+		●32 salidas digitales, con aislamiento galvánico en grupos de 8 
+		●Tensión nominal de salida 24 V DC 
+	●Corriente nominal de salida 0,5 A por canal 
+	●Valores sustitutivos parametrizables (por canal) 
+	●Diagnóstico parametrizable (por canal) 
+	●Adecuado para electroválvulas, contactores de corriente continua y lámparas de 		señalización 
+	●Contador de ciclos de conmutación para los actuadores conectados, como, 		p. ej., electroválvulas 
+	●Hardware compatible con el módulo de salidas digitales: 
+		–DQ 16x24VDC/0.5A ST (6ES7522-1BH00-0AB0) 
+		–DQ 16x24VDC/0.5A HF (6ES7522-1BH01-0AB0) 
+		–DQ 32x24VDC/0.5A ST (6ES7522-1BL00-0AB0) 
+	El módulo soporta las siguientes funciones: 
+
+El módulo puede configurarse con STEP 7 (TIA Portal) y con un archivo GSD. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 12 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Descripción del producto 
+2.1 Características 
+Compatibilidad 
+La tabla siguiente muestra la compatibilidad de los módulos y las dependencias entre la versión de hardware (FS) y la versión de firmware (FW) utilizada: 
+Accesorios 
+Los siguientes accesorios se suministran con el módulo y también pueden pedirse como repuesto: 
+●Etiquetas rotulables 
+●Conectores en U 
+●Tapa frontal universal 
+Otros componentes 
+Los siguientes componentes deben pedirse por separado: 
+Conector frontal incl. puentes y bridas para cables 
+Encontrará más inforS7-1500/ET 200MP . 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	13
+
+
+Descripción del producto 
+2.2 Funciones 
+2.2 	Funciones 
+2.2.1 	Contador de ciclos de conmutación 
+		La función registra el número de ciclos de conmutación de la salida y, con ello, los ciclos de 		conmutación de un actuador conectado, p. ej., de electroválvulas. Al alcanzar el número 		especificado de ciclos de conmutación, se dispara la alarma de mantenimiento "Advertencia 		de valor límite" siempre y cuando se haya configurado y habilitado. En caso de sustituir el 		actuador, el contador de ciclos de conmutación puede reiniciarse con el programa de 		usuario. 
+En caso de sustituir el módulo, existe la posibilidad de inicializar el contador de ciclos de conmutación con el programa de usuario. 
+Campos de aplicación típicos: 
+	●Registro del número de ciclos de conmutación de los aparatos conectados, p. ej., 	electroválvulas o contactores de carga 
+	●Mantenimiento predictivo 
+Ventajas 
+	●Esta función se configura y no se programa. 
+●Posibilidad de "vigilar" cada uno de los canales. Se pueden elegir las salidas que se "vigilan". 
+●La configuración de la instalación se puede modificar individualmente y con flexibilidad. 
+●Cuidado y mantenimiento sencillos. El contador de ciclos de conmutación se puede activar y desactivar con el programa de usuario. 
+●Aumento de la disponibilidad de la instalación. La sustitución de un actuador se puede planfiicar con mucha antelación para el siguiente ciclo de mantenimiento. 
+Requisitos 
+	Versión del firmware a partir de V1.1.0 del módulo. 
+Configuración 
+El contador de ciclos de conmutación se configura con los siguientes parámetros: ●Contador de ciclos de conmutación activado/desactivado 
+●Disparo de la alarma de mantenimiento al alcanzarse el valor límite 
+●Definición del valor límite para la alarma de mantenimiento 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 14 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Descripción del producto 
+2.2 Funciones 
+Funcionamiento 
+El módulo cuenta los ciclos de conmutación evaluando los flancos ascendentes de una señal de salida. Cuando el módulo detecta un flanco ascendente, el contador de ciclos de conmutación (24 bits) se incrementa para el correspondiente canal. Cuando se desborda el contador de ciclos de conmutación, este vuelve a empezar desde 0. 
+Si se activa el parámetro "Ciclos de conmutación de mantenimiento", se notificará la alarma de mantenimiento "Advertencia de valor límite" cuando se rebase dicho valor. Como alternativa, la alarma de mantenimiento puede activarse en los juegos de parámetros a partir del DS 64. 
+Los estados actuales de los contadores se guardan cíclicamente (aprox. cada 20 segundos) de forma remanente en el módulo. En cada rearranque (desconexión/conexión de red del módulo), se restablecen los contadores de ciclos de conmutación. 
+La función se activa con el parámetro "Contador de ciclos de conmutación" o en los juegos de parámetros a partir del DS 64. 
+Con el juego de datos DS 129 se leen los estados actuales de los contadores. El juego de datos DS 129 incluye el estado del contador en formato UDINT para cada canal. 
+Con el juego de datos DS 130 se leen los valores límite de cada canal en formato UDINT. 
+Con el juego de datos DS 131 existe la posibilidad de sobrescribir el valor de contaje actual de cada contador de ciclos de conmutación. 
+Con el parámetro "Límite ciclos conmutación" o con el juego de datos DS 131 se puede definir un valor límite para cada contador de ciclos de conmutación. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	15
+
+
+Conexión 	3 
+En el presente capítulo encontrará el esquema de principio del módulo y diferentes opciones 
+de conexión. 
+Encontrará información sobre cómo cablear el conector frontal, apantallar el cable, etc. en el 
+
+. 
+Esquema eléctrico y esquema de principio 
+La figura siguiente muestra como ejemplo la asignación de conexiones y la asignación de 
+los canales a las direcciones (desde byte de salida a hasta byte de salida d). 
+
+①Bus de fondo 	MAINT 	LED indicador de mantenimiento (amarillo) 
+xL+ Tensión de alimentación de 24 V DC 	RUN 	LED indicador de estado (verde) 
+xM Masa 	ERROR 	LED indicador de error (rojo) 
+CHx Canal o LED de estado del canal (verde/rojo) 	PWR 	LED de tensión de alimentación POWER (verde) 
+Figura 3-1 Esquema de principio y asignación de conexiones 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+16 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Conexión 
+Nota 
+Al conducir la tensión de alimentación de 24 V al canal correspondiente las salidas del módulo tienen la señal "1" durante aprox. 50 μs según el circuito. 
+Sugerencia: Uso de puentes 
+Si desea suministrar a los cuatro grupos de carga el mismo potencial (sin aislamiento galvánico), utilice los puentes suministrados con el conector frontal. De este modo evitará tener que cablear un borne con dos conductores. 
+Proceda del siguiente modo: 
+1.Aplique la tensión de alimentación de 24 V DC a los bornes 19 y 20. 
+2.Coloque puentes entre los bornes: 
+	–9 y 29 (L+) 
+	–10 y 30 (M) 
+	–19 y 39 (L+) 
+	–20 y 40 (M) 
+3.Tienda puentes entre los bornes 29 y 39, así como 30 y 40. 
+4.Utilice los bornes 9 y 10 para conectar en bucle el potencial con el siguiente módulo. 
+
+Nota 
+Tenga en cuenta que no debe sobrepasarse la carga de corriente máxima admisible de 8 A por puente. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	17
+
+
+Parametrización y direccionamiento 	4 
+4.1 	Parámetros 
+Parámetros del DQ 32x24VDC/0.5A HF 
+Al parametrizar el módulo con STEP 7, se especifican las características del módulo mediante diferentes parámetros. Los parámetros ajustables figuran en la siguiente tabla. El rango efectivo de los parámetros ajustables depende del tipo de configuración. Son posibles las siguientes configuraciones: 
+●Configuración centralizada con una CPU S7-1500 
+●Configuración descentralizada con PROFINET IO en un sistema ET 200MP 
+●Configuración descentralizada con PROFIBUS DP en un sistema ET 200MP 
+Al parametrizar el módulo en el programa de usuario, los parámetros se transfieren al módulo mediante juegos de datos con la instrucción WRREC (reparametrización en RUN); ver capítulo Parametrización (Página 39) 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	18
+
+
+Parametrización y direccionamiento 
+4.1 Parámetros 
+* Si habilita el diagnóstico para varios canales, en caso de un corte eléctrico recibirá una avalancha de avisos, puesto que cada canal habilitado detectará este fallo. Puede evitar la avalancha de avisos habilitando el diagnóstico solo para un canal. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	19
+
+
+Parametrización y direccionamiento 
+4.2 Explicación de los parámetros 
+4.2 	Explicación de los parámetros 
+Falta tensión de alimentación 
+Habilitación del diagnóstico cuando no hay tensión de alimentación L+ o esta es insuficiente. 
+Cortocircuito a masa 
+Habilitación del diagnóstico cuando aparece un cortocircuito a masa de la alimentación del actuador (CHx). 
+Ciclos de conmutación de mantenimiento 
+Con este parámetro se habilita la alarma de mantenimiento "Advertencia de valor límite" al rebasar el valor límite del contador de ciclos de conmutación. 
+El valor límite se parametriza con el parámetro "Límite ciclos conmutación" para cada canal CHx. 
+Contador de ciclos de conmutación 
+ Habilitación por canales de los contadores de ciclos de conmutación (Página 14). 
+Rotura de hilo 
+Habilitación del diagnóstico cuando el cable al actuador está interrumpido. 
+Reacción a STOP de la CPU 
+Determina el comportamiento de la salida cuando la CPU pasa al estado operativo STOP o cuando se interrumpe la conexión con la CPU. 
+Valor límite de ciclos de conmutación 
+Define por canales el valor límite con cuyo rebase se notifica la alarma de mantenimiento "Advertencia de valor límite". 
+Introduzca un valor entero entre 0 y 16777214. Consulte este valor en la hoja de datos del actuador conectado. Le recomendamos que no indique este valor máximo, sino que defina, p. ej., un valor al 80 % o al 90 %, para poder tener tiempo suficiente para sustituir 
+preventivamente el actuador. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+20 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+4.3	Área de direcciones 
+En STEP 7, el módulo puede configurarse de diferentes maneras (ver la tabla siguiente). En función de la configuración se asignan direcciones adicionales o distintas en la memoria imagen de proceso de las salidas/entradas. 
+Opciones de configuración del DQ 32x24VDC/0.5A HF 
+El módulo puede configurarse con STEP 7 (TIA Portal) o con un archivo GSD. 
+Si se configura el módulo mediante un archivo GSD, encontrará las configuraciones bajo diversos nombres abreviados/nombres de módulo. 
+Son posibles las configuraciones siguientes: 
+Nota 
+Comportamiento de valor sustitutivo en modo Shared Device con la configuración siguiente (solo V1.0): 
+•4 x 8 canales con/sin información de calidad 
+Si en modo Shared Device uno de los controladores IO implicados cambia al estado operativo STOP o falla por interrumpirse la conexión, por ejemplo, todos los submódulos del módulo de salidas tendrán el comportamiento de valor sustitutivo parametrizado (p. ej., desconectar). 
+Esto significa que aunque falle un solo controlador IO, los restantes controladores IO que intervienen en Shared Device ya no podrán controlar el submódulo asignado del módulo de salidas. 
+
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+Información de calidad (Quality Information, QI) 
+Las opciones siguientes tienen activada siempre la información de calidad: 
+●DQ 32x24VDC/0.5A HF QI 
+●DQ 32x24VDC/0.5A HF S QI 
+●DQ 32x24VDC/0.5A HF MSO 
+Cada canal tiene asignado un bit adicional de información de calidad. El bit de información de calidad indica si el valor de salida especificado por el programa de usuario está realmente presente en el borne del módulo (0 = el valor es erróneo). 
+Nota 
+La alarma de mantenimiento "Advertencia de valor límite" no influye en la información de calidad. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 22 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+Espacio de direcciones en la configuración como DQ 32x24VDC/0.5A HF de 32 canales 
+La figura siguiente muestra la asignación del espacio de direcciones en la configuración como módulo de 32 canales con información de calidad. La dirección inicial del módulo puede asignarse libremente. Las direcciones de los canales se derivan de dicha dirección inicial. 
+Las letras "a" a "d" están serigrafiadas en el módulo. "QB a" indica p. ej., el byte de salida "a" de la dirección de inicio del módulo. 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	23
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+Espacio de direcciones del DQ 32x24VDC/0.5A HF S QI en configuración de 4 x 8 canales 
+En la configuración como módulo de 4 x 8 canales, los canales del módulo se reparten entre varios submódulos. Estos submódulos pueden asignarse a diferentes controladores IO si el módulo se utiliza en un Shared Device. 
+El número de controladores IO depende del módulo de interfaz utilizado. Lea las indicaciones del manual de producto que corresponda al módulo de interfaz. 
+A diferencia de la configuración como módulo de 1 x 32 canales, cada uno de los cuatro submódulos posee una dirección inicial que se puede asignar libremente. Las direcciones para la correspondiente información de calidad de un submódulo también pueden asignarse a discreción. 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+24 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+Espacio de direcciones en la configuración como DQ 32x24VDC/0.5A HF MSO de 1 x 32 canales 
+Al configurar un módulo de 1 x 32 canales (Shared Output interna del módulo, MSO), los canales 0 a 31 del módulo se copian a varios submódulos. Así, los canales 0 a 31 están presentes con valores idénticos en distintos submódulos. Al usar el módulo en un Shared Device, dichos submódulos pueden asignarse a un total de cuatro controladores IO: 
+●El controlador IO al que está asignado el submódulo 1 tiene acceso de escritura a las 	salidas 0 a 31. 
+●Los controladores IO a los que están asignados los submódulos 2, 3 ó 4 tienen acceso 	de lectura a las salidas 0 a 31. 
+El número de controladores IO depende del módulo de interfaz utilizado. Lea las indicaciones del manual de producto que corresponda al módulo de interfaz. 
+Información de calidad (Quality Information, QI) 
+El significado de la información de calidad depende del submódulo en cuestión. 
+En el caso del submódulo 1 (= submódulo base), la información de calidad 0 indica que el valor es erróneo o que el controlador IO del submódulo base se encuentra en estado STOP. 
+En los submódulos 2 a 4 (= submódulos MSO), la información de calidad 0 indica que el valor es erróneo o que se ha producido uno de los siguientes errores: 
+●El submódulo base todavía no está parametrizado (no está listo para el funcionamiento). 
+●Se ha interrumpido la conexión entre el controlador IO y el submódulo base. 
+●El controlador IO del submódulo base se encuentra en el estado STOP o 	DESCONEXIÓN. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	25
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+La figura siguiente muestra la asignación del espacio de direcciones para los submódulos 1 y 2 y la información de calidad. 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 26 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+La figura siguiente muestra la asignación del espacio de direcciones con los submódulos 3 y 4 y la información de calidad. 
+
+Referencia 
+Encontrará información sobre la funcionalidad Shared Input/Shared Output (MSI/MSO) en el 
+, capítulo Shared 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	27
+
+
+Alarmas y avisos de diagnóstico 	5 
+5.1 	Indicadores de estado y error 
+Indicadores LED 
+La siguiente figura muestra los indicadores LED (indicadores de estado y error) del módulo. 
+
+Figura 5-1 Indicadores LED del módulo DQ 32x24VDC/0.5A HF 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+28 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Alarmas y avisos de diagnóstico 
+5.1 Indicadores de estado y error 
+Significado de los indicadores LED 
+En las tablas siguientes se explica el significado de los indicadores de estado y error. Las soluciones para los avisos de diagnóstico se indican en el capítulo Avisos de diagnóstico (Página 31). 
+LED RUN y ERROR 
+
+LED MAINT 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	29
+
+
+Alarmas y avisos de diagnóstico 
+5.2 Alarmas 
+LED PWR1/PWR2/PWR3/PWR4 
+
+LED CHx 
+
+
+El módulo de salidas digitales DQ 32x24VDC/0.5A HF soporta alarmas de diagnóstico y de mantenimiento. 
+Encontrará información detallada sobre el evento de error en el bloque de organización de la alarma de diagnóstico, con la instrucción "RALRM" (leer información adicional de alarma) y en la ayuda en pantalla de STEP 7. 
+Alarma de diagnóstico 
+El módulo genera una alarma de diagnóstico con estos eventos: ●Falta tensión de alimentación L+ 
+●Cortocircuito a masa 
+●Rotura de hilo 
+●Error de parametrización 
+Alarma de mantenimiento 
+El módulo genera una alarma de mantenimiento con estos eventos: ●Advertencia de valor límite 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 30 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Alarmas y avisos de diagnóstico 
+5.3 Avisos de diagnóstico 
+5.3 	Avisos de diagnóstico 
+Avisos de diagnóstico 
+Con cada evento de diagnóstico se emite un aviso de diagnóstico y en el módulo parpadea el LED ERROR. Los avisos de diagnóstico pueden leerse, por ejemplo, en el búfer de diagnóstico de la CPU. Los códigos de error pueden evaluarse mediante el programa de usuario. 
+Si el módulo se utiliza de forma descentralizada en un sistema ET 200MP con PROFIBUS DP, los datos de diagnóstico se pueden leer con la instrucción RDREC o RD_REC utilizando los juegos de datos 0 y 1. Encontrará la estructura de los juegos de datos en Internet, en el "Manual de producto Módulo de interfaz IM 155-5 DP ST (6ES7155-5BA00-0AB0)". 
+
+* La rotura de hilo se notifica también en caso de cortocircuito a L+ de la alimentación del actuador Esto puede dar lugar a 
+diagnósticos indeseados en caso de control redundante de una carga. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	31
+
+
+Datos técnicos 	6 
+Datos técnicos del DQ 32x24VDC/0.5 A HF 
+La tabla siguiente contiene los datos técnicos (versión de 06/2018) Encontrará una hoja de 
+. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+32 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Datos técnicos 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	33
+
+
+Datos técnicos 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+34 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Datos técnicos 
+Corriente residual con estado de señal "0": 
+
+
+
+Datos técnicos 
+Reducción de potencia (derating) de la corriente total de las salidas (por grupo) 
+Las curvas siguientes muestran la capacidad de carga de las salidas en función de la posición de montaje del sistema de automatización S7-1500 o sistema de periferia descentralizada ET 200MP y la temperatura ambiente. 
+
+①Montaje horizontal del sistema 
+②Montaje vertical del sistema 
+Figura 6-1 Datos sobre la corriente total de las salidas (por grupo) 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+36 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Croquis acotado 	A 
+A.1 	Croquis acotado 
+Este anexo incluye el croquis acotado del módulo montado en un perfil soporte, así como un croquis acotado con tapa frontal abierta. Las dimensiones deben tenerse en cuenta al montar el módulo en armarios, salas de distribución, etc. 
+
+Figura A-1 	Croquis acotado del módulo DQ 32x24VDC/0.5A HF 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	37
+
+
+Croquis acotado 
+A.1 Croquis acotado 
+
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 38 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Registros de parámetros 	B 
+B.1 	Parametrización 
+Los juegos de datos del módulo tienen una estructura idéntica, independientemente de si el módulo se configura con PROFIBUS DP o PROFINET IO. 
+Dependencias en la configuración con un archivo GSD 
+En caso de configurar el módulo con un archivo GSD, pueden surgir dependencias en el "Ajuste de los parámetros". 
+En este módulo no hay dependencias. Los distintos parámetros pueden combinarse entre sí sin restricciones. 
+Parametrización en el programa de usuario 
+El ajuste de parámetros de los módulos se puede cambiar en RUN (p. ej., la reacción a STOP de la CPU de un canal determinado se puede cambiar en RUN sin que ello afecte a los demás canales). 
+Modificación de parámetros en RUN 
+Los parámetros se transfieren al módulo mediante los registros 64 a 95 con la instrucción WRREC. Los parámetros configurados con STEP 7 no cambian en la CPU, es decir, los parámetros configurados con STEP 7 vuelven a ser válidos tras un arranque. 
+El módulo comprueba la plausibilidad de los parámetros una vez que estos han sido transferidos. 
+Parámetro de salida STATUS 
+Si se producen errores al transferir los parámetros con la instrucción WRREC, el módulo seguirá funcionando con la parametrización utilizada hasta entonces. El parámetro de salida STATUS contiene no obstante el código de error correspondiente. 
+La instrucción WRREC y los códigos de error se describen en la ayuda en pantalla de STEP 7. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	39
+
+
+Registros de parámetros 
+B.1 Parametrización 
+Asignación de juego de datos y canal 
+En la configuración de 1 x 32 canales, los parámetros se encuentran en los registros 64 a 95 y están asignados de la siguiente manera: 
+●Juego de datos 64 para canal 0 
+●Juego de datos 65 para canal 1 
+●… 
+●Registro 94 para canal 30 
+●Registro 95 para canal 31 
+En la configuración de 4 x 8 canales, el módulo consta de 4 submódulos de ocho canales cada uno. Los parámetros para los canales se encuentran en los juegos de datos 64 a 71 y tienen la siguiente asignación: 
+●Juegos de datos 64 a 71 para los canales 0 a 7 (submódulo 1) 
+●Juegos de datos 64 a 71 para los canales 8 a 15 (submódulo 2) 
+●Registros 64 a 71 para los canales 16 a 23 (submódulo 3) 
+●Registros 64 a 71 para los canales 24 a 31 (submódulo 4) 
+Al transferir los juegos de datos, debe direccionarse el submódulo correspondiente. 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 40 		Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Registros de parámetros 
+B.2 Estructura de los juegos de parámetros DS 64 - 95 
+B.2 	Estructura de los juegos de parámetros DS 64 - 95 
+Estructura de los juegos de datos 64 a 95 
+La figura siguiente muestra un ejemplo de la estructura del juego de datos 64 para el canal 0. En el caso de los canales 1 a 31, la estructura es idéntica. Los valores de los bytes 0 y 1 son fijos y no deben modificarse. 
+Los parámetros se activan poniendo a "1" el bit correspondiente. 
+
+Figura B-1 	Estructura del juego de datos 64: bytes 0 a 3 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	41
+
+
+Registros de parámetros 
+B.3 Estructura del juego de datos DS 129 
+B.3 	Estructura del juego de datos DS 129 
+Estructura del juego de datos 129 
+Los estados actuales de los contadores de ciclos de conmutación se leen con el juego de datos 129. Para cada canal, el estado del contador se suministra en formato UDINT. La longitud del juego de datos resulta del número de canales del submódulo elegido. 
+La figura siguiente muestra la estructura del juego de datos 129 para 32 canales. 
+
+Figura B-2 Estructura del juego de datos 129: bytes 0 a 127 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+42 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Registros de parámetros 
+B.3 Estructura del juego de datos DS 129 
+La figura siguiente muestra la estructura del juego de datos 129 para 4 submódulos con 8 canales cada uno. 
+
+Figura B-3 	Estructura del juego de datos 129: bytes 0 a 31 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	43
+
+
+Registros de parámetros 
+B.4 Estructura del juego de datos DS 130 
+B.4 	Estructura del juego de datos DS 130 
+Estructura del juego de datos 130 
+Los valores límite de los contadores de ciclos de conmutación se leen con el juego de datos 130. Para cada canal, el valor de ajuste se suministra en formato UDINT. La longitud del juego de datos resulta del número de canales del submódulo elegido. 
+La figura siguiente muestra la estructura del juego de datos 130 para 32 canales. 
+
+Figura B-4 Estructura del juego de datos 130: bytes 0 a 127 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+44 	Manual de producto, 06/2018, A5E35683519-AC 
+
+
+Registros de parámetros 
+B.4 Estructura del juego de datos DS 130 
+La figura siguiente muestra la estructura del juego de datos 130 para 4 submódulos con 8 canales cada uno. 
+
+Figura B-5 	Estructura del juego de datos 130: bytes 0 a 31 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 
+Manual de producto, 06/2018, A5E35683519-AC 	45
+
+
+Registros de parámetros 
+B.5 Estructura del juego de datos DS 131 
+B.5 	Estructura del juego de datos DS 131 
+Estructura del juego de datos 131 
+La figura siguiente muestra la estructura del juego de datos 131. 
+Los parámetros se activan poniendo a "1" el bit correspondiente. 
+
+Figura B-6 Estructura del juego de datos 131: bytes 0 a 7 
+Módulo de salidas digitales DQ 32x24VDC/0.5A HF (6ES7522-1BL01-0AB0) 46 		Manual de producto, 06/2018, A5E35683519-AC 

@@ -7,7 +7,7 @@ from datetime import datetime
 # ──────────────────────────────────────────────
 #  CONFIGURACIÓN  ← Edita aquí tus datos
 # ──────────────────────────────────────────────
-API_KEY = ""
+API_KEY = "cd2ec8a3256e45d2aec8a3256e45d24f"
 
 LOCATIONS = [
     {"name": "San José",         "lat":  9.9281,  "lon": -84.0907},

@@ -1,0 +1,55 @@
+
+
+Data sheet for SINAMICS Power module PM240-2
+Remarks :
+
+Input
+Output
+Overload capability
+
+High Overload (HO)
+1.5 × output current rating (i.e., 150 % overload) for 57 s with a cycle time of 300 s 2 × output current rating (i.e., 200 % overload) for 3 s with a cycle time of 300 s
+
+
+
+
+
+
+Relative humidity
+
+Line side
+
+DC link (for braking resistor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data sheet for SINAMICS Power module PM240-2
+
+
+100%
+50%
+25%
+The percentage values show the losses in relation to the rated apparent power of 
+the converter.
+The diagram shows the losses for the points (as per standard IEC61800-9-2) of 
+the relative torque generating current (I) over the relative motor stator frequency 
+(f). The values are valid for the basic version of the converter without 
+options/components.
+*calculated values
+1)The output current and HP ratings are valid for the voltage range 440V-480V
+

@@ -1,14 +1,18 @@
 # core/db_offsets.py
 # Constantes y funciones helper que describen la estructura de memoria de los
 # tres Data Blocks del PLC.  Este archivo es la fuente de verdad para cualquier
-# cálculo de offset; si el PLC cambia su layout, solo hay que editar aquí.
+# calculo de offset; si el PLC cambia su layout, solo hay que editar aqui.
+#
+# Los tamanos de DB1 y DB2 se calculan dinamicamente a partir de config.py.
+
+from config import SENSOR_COUNT, MOTOR_COUNT
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Números de Data Block
+# Numeros de Data Block
 # ══════════════════════════════════════════════════════════════════════════════
-DB_SENSORS  = 1   # DB1 – SensorData       (8 sensores × 10 bytes = 80 bytes)
-DB_MOTORS   = 2   # DB2 – MotorControl     (4 motores  ×  1 byte  =  4 bytes)
-DB_AUTOCONF = 3   # DB3 – AutomationConfig (variables sueltas      = 14 bytes)
+DB_SENSORS  = 1   # DB1 – SensorData
+DB_MOTORS   = 2   # DB2 – MotorControl
+DB_AUTOCONF = 3   # DB3 – AutomationConfig
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DB1 – SensorData
@@ -20,7 +24,7 @@ DB_AUTOCONF = 3   # DB3 – AutomationConfig (variables sueltas      = 14 bytes)
 #   +9  (padding de 1 byte hasta completar 10)
 
 SENSOR_BLOCK_SIZE = 10   # bytes por sensor
-DB1_TOTAL_SIZE    = 80   # 8 sensores × 10 bytes
+DB1_TOTAL_SIZE    = SENSOR_COUNT * SENSOR_BLOCK_SIZE
 
 # Offsets internos dentro de cada struct de sensor
 SENSOR_TEMPERATURE_OFFSET = 0   # REAL, 4 bytes
@@ -33,33 +37,36 @@ def sensor_offset(index: int) -> int:
     """Retorna el byte de inicio del sensor[index] dentro de DB1.
 
     Args:
-        index: Índice del sensor (0-7).
+        index: Indice del sensor (0..SENSOR_COUNT-1).
 
     Returns:
         Offset en bytes desde el inicio de DB1.
 
     Raises:
-        ValueError: Si index está fuera del rango 0-7.
+        ValueError: Si index esta fuera del rango valido.
     """
-    if not (0 <= index <= 7):
-        raise ValueError(f"Índice de sensor inválido: {index}. Debe estar entre 0 y 7.")
+    if not (0 <= index < SENSOR_COUNT):
+        raise ValueError(
+            f"Indice de sensor invalido: {index}. "
+            f"Debe estar entre 0 y {SENSOR_COUNT - 1} (SENSOR_COUNT={SENSOR_COUNT})."
+        )
     return index * SENSOR_BLOCK_SIZE
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DB2 – MotorControl
 # ══════════════════════════════════════════════════════════════════════════════
-# Cada motor ocupa exactamente 1 byte, con 5 bits usados:
+# Cada motor ocupa exactamente 2 bytes (5 bits usados + padding):
 #   bit 0  cmd_run    BOOL  Comando arranque manual (escribe Python)
 #   bit 1  is_running BOOL  Estado real del motor   (escribe PLC)
-#   bit 2  auto_mode  BOOL  Modo automático activo  (escribe Python)
+#   bit 2  auto_mode  BOOL  Modo automatico activo  (escribe Python)
 #   bit 3  enabled    BOOL  Motor habilitado        (escribe Python)
 #   bit 4  fault      BOOL  Falla del motor         (escribe PLC)
 
 MOTOR_BLOCK_SIZE = 2   # 2 bytes por motor (5 bits + padding)
-DB2_TOTAL_SIZE   = 8   # 4 motores × 2 bytes
+DB2_TOTAL_SIZE   = MOTOR_COUNT * MOTOR_BLOCK_SIZE
 
-# Números de bit dentro del byte del motor
+# Numeros de bit dentro del byte del motor
 MOTOR_BIT_CMD_RUN    = 0
 MOTOR_BIT_IS_RUNNING = 1
 MOTOR_BIT_AUTO_MODE  = 2
@@ -70,19 +77,20 @@ MOTOR_BIT_FAULT      = 4
 def motor_offset(index: int) -> int:
     """Retorna el byte de inicio del motor[index] dentro de DB2.
 
-    Como cada motor ocupa exactamente 1 byte, el offset coincide con el índice.
-
     Args:
-        index: Índice del motor (0-3).
+        index: Indice del motor (0..MOTOR_COUNT-1).
 
     Returns:
         Offset en bytes desde el inicio de DB2.
 
     Raises:
-        ValueError: Si index está fuera del rango 0-3.
+        ValueError: Si index esta fuera del rango valido.
     """
-    if not (0 <= index <= 3):
-        raise ValueError(f"Índice de motor inválido: {index}. Debe estar entre 0 y 3.")
+    if not (0 <= index < MOTOR_COUNT):
+        raise ValueError(
+            f"Indice de motor invalido: {index}. "
+            f"Debe estar entre 0 y {MOTOR_COUNT - 1} (MOTOR_COUNT={MOTOR_COUNT})."
+        )
     return index * MOTOR_BLOCK_SIZE
 
 
@@ -90,10 +98,10 @@ def motor_offset(index: int) -> int:
 # DB3 – AutomationConfig
 # ══════════════════════════════════════════════════════════════════════════════
 # Variables sueltas (no es array):
-#   Offset  0  temp_max     REAL   4 bytes  Umbral máx. temperatura (default 35.0 °C)
-#   Offset  4  temp_min     REAL   4 bytes  Umbral mín. temperatura (default 10.0 °C)
-#   Offset  8  humid_max    REAL   4 bytes  Umbral máx. humedad     (default 70.0 %RH)
-#   Offset 12  auto_global  BOOL   bit 0    Modo automático global  (default FALSE)
+#   Offset  0  temp_max     REAL   4 bytes  Umbral max. temperatura (default 35.0 C)
+#   Offset  4  temp_min     REAL   4 bytes  Umbral min. temperatura (default 10.0 C)
+#   Offset  8  humid_max    REAL   4 bytes  Umbral max. humedad     (default 70.0 %RH)
+#   Offset 12  auto_global  BOOL   bit 0    Modo automatico global  (default FALSE)
 #   Offset 12  alarm_active BOOL   bit 1    Alarma activa           (default FALSE)
 
 DB3_TOTAL_SIZE = 14   # bytes totales del bloque

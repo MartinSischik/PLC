@@ -1,0 +1,548 @@
+
+
+
+SIMATIC
+ET 200SP 
+Módulo de salidas digitales DQ16x24VDC/0.5A ST 
+(6ES7132-6BH01-0BA0)
+Manual de producto
+01/2025
+A5E03574422-AE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notas jurídicas
+Filosofía en la señalización de advertencias y peligros
+Este manual contiene las informaciones necesarias para la seguridad personal así como para la prevención de daños materiales. Las informaciones para su seguridad personal están resaltadas con un triángulo de advertencia; las informaciones para evitar únicamente daños materiales no llevan dicho triángulo. De acuerdo al grado de peligro las consignas se representan, de mayor a menor peligro, como sigue.
+
+
+
+Si se dan varios niveles de peligro se usa siempre la consigna de seguridad más estricta en cada caso. Si en una consigna de seguridad con triángulo de advertencia de alarma de posibles daños personales, la misma consigna puede contener también una advertencia sobre posibles daños materiales.
+Personal cualificado
+El producto/sistema tratado en esta documentación sólo deberá ser manejado o manipulado por personal cualificado para la tarea encomendada y observando lo indicado en la documentación correspondiente a la misma, particularmente las consignas de seguridad y advertencias en ella incluidas. Debido a su formación y experiencia, el personal cualificado está en condiciones de reconocer riesgos resultantes del manejo o manipulación de dichos productos/sistemas y de evitar posibles peligros.
+Uso previsto de los productos de Siemens
+Considere lo siguiente:
+Marcas registradas
+Todos los nombres marcados con ® son marcas registradas de Siemens Aktiengesellschaft. Los restantes nombres y designaciones contenidos en el presente documento pueden ser marcas registradas cuya utilización por terceros para sus propios fines puede violar los derechos de sus titulares.
+Exención de responsabilidad
+Hemos comprobado la concordancia del contenido de esta publicación con el hardware y el software descritos. Sin embargo, como es imposible excluir desviaciones, no podemos hacernos responsable de la plena concordancia. El contenido de esta publicación se revisa periódicamente; si es necesario, las posibles correcciones se incluyen en la siguiente edición.
+
+Postfach 48 48 
+90026 NÜRNBERG 
+ALEMANIA
+
+
+Índice
+
+Módulo de salidas digitales DQ 16x24VDC/0.5A ST (6ES7132-6BH01-0BA0)
+Manual de producto, 01/2025, A5E03574422-AE 	3
+
+
+Introducción 	1 
+Finalidad de la documentación
+El presente manual de producto complementa el manual de sistema Sistema de periferia des­centralizada ET 200SP ().
+En dicho manual de sistema se describen las funciones que afectan de forma general al sistema.
+La información contenida en el presente manual de producto y en los manuales de sistema y de funciones permite poner en marcha el sistema.
+Convenciones
+CPU: cuando en adelante se utilice el término "CPU", se hará para designar tanto los módulos centrales del sistema de automatización S7-1500, como las CPU o los módulos de interfaz del sistema de periferia descentralizada ET 200SP.
+STEP 7: para designar el software de configuración y programación, en la presente documentación se utiliza "STEP 7" como sinónimo de todas las versiones de "STEP 7(TIA Portal)".
+Preste atención también a las notas marcadas del modo siguiente:
+NOTA
+Una nota contiene datos importantes acerca del producto descrito en la documentación, el manejo de dicho producto o la parte de la documentación a la que debe prestarse especial atención.
+Reciclaje y eliminación
+Para un reciclaje y una eliminación ecológicos de los aparatos usados, rogamos dirigirse a un centro certificado de recogida de material electrónico y eliminarlos conforme a las normativas vigentes en su país.
+
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+Información básica
+Información de productos
+Los manuales de producto contienen una descripción sintetizada de la información específica
+técnicos.
+Ejemplos: 
+de los módulos, como características, esquemas de conexiones, curvas características o datos
+•	Manuales de producto de las CPU
+•	Manuales de producto de los módulos de interfaz
+•	Manuales de producto de los módulos digitales
+•	Manuales de producto de los módulos analógicos
+•	Manuales de producto de los arrancadores de motor
+•	Manuales de producto de BaseUnits
+•	Manual de producto Módulo de servidor
+•	Manuales de producto de los módulos de comunicación
+•	Manuales de producto de los módulos tecnológicos
+Módulo de salidas digitales DQ 16x24VDC/0.5A ST (6ES7132-6BH01-0BA0)
+Manual de producto, 01/2025, A5E03574422-AE 	5
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+Información general
+Información del producto
+Los cambios y ampliaciones de los manuales se documentan en una información del producto. La información del producto tiene un carácter más vinculante que el manual de producto y el manual de sistema. 
+Encontrará la información del producto actualizada del sistema de periferia descentralizada ET 200SP en Internet. ()
+Manual Collection ET 200SP
+La Manual Collection contiene la documentación completa del sistema de periferia descentralizada SIMATIC ET 200SP recogida en un archivo.
+Manual Collection Módulos de seguridad
+La Manual Collection contiene la documentación completa de los módulos de seguridad, SIMATIC recogida en un archivo.
+
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+1.1.2 Herramientas básicas
+Herramientas
+Las herramientas descritas a continuación lo ayudarán en todas las etapas: desde la planificación hasta el análisis de la instalación, pasando por la puesta en marcha.
+TIA Selection Tool
+TIA Selection Tool lo ayudará a seleccionar, configurar y pedir equipos para Totally Integrated Automation (TIA). 
+Como sucesor de SIMATIC Selection Tools el TIA Selection Tool agrupa en una sola herramienta los configuradores ya conocidos para los sistemas de automatización.
+TIA Selection Tool permite generar una lista de pedido completa a partir de la selección o configuración de productos realizada.
+SIMATIC Automation Tool 
+SIMATIC Automation Tool permite llevar a cabo tareas de puesta en marcha y servicio técnico como operaciones masivas en distintas estaciones SIMATIC S7, independientemente del TIA Portal. 
+SIMATIC Automation Tool ofrece numerosas funciones:
+•	Escaneado de una red de instalación PROFINET/Ethernet e identificación de todas las CPU 	conectadas
+•	Asignación de direcciones (IP, subred, Gateway) y nombre de dispositivo (dispositivo 	PROFINET) a una CPU
+•	Transferencia al módulo de la fecha y la hora convertida a hora UTC de la programadora o 	el PC
+
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+PRONETA
+SIEMENS PRONETA (análisis de red PROFINET) es una herramienta de puesta en marcha y diagnóstico para redes PROFINET. PRONETA Basic cuenta con 2 funciones centrales:
+•En el análisis de red se obtiene una vista general de la topología de PROFINET. Compare una configuración real con un sistema de referencia o haga modificaciones de parámetros simples, p.ej., en los nombres y direcciones IP de los dispositivos. 
+•"Test IO", que permite comprobar, con facilidad y rapidez, el cableado y la configuración de los módulos de una instalación, incluida la documentación de los resultados del test.
+SIEMENS PRONETA Professional ofrece funciones adicionales como producto bajo licencia.
+Permite una gestión de activos sencilla en redes PROFINET y asiste a los operadores de instalaciones de automatización en la adquisición automatizada de datos de los componentes utilizados por medio de numerosas funciones:
+•La interfaz de usuario (API) proporciona un punto de acceso a la célula de automatización para automatizar las funciones de escaneo vía MQTT o por línea de comandos.
+•Con el diagnóstico PROFIenergy es posible detectar rápidamente el modo de pausa o la disponibilidad para el funcionamiento actuales en los dispositivos compatibles con PROFIenergy y, si es necesario, cambiarlos.
+•El asistente de juegos de datos ayuda a los desarrolladores de PROFINET a leer y escribir juegos de datos PROFINET acíclicos de forma rápida y sencilla, sin necesidad de PLC ni ingeniería.
+Encontrará SIEMENS PRONETA Professional en Internet: (https://www.siemens.com/proneta-
+
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+1.1.3 MultiFieldbus Configuration Tool (MFCT)
+MultiFieldbus Configuration Tool
+La MultiFieldbus Configuration Tool (MFCT) es un software basado en PC y le ayuda en la configuración de dispositivos MultiFieldbus y DALI. MFCT también ofrece opciones convenientes para actualizaciones masivas del firmware de dispositivos ET 200 con soporte de MultiFieldbus y lectura de datos de servicio para muchos otros dispositivos Siemens.
+Alcance funcional del MFCT
+•	Configuración de MultiFieldbus: 
+	Ingeniería, configuración y diagnóstico de dispositivos MultiFieldbus, provisión de los 	archivos de proyecto necesarios (archivo del proyecto UDT, CSV y EDS), 
+	transferencia/exportación de los archivos al dispositivo y/o almacenamiento de datos.
+•	Configuración de DALI: 
+	Selección de dispositivos y configuración online de dispositivos DALI.
+•	TM FAST: 
+	Generación y descarga de archivos FPGA-UPD y FPGA-DB.
+•	Mantenimiento: 
+	Escaneo de topología de una red Ethernet, lectura de datos de servicio, asignación de 	parámetros y actualización del firmware.
+•	Ajustes: 
+	Cambio de idioma alemán e inglés, velocidad del escáner de red, ajuste del adaptador de 	red, instalación de archivos GSDMLy EDS.
+Requisitos del sistema/de instalación para MFCT
+El MFCT se ejecuta en Microsoft Windows y no requiere instalación no derechos de administrador. 
+Para MFCT debe instalar además el siguiente software:
+))
+•	NPcap del directorio "Misc"
+•	PG/PC interface del directorio "Misc"
+•	Microsoft C++ Redistributable para sistemas x86 (Encontrará los datos de instalación para 	su descarga en Internet. ())
+
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+1.1.4 	Documentación técnica de SIMATIC
+La información se completa con documentos adicionales de SIMATIC. Encontrará estos documentos y su utilización en los siguientes enlaces y códigos QR.
+Industry Online Support completa las posibilidades de obtener información sobre todos los temas. Asimismo, los ejemplos de aplicación lo ayudan a resolver tareas de automatización.
+Sinopsis de la documentación técnica de SIMATIC
+Aquí encontrará una vista general de la documentación sobre SIMATIC disponible en Siemens Industry Online Support:
+En el siguiente vídeo le enseñaremos cómo encontrar la vista general directamente en Siemens Industry Online Support y cómo utilizar Siemens Industry Online Support en su dispositivo móvil:
+Acceso rápido a la documentación técnica de los productos de automatización a
+
+
+
+
+
+Introducción
+1.1 Guía de la documentación del ET 200SP
+Actualizar la documentación
+La documentación de este producto se actualiza de forma digital. Especialmente, cuando se amplían las funciones se ofrecen nuevas características funcionales en una versión 
+actualizada.
+1. Instale la versión más reciente tal y como se describe anteriormente desde el Industry 	Online Support o el ID Link.
+2. Guarde también esta versión de la documentación.
+mySupport
+Con mySupport podrá sacar el máximo partido al Industry Online Support. 
+Ejemplos de aplicación
+Los ejemplos de aplicación le asisten con diferentes herramientas y ejemplos a la hora de resolver las tareas de automatización. Los ejemplos muestran siempre soluciones en las que interactúan varios componentes del sistema sin centrarse en productos concretos.
+
+
+
+Ciberseguridad industrial 	2 
+2.1 	Introducción a la ciberseguridad industrial
+La digitalización y la creciente interconexión de las máquinas e instalaciones industriales conllevan un mayor peligro de ciberataques. Por eso, la toma de medidas de protección adecuadas es un deber, en especial en el caso de los sistemas de infraestructuras críticas.
+Encontrará información general y medidas en materia de ciberseguridad industrial en el manual de sistema Sistema de periferia descentralizada ET 200SP 
+().
+Este capítulo ofrece un resumen de la información relacionada con la ciberseguridad en relación con su dispositivo SIEMENS.
+2.2 	Información de ciberseguridad
+Siemens ofrece productos y soluciones con funciones de ciberseguridad industrial con el objetivo de hacer más seguro el funcionamiento de instalaciones, sistemas, máquinas y redes.
+Para proteger las instalaciones, los sistemas, las máquinas y las redes contra de amenazas cibernéticas, es necesario implementar - y mantener continuamente - un concepto de ciberseguridad industrial integral y holístico conforme al estado del arte. Los productos y las soluciones de Siemens constituyen una parte de este concepto.
+Los clientes son responsables de impedir el acceso no autorizado a sus instalaciones, sistemas, máquinas y redes. Dichos sistemas, máquinas y componentes solo deben estar conectados a la red corporativa o a Internet cuando y en la medida que sea necesario y siempre que se hayan tomado las medidas de protección adecuadas (p. ej. cortafuegos y segmentación de la red).
+Para obtener información adicional sobre las medidas de ciberseguridad industrial que podrían ser implementadas, por favor visite 
+https://www.siemens.com/cybersecurity-industry.
+Los productos y las soluciones de Siemens están sometidos a un desarrollo constante con el fin de hacerlos más seguros. Siemens recomienda encarecidamente realizar actualizaciones en cuanto estén disponibles y utilizar únicamente las últimas versiones de los productos. El uso de versiones anteriores de los productos o sin soporte y la falta de aplicación de las nuevas actualizaciones, puede aumentar el riesgo de amenazas cibernéticas.
+Para mantenerse informado de las actualizaciones de productos, recomendamos que se suscriba al Siemens Industrial Cybersecurity RSS Feed en 
+https://www.siemens.com/cert.
+
+
+
+Descripción del producto 	3 
+3.1 Características 
+Referencia
+6ES7132-6BH01-0BA0 (unidad de embalaje: 1 unidad)
+6ES7132-6BH01-2BA0 (unidad de embalaje: 10 unidades)
+Vista del módulo
+7
+1 	8 
+2
+12
+6
+14
+Link
+ficación por color
+identificación de referencia
+Figura 3-1  Vista del módulo DQ 16×24VDC/0.5A ST
+
+
+
+Descripción del producto
+3.1 Características
+Características 
+El módulo tiene las siguientes características técnicas: 
+•Módulo de salidas digitales con 16 salidas
+•Salida tipo fuente (sourcing) (PNP, salida tipo P)
+•Tensión de alimentación L+
+•Intensidad de salida 0,5 A (por canal)
+•Corriente total, máx. 8 A 
+(ver reducción de potencia: Datos técnicos (Página 27))
+•Diagnósticos parametrizables (por módulo)
+•Valores sustitutivos parametrizables (por canal)
+•Adecuado para electroválvulas, contactores de corriente continua y lámparas de
+señalización
+•Compatibilidad de repuestos ampliada (consulte la Información del producto
+())
+El módulo soporta las siguientes funciones:
+Tabla 3-1  Funciones y sus dependencias de las versiones
+Accesorios
+Los siguientes accesorios están disponibles opcionalmente: 
+•Tiras rotulables
+•Plaquitas de identificación por color
+•Etiqueta de identificación por referencia
+•Conexión de pantalla
+Ver también 
+Encontrará más información sobre los accesorios en el manual de sistema Sistema de perife­
+ria descentralizada ET 200SP
+
+
+
+Conexión 	4 
+4.1 Esquema de conexiones
+En este capítulo encontrará la asignación de conexiones del módulo.
+Encontrará información acerca del cableado de la BaseUnit en el manual de sistema Sistema de periferia descentralizada ET 200SP 
+(http://support.automation.siemens.com/WW/view/es/58649293).
+NOTA
+El grupo de carga del módulo debe comenzar con una BaseUnit clara. Téngalo en cuenta también para la configuración.
+NOTA
+Cortocircuito transversal en la salida
+Tenga en cuenta que una tensión aplicada a la salida debido a un cortocircuito transversal puede provocar que los módulos se alimenten con L+.
+Asignación de conexiones: Conexión de 1 hilo de actuadores
+La siguiente tabla muestra la asignación de conexiones del módulo de salidas digitales DQ 16x24VDC/0.5A ST en la BaseUnit tipo A0 sin bornes AUX:
+
+
+
+
+
+Conexión 
+4.1 Esquema de conexiones
+Asignación de conexiones: Conexión de 2 hilos de actuadores
+La siguiente tabla muestra un ejemplo de asignación de conexiones del módulo de salidas digitales DQ 16x24VDC/0.5A ST en la BaseUnit BU tipo A0 con bornes AUX.
+1)Entrada de alimentación sólo en la BaseUnit clara
+Tipos de conexión de salida
+
+
+
+
+
+Conexión
+4.2 Esquema de principio
+También puede conectar la tierra y FE a través de un módulo de distribución de potencial (módulo PotDis) o bornes AUX. Encontrará más información sobre los posibles módulos de distribución de potencial en el manual de producto BaseUnits 
+(https://support.industry.siemens.com/cs/ww/es/view/59753521).
+NOTA
+Las diferentes posibilidades de conexión pueden utilizarse para todos los canales y combinarse libremente.
+En este capítulo encontrará el esquema de principio del módulo.
+
+Figura 4-1  Esquema de principio
+
+
+
+Parametrización y direccionamiento 	5 
+5.1 	Parámetros
+Parámetros del DQ 16x24VDC/0.5A ST
+Al efectuar la parametrización del módulo con STEP 7, las propiedades del módulo se especifican por medio de distintos parámetros. Los parámetros configurables figuran en la siguiente tabla. El ámbito de actuación de los parámetros ajustables depende del tipo de configuración. 
+Son posibles las siguientes configuraciones:
+•Operación centralizada con una CPU ET 200SP o un ET 200SP Open Controller
+•Operación descentralizada con PROFINET IO en un sistema ET 200SP
+•Operación descentralizada con PROFIBUS DP en un sistema ET 200SP
+Además de la parametrización mediante el software de configuración, los parámetros también se pueden configurar (dinámicamente) en RUN mediante el programa de usuario. Al realizar la parametrización en el programa de usuario, los parámetros se transfieren al módulo con la instrucción "WRREC" mediante juegos de datos; ver capítulo Parametrización y estructura de juegos de parámetros (Página 33).
+Se pueden ajustar los siguientes parámetros:
+Tabla 5-1  Parámetros ajustables y su ajuste predeterminado (archivo GSD) 
+
+PROFIBUS (máximo 244 bytes por estación ET 200SP). La longitud de parámetro del módulo de periferia es de 6 bytes en caso de configuración con GSD en PROFIBUS. Sin embargo, estos parámetros pueden ajustarse si es preciso con el juego de datos 128, véase el anexo "Juego de parámetros".
+
+
+
+Parametrización y direccionamiento
+5.1 Parámetros
+
+PROFIBUS (máximo 244 bytes por estación ET 200SP). La longitud de parámetro del módulo de periferia es de 6 bytes en caso de configuración con GSD en PROFIBUS. Sin embargo, estos parámetros pueden ajustarse si es preciso con el juego de datos 128, véase el anexo "Juego de parámetros".
+
+
+
+Parametrización y direccionamiento
+5.2 Explicación de los parámetros
+5.2 	Explicación de los parámetros
+Diagnóstico Falta tensión de alimentación L+
+Habilitado, permite diagnosticar tensión de alimentación L+ faltante o insuficiente.
+Diagnóstico Cortocircuito a masa
+Habilitado, permite diagnosticar un cortocircuito a M en la alimentación de actuadores.
+Diagnóstico Cortocircuito a L+
+Habilitado, permite diagnosticar un cortocircuito a L+ en la alimentación de actuadores.
+Diagnóstico Rotura de hilo
+Habilitado, permite diagnosticar una interrupción en el cable al actuador.
+Canal activado
+Define si un canal está activado o desactivado.
+Reacción a STOP de la CPU
+Define el comportamiento del módulo en caso de STOP de la CPU.
+Grupo de potencial
+Un grupo de potencial consta de un grupo de módulos de periferia colocados uno junto a otro en una estación ET 200SP y que son alimentados por una fuente común.
+Un grupo de potencial comienza con una BaseUnit clara, que suministra la tensión de alimentación necesaria para todos los módulos del grupo de potencial. La BaseUnit clara interrumpe las tres barras de potencial autoinstalables P1, P2 y AUX hacia el módulo izquierdo.
+Especifique qué slot contiene una BaseUnit clara con entrada de alimentación o una BaseUnit oscura (ver el manual de sistema Sistema de periferia descentralizada ET 200SP 
+()).
+Todos los demás módulos de periferia de este grupo de potencial están enchufados en la BaseUnit oscura. Toman los potenciales de las barras de potencial autoinstalables P1, P2 y AUX del adyacente por la izquierda.
+La configuración de la estación debe completarse con un módulo de servidor.
+
+
+
+Parametrización y direccionamiento
+5.3 Área de direcciones
+5.3 Área de direcciones
+En STEP 7, el módulo puede configurarse de diferentes maneras (ver la siguiente tabla). En función de la configuración se asignan direcciones adicionales o distintas en la memoria imagen de proceso de las salidas/entradas. 
+Opciones de configuración del DQ 16x24VDC/0.5A ST
+El módulo se puede configurar con STEP 7 (TIA Portal) o con un archivo GSD. Si el módulo se configura mediante un archivo GSD, encontrará las configuraciones con diferentes nombres abreviados/nombres de módulo (ver la siguiente tabla). Son posibles las configuraciones siguientes:
+Tabla 5-2  Opciones de configuración con archivo GSD
+Información de calidad (Quality Information, QI)
+En las siguientes configuraciones, la información de calidad siempre está activada:
+•	DQ 16x24VDC/0.5A ST V0.0, QI
+Cada canal tiene asignado un bit adicional de información de calidad. El bit de información de calidad indica si el valor de salida especificado por el programa de usuario está realmente presente en el borne del módulo (0 = el valor es incorrecto).
+Encontrará más información para evaluar la información de calidad en el manual de sistema Sistema de periferia descentralizada ET 200SP
+
+
+
+Parametrización y direccionamiento
+5.3 Área de direcciones
+Espacio de direcciones en la configuración como DQ 16x24VDC/0.5A ST V0.0 de 1 x 16 canales
+La siguiente figura muestra la asignación del espacio de direcciones cuando se configura como un módulo de 1 x 16 canales sin información de calidad. La dirección inicial del módulo puede asignarse libremente. "QB" significa byte de salida.
+Asignación en la memoria imagen de proceso de las salidas (MIPS)
+Figura 5-1  Espacio de direcciones en la configuración como DQ 16x24VDC/0.5A ST V0.0 de 16 canales
+Espacio de direcciones en la configuración como DQ 16x24VDC/0.5A ST V0.0, QI de 1 x 16 canales
+La siguiente figura muestra la asignación del espacio de direcciones cuando se configura como un módulo de 1 x 16 canales con información de calidad. La dirección inicial del módulo puede asignarse libremente. Las direcciones de los canales se derivan de la dirección inicial. "IB" significa byte de entrada. "QB" significa byte de salida.
+Asignación en la memoria imagen de proceso de las salidas (MIPS)
+Asignación en la memoria imagen de proceso de las entradas (MIPE)
+0 = El valor emitido en el canal es incorrecto
+Figura 5-2  Espacio de direcciones en la configuración como DQ 16x24VDC/0.5A ST V0.0, QI de 16 canales
+
+
+
+Alarmas y avisos de diagnóstico 	6 
+6.1 Indicadores de estados y errores
+Indicadores LED
+En la siguiente figura se muestran los indicadores LED (señalización de estados y fallos) del módulo:
+
+①	DIAG (verde/rojo)
+②	Estado del canal (verde)
+③	PWR (verde)
+Figura 6-1  Indicadores LED
+Significado de los indicadores LED
+Las siguientes tablas describen el significado de los indicadores de estado y error. Para ver las medidas de solución de los avisos de diagnóstico, consulte el capítulo Avisos de diagnóstico (Página 25).
+
+
+
+Alarmas y avisos de diagnóstico
+6.1 Indicadores de estados y errores
+LED DIAG
+Tabla 6-1  Indicación de errores del LED DIAG
+LED de estado de canal
+Tabla 6-2  Indicación de estados del LED de estado de canal
+LED PWR
+Tabla 6-3  Indicación de estado del LED PWR
+
+
+
+
+
+Alarmas y avisos de diagnóstico
+6.3 Avisos de diagnóstico
+6.2 Alarmas
+El módulo de salidas digitales DQ 16×24VDC/0.5A ST soporta alarmas de diagnóstico.
+Alarmas de diagnóstico
+El módulo genera una alarma de diagnóstico con los siguientes eventos:
+•	Cortocircuito
+•	Rotura de hilo
+•	Error de parametrización
+•	Falta tensión de alimentación
+Encontrará información detallada sobre el evento en la ayuda en pantalla de STEP 7.
+6.3 Avisos de diagnóstico
+Con cada evento de diagnóstico se emite un aviso de diagnóstico y en el módulo parpadea en rojo el LED DIAG. Los avisos de diagnóstico pueden leerse, por ejemplo, en el búfer de diagnóstico de la CPU. Los códigos de error pueden evaluarse mediante el programa de usuario.
+NOTA
+Conexión en paralelo de 2 salidas
+Cuando se conectan 2 salidas en paralelo para el control redundante de una carga, deben desactivarse los diagnósticos de canal "Cortocircuito a L+" y "Rotura de hilo", porque de lo contrario pueden aparecer avisos de diagnóstico 
+erróneos.
+Tabla 6-4  Avisos de diagnóstico, su significado y soluciones posibles
+
+
+
+
+
+Alarmas y avisos de diagnóstico 
+6.3 Avisos de diagnóstico
+
+NOTA 
+En caso de cortocircuito a L+ de la alimentación del actuador, en el canal conectado pueden darse unas condiciones de carga que provoquen un diagnóstico de rotura de hilo.
+
+
+
+Datos técnicos 	7 
+7.1 Datos técnicos
+Datos técnicos del DQ 16x24VDC/0.5A ST
+La siguiente tabla contiene los datos técnicos a fecha de edición. Encontrará una hoja de datos técnicos, diariamente actualizada, en Internet 
+().
+
+
+
+
+
+Datos técnicos 
+7.1 Datos técnicos
+
+
+
+
+
+	Datos técnicos 
+7.1 Datos técnicos
+
+
+
+
+
+Datos técnicos 
+7.1 Datos técnicos
+
+
+
+
+
+Datos técnicos
+7.1 Datos técnicos
+Corriente residual para estado de señal "0"
+NOTA
+Corriente residual para estado de señal "0"
+Debido a la función "Diagnóstico Rotura de hilo" fluye una corriente residual reducida en el estado de señal "0" de la salida, lo que puede hacer que los diodos indicadores se iluminen débilmente.
+Esta corriente residual es independiente del parámetro ajustado "Diagnóstico Rotura de hilo".
+Curva de derating
+La siguiente figura muestra la curva de derating de la intensidad de carga en posición de montaje horizontal y vertical. Utilice este gráfico para determinar la corriente total máxima del módulo en función de la temperatura ambiente.
+
+Figura 7-1  Corriente de carga en función de la temperatura ambiente en diferentes posiciones de montaje
+Si un canal impulsa una carga inductiva conmutada cíclicamente, este canal contribuye con 500 mA a la corriente total.
+
+
+
+Datos técnicos
+7.1 Datos técnicos
+Frecuencia de conmutación máxima permitida de las cargas inductivas
+Las siguientes curvas muestran la frecuencia de conmutación máxima permitida de las cargas inductivas en función de la inductancia y la corriente del canal. La frecuencia máxima de conmutación es para una relación impulso-pausa del 50 %. El canal contribuye con 500 mA a la corriente total del módulo, incluso si la corriente real presente en el canal es menor.
+Si se desconoce la inductancia del actuador, debe partirse de una inductancia máxima de 1,152 H para cargas DC-13 (IEC 60947-5-1).
+Corriente nominal del canal / mA
+Figura 7-2  Frecuencia máxima de conmutación
+Croquis acotado
+Ver manual de producto ET 200SP BaseUnits 
+() 
+
+
+
+Juego de parámetros 	A 
+A.1 Parametrización y estructura de juegos de parámetros
+El juego de datos del módulo tiene una estructura idéntica, independientemente de que se configure el módulo con PROFIBUS DP o con PROFINET IO. El juego de datos 128 permite reparametrizar el módulo en el programa de usuario, independientemente de la 
+programación. De este modo es posible utilizar todas las funciones del módulo, incluso si este se ha configurado mediante PROFIBUS-GSD.
+Parametrización en el programa de usuario
+Puede reparametrizar el módulo en el estado operativo RUN. Por ejemplo, el comportamiento de canales individuales en caso de STOP de la CPU se puede cambiar en RUN sin que ello afecte a los demás canales.
+Modificación de parámetros en RUN
+Los parámetros se transfieren al módulo con la instrucción "WRREC" mediante el juego de datos 128. Los parámetros ajustados con STEP 7 en la CPU no se modifican, es decir, los parámetros ajustados con STEP 7 vuelven a ser válidos después de un arranque.
+Si reconfigura un módulo y hay diagnósticos presentes antes de reconfigurarlo, estos diagnósticos se notifican como "salientes".
+Parámetro de salida STATUS
+Si se producen errores al transferir los parámetros con la instrucción "WRREC", el módulo sigue funcionando con la parametrización utilizada hasta entonces. El parámetro de salida STATUS contiene el correspondiente código de error. 
+La instrucción "WRREC" y los códigos de error se describen en la ayuda en pantalla de STEP 7.
+
+
+
+Juego de parámetros 
+A.1 Parametrización y estructura de juegos de parámetros
+Estructura del juego de datos 128
+NOTA 
+El canal 0 contiene la habilitación de los diagnósticos de todo el módulo.
+
+Figura A-1  Estructura del juego de datos 128
+Información del encabezado
+La siguiente figura muestra la estructura de la información del encabezado.
+
+Figura A-2  Información del encabezado
+
+
+
+Juego de parámetros
+A.2 Códigos de error
+Parámetros
+La figura siguiente muestra la estructura de los parámetros para los canales 0 a 15.
+Los parámetros se activan poniendo a "1" el bit correspondiente.
+
+
+Figura A-3  Estructura bytes x a x+1 para los canales 0 a 15
+A.2 Códigos de error
+Error al transferir el juego de datos
+El módulo comprueba siempre todos los valores del juego de datos transferido. El módulo solo aplica los valores del juego de datos si todos los valores se han transferido sin error.
+Si se produce un error, la instrucción WRREC para escritura de juegos de datos devuelve en el parámetro STATUS el código de error correspondiente.
+La tabla siguiente muestra los códigos de error específicos del módulo y su significado para el juego de parámetros 128.
+Tabla A-1  Avisos de error, su significado y soluciones posibles
+
+
+
+
+
+Juego de parámetros 
+A.2 Códigos de error
+
+
+

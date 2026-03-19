@@ -1,0 +1,44 @@
+
+Overview 
+This common usage and style guide describes the common elements, error handling, language support and terminology used by the Weather Company Data APIs. 
+HTTP Headers
+The following HTTP headers should be set to the appropriate values: 
+HTTPS Access 
+All TWC APIs support HTTPS.  HTTPS is required to be used for all requests to the APIs. 
+Data Lifetime - Caching and Expiration 
+	●​	Standard HTTP Cache-Control headers are used to define caching length. The TTL (Time To Live) value is provided in the HTTP Header as an absolute time value using the “max-age” directive. 		Example:  “cache-control: max-age=599”. 
+●​	The response may also provide a data element ‘expirationTimeUtc’ or ‘Expires’ which can be used to expire and remove a record from your system. 
+Cross-Origin Resource Sharing 
+All TWC APIs support Cross-Origin Resource Sharing or CORS. For additional information on this communications mechanism, please refer to the following documents: 
+URL Path Components
+
+
+
+HTTP Error Status Codes 
+There are some differences in error status codes between v1 and v2/v3 APIs; the difference in HTTP status codes is noted in the table below for v1 APIs and v2/v3 APIs. 
+
+
+
+Standard Units of Measure 
+Data attributes that respond to the ‘units’ parameter follow the pattern below for the different units of measure applied to the data.  The following applies to the majority of APIs.  Please refer to respective API documentation for possible deviations.
+Unit of Measure Conversion Tables 
+
+
+
+Postal Code and Postal Key Support 
+Some APIs support requests by postal code. There is limited postal code support for v1 APIs. If a v1 API is noted with postal code support; the following countries postal codes are supported.  Further, v3 APIs 
+support requests by postal KEY.  Postal Key will always be represented in a query in the camelCase format of ‘postalKey’ and will be formatted as ‘postalCode:countryCode’, i.e.: ‘postalKey=81657:US’. 
+Supported countries for v1 postal codes are listed below: 
+Supported countries for v3 postalKeys are listed below: 
+
+
+
+
+
+
+
+
+Language Translations & Language Codes 
+Some attributes support language translations. Any attribute that supports translated content will be noted as such in the ‘Translated Fields’ section of the API specific documentation. The ‘Translated Fields’ section denotes which fields respond to the valid ‘language’ parameter in the API request. Translated content will only be provided for valid supported languages as noted in the Language Code table. 
+
+

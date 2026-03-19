@@ -1,0 +1,39 @@
+
+
+Hoja de datos 	6ES7592-1AM00-0XB0
+
+
+
+cable común
+macizos, mín.
+macizos, máx.
+flexibles sin puntera, máx.
+flexibles sin puntera, máx.
+flexibles con puntera, mín.
+flexibles con puntera, máx.
+macizos, mín.
+macizos, máx.
+flexibles sin puntera, máx.
+flexibles sin puntera, máx.
+flexibles con puntera, mín.
+flexibles con puntera, máx.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

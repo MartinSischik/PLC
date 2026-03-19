@@ -1,0 +1,549 @@
+
+
+
+SINAMICS 
+SINAMICS G120 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas 
+
+___________________ ___________________ ___________________ ___________________ 
+
+
+Edición 01/2017 
+01/2017 
+A5E39910322E AA 	
+
+
+Notas jurídicas 
+Filosofía en la señalización de advertencias y peligros 
+Este manual contiene las informaciones necesarias para la seguridad personal así como para la prevención de daños materiales. Las informaciones para su seguridad personal están resaltadas con un triángulo de advertencia; las informaciones para evitar únicamente daños materiales no llevan dicho triángulo. De acuerdo al grado de peligro las consignas se representan, de mayor a menor peligro, como sigue. 
+
+
+
+Si se dan varios niveles de peligro se usa siempre la consigna de seguridad más estricta en cada caso. Si en una consigna de seguridad con triángulo de advertencia de alarma de posibles daños personales, la misma consigna puede contener también una advertencia sobre posibles daños materiales. 
+Personal cualificado 
+El producto/sistema tratado en esta documentación sólo deberá ser manejado o manipulado por personal cualificado para la tarea encomendada y observando lo indicado en la documentación correspondiente a la misma, particularmente las consignas de seguridad y advertencias en ella incluidas. Debido a su formación y experiencia, el personal cualificado está en condiciones de reconocer riesgos resultantes del manejo o manipulación de dichos productos/sistemas y de evitar posibles peligros. 
+Uso previsto de los productos de Siemens 
+Considere lo siguiente: 
+Marcas registradas 
+Todos los nombres marcados con ® son marcas registradas de Siemens AG. Los restantes nombres y designaciones contenidos en el presente documento pueden ser marcas registradas cuya utilización por terceros para sus propios fines puede violar los derechos de sus titulares. 
+Exención de responsabilidad 
+Hemos comprobado la concordancia del contenido de esta publicación con el hardware y el software descritos. Sin embargo, como es imposible excluir desviaciones, no podemos hacernos responsable de la plena concordancia. El contenido de esta publicación se revisa periódicamente; si es necesario, las posibles correcciones se incluyen en la siguiente edición. 
+
+
+
+Índice 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 3
+
+
+Índice 
+Este manual describe cómo instalar y poner en marcha la Control Unit CU240B-2 o 
+CU240E-2 del convertidor SINAMICS G120. 
+¿Qué significan los símbolos del manual? 
+ Referencia a información detallada en el manual 
+Control Units CU240B-2 y CU240E-2 
+4 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+
+
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 5
+
+
+Consignas básicas de seguridad 
+1.2 Seguridad industrial 
+Nota 
+Seguridad industrial 
+Siemens ofrece productos y soluciones con funciones de seguridad industrial con el objetivo de hacer más seguro el funcionamiento de instalaciones, sistemas, máquinas y redes. 
+Para proteger las instalaciones, los sistemas, las máquinas y las redes de amenazas cibernéticas, es necesario implementar (y mantener continuamente) un concepto de seguridad industrial integral que sea conforme a la tecnología más avanzada. Los productos y las soluciones de Siemens constituyen únicamente una parte de este concepto. 
+El cliente es responsable de impedir el acceso no autorizado a sus instalaciones, sistemas, máquinas y redes. Los sistemas, las máquinas y los componentes solo deben estar conectados a la red corporativa o a Internet cuando y en la medida que sea necesario y siempre que se hayan tomado las medidas de protección adecuadas (p. ej., uso de cortafuegos y segmentación de la red). 
+Adicionalmente, deberán observarse las recomendaciones de Siemens en cuanto a las medidas de protección correspondientes. Encontrará más información sobre seguridad industrial en: 
+Seguridad industrial . 
+Los productos y las soluciones de Siemens están sometidos a un desarrollo constante con el fin de mejorar todavía más su seguridad. Siemens recomienda expresamente realizar actualizaciones tan pronto como estén disponibles y utilizar únicamente las últimas versiones de los productos. El uso de versiones anteriores o que ya no se soportan puede aumentar el riesgo de amenazas cibernéticas. 
+Para mantenerse siempre informado de las actualizaciones de productos, suscríbase al Siemens Industrial Security RSS Feed en: 
+Seguridad industrial . 
+		Control Units CU240B-2 y CU240E-2 6 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Volumen del suministro 	2 
+El suministro consta por lo menos de los siguientes componentes: 
+erencia. Encontrará la referencia, el nombre y la versión del hardware (p. ej., 02) y del firmware (p. ej., 4.6) en la placa de características ① de la Control Unit. 
+●Instrucciones de servicio resumidas en alemán e inglés 
+●El convertidor incluye software fuente abierto (OSS). Las condiciones de licencia del 	OSS estás almacenadas en el convertidor. 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 7
+
+
+Volumen del suministro 
+Transferencia a un PC de las condiciones de licencia del OSS 
+Procedimiento 
+2.Inserte una tarjeta de memoria vacía en la ranura al efecto del convertidor. 
+ Vista general de las interfaces (Página 11) 
+3.Conecte la alimentación del convertidor. 
+4.El convertidor escribe el archivo "Read_OSS.ZIP" en la tarjeta de memoria en aprox. 30 segundos. 
+5.Desconecte la alimentación del convertidor. 
+6.Extraiga la tarjeta de memoria del convertidor. 
+7.Inserte la tarjeta de memoria en el lector de tarjetas de un PC. 
+8.Lea las condiciones de licencia. 
+	Con ello ha transferido las condiciones de licencia del OSS a un PC. 
+		Control Units CU240B-2 y CU240E-2 8 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Power Modules admisibles 
+	La Control Unit puede utilizarse con los siguientes Power Modules: 
+Instalación de la Control Unit - General 
+Cada Power Module posee un soporte adecuado para la Control Unit y un mecanismo de desbloqueo. 
+Extracción de una Control Unit 
+Desprenda la Control Unit del Power Module presionando el mecanismo de desbloqueo. 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 9
+
+
+Instalar 
+3.1 Insertar la Control Unit en el Power Module 
+Particularidades del Power Module PM230 IP55, FSA … FSC 
+
+Para insertar o extraer la Control Unit, es nece-sario aflojar los ocho o diez tornillos de fijación de la tapa y retirarla. 
+La figura muestra el mecanismo de desbloqueo del Power Module. 
+Vuelva a montar la tapa antes de poner en 
+marcha el convertidor. Evite dañar la junta de la tapa durante el montaje. 
+
+
+
+Adaptador para el funcionamiento con Power Module PM230 IP55 
+Referencia 10055500 
+
+Figura 3-1 Inserción del adaptador KnorrTec en la interfaz para Operator Panel 
+		Control Units CU240B-2 y CU240E-2 10 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Instalar 
+3.2 Vista general de las interfaces 
+3.2 	Vista general de las interfaces 
+Interfaces en el frente de la Control Unit 
+Para poder acceder a las interfaces del frente de la Control Unit, hay que retirar el Operator Panel (si lo hay) y abrir las puertas frontales. 
+
+
+
+①Ranura para la tarjeta de memoria ②Regletas de bornes 
+④Interfaz de bus de campo en la parte 	inferior 
+⑤Selección de la dirección 
+CU240E-2 PN-F 
+de bus de campo 
+En todas las Control Units excepto CU240E-2 PN y 
+⑥LED de 
+
+estado 
+⑦Interfaz USB para la conexión con un PC 
+•U -10/0 V … 10 V 
+⑨Interfaz al Operator Panel 
+
+1) AI 1 no está disponible en la Control Unit CU240B-2 
+
+1) Cada entrada digital de seguridad F-DI utilizada ocupa dos entradas digitales DI 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	11
+
+
+Instalar 
+3.2 Vista general de las interfaces 
+
+Cableado de la regleta de bornes con compatibilidad electromagnética 
+●Si se usan cables apantallados, la pantalla debe conectarse cubriendo una amplia superficie y con buen contacto eléctrico a la placa de montaje del armario eléctrico o al contacto de pantalla del convertidor. 
+●Utilice la chapa de conexión para pantalla de la Control Unit para el apantallamiento y el alivio de tracción. 
+
+
+Interfaces en la parte inferior de las Control Units CU240B-2 y CU240E-2 
+
+Control Units CU240B-2 y CU240E-2 
+12 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Instalar 
+3.3 Regleta de bornes de las Control Units CU240B-2 
+3.3 	Regleta de bornes de las Control Units CU240B-2 
+Regletas de bornes con ejemplo de cableado 
+
+Figura 3-2 Ejemplo de cableado de las entradas digitales con la alimentación interna por convertidor de 24 V 
+Todos los bornes con el potencial de referencia "GND" están conectados entre sí a nivel interno del convertidor. 
+El potencial de referencia "DI COM" está aislado galvánicamente respecto a "GND". 
+→ Si, como se muestra arriba, la alimentación de 24 V del borne 9 se emplea como alimentación de las entradas digitales, "GND" y "DI COM" deben conectarse entre sí en la regleta de bornes. 
+→ Conecte a los bornes 31, 32 solo alimentaciones conformes con SELV (Safety Extra Low Voltage) o PELV (Protective Extra Low Voltage). 
+→ Si quiere utilizar la alimentación de los bornes 31, 32 también para las entradas digitales, deben conectarse "DI COM" y "GND IN" entre sí en la regleta de bornes. 
+Para la entrada analógica puede usarse la alimentación interna de 10 V o una fuente de alimentación externa. 
+→ Si se utiliza la alimentación interna de 10 V, debe conectarse AI 0- con GND. 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	13
+
+
+Instalar 
+3.3 Regleta de bornes de las Control Units CU240B-2 
+Otras posibilidades de cableado de las entradas digitales 
+
+
+
+Si se requiere aislamiento galvánico entre la alimentación externa y la ali-mentación interna del convertidor, retire el puente entre los bornes 28 y 69. 
+
+Conexión de contactos en fuente con alimentación 
+externa 
+
+
+
+Los bornes 28 y 69 no deben estar conectados entre sí. 
+
+Conexión de contactos en sumidero con alimenta-
+ción externa 
+Control Units CU240B-2 y CU240E-2 
+14 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Instalar 
+3.4 Ajuste de fábrica de las interfaces CU240B-2 
+3.4 	Ajuste de fábrica de las interfaces CU240B-2 
+El ajuste de fábrica de los bornes depende de qué bus de campo admita la Control Unit. 
+Control Units con interfaz PROFIBUS 
+La función de la interfaz de bus de campo y de las entradas digitales DI 0, DI 1 depende de DI 3. 
+
+--- Sin función. 
+Consigna de velocidad (consigna principal): p1070[0] = 2050[1] 
+Figura 3-3 Ajuste de fábrica de las Control Units CU240B-2 DP 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	15
+
+
+Instalar 
+3.4 Ajuste de fábrica de las interfaces CU240B-2 
+Control Units con interfaz USS 
+	La interfaz de bus de campo no está activa. 
+
+--- Sin función. 
+Consigna de velocidad (consigna principal): p1070[0] = 755[0] Figura 3-4 Ajuste de fábrica de las Control Units CU240B-2 
+Cambio de función de los bornes 
+	La función de los bornes marcados en color en las dos figuras anteriores se puede ajustar. 
+Para no tener que cambiar los bornes uno por uno, es posible ajustar varios a la vez mediante ajustes predeterminados ("p0015 Macro unidad de accto."). 
+Los ajustes de fábrica de los bornes descritos anteriormente corresponden a los siguientes ajustes predeterminados: 
+●Ajuste predeterminado 12 (p0015 = 12): "E/S estándar con consigna analógica" ●Ajuste predeterminado 7 (p0015 = 7): "Bus de campo con conmutación de juego de datos" 
+Encontrará más ajustes predeterminados en las instrucciones de servicio. 
+ Vista general de manuales (Página 37) 
+		Control Units CU240B-2 y CU240E-2 16 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Instalar 
+3.5 Regleta de bornes de las Control Units CU240E-2 
+3.5 	Regleta de bornes de las Control Units CU240E-2 
+Regletas de bornes con ejemplo de cableado 
+
+Figura 3-5 Ejemplo de cableado de las entradas digitales con la alimentación interna por convertidor de 24 V 
+Todos los bornes con el potencial de referencia "GND" están conectados entre sí a nivel interno del convertidor. 
+Los potenciales de referencia "DI COM1" y "DI COM2" están aislados galvánicamente de 
+"GND". 
+→ Si, como se muestra arriba, la alimentación de 24 V del borne 9 se emplea como alimentación de las entradas digitales, "GND", "DI COM1" y "DI COM2" deben conectarse entre sí en la regleta de bornes. 
+Si se conecta una alimentación opcional de 24 V a los bornes 31, 32, la Control Unit permanece en funcionamiento incluso en caso de desenchufarse el Power Module de la red. En consecuencia, la Control Unit mantiene, p. ej., la comunicación de bus de campo. 
+→ Conecte a los bornes 31, 32 solo alimentaciones conformes con SELV (Safety Extra Low Voltage) o PELV (Protective Extra Low Voltage). 
+→ Si desea utilizar la alimentación de los bornes 31, 32 también para las entradas digitales, "DI COM1/2" y "GND IN" deben conectarse entre sí en la regleta de bornes. 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	17
+
+
+Instalar 
+3.5 Regleta de bornes de las Control Units CU240E-2 
+Otras posibilidades de cableado de las entradas digitales 
+
+
+
+Si se desea conectar entre sí los po-tenciales de la alimentación externa y la alimentación interna del convertidor, debe conectarse "GND" con los bornes 34 y 69 (entre sí) en la regleta de bor-nes. 
+
+Conexión de contactos en fuente con alimentación 
+externa 
+
+
+Conexión de contactos en sumidero con alimenta-ción externa 
+
+Conecte entre sí los bornes 69 y 34 en la regleta de bornes. 
+Control Units CU240B-2 y CU240E-2 
+
+18 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Instalar 
+3.6 Ajuste de fábrica de las interfaces CU240E-2 
+3.6 	Ajuste de fábrica de las interfaces CU240E-2 
+El ajuste de fábrica de la regleta de bornes depende de la Control Unit. 
+Control Units con interfaz PROFIBUS o PROFINET 
+La función de la interfaz de bus de campo y de las entradas digitales DI 0, DI 1 depende de DI 3. 
+
+--- Sin función. 
+Consigna de velocidad (consigna principal): p1070[0] = 2050[1] 
+Figura 3-6 Ajuste de fábrica de las Control Units CU240E-2 DP(-F) y CU240E-2 PN(-F) 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	19
+
+
+Instalar 
+3.6 Ajuste de fábrica de las interfaces CU240E-2 
+Control Units con interfaz USS 
+	La interfaz de bus de campo no está activa. 
+
+--- Sin función. 
+Consigna de velocidad (consigna principal): p1070[0] = 755[0] 
+Figura 3-7 Ajuste de fábrica de las Control Units CU240E-2 y CU240E-2 F 
+Cambio de función de los bornes 
+	La función de los bornes marcados en color en las dos figuras anteriores se puede ajustar. 
+Para no tener que cambiar los bornes uno por uno, es posible ajustar varios a la vez mediante ajustes predeterminados ("p0015 Macro unidad de accto."). 
+Los ajustes de fábrica de los bornes descritos anteriormente corresponden a los siguientes ajustes predeterminados: 
+●Ajuste predeterminado 12 (p0015 = 12): "E/S estándar con consigna analógica" ●Ajuste predeterminado 7 (p0015 = 7): "Bus de campo con conmutación de juego de datos" 
+Encontrará más ajustes predeterminados en las instrucciones de servicio. 
+ Vista general de manuales (Página 37) 
+		Control Units CU240B-2 y CU240E-2 20 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 	4 
+4.1 	Herramientas para la puesta en marcha del convertidor 
+Operator Panel 
+Un Operator Panel sirve para la puesta en marcha, el diagnóstico y el control del convertidor, así como para la copia de seguridad y la transferencia de los ajustes del convertidor. 
+●Con interfaz de usuario en idiomas europeos 
+●Con interfaz de usuario en chino, inglés y alemán 
+Encontrará más información sobre la compatibilidad de IOP y convertidores en Internet: 
+Herramientas de PC 
+ 
+Tutorial de Startdrive  
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	21
+
+
+Puesta en marcha 
+4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+4.2 	Puesta en marcha con el Basic Operator Panel BOP-2 
+Insertar el Operator Panel 
+Inicio de la puesta en marcha rápida 
+Requisitos 
+Procedimiento 
+1.Pulse la tecla OK. 
+2.Cambie la indicación con una tecla de flecha: nO → YES 
+3.Pulse la tecla OK. 
+		Control Units CU240B-2 y CU240E-2 22 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+●EXPERT: El procedimiento se describe en las instrucciones de servicio. 
+●	 Vista general de manuales (Página 37) 
+Elegir la clase de aplicación apropiada 
+Al seleccionar una clase de aplicación, el convertidor asigna a la regulación de motor los correspondientes ajustes: 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	23
+
+
+Puesta en marcha 
+4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+
+●HP 60HZ: NEMA 
+●KW 60HZ: IEC 60 Hz 
+	Ajuste la tensión de conexión del convertidor. 
+	Ajuste el tipo de motor. Si la placa de características del motor lleva impreso un código de 	motor de 5 cifras, seleccione el tipo de motor con código de motor que corresponda. 
+Motores sin código de motor en la placa de características: ●INDUCT: Motor asíncrono no Siemens 
+●1L… IND: Motores asíncronos 1LE1, 1LG6, 1LA7, 1LA9 
+Motores con código de motor en la placa de características: ●1LE1 IND 100: 1LE1 . 9 
+●1PC1 IND: 1PC1 
+●1PH8 IND: Motor asíncrono 
+●1FP1: Motor de reluctancia 
+Dependiendo del convertidor, es posible que la lista de motores disponible en el BOP-2 no coincida con la lista referida anteriormente. 
+Si no conoce el código del motor, ajuste el código de motor = 0 e introduzca los datos de motor a partir de p0304 según la placa de características. 
+		Control Units CU240B-2 y CU240E-2 24 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+●FORCED: Refrigeración independiente 
+●LIQUID: Refrigeración por líquido 
+●NO FAN: Sin ventilador 
+●PUMP FAN: carga en función de la velocidad; las aplicaciones típicas son las bombas y 	filtros. 
+ Vista general de manuales (Página 37) 
+
+Figura 4-1 	Velocidad mínima y velocidad máxima del motor 
+
+Figura 4-2 	Tiempos de aceleración y deceleración del motor 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	25
+
+
+Puesta en marcha 
+4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+	Tiempo de deceleración después del comando DES3 
+	Identificación de datos del motor. Seleccione el método según el cual el convertidor mide los 	datos del motor conectado: 
+	●OFF: Sin identificación de los datos del motor 
+	●STILL: Ajuste predeterminado: Medir datos de motor en parada. Tras la identificación de 	los datos del motor, el convertidor desconecta el motor. 
+2.Pulse la tecla OK. 
+	Ha finalizado la puesta en marcha rápida. 
+4.2.3 	Dynamic Drive Control 
+		Ajuste la norma de motor: 		●KW 50HZ: IEC 
+		●HP 60HZ: NEMA 
+	●KW 60HZ: IEC 60 Hz 
+	Ajuste la tensión de conexión del convertidor. 
+	Ajuste el tipo de motor. Si la placa de características del motor lleva impreso un código de 	motor de 5 cifras, seleccione el tipo de motor con código de motor que corresponda. 
+Motores sin código de motor en la placa de características: ●INDUCT: Motor asíncrono no Siemens 
+●1L… IND: Motores asíncronos 1LE1, 1LG6, 1LA7, 1LA9 
+Motores con código de motor en la placa de características: ●1LE1 IND 100: 1LE1 . 9 
+●1PC1 IND: 1PC1 
+●1PH8 IND: Motor asíncrono 
+●1FP1: Motor de reluctancia 
+Dependiendo del convertidor, es posible que la lista de motores disponible en el BOP-2 no coincida con la lista referida anteriormente. 
+Si no conoce el código del motor, ajuste el código de motor = 0 e introduzca los datos de motor a partir de p0304 según la placa de características. 
+	Funcionamiento del motor a 87 Hz. El BOP-2 muestra este paso solo si se ha seleccionado 	IEC como norma de motor (EUR/USA, P100 = kW 50 Hz). 
+		Control Units CU240B-2 y CU240E-2 26 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+●FORCED: Refrigeración independiente 
+●LIQUID: Refrigeración por líquido 
+●NO FAN: Sin ventilador 
+●CL LOOP: Ajuste recomendado para aplicaciones con tiempos de aceleración y deceleración breves. Este ajuste no es apropiado para mecanismos elevadores ni aparatos de elevación. 
+●HVY LOAD: Ajuste recomendado para aplicaciones con alto par de despegue. 
+ Vista general de manuales (Página 37) 
+
+Figura 4-3 	Velocidad mínima y velocidad máxima del motor 
+
+Figura 4-4 	Tiempo de aceleración y deceleración del motor 
+Tiempo de deceleración después del comando DES3 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	27
+
+
+Puesta en marcha 
+4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+●OFF: No medir datos del motor. 
+STIL ROT: Ajuste recomendado: medir datos de motor en parada y con el motor en giro. 
+Tras la identificación de los datos del motor, el convertidor desconecta el motor. ●STILL: Ajuste predeterminado: Medir datos de motor en parada. 
+Tras la identificación de los datos del motor, el convertidor desconecta el motor. 
+Seleccione este ajuste si el motor no puede girar libremente, p. ej., en zonas de desplazamiento limitadas mecánicamente. 
+●ROT: Medir datos del motor con el motor en giro. 
+Tras la identificación de los datos del motor, el convertidor desconecta el motor. ●ST RT OP: Ajuste como STIL ROT. 
+Tras la identificación de los datos del motor, el motor acelera hasta la consigna actual. ●STILL OP: Ajuste como STILL. 
+Tras la identificación de los datos del motor, el motor acelera hasta la consigna actual. 
+●Pulse la tecla OK. 
+	Ha finalizado la puesta en marcha rápida. 
+4.2.4 	Identificación de los datos del motor y optimización de la regulación 
+		El convertidor dispone de varios métodos para identificar de manera automática los datos 		del motor y optimizar la regulación de velocidad. 
+Para iniciar la identificación de los datos del motor es necesario conectar el motor a través de la regleta de bornes, el bus de campo o el Operator Panel. 
+		Control Units CU240B-2 y CU240E-2 28 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 4.2 Puesta en marcha con el Basic Operator Panel BOP-2 
+Requisitos 
+●En la puesta en marcha rápida se ha elegido un método de identificación de los datos del 	motor, p. ej., la medición de los datos del motor en parada. 
+Si la temperatura del motor es demasiado alta, los resultados de la identificación de los datos del motor se adulteran. 
+Procedimiento con Operator Panel BOP-2 
+Si el convertidor no muestra la alarma A07991, desconecte el motor como se describe a continuación y conmute el control del convertidor de HAND a AUTO. 
+En caso necesario, desconecte el motor. 
+Conmute el control del convertidor de HAND a AUTO. 
+Ha finalizado la identificación de los datos del motor. 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	29
+
+
+Puesta en marcha 
+4.3 Conectar el convertidor al bus de campo 
+4.3 	Conectar el convertidor al bus de campo 
+¿Dónde figuran las instrucciones para la conexión al bus de campo? 
+Descarga de las instruccion
+● 
+Ficheros de descripción para buses de campo 
+Los archivos de descripción son hojas de datos de dispositivo electrónicas que contienen toda la información necesaria para un control superior. El archivo de descripción correspondiente permite configurar y utilizar el convertidor en un bus de campo. 
+		 
+
+ 
+Ethernet/IP: EDS  
+Alternativa a la descarga para GSD y GSDML 
+GSD y GSDML están almacenados en el convertidor. Si se ajusta p0804 = 12, el convertidor escribe su GSD o GSDML en la tarjeta de memoria insertada. El archivo se puede transferir desde la tarjeta de memoria a, p. ej., un PC. 
+Ejemplos de tramas a través de PROFIBUS y PROFINET 
+Control Units CU240B-2 y CU240E-2 
+30 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 
+4.3 Conectar el convertidor al bus de campo 
+Palabra de mando 1 (STW1), palabra de recepción PZD 1 (palabra: r2050[0], bits: r2090.00 … r2090.15) 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	31
+
+
+Puesta en marcha 
+4.3 Conectar el convertidor al bus de campo 
+Palabra de estado 1 (ZSW1), palabra de emisión PZD 1 (palabra: p2051[0], bits: p2080[0] … p2080[15]) 
+		Control Units CU240B-2 y CU240E-2 32 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 
+4.4 Parámetros de uso frecuente 
+
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	33
+
+
+Puesta en marcha 
+4.4 Parámetros de uso frecuente 
+		Control Units CU240B-2 y CU240E-2 34 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+Puesta en marcha 
+4.4 Parámetros de uso frecuente 
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	35
+
+
+Puesta en marcha 
+4.4 Parámetros de uso frecuente 
+		Control Units CU240B-2 y CU240E-2 36 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+
+●I
+	 
+uesta en marcha ampliada. 
+●
+	 
+exión equipotencial y tendido de cables. 
+●
+	 
+iones. 
+●
+	 
+
+●
+	 
+
+Control Units CU240B-2 y CU240E-2 
+Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 	37
+
+
+Más información 
+5.2 Soporte técnico 
+●
+ 
+
+●
+ 
+erta para IOP. 
+●
+ 
+
+●
+ 
+ mantenimiento. 
+	
+●Manuales de accesorios  
+Descripciones de la insta filtros de red. Las descripciones impresas de la instalación se suministran junto con los componentes. 
+
+5.2 	Soporte técnico 
+ +49 (0)911 895 7222 
+ +44 161 446 5545 
+ +39 (02) 24362000 
+ +34 902 237 238 
+ +33 (0) 821 801 122 
+	Encontrará otrosn Internet: 
+Product support  
+Control Units CU240B-2 y CU240E-2 
+38 	Instrucciones de servicio resumidas, 01/2017, A5E39910322E AA 
+
+
+

@@ -1,0 +1,200 @@
+
+
+Hoja de datos 	3RW5526-1HA16
+
+
+referencia del fabricante
+● del módulo HMI High Feature utilizable 	
+● del módulo de comunicación PROFINET Standard 	
+utilizable
+● del módulo de comunicación PROFINET High-Feature 	
+utilizable
+conexión dentro del triángulo
+● del interruptor automático utilizable con 500 V con 	
+conexión dentro del triángulo
+● del fusible gG utilizable hasta 690 V 	
+● del fusible gG utilizable con conexión dentro del triángulo 	
+hasta 500 V
+● del fusible gR para protección de semiconductores 	
+utilizable hasta 690 V
+● del fusible aR para protección de semiconductores 	
+utilizable hasta 690 V
+
+
+
+certificado de aptitud
+componente del producto
+puenteo integrado
+tiempo de puenteo en caso de fallo de red
+tensión máxima admitida para separación de protección
+ajustable
+
+
+
+
+
+
+
+función del producto
+electrónica de sobrecarga)
+
+
+
+
+
+intensidad de empleo
+intensidad de empleo con conexión dentro del triángulo
+tensión de empleo
+conexión dentro del triángulo
+conexión dentro del triángulo
+potencia de empleo para motor trifásico
+valor asignado
+valor asignado
+valor asignado
+pérdidas [W] con valor asignado de la intensidad con AC
+
+
+
+pérdidas [W] con AC en caso de limitación de corriente del 
+350 %
+
+tensión de alimentación del circuito de mando con AC
+mando con AC con 50 Hz
+mando con AC con 50 Hz
+mando con AC con 60 Hz
+mando con AC con 60 Hz
+alimentación de mando
+alimentación de mando
+asignado
+máx.
+alimentación de mando máx.
+de alimentación de mando
+
+
+poder de corte, corriente de las salidas de relé
+
+distancia que debe respetarse para montaje en serie
+
+
+
+
+versión de la conexión eléctrica
+longitud del cable para conexión de termistor
+tipo de secciones de conductor conectables para contactos 
+principales del borne de marco
+● utilizando el punto de embornadodelantero monofilar 	1x (2,5 ... 16 mm²)
+● utilizando el punto de embornadodelantero alma flexible 	1x (2,5 ... 50 mm²)
+con preparación de los extremos de cable
+● utilizando el punto de embornadodelantero multifilar 	1x (10 ... 70 mm²)
+● utilizando el punto de embornadoposterior monofilar 	1x (2,5 ... 16 mm²)
+● borne de marco utilizando el punto de 	1x (10 ... 2/0)
+embornadoposterior
+● utilizando los dos puntos de embornaje monofilar 	2x (2,5 ... 16 mm²)
+● utilizando los dos puntos de embornaje alma flexible con 	2x (2,5 ... 35 mm²)
+preparación de los extremos de cable
+● utilizando los dos puntos de embornaje multifilar 	2x (6 ... 16 mm²), 2x (10 ... 50 mm²)
+● utilizando el punto de embornadoposterior alma flexible 	1x (2,5 ... 50 mm²)
+con preparación de los extremos de cable
+tipo de secciones de conductor conectables
+los extremos de cable
+longitud del cable
+par de apriete
+● para contactos principales con bornes de tornillo 	4,5 ... 6 N·m
+● para contactos auxiliares y de control con bornes de 	0,8 ... 1,2 N·m
+tornillo
+par de apriete [lbf·in]
+tornillo
+temperatura ambiente
+categoría medioambiental
+● durante el funcionamiento según IEC 60721 	3K6 (sin formación de hielo, condensación ocasional), 3C3 (sin niebla salina), 
+3S2 (no puede entrar arena en los aparatos), 3M6
+● durante el almacenamiento según IEC 60721 	1K6 (condensación ocasional), 1C2 (sin niebla salina), 1S2 (no puede entrar 
+arena en los aparatos), 1M4
+
+
+módulo de comunicación soportado
+
+
+
+
+referencia del fabricante
+● del interruptor automático utilizable con fallo 
+estándar
+— con 460/480 V según UL 	Tipo Siemens: 3VA51, máx. 125 A; Iq = 10 kA
+— 460/480 V según UL 	Tipo Siemens: 3VA51, máx. 125 A; Iq max = 65 kA
+— con 460/480 V con conexión dentro del triángulo 	Tipo Siemens: 3VA51, máx. 125 A; Iq = 10 kA
+según UL
+— 460/480 V con conexión dentro del triángulo según 	Tipo Siemens: 3VA51, máx. 125 A; Iq max = 65 kA
+UL
+— con 575/600 V según UL 	Tipo Siemens: 3VA51, máx. 125 A; Iq = 10 kA
+— 575/600 V con conexión dentro del triángulo según 	Tipo Siemens: 3VA51, máx. 125 A; Iq max = 65 kA
+UL
+— con 575/600 V con conexión dentro del triángulo 	Tipo Siemens: 3VA51, máx. 125 A; Iq = 10 kA
+según UL
+● del fusible
+— utilizable con fallo estándar hasta 575/600 V según 	Typ: Class RK5 / K5, max. 250 A; Iq = 10 kA
+UL
+— utilizable con fallo alto hasta 575/600 V según UL 	Tipo: clase J/L, máx. 250 A; Iq = 100 kA
+— utilizable con fallo estándar con conexión dentro del 	Typ: Class RK5 / K5, max. 250 A; Iq = 10 kA
+triángulo hasta 575/600 V según UL
+— utilizable con fallo alto con conexión dentro del 	Tipo: clase J/L, máx. 250 A; Iq = 100 kA
+triángulo hasta 575/600 V según UL
+potencia de empleo [hp] para motor trifásico
+°C valor asignado
+● con 220/230 V con conexión dentro del triángulo con 50 	40 hp
+°C valor asignado
+°C valor asignado
+● con 575/600 V con conexión dentro del triángulo con 50 	100 hp
+°C valor asignado
+
+
+respecto a ATEX
+a ATEX
+respecto a ATEX
+ATEX
+61508 respecto a ATEX
+certificado de aptitud
+
+
+
+fabricación
+comercialización
+
+
+
+funcionamiento
+vida
+
+
+Información sobre el embalaje 
+
+Information for data generation and storage 
+
+Information- and Downloadcenter (Catálogos, Folletos,…) 
+
+Industry Mall (sistema de pedido online) 
+
+Service&Support (Manuales, certificados, características, FAQ,…) 
+
+Base de datos de imágenes (fotos de producto, dibujos acotados 2D, modelos 3D, esquemas de conexiones, macros EPLAN, …) 
+Generador CAx online 
+
+Curvas características 
+
+Curva característica: Comportamiento en disparo, I²t, Corriente de corte limitada 
+Característica: Altitud de instalación 
+
+Simulation Tool for Soft Starters (STS) 
+
+
+
+
+
+
+
+
+
+
+
+
+

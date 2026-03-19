@@ -1,0 +1,450 @@
+
+
+
+
+
+SIMATIC 
+ET 200SP 
+Módulo de entradas digitales 
+DI 16x24VDC ST 
+(6ES7131-6BH01-0BA0) 
+Manual de producto 
+02/2019 
+A5E03573444-AG 
+
+___________________ 
+
+
+
+Notas jurídicas 
+Filosofía en la señalización de advertencias y peligros 
+Este manual contiene las informaciones necesarias para la seguridad personal así como para la prevención de daños materiales. Las informaciones para su seguridad personal están resaltadas con un triángulo de advertencia; las informaciones para evitar únicamente daños materiales no llevan dicho triángulo. De acuerdo al grado de peligro las consignas se representan, de mayor a menor peligro, como sigue. 
+
+
+
+Si se dan varios niveles de peligro se usa siempre la consigna de seguridad más estricta en cada caso. Si en una consigna de seguridad con triángulo de advertencia de alarma de posibles daños personales, la misma consigna puede contener también una advertencia sobre posibles daños materiales. 
+Personal cualificado 
+El producto/sistema tratado en esta documentación sólo deberá ser manejado o manipulado por personal cualificado para la tarea encomendada y observando lo indicado en la documentación correspondiente a la misma, particularmente las consignas de seguridad y advertencias en ella incluidas. Debido a su formación y experiencia, el personal cualificado está en condiciones de reconocer riesgos resultantes del manejo o manipulación de dichos productos/sistemas y de evitar posibles peligros. 
+Uso previsto de los productos de Siemens 
+Considere lo siguiente: 
+Marcas registradas 
+Todos los nombres marcados con ® son marcas registradas de Siemens AG. Los restantes nombres y designaciones contenidos en el presente documento pueden ser marcas registradas cuya utilización por terceros para sus propios fines puede violar los derechos de sus titulares. 
+Exención de responsabilidad 
+Hemos comprobado la concordancia del contenido de esta publicación con el hardware y el software descritos. Sin embargo, como es imposible excluir desviaciones, no podemos hacernos responsable de la plena concordancia. El contenido de esta publicación se revisa periódicamente; si es necesario, las posibles correcciones se incluyen en la siguiente edición. 
+
+
+
+Prólogo 
+Finalidad de la documentación 
+El presente manual de proddescentralizada ET 200SP . 
+En dicho manual de sistema se describen las funciones que afectan de forma general al sistema. 
+La información contenida en el presente manual de producto y en los manuales de sistema y de funciones permite poner en marcha el sistema. 
+Cambios con respecto a la versión anterior 
+Con respecto a la versión anterior del manual de producto, se ha realizado el siguiente cambio: 
+Datos técnicos: Se ha añadido la temperatura ambiente en posición de montaje horizontal y vertical, mín. - 30 °C. 
+Convenciones 
+CPU: cuando en adelante se utilice el término "CPU", se hará para designar tanto los módulos centrales del sistema de automatización S7-1500, como las CPU o los módulos de interfaz del sistema de periferia descentralizada ET 200SP. 
+STEP 7: para designar el software de configuración y programación, en la presente documentación se utiliza "STEP 7" como sinónimo de todas las versiones de "STEP 7 (TIA Portal)". 
+Preste atención también a las notas marcadas del modo siguiente: 
+Nota 
+Una nota contiene datos importantes acerca del producto descrito en la documentación, el manejo de dicho producto o la parte de la documentación a la que debe prestarse especial atención. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 3
+
+
+Prólogo 
+Información de seguridad 
+Siemens ofrece productos y soluciones con funciones de seguridad industrial con el objetivo de hacer más seguro el funcionamiento de instalaciones, sistemas, máquinas y redes. 
+Para proteger las instalaciones, los sistemas, las máquinas y las redes de amenazas cibernéticas, es necesario implementar (y mantener continuamente) un concepto de seguridad industrial integral que sea conforme a la tecnología más avanzada. Los productos y las soluciones de Siemens constituyen únicamente una parte de este concepto. 
+Los clientes son responsables de impedir el acceso no autorizado a sus instalaciones, sistemas, máquinas y redes. Dichos sistemas, máquinas y componentes solo deben estar conectados a la red corporativa o a Internet cuando y en la medida que sea necesario y siempre que se hayan tomado las medidas de protección adecuadas (p. ej. uso de cortafuegos y segmentación de la red). 
+Para obtener información adicional ue podrían ser implementadas, por favor visite . 
+Los productos y las soluciones de Siemens están sometidos a un desarrollo constante con el fin de mejorar todavía más su seguridad. Siemens recomienda expresamente realizar actualizaciones en cuanto estén disponibles y utilizar únicamente las últimas versiones de los productos. El uso de versiones anteriores o que ya no se soportan puede aumentar el riesgo de amenazas cibernéticas. 
+Para mantenerse informado de las actualizaciones de productos, recomendamos que se S Feed en 
+. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+4 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Índice 
+	Prólogo ................................................................................................................................................... 3 1 	Guía de orientación en la documentación ................................................................................................ 6 2 	Descripción del producto ....................................................................................................................... 11 	2.1 	Características ........................................................................................................................ 11 3 
+	Conexión .............................................................................................................................................. 13 	3.1 	Esquema eléctrico y esquema de principio ............................................................................ 13 4 	Parametrización y direccionamiento ...................................................................................................... 16 	4.1 	Parámetros ............................................................................................................................. 16 	4.2 
+	Explicación de los parámetros ................................................................................................ 18 	4.3 	Área de direcciones ................................................................................................................ 19 5 	Alarmas y avisos de diagnóstico ........................................................................................................... 21 	5.1 	Indicadores de estados y errores ........................................................................................... 21 	5.2 
+	Alarmas ................................................................................................................................... 23 	5.3 	Avisos de diagnóstico ............................................................................................................. 23 6 	Datos técnicos ...................................................................................................................................... 24 	6.1 	Datos técnicos ........................................................................................................................ 24 A 
+	Juego de parámetros ............................................................................................................................ 28 	A.1 	Parametrización y estructura de juegos de parámetros ......................................................... 28 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 5
+
+
+Guía de orientación en la documentación 	1 
+La documentación del sistema de periferia descentralizada SIMATIC ET 200SP se divide en tres partes. 
+Esta división permite acceder directamente al contenido deseado. 
+
+Información básica 
+En el manual de sistema se describen detalladamente la configuración, el montaje, el cableado y la puesta en marcha del sistema de periferia descentralizada SIMATIC ET 200SP. La ayuda en pantalla de STEP 7 le prestará apoyo en la configuración y programación. 
+Información de dispositivos 
+Los manuales de producto contienen una descripción sintetizada de la información específica de los módulos, como características, esquemas de conexiones, curvas características o datos técnicos. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+6 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Guía de orientación en la documentación 
+Información general 
+En los manuales de funciones encontrará descripciones detalladas sobre temas generales en torno al sistema de periferia descentralizada SIMATIC ET 200SP, p. ej., diagnóstico, comunicación, servidor web, Motion Control y OPC UA. 
+ . 
+Los cambios y ampliaciones de los manuales se documentan en una información del producto. 
+ de Internet . 
+Manual Collection ET 200SP 
+La Manual Collection contiene la documentación completa del sistema de periferia descentralizada SIMATIC ET 200SP recogida en un archivo. 
+
+. 
+"mySupport" 
+Con "mySupport", su área de trabajo personal, podrá sacar el máximo partido al Industry Online Support. 
+En "mySupport" se pueden guardar filtros, favoritos y etiquetas, solicitar datos CAx y elaborar una librería personal en el área Documentación. Asimismo, en las consultas que realice con el Support Request (solicitud de soporte), este ya estará cumplimentado con sus datos, y en todo momento podrá ver una relación de las solicitudes pendientes. 
+Para usar todas las funciones de "m 
+Encontrará "mySupport" en Internet . 
+"mySupport": "Documentación" 
+En "MySupport", bajo "Documentación", se pueden combinar manuales completos o partes de ellos para elaborar un manual personalizado. 
+Este manual se puede exportar como archivo PDF o a un formato editable. 
+
+. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 7
+
+
+Guía de orientación en la documentación 
+"mySupport": "Datos CAx" 
+En el área "Datos CAx" de "mySupport" puede acceder a datos de producto actualizados para su sistema CAx o CAe. 
+Con tan solo unos clics podrá configurar su propio paquete de descarga. 
+Puede escoger entre: 
+●Imágenes de producto, croquis acotados 2D, modelos 3D, esquemas eléctricos, archivos de macros EPLAN 
+●Manuales, curvas características, instrucciones de manejo, certificados 
+●Datos maestros de productos 
+
+. 
+Ejemplos de aplicación 
+Los ejemplos de aplicación le asisten con diferentes herramientas y ejemplos a la hora de resolver las tareas de automatización. En los ejemplos se muestran siempre soluciones en las que interactúan varios componentes del sistema, sin centrarse en productos concretos. 
+
+. 
+TIA Selection Tool 
+TIA Selection Tool permite seleccionar, configurar y pedir dispositivos para Totally Integrated Automation (TIA). 
+Es el sucesor de SIMATIC Selection Tool y recoge en una misma herramienta los configuradores de automatización ya conocidos. 
+TIA Selection Tool permite generar un lista de pedido completa a partir de la selección o configuración de productos realizada. 
+
+. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+8 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Guía de orientación en la documentación 
+SIMATIC Automation Tool 
+SIMATIC Automation Tool permite llevar a cabo actividades de puesta en marcha y servicio técnico de forma global y simultánea en distintas estaciones SIMATIC S7, 
+independientemente del TIA Portal. 
+SIMATIC Automation Tool ofrece numerosas funciones: 
+●Escaneado de una red de instalación PROFINET/Ethernet e identificación de todas las 	CPU conectadas 
+●Asignación de la dirección (IP, subred, pasarela) y del nombre de estación (dispositivo 	PROFINET) a una CPU 
+●Transferencia al módulo de la fecha y la hora convertida a hora UTC de la programadora 	o PC 
+●Descarga de programas en la CPU 
+●Cambio de los modos de operación RUN/STOP 
+●Localización de las CPU mediante parpadeo de los LED 
+●Lectura de información de errores de la CPU 
+●Lectura del búfer de diagnóstico de la CPU 
+●Restablecimiento de los ajustes de fábrica 
+●Actualización del firmware de la CPU y los módulos conectados 
+
+. 
+PRONETA 
+	La herramienta SIEMENS PRONETA ("análisis de red PROFINET") permite analizar la red 	de la instalación durante la puesta en marcha. PRONETA cuenta con dos funciones 	centrales: 
+	●La vista topológica general escanea automáticamente la red PROFINET y todos los 		componentes conectados. 
+●La comprobación E/S permite comprobar rápidamente el cableado y la configuración de 	los módulos de una instalación. 
+
+. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 9
+
+
+Guía de orientación en la documentación 
+SINETPLAN 
+SINETPLAN, el Siemens Network Planner, es una ayuda para planificadores de 
+instalaciones y redes de automatización basada en PROFINET. La herramienta facilita, incluso en la fase de planificación, el dimensionamiento profesional y anticipativo de la instalación de PROFINET. SINETPLAN le ayuda también a optimizar la red así como a aprovechar al máximo los recursos en la red y planificar reservas. De esta forma se evitan problemas en la puesta en marcha o fallos durante el funcionamiento productivo antes de iniciar la aplicación programada. Esto aumenta la disponibilidad de la producción y contribuye a mejorar la seguridad de operación. 
+Resumen de las ventajas 
+●Optimización de la red mediante el cálculo puerto a puerto de las cargas de red. 
+●Mayor disponibilidad de producción mediante escaneo online y verificación de las instalaciones existentes 
+●Transparencia antes de la puesta en marcha mediante la importación y simulación de proyectos STEP 7 existentes 
+●Eficiencia mediante la protección a largo plazo de las inversiones existentes y el aprovechamiento óptimo de los recursos 
+Encontrará SINETPLAN en Internet . 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+10 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Descripción del producto 	2 
+2.1 	Características 
+Referencia 
+6ES7131-6BH01-0BA0 (unidad de embalaje: 1 unidad) 
+6ES7131-6BH01-2BA0 (unidad de embalaje: 10 unidades) 
+Vista del módulo 
+
+
+① Tipo y nombre del módulo 
+② LED de diagnóstico 
+③ Código matricial bidimensional ④ Esquema de conexión 
+⑤ LED de estado de canal 
+⑥ LED de tensión de alimentación 
+
+⑦ Clase de función 
+⑧ Identificación por color del tipo de módulo 
+⑨ Versión funcional y de firmware 
+⑩ Código de color para seleccionar las etiquetas de 
+identificación por color 
+⑪ Tipo de BU 
+⑫ Referencia 
+
+Figura 2-1 	Vista del módulo DI 16×24VDC ST 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	11
+
+
+Descripción del producto 
+2.1 Características 
+Características 
+El módulo tiene las siguientes características técnicas: 
+●Módulo de entradas digitales con 16 entradas 
+●Entrada Sink, (PNP, entrada tipo P) 
+●Tensión de alimentación L+ 
+●Retardo a la entrada parametrizable 0,05..20 ms (por canal) 
+●Diagnóstico parametrizable (por módulo) 
+●Apto para conectar interruptores y sensores a 2 hilos según IEC 61131, tipo 3 El módulo soporta las siguientes funciones: 
+
+Accesorios 
+Los siguientes accesorios deben pedirse por separado: ●Tiras rotulables 
+●Etiquetas de identificación por color 
+●Etiqueta de identificación por referencia 
+●Conexión de pantalla 
+Ver también 
+Encontrará más información sobre los accesorios en el manual de sistema Sistema de 
+. 
+	Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 12 		Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Conexión 	3 
+3.1 	Esquema eléctrico y esquema de principio 
+En este capítulo encontrará el esquema de principio del módulo DI 16x24VDC ST con las asignaciones de terminales para una conexión a 1 hilo. 
+Encontrará más información sobre el cableado de la BaseUnit en el manual del sistema 
+. 
+Nota 
+El grupo de carga del módulo debe comenzar por una BaseUnit clara. Téngalo en cuenta durante la configuración. 
+Nota 
+Durante la puesta en marcha deberá prestar atención a que los módulos digitales se utilicen únicamente con la BaseUnit tipo A0. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	13
+
+
+Conexión 
+3.1 Esquema eléctrico y esquema de principio 
+Conexión: conexión a 1 hilo 
+La figura siguiente muestra el esquema de principio y, a modo de ejemplo, la asignación de terminales del módulo de entradas digitales DI 16x24VDC ST en la BaseUnit del tipo A0 sin bornes AUX (conexión a 1 hilo). 
+
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+14 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Conexión 
+3.1 Esquema eléctrico y esquema de principio 
+Detección de rotura de hilo 
+Si está configurada la detección de rotura de hilo, el módulo necesitará con señal "0" una corriente de polarización reducida en la entrada digital para la vigilancia. Para que esta corriente de polarización pueda fluir por los contactos abiertos de los sensores, en los sensores mecánicos se requiere la conexión paralela de una resistencia de 25 kΩ a 45 kΩ. 
+Si desactiva la detección de rotura de hilo en la configuración, no necesitará la conexión paralela de una resistencia. 
+Si está configurada la detección de rotura de hilo, conecte una resistencia de 25 kΩ a 45 kΩ en paralelo para cada contacto mecánico del sensor. 
+
+Figura 3-2 	Conectar una resistencia al contacto mecánico del sensor 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	15
+
+
+Parametrización y direccionamiento 	4 
+4.1 	Parámetros 
+Parámetros del DI 16x24VDC ST 
+Al efectuar la parametrización del módulo con STEP 7, las propiedades del módulo se especifican por medio de distintos parámetros. Los parámetros configurables figuran en la siguiente tabla. El rango efectivo de los parámetros ajustables depende del tipo de configuración. 
+Son posibles las siguientes configuraciones: 
+●Operación centralizada con una CPU ET 200SP 
+●Operación descentralizada con PROFINET IO en un sistema ET 200SP 
+●Operación descentralizada con PROFIBUS DP en un sistema ET 200SP 
+Si la parametrización se lleva a cabo en el programa de usuario, los parámetros se transfieren al módulo con la instrucción "WRREC" mediante juegos de datos (ver capítulo Parametrización y estructura de juegos de parámetros (Página 28)). 
+Es posible ajustar los siguientes parámetros: 
+
+	Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 16 		Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Parametrización y direccionamiento 
+4.1 Parámetros 
+
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	17
+
+
+Parametrización y direccionamiento 
+4.2 Explicación de los parámetros 
+4.2 	Explicación de los parámetros 
+Diagnóstico Falta tensión de alimentación L+ 
+Habilitado, permite diagnosticar tensión de alimentación L+ faltante o insuficiente. 
+Diagnóstico Rotura de hilo 
+Habilitado, permite diagnosticar una interrupción en el cable al sensor. 
+Canal activado 
+Define si un canal está activado o desactivado. 
+Retardo a la entrada 
+Este parámetro permite suprimir fluctuaciones anómalas en una señal. Los cambios de la señal solo se detectan cuando permanecen estables durante más tiempo que el retardo a la entrada ajustado. 
+Grupo de potencial 
+Un grupo de potencial consta de un grupo de módulos de periferia colocados juntos dentro de una estación ET 200SP y que son alimentados por una fuente común. 
+Un grupo de potencial comienza con una BaseUnit clara, en la que se aplica la tensión de alimentación necesaria para todos los módulos del grupo de potencial. La BaseUnit clara interrumpe las tres barras de potencial autoinstalables P1, P2 y AUX hacia el módulo adyacente por la izquierda. 
+Todos los demás módulos de periferia de este grupo de potencial están enchufados en la BaseUnit oscura. Toman los potenciales de las barras de potencial autoinstalables P1, P2 y AUX del adyacente por la izquierda. 
+Un grupo de potencial termina con la BaseUnit oscura, a la que sigue, en la configuración de la estación, una BaseUnit clara o un módulo de servidor. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+18 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+4.3	Área de direcciones 
+En STEP 7, el módulo puede configurarse de diferentes maneras (ver la tabla siguiente). En función de la configuración se asignan direcciones adicionales/diferentes en la memoria imagen de proceso de las entradas. 
+Opciones de configuración del DI 16x24VDC ST 
+El módulo puede configurarse con STEP 7 (TIA Portal) o con un archivo GSD. Si el módulo se configura mediante un archivo GSD, encontrará las configuraciones bajo distintos nombres abreviados/nombres de módulo (ver tabla siguiente). Son posibles las 
+configuraciones siguientes: 
+
+Evaluación de la información de calidad 
+Si se habilita la información de calidad en el módulo digital, se asignarán adicionalmente dos bytes en el espacio de direcciones de entrada. Los bits 0 a 15 de este byte están asignados a un canal. Informan acerca de la validez del valor digital. 
+Bit = 1: no hay fallos en el canal. 
+Bit = 0: el canal está desactivado o hay un fallo en el módulo. 
+Cuando aparece un fallo en un canal de este módulo, la información de calidad es 0 para todos los canales. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	19
+
+
+Parametrización y direccionamiento 
+4.3 Área de direcciones 
+Espacio de direcciones 
+La figura siguiente muestra la asignación del espacio de direcciones en el módulo DI 16x24VDC ST con información de calidad (Quality Information (QI)). Para que las direcciones de la información de calidad estén disponibles, es necesario habilitar la información de calidad. 
+
+Figura 4-1 Espacio de direcciones del DI 16×24VDC ST con información de calidad 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+20 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Alarmas y avisos de diagnóstico 	5 
+5.1 	Indicadores de estados y errores 
+Indicadores LED 
+La siguiente figura muestra los indicadores LED (indicadores de estado y error) de DI 16x24VDC ST. 
+
+①DIAG (verde/rojo) 
+②Estado del canal (verde) 
+③PWR (verde) 
+Figura 5-1 	Indicadores LED 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	21
+
+
+Alarmas y avisos de diagnóstico 
+5.1 Indicadores de estados y errores 
+Significado de los indicadores LED 
+Las tablas siguientes explican el significado de los indicadores de estados y errores. Para ver las medidas de solución de los avisos de diagnóstico, consulte el capítulo 
+AUTOHOTSPOT. 
+LED DIAG 
+
+LED de estado de canal 
+
+LED PWR 
+
+Consulte también 
+	Avisos de diagnóstico (Página 23) 
+	Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 22 		Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Alarmas y avisos de diagnóstico 
+5.2 Alarmas 
+5.2 	Alarmas 
+		El módulo de entradas digitales DI 16×24VDC ST soporta alarmas de diagnóstico. 
+Alarmas de diagnóstico 
+El módulo genera una alarma de diagnóstico con los siguientes eventos: ●Rotura de hilo 
+●Error de parametrización 
+●Falta tensión de alimentación 
+5.3 	Avisos de diagnóstico 
+		Con cada evento de diagnóstico se emite un aviso de diagnóstico y en el módulo parpadea 		el LED DIAG. Los avisos de diagnóstico pueden leerse, por ejemplo, en el búfer de 		diagnóstico de la CPU. Los códigos de error pueden evaluarse mediante el programa de 		usuario. 
+
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	23
+
+
+Datos técnicos 	6 
+6.1 	Datos técnicos 
+Datos técnicos del DI 16×24VDC ST 
+La tabla siguiente contiene los datos técnicos (versión de 02/2019). Encontrará una hoja de 
+. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+24 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Datos técnicos 
+6.1 Datos técnicos 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	25
+
+
+Datos técnicos 
+6.1 Datos técnicos 
+	Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 26 		Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Datos técnicos 
+6.1 Datos técnicos 
+Croquis acotado 
+
+ 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	27
+
+
+Juego de parámetros 	A 
+A.1 	Parametrización y estructura de juegos de parámetros 
+El juego de datos del módulo tiene una estructura idéntica, independientemente de que se configure el módulo con PROFIBUS DP o con PROFINET IO. El juego de datos 128 permite reparametrizar el módulo en el programa de usuario, independientemente de la 
+programación. De este modo es posible utilizar todas las funciones del módulo, incluso si este se ha configurado mediante PROFIBUS-GSD. 
+Parametrización en el programa de usuario 
+Es posible cambiar la parametrización del módulo en RUN (p. ej., el retardo a la entrada de canales concretos puede modificarse en RUN sin que ello afecte a los demás canales). 
+Modificación de parámetros en RUN 
+Los parámetros se transfieren al módulo con la instrucción "WRREC" mediante el juego de datos 128. Los parámetros ajustados con STEP 7 no se modifican en la CPU, es decir, los parámetros ajustados con STEP 7 vuelven a ser válidos tras un arranque. 
+Parámetro de salida STATUS 
+Si se producen errores al transferir los parámetros con la instrucción "WRREC", el módulo sigue funcionando con la parametrización utilizada hasta entonces. El parámetro de salida STATUS contiene el correspondiente código de error. 
+La instrucción "WRREC" y los códigos de error se describen en la ayuda en pantalla de STEP 7. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+28 	Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Juego de parámetros 
+A.1 Parametrización y estructura de juegos de parámetros 
+Estructura del juego de datos 128 
+Nota 
+El canal 0 contiene la habilitación de los diagnósticos de todo el módulo. 
+
+Figura A-1 	Estructura del juego de datos 128 
+Información del encabezado 
+La siguiente figura muestra la estructura de la información del encabezado. 
+
+Figura A-2 	Información del encabezado 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	29
+
+
+Juego de parámetros 
+A.1 Parametrización y estructura de juegos de parámetros 
+Parámetros 
+La figura siguiente muestra la estructura de los parámetros para los canales 0 a 15. 
+Los parámetros se activan poniendo a "1" el bit correspondiente. 
+
+Figura A-3 Estructura bytes x a x+1 para los canales 0 a 15 
+	Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 30 		Manual de producto, 02/2019, A5E03573444-AG 
+
+
+Juego de parámetros 
+A.1 Parametrización y estructura de juegos de parámetros 
+Error al transferir el juego de datos 
+El módulo comprueba siempre todos los valores del juego de datos transferido. El módulo solo aplica los valores del juego de datos si todos los valores se han transferido sin error. 
+Si se produce un error, la instrucción WRREC para escritura de juegos de datos devuelve en el parámetro STATUS el código de error correspondiente (ver también la descripción del parámetro "STATUS" en la Ayuda en pantalla de STEP 7). 
+La tabla siguiente muestra los códigos de error específicos del módulo y su significado para el juego de parámetros 128. 
+Módulo de entradas digitales DI 16x24VDC ST (6ES7131-6BH01-0BA0) 
+Manual de producto, 02/2019, A5E03573444-AG 	31

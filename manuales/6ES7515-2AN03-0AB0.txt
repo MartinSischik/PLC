@@ -1,0 +1,708 @@
+
+Edición 	11/2023
+MANUAL DE PRODUCTO
+SIMATIC
+S7-1500
+CPU 1515-2 PN
+6ES715-2AN03-0AB0
+support.industry.siemens.com
+
+
+
+
+SIMATIC
+S7-1500 
+CPU 1515-2 PN 
+(6ES7515-2AN03-0AB0)
+Manual de producto
+11/2023
+A5E46416216-AD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notas jurídicas
+Filosofía en la señalización de advertencias y peligros
+Este manual contiene las informaciones necesarias para la seguridad personal así como para la prevención de daños materiales. Las informaciones para su seguridad personal están resaltadas con un triángulo de advertencia; las informaciones para evitar únicamente daños materiales no llevan dicho triángulo. De acuerdo al grado de peligro las consignas se representan, de mayor a menor peligro, como sigue.
+
+
+
+Si se dan varios niveles de peligro se usa siempre la consigna de seguridad más estricta en cada caso. Si en una consigna de seguridad con triángulo de advertencia de alarma de posibles daños personales, la misma consigna puede contener también una advertencia sobre posibles daños materiales.
+Personal cualificado
+El producto/sistema tratado en esta documentación sólo deberá ser manejado o manipulado por personal cualificado para la tarea encomendada y observando lo indicado en la documentación correspondiente a la misma, particularmente las consignas de seguridad y advertencias en ella incluidas. Debido a su formación y experiencia, el personal cualificado está en condiciones de reconocer riesgos resultantes del manejo o manipulación de dichos productos/sistemas y de evitar posibles peligros.
+Uso previsto de los productos de Siemens
+Considere lo siguiente:
+Marcas registradas
+Todos los nombres marcados con ® son marcas registradas de Siemens AG. Los restantes nombres y designaciones contenidos en el presente documento pueden ser marcas registradas cuya utilización por terceros para sus propios fines puede violar los derechos de sus titulares.
+Exención de responsabilidad
+Hemos comprobado la concordancia del contenido de esta publicación con el hardware y el software descritos. Sin embargo, como es imposible excluir desviaciones, no podemos hacernos responsable de la plena concordancia. El contenido de esta publicación se revisa periódicamente; si es necesario, las posibles correcciones se incluyen en la siguiente edición.
+
+Postfach 48 48 
+90026 NÜRNBERG 
+ALEMANIA
+
+
+Índice
+
+
+
+
+
+Introducción 	1 
+Finalidad de la documentación
+El presente manual de producto viene a complementar el manual de sistema del sistema de automatización S7-1500y del sistema de periferia descentralizada ET 200MP, así como los manuales de funciones. El manual de producto incluye una descripción sintetizada de la información específica del módulo. Las funciones relacionadas con el sistema se describen en el manual de sistema. Todas las funciones que trascienden los límites del sistema se 
+describen en los manuales de funciones.
+La información contenida en el presente manual de producto y en el manual de sistema permite poner en marcha la CPU .
+Convenciones
+STEP 7: para designar el software de configuración y programación, en la presente documentación se utiliza "STEP 7" como sinónimo de todas las versiones de "STEP 7 (TIA Portal)".
+Preste atención también a las notas marcadas del modo siguiente:
+NOTA
+Una nota contiene datos importantes acerca del producto descrito en la documentación, el manejo de dicho producto o la parte de la documentación a la que debe prestarse especial atención.
+Reciclaje y eliminación
+Para un reciclaje y una eliminación ecológicos de los aparatos usados, diríjase a un centro certificado de recogida de material electrónico y elimínelos conforme a las normativas vigentes en su país.
+Industry Mall
+Industry Mall es el sistema de catálogos y pedidos de SIEMENS AG para soluciones de automatización y accionamientos sobre la base de Totally Integrated Automation (TIA) y Totally Integrated Power (TIP).
+Encontrará los catálogos de todos los productos de automatización y accionamientos en In­ternet ().
+
+
+
+Introducción
+1.1 Guía de la documentación del S7-1500/ET 200MP
+ID Link para la placa de características digital
+
+El ID Link es un identificador mundial único conforme a IEC 61406-1, que encontrará en el futuro en forma de código QR impreso en el producto.
+En la figura se ve un ejemplo de un ID Link para la CPU 1515-2 PN.
+El ID Link se reconoce por la esquina negra que tiene en la parte inferior derecha del cuadro. El ID Link le conduce a la placa de características digital del producto.
+Escanee el código QR impreso en el producto o en la etiqueta del embalaje con la cámara de un smartphone, un escáner de código de barras o una aplicación de lectura. Abra el ID Link.
+En la placa de características digital encontrará datos del producto, manuales, declaraciones de conformidad, certificados y otra información útil relacionada con el producto.
+Información básica
+
+
+
+Introducción
+1.1 Guía de la documentación del S7-1500/ET 200MP
+Información de productos
+Información general
+Información del producto
+Los cambios y ampliaciones de los manuales se documentan en una información del producto. La información del producto tiene un carácter más vinculante que el manual de producto y el manual de sistema. 
+Encontrará la información del producto actualizada de los sistemas S7-1500 y ET 200MP en Internet. (https://support.industry.siemens.com/cs/es/es/view/68052815)
+Manual Collection S7-1500/ET 200MP
+La Manual Collection contiene la documentación completa del sistema de automatización SIMATIC S7‑1500 y del sistema de periferia descentralizada ET 200MP recogida en un archivo.
+
+
+
+Introducción
+1.1 Guía de la documentación del S7-1500/ET 200MP
+Manual Collection Módulos de seguridad
+La Manual Collection contiene la documentación completa de los módulos de seguridad, SIMATIC recogida en un archivo.
+Comparativa de SIMATIC S7-1500 en cuanto a lenguajes de programación
+La comparativa contiene una relación de las instrucciones y funciones que se pueden emplear con qué familias de controladores. 
+La información se completa con documentos adicionales de SIMATIC. Encontrará estos documentos y su utilización en los siguientes enlaces y códigos QR.
+Industry Online Support completa las posibilidades de obtener información sobre todos los temas. Asimismo, los ejemplos de aplicación lo ayudan a resolver tareas de automatización.
+Sinopsis de la documentación técnica de SIMATIC
+Aquí encontrará una vista general de la documentación sobre SIMATIC disponible en Siemens Industry Online Support:
+En el siguiente vídeo le enseñaremos cómo encontrar la vista general directamente en Siemens Industry Online Support y cómo utilizar Siemens Industry Online Support en su dispositivo móvil: 
+	Acceso rápido a la documentación técnica de los productos de automatización a
+
+
+
+Introducción
+1.1 Guía de la documentación del S7-1500/ET 200MP
+Guardar la documentación
+Guarde la documentación para un uso posterior.
+En caso de documentación adjuntada digitalmente:
+1. Descargue la documentación asociada tras recibir el producto o, a más tardar, antes del 	primer montaje/puesta en marcha. Utilice las siguientes opciones para la descarga:
+El producto tiene asignada una documentación por medio de la referencia. Encontrarála referencia impresa en el producto y en la etiqueta del embalaje. Los productos con nuevas funciones incompatibles reciben una nueva referencia y documentación.
+–ID Link:
+Si su producto está marcado con un ID Link, reconocerá el ID Link en forma de código QR con un marco y una esquina de marco negra en la parte inferior derecha. El ID Link le conduce a la placa de características digital del producto. Escanee el código QR impreso en el producto o en la etiqueta del embalaje con la cámara de un smartphone, un escáner de código de barras o una aplicación de lectura. Abra el ID Link.
+2. Guarde esta versión de la documentación.
+Actualizar la documentación
+La documentación de este producto se actualiza de forma digital. Especialmente, cuando se amplían las funciones se ofrecen nuevas características funcionales en una versión 
+actualizada.
+1. Instale la versión más reciente tal y como se describe anteriormente desde el Industry 	Online Support o el ID Link.
+2. Guarde también esta versión de la documentación.
+mySupport
+Con mySupport podrá sacar el máximo partido al Industry Online Support. 
+
+
+
+
+
+Introducción
+1.1 Guía de la documentación del S7-1500/ET 200MP
+Encontrará mySupport en Internet. ()
+Ejemplos de aplicación
+Los ejemplos de aplicación le asisten con diferentes herramientas y ejemplos a la hora de resolver las tareas de automatización. Los ejemplos muestran siempre soluciones en las que interactúan varios componentes del sistema sin centrarse en productos concretos.
+
+
+
+Ciberseguridad industrial 	2 
+2.1 Introducción: Industrial Cybersecurity
+La digitalización y la creciente interconexión de las máquinas y las instalaciones industriales conllevan un mayor peligro de ciberataques. Por eso, la toma de medidas de protección adecuadas es un deber, en especial en el caso de los sistemas de infraestructuras críticas.
+Encontrará información general y medidas sobre el tema de ciberseguridad industrial en el manual de sistema (https://support.industry.siemens.com/cs/es/es/view/59191792).
+Este capítulo ofrece un resumen de la información relacionada con la seguridad de su dispositivo SIMATIC.
+NOTA
+Las modificaciones relacionadas con la seguridad realizadas en el software o en los dispositivos están documentadas en el capítulo "Nuevas funciones (Página 14)".
+Siemens ofrece productos y soluciones con funciones de ciberseguridad industrial con el objetivo de hacer más seguro el funcionamiento de instalaciones, sistemas, máquinas y redes.
+Para proteger las instalaciones, los sistemas, las máquinas y las redes de amenazas cibernéticas, es necesario implementar (y mantener continuamente) un concepto de ciberseguridad industrial integral que este conforme al estado del arte. Los productos y las soluciones de Siemens constituyen una parte de este concepto.
+Los clientes son responsables de impedir el acceso no autorizado a sus instalaciones, sistemas, máquinas y redes. Dichos sistemas, máquinas y componentes solo deben estar conectados a la red corporativa o a Internet cuando y en la medida que sea necesario y siempre que se hayan tomado las medidas de protección adecuadas (p. ej. cortafuegos y segmentación de la red). 
+Para obtener información adicional sobre las medidas de ciberseguridad industrial que
+cybersecurity.html).
+Los productos y las soluciones de Siemens están sometidos a un desarrollo constante con el fin de hacerlos más seguros. Siemens recomienda expresamente realizar actualizaciones en cuanto estén disponibles y utilizar únicamente las últimas versiones de los productos. El uso de versiones de los productos anteriores o que ya no sean soportadas y la falta de aplicación de las nuevas actualizaciones, puede aumentar el riesgo de amenazas cibernéticas. 
+Para mantenerse informado de las actualizaciones de productos, recomendamos que se suscriba al Siemens Industrial Cybersecurity RSS Feed en
+
+
+
+Ciberseguridad industrial 
+2.3 Información relacionada con la ciberseguridad
+2.3 	Información relacionada con la ciberseguridad
+Tenga en cuenta toda la información relevante en relación con la ciberseguridad.
+
+
+
+
+
+	Ciberseguridad industrial 
+2.3 Información relacionada con la ciberseguridad
+
+
+
+
+
+Descripción del producto 	3 
+3.1 	Nuevas funciones
+En este capítulo encontrará un resumen de las principales nuevas funciones del firmware de
+la CPU frente a la CPU antecesora (V3.0).
+Nuevas funciones de la CPU con la versión de firmware V3.1
+
+
+
+
+
+Descripción del producto 
+3.1 Nuevas funciones
+Referencia
+Encontrará un resumen de todas las nuevas funciones, mejoras y revisiones de cada una de las versiones de firmware en Internet
+
+
+
+Descripción del producto
+3.2 Aplicación
+3.2 	Aplicación
+SIMATIC S7-1500 es el sistema de control modular para un gran número de aplicaciones de
+automatización en la automatización discreta.
+SIMATIC S7-1500 es una solución rentable y cómoda para las tareas más diversas que ofrece
+las ventajas siguientes:
+•Diseño modular y sin ventilador
+•Implementación sencilla de estructuras descentralizadas
+•Manejo sencillo
+Los campos de aplicación del sistema de automatización SIMATIC S7-1500 son, p. ej.:
+•Máquinas especiales
+•Máquinas textiles
+•Máquinas envasadoras/embaladoras
+•Construcción de maquinaria en general
+•Sistema de control
+•Construcción de máquinas herramienta
+•Técnica de instalación
+•Industria eléctrica y electricistas
+•Automóvil
+•Aguas/aguas residuales
+•Alimentación y bebidas
+Los campos de aplicación del sistema redundante SIMATIC S7‑1500R/H son, p. ej.:
+•Túneles
+•Aeropuertos (p. ej., sistemas de transporte de equipajes)
+•Metros
+•Construcción naval
+•Plantas depuradoras
+•Almacenes de estanterías elevadas
+Los campos de aplicación del sistema de automatización SIMATIC S7-1500T para aplicaciones
+avanzadas de Motion Control son, p. ej.:
+•Máquinas envasadoras/embaladoras
+•Aplicaciones de converting
+•Automatización de montaje
+•Máquinas de Pick & Place
+•Paletizadoras
+Se dispone de varias CPU de potencia escalonada y una amplia gama de módulos con
+numerosas y cómodas funciones. Las CPU de seguridad permiten su uso en aplicaciones
+seguras. El diseño modular permite utilizar únicamente los módulos que necesite para su
+aplicación. En caso de que aumenten las tareas que realizar, puede reequipar el controlador
+en todo momento con módulos adicionales.
+La alta compatibilidad industrial gracias a la elevada inmunidad a las perturbaciones
+electromagnéticas (CEM), así como a la gran resistencia a choques y vibraciones permite un
+uso universal de los sistemas de automatización SIMATIC S7-1500, S7-1500R/H y S7-1500T.
+
+
+
+Descripción del producto 
+3.2 Aplicación
+Segmentos de potencia de las CPU estándar
+Las CPU pueden utilizarse tanto para aplicaciones pequeñas y medianas como para soluciones de gama alta en la automatización de máquinas e instalaciones.
+Tabla 3-1  CPU estándar
+* De la memoria de trabajo integrada hay 50 Mbytes reservados para la librería de funciones del runtime de la CPU.
+
+
+
+Descripción del producto
+3.2 Aplicación
+Segmentos de potencia de las CPU redundantes
+Las CPU del sistema redundante S7-1500R/H ofrecen un alto grado de fiabilidad y disponibilidad de la instalación. Una configuración redundante de los principales componentes de automatización reduce la probabilidad de paradas de la producción y las consecuencias de los fallos en los componentes.
+Cuanto mayores sean los riesgos y costes de una parada de la producción, más rentable seráun sistema redundante. Los costes de inversión, que suelen ser elevados, quedan 
+compensados al prevenir paradas de la producción.
+Tabla 3-2  CPU redundantes
+Segmentos de potencia de las CPU compactas
+Las CPU compactas se pueden utilizar para aplicaciones pequeñas y medianas y disponen de periferia analógica y digital integrada, así como de funciones tecnológicas integradas.
+Tabla 3-3  CPU compactas
+La tabla siguiente muestra las características específicas de las CPU compactas.
+
+
+
+
+
+Descripción del producto
+3.2 Aplicación
+Segmentos de potencia de las CPU tecnológicas
+Las CPU tecnológicas pueden utilizarse tanto para aplicaciones pequeñas y medianas como para soluciones de gama alta en la automatización de máquinas e instalaciones. Las 
+funciones avanzadas de Motion Control las hacen especialmente adecuadas para el control de accionamientos.
+Tabla 3-4  CPU tecnológicas
+
+
+
+
+
+Descripción del producto
+3.2 Aplicación
+Segmentos de potencia de las CPU de seguridad
+Las CPU de seguridad están destinadas a usuarios que desean implementar aplicaciones estándar y de seguridad exigentes de forma centralizada o descentralizada.
+Estas CPU de seguridad permiten procesar programas estándar y de seguridad en una única CPU. Esto posibilita la evaluación de datos de seguridad en programas de usuario estándar.
+Gracias a la integración, las ventajas del sistema y las numerosas funciones de SIMATIC también están disponibles en las aplicaciones de seguridad.
+Las CPU de seguridad están homologadas para el uso en modo seguro hasta:
+•Clase de seguridad (Safety Integrity Level) SIL3 según IEC 61508:2010
+•Performance Level (PL) e y categoría 4 según ISO 13849-1:2015 o EN ISO 13849-1:2015
+Para una mayor seguridad informática, la administración de usuarios local permite limitar de manera individual el acceso de los usuarios a la configuración F y al programa F. 
+Tabla 3-5  CPU de seguridad
+* De la memoria de trabajo integrada hay 50 Mbytes reservados para la librería de funciones del runtime de la CPU.
+
+
+
+Descripción del producto
+3.2 Aplicación
+* De la memoria de trabajo integrada hay 50 Mbytes reservados para la librería de funciones del runtime de la CPU.
+Además de las CPU hay otros componentes, p. ej., accionamientos SINAMICS, que también disponen de funciones de seguridad integradas. Encontrará más información sobre las funciones de seguridad integradas en accionamientos en los manuales de cada producto.
+Security Integrated
+En combinación con STEP 7, las CPU ofrecen protección de know-how mediante contraseña para evitar la lectura o modificación no autorizadas de bloques de programa.
+La protección anticopia (Copy Protection) ofrece una protección fiable contra la reproducción no autorizada de bloques de programa. La protección contra copia permite vincular los bloques de la SIMATIC Memory Card individualmente a su número de serie, de forma que el bloque solo pueda ejecutarse si la tarjeta de memoria configurada está insertada en la CPU.
+Además, a través de la administración de usuarios local pueden administrarse todos los usuarios del proyecto. Pueden ajustarse de manera individual los derechos de los distintos usuarios, p. ej., los derechos de acceso.
+Gracias a una protección mejorada frente a manipulaciones, el controlador puede detectar transferencias modificadas o no autorizadas de los datos de ingeniería.
+El uso de un CP Ethernet (CP 1543-1) ofrece una protección de acceso adicional gracias a un cortafuegos o a la posibilidad de establecer conexiones VPN seguras.
+
+
+
+Descripción del producto
+3.2 Aplicación
+Diseño y manejo
+Todas las CPU de la familia de productos SIMATIC S7-1500 disponen de un display con información en texto explícito. A través del display, el usuario puede consultar información acerca de las referencias o la versión de firmware, por ejemplo. Además, es posible ajustar la dirección IP de la CPU y efectuar otros ajustes de red directamente in situ sin necesidad de programadora. El display muestra los mensajes de error directamente en texto explícito. En caso de servicio técnico, los tiempos de parada de la instalación se minimizan gracias al rápido acceso a los avisos de diagnóstico. Encontrará información detallada sobre estas y otras numerosas funciones del display en SIMATIC S7-1500 Display Simulator 
+(https://support.industry.siemens.com/cs/ww/en/view/109761758). 
+Los conectores frontales unificados para todos los módulos y los puentes de potencial integrados para formar grupos de potencial con flexibilidad simplifican la gestión del almacén. Los componentes adicionales, como interruptores automáticos, relés, etc., se pueden montar de forma rápida y sencilla, ya que el perfil soporte del SIMATIC S7-1500 incorpora un perfil normalizado. Las CPU de la familia de productos SIMATIC S7-1500 pueden ampliarse de forma centralizada y modular mediante módulos de señales. Gracias a la ampliación compacta es posible un ajuste flexible a cada aplicación. 
+El cableado del sistema para módulos de señales digitales permite una conexión rápida y clara con sensores y actuadores de campo (conexión totalmente modular formada por módulos de conexión frontal, cables de conexión y módulos de conexión), además de un cableado sencillo dentro del armario eléctrico (conexión flexible formada por conectores frontales con conductores individuales conectorizados).
+Diagnóstico del sistema y avisos
+El diagnóstico de sistema integrado está activado de forma predeterminada para las CPU. Los distintos tipos de diagnóstico no se programan, sino que se configuran. La información de diagnóstico del sistema y los avisos de los accionamientos se muestran de forma unificada y en texto explícito: 
+•En el display de la CPU
+•En STEP 7
+•En el HMI
+•En el servidor web
+Esta información está disponible tanto en el estado operativo RUN como en el estado operativo STOP de la CPU. En caso de configurar nuevos componentes de hardware, la información de diagnóstico se actualiza automáticamente.
+La CPU está disponible como servidor central de alarmas en tres idiomas del proyecto. El HMI se encarga de visualizar los textos en los idiomas del proyecto definidos para la CPU. Si se requieren textos de aviso en otros idiomas, se pueden cargar a través de la conexión configurada en el HMI. La CPU, STEP 7 y el HMI garantizan la coherencia de los datos sin necesidad de pasos de ingeniería adicionales. Los trabajos de mantenimiento son más sencillos.
+
+
+
+	Descripción del producto 
+3.3 Características del hardware
+3.3 Características del hardware
+Referencia
+6ES7515-2AN03-0AB0
+Vista del módulo
+La figura siguiente ilustra la CPU 1515‑2 PN.
+
+Figura 3-1  CPU 1515-2 PN
+NOTA 
+Lámina protectora 
+Recuerde que las CPU se entregan con una lámina protectora extraíble sobre el display.
+
+
+
+Descripción del producto 
+3.3 Características del hardware
+Características 
+	La CPU 1515‑2 PN presenta las características técnicas siguientes:
+Accesorios 
+	Encontrará información sobre el tema "Accesorios/repuestos" en el manual de sistema
+
+
+
+	Descripción del producto 
+3.4 Funciones de firmware
+3.4 Funciones de firmware
+Funciones
+La CPU 1515‑2 PN soporta las funciones de firmware siguientes:
+
+
+
+
+
+Descripción del producto 
+3.4 Funciones de firmware
+
+
+
+
+
+	Descripción del producto 
+3.4 Funciones de firmware
+
+
+
+
+
+Descripción del producto 
+3.4 Funciones de firmware
+
+
+
+
+
+Descripción del producto
+3.5 Elementos de mando y señalización
+3.5 Elementos de mando y señalización
+3.5.1 Vista frontal de la CPU con tapa frontal cerrada
+La figura siguiente muestra la vista frontal de la CPU 1515‑2 PN.
+①	Indicadores LED del estado operativo actual y el estado de diagnóstico de la CPU
+②	Display
+③	Botones de mando
+Figura 3-2  Vista de la CPU 1515‑2 PN (con tapa frontal), lado anterior
+NOTA
+Rango de temperatura del display
+Para aumentar su vida útil, el display se apaga por debajo de la temperatura de empleo del
+dispositivo. Una vez que el display se ha enfriado, vuelve a conectarse automáticamente.
+Cuando el display está apagado, los LED continúan indicando el estado de la CPU.
+Encontrará más información sobre las temperaturas a las que el display se apaga y se conecta
+de nuevo en los datos técnicos (Página 42).
+
+
+
+Descripción del producto
+3.5 Elementos de mando y señalización
+Enchufar y desenchufar la tapa frontal o el display
+La tapa frontal o el display se pueden enchufar y desenchufar durante el funcionamiento.
+Bloqueo de la tapa frontal
+Para proteger la SIMATIC Memory Card y los botones de los modos de operación de la CPU frente a accesos no autorizados se puede bloquear la tapa frontal.
+En la tapa frontal se puede colocar un precinto o un candado con un diámetro de arco de 3 mm.
+
+Figura 3-3  Lengüeta de bloqueo en la CPU
+Además del bloqueo mecánico, en el display también se puede bloquear el acceso a una CPU protegida por contraseña (bloqueo local) y parametrizar adicionalmente una contraseña para el display. Encontrará más información sobre el display, los niveles de protección 
+configurables y el bloqueo local en el manual de sistema S7‑1500/ET 200MP
+
+
+
+Descripción del producto
+3.5 Elementos de mando y señalización
+3.5.2 Vista frontal de la CPU sin tapa frontal y vista desde abajo
+La siguiente figura muestra los elementos de mando y de conexión de la CPU 1515‑2 PN.
+①	Indicadores LED del estado operativo actual y el estado de diagnóstico de la CPU
+②	Display
+③	Botones de dirección
+④	Indicadores LED para la interfaz PROFINET
+⑤	Teclas de modos de servicio STOP y RUN
+⑥	LED STOP-ACTIVE
+⑦	Conexión para la tensión de alimentación
+Figura 3-4  Vista de la CPU 1515‑2 PN (sin tapa frontal), lado anterior
+NOTA
+Retirar el display
+Retire el display solo si está defectuoso.
+Encontrará información sobre cómo retirar y sustituir el display en el manual de sistema
+S7-1500, ET 200MP (http://support.automation.siemens.com/WW/view/es/59191792).
+
+
+
+Descripción del producto
+3.5 Elementos de mando y señalización
+1
+2
+3
+4
+5
+①Ranura para la SIMATIC Memory Card
+②Interfaz PROFINET IO (X1) con 2 puertos
+③Interfaz PROFINET IO (X2) con 1 puerto
+④Conexión para la tensión de alimentación
+⑤Tornillo de fijación
+Figura 3-5  Vista de la CPU 1515‑2 PN, lado inferior
+
+
+
+Descripción del producto
+3.6 Botones de los modos de operación
+3.5.3 Vista posterior de la CPU
+La figura siguiente muestra los elementos de conexión de la parte posterior de la
+CPU 1515‑2 PN.
+①	Superficies de contacto de la pantalla
+②	Conexión enchufable para alimentación
+③	Conexión enchufable para bus de fondo
+④	Tornillos de fijación
+Figura 3-6  Vista de la CPU 1515‑2 PN, lado posterior
+3.6 Botones de los modos de operación
+Los botones de modo se utilizan para:
+•	solicitar el cambio de un estado operativo determinado
+•	bloquear o habilitar el cambio de un estado operativo determinado
+(si p. ej. la tecla de modo STOP está activada, no es posible conmutar la CPU a RUN
+mediante una tarea de comunicación configurada en TIA Portal o mediante el display)
+La tabla siguiente explica el manejo de los botones de los modos de operación.
+Tabla 3-6  Significado de los botones de modo
+
+
+
+
+
+Descripción del producto 
+3.6 Botones de los modos de operación
+
+
+
+
+
+Conexión 	4
+Este capítulo contiene información sobre la asignación de las conexiones de las distintas interfaces, así como el esquema de principio de la CPU 1515‑2 PN.
+Tensión de alimentación de 24 V DC (X80)
+El conector de alimentación viene de fábrica enchufado en la CPU.
+La siguiente tabla muestra los nombres de las señales y las denominaciones de las conexiones de la alimentación de 24 V DC.
+Tabla 4-1  Asignación de conexiones de la alimentación de 24 V DC
+1)1L+ y 2L+, así como 1M y 2M, están puenteados internamente.
+2)Admite 10 A como máximo.
+Si la CPU recibe alimentación del sistema, puede prescindirse de la conexión de alimentación de 24 V.
+Interfaz PROFINET X1 con switch de 2 puertos (X1 P1R y X1 P2R)
+La asignación corresponde al estándar Ethernet de un conector RJ45.
+•	Si la opción Autonegotiation está desactivada, el conector hembra RJ45 tiene la 	asignación de switch (MDI-X).
+•	Si la opción Autonegotiation está activada, actúa el Autocrossing y el conector hembra 	RJ45 tiene la asignación de equipo terminal (MDI) o switch (MDI‑X).
+
+
+
+Conexión
+Interfaz PROFINET X2 con 1 puerto (X2 P1)
+La asignación corresponde al estándar Ethernet para conectores RJ45.
+En X2, Autocrossing siempre está activo. Así, el conector hembra RJ45 tendrá asignación de equipo terminal (MDI) o switch (MDI-X).
+Desenchufar los conectores PROFINET
+Para desenchufar los conectores PROFINET se necesita un destornillador (ancho de hoja máx. de 2,5 mm).
+Retirar el display
+Encontrará una descripción sobre cómo retirar y sustituir el display en el manual de sistema S7‑1500, ET 200MP (http://support.automation.siemens.com/WW/view/es/59191792).
+Referencia
+Encontrará más información sobre el tema "Conexión de la CPU" y sobre el tema "Accesorios/Repuestos" en el manual de sistema S7-1500, ET 200MP 
+().
+Asignación de las direcciones MAC
+La CPU 1515‑2 PN posee dos interfaces PROFINET; la primera interfaz dispone de dos puertos. Cada interfaz PROFINET tiene una dirección MAC, y cada puerto PROFINET tiene una dirección MAC propia, de modo que para la CPU 1515‑2 PN hay en total cinco direcciones MAC.
+Las direcciones MAC de los puertos PROFINET son necesarias para el protocolo LLDP, p. ej., para la función de reconocimiento de vecindad.
+La banda numérica de las direcciones MAC es correlativa. En la placa de características situada en el lado derecho están impresas la primera y la última dirección MAC de cada 
+CPU 1515‑2 PN.
+La tabla siguiente indica cómo se asignan las direcciones MAC.
+Tabla 4-2  Asignación de las direcciones MAC
+
+
+
+
+
+Conexión
+Esquema de principio
+La figura siguiente muestra el esquema de principio de la CPU 1515‑2 PN.
+
+X1 P2, X2 P1
+Figura 4-1  Esquema de principio de la CPU 1515‑2 PN
+
+
+
+A continuación se describen los indicadores LED de las CPU 1515‑2 PN.
+Encontrará más información sobre el tema "Alarmas" en la Ayuda en pantalla de STEP​ 7.
+Encontrará información adicional sobre los temas "Diagnóstico" y "Avisos de sistema" en el
+manual de funciones Diagnóstico
+().
+5.1 	Indicación de estados y errores en la CPU
+Indicadores LED
+La figura siguiente muestra los indicadores LED de la CPU 1515‑2 PN.
+①LED RUN/STOP (LED verde/amarillo)
+②LED ERROR (LED rojo)
+③LED MAINT (LED amarillo)
+④LED LINK RX/TX para puerto X1 P1 (LED amarillo/verde)
+⑤LED LINK RX/TX para puerto X1 P2 (LED amarillo/verde)
+⑥LED LINK RX/TX para puerto X2 P1 (LED amarillo/verde)
+⑦LED STOP-ACTIVE
+Figura 5-1  Indicadores LED de la CPU 1515‑2 PN (sin tapa frontal)
+
+
+
+Alarmas, mensajes de error, avisos de diagnóstico y de sistema
+5.1 Indicación de estados y errores en la CPU
+Significado de los LED RUN/STOP, ERROR y MAINT
+La CPU 1515‑2 PN dispone de tres LED para indicar el estado operativo actual y el estado de
+diagnóstico. La tabla siguiente explica el significado de las diferentes combinaciones de
+colores de los LED RUN/STOP, ERROR y MAINT.
+Tabla 5-1  Significado de los LED
+de
+Petición de forzado permanente activa
+El servidor OPC UA de la CPU espera listas de con­
+fianza iniciales y CRL (listas de revocación) median­
+te la función GDS Push.
+rillo
+parada.
+El programa de la SIMATIC Memory Card causa un
+mory Card ha dado error.
+La CPU ha detectado un estado de error. Hay más 
+información disponible en el búfer de diagnóstico 
+de la CPU.
+mory Card
+La CPU ejecuta un programa con punto de parada 
+activo. El programa se mueve actualmente de un 
+punto de parada a otro.
+Se está ejecutando la actualización de firmware.
+
+
+
+Alarmas, mensajes de error, avisos de diagnóstico y de sistema
+5.1 Indicación de estados y errores en la CPU
+en amarillo/verde
+Arranque (boot de la CPU)
+Prueba de parpadeo de LED
+Significado del LED LINK RX/TX
+Cada puerto tiene un LED LINK RX/TX. La tabla siguiente muestra las diferentes configuraciones de LED de los puertos de la CPU 1515‑2 PN.
+Tabla 5-2  Significado de los LED
+En estos momentos no se están recibiendo/enviando datos a través de la interfaz PROFINET. Conexión LINK no establecida.
+	La CPU está ejecutando una "prueba de parpadeo de LED". LED parpadea en verde
+	No existe conexión Ethernet entre la interfaz PROFINET del dispositivo PROFINET y un interlo­LED encendido en verde 	cutor.
+	En estos momentos se están recibiendo/enviando datos desde un interlocutor de la Ethernet a LED parpadea 	través de la interfaz PROFINET del dispositivo PROFINET.
+en amarillo/verde
+NOTA 
+Instrucción "LED" 
+La instrucción "LED" permite leer el estado (p. ej., "encendido" o "apagado") de los LED de una CPU o un módulo. Sin embargo, tenga en cuenta que no es posible leer el estado de los LED LINK RX/TX en todas las CPU S7-1500.
+Encontrará más información sobre la instrucción "LED" en la Ayuda en pantalla de STEP 7.
+
+
+
+Alarmas, mensajes de error, avisos de diagnóstico y de sistema 	5.1 Indicación de estados y errores en la CPU
+Significado del LED STOP-ACTIVE
+La tabla siguiente explica el significado del LED STOP-ACTIVE de la CPU 1515‑2 PN. Tabla 5-3  Significado de los LED
+
+
+
+
+
+Datos técnicos 	6 
+La tabla siguiente contiene los datos técnicos con versión de 11/2023. Encontrará una hoja de datos técnicos actualizada diariamente en Internet 
+(https://support.industry.siemens.com/cs/ww/es/pv/6ES7515-2AN03-0AB0/td?dl=es).
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+
+
+
+
+
+Datos técnicos
+Datos técnicos generales
+Encontrará información sobre los datos técnicos generales, p. ej., normas y homologaciones,
+compatibilidad electromagnética, grado de protección, etc., en el manual de sistema
+
+
+
+Croquis acotado 	A 
+Este capítulo incluye el croquis acotado del módulo montado en un perfil soporte, así como un croquis acotado con tapa frontal abierta. Deben observarse las dimensiones al montar en armarios, salas de equipos, etc.
+Croquis acotados de la CPU 1515‑2 PN
+Figura A-1  Croquis acotado de la CPU 1515-2 PN
+
+
+
+Croquis acotado
+Figura A-2  CPU con tapa frontal abierta
+

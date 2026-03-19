@@ -1,16 +1,24 @@
 # core/tms_bridge_service.py
-# Servicio puente: lee TMS6000 y escribe sensores logicos en DB1 del PLC.
+# Servicio puente: lee TMS6000 y escribe sensores en DB1 del PLC.
+#
+# Usa TMS_SENSOR_MAP de config.py para mapear registros Modbus a slots DB1.
+# Soporta N sensores — agregar uno es agregar una linea en TMS_SENSOR_MAP.
 
 import threading
 import time
 
 from core.plc_interface import SiloPLC
 from core.tms6000_provider import Tms6000Provider
-from config import TMS_BRIDGE_INTERVAL, TMS_MARK_INACTIVE_ON_FAILURE
+from config import (
+    TMS_BRIDGE_INTERVAL,
+    TMS_MARK_INACTIVE_ON_FAILURE,
+    TMS_SENSOR_MAP,
+    SENSOR_COUNT,
+)
 
 
 class TmsBridgeService:
-    """Bridge de sensores TMS6000 -> PLC DB1 (indices 0,1,2)."""
+    """Bridge generico TMS6000 -> PLC DB1 usando TMS_SENSOR_MAP."""
 
     def __init__(
         self,
@@ -30,7 +38,8 @@ class TmsBridgeService:
         self._running = True
         self._thread = threading.Thread(target=self._loop, name="TmsBridge", daemon=True)
         self._thread.start()
-        print(f"[BRIDGE] TMS->PLC iniciado (cada {self._interval}s)")
+        print(f"[BRIDGE] TMS->PLC iniciado (cada {self._interval}s, "
+              f"{len(TMS_SENSOR_MAP)} sensores mapeados)")
 
     def stop(self) -> None:
         self._running = False
@@ -44,18 +53,28 @@ class TmsBridgeService:
             if not self._provider.is_connected():
                 self._provider.connect()
 
-            values = self._provider.read_logical_sensors()
-            if values.ok:
-                # T0 y T1: temperatura (humedad no usada en esos indices)
-                self._plc.write_sensor(0, values.t0_temp or 0.0, 0.0, active=True)
-                self._plc.write_sensor(1, values.t1_temp or 0.0, 0.0, active=True)
-                # T2: humedad (temperatura no usada en ese indice)
-                self._plc.write_sensor(2, 0.0, values.t2_hum or 0.0, active=True)
-                # T3..T7 no existen en esta topologia.
-                for i in range(3, 8):
-                    self._plc.write_sensor(i, 0.0, 0.0, active=False)
+            readings = self._provider.read_sensors()
+            all_ok = all(val is not None for _, val in readings.values())
+
+            if all_ok or not TMS_MARK_INACTIVE_ON_FAILURE:
+                # Escribir valores leidos en DB1
+                for db_idx, (kind, val) in readings.items():
+                    if val is None:
+                        continue
+                    if kind == "temp":
+                        self._plc.write_sensor(db_idx, val, 0.0, active=True)
+                    else:
+                        self._plc.write_sensor(db_idx, 0.0, val, active=True)
+
+                # Desactivar slots que NO estan en el mapa
+                mapped = set(readings.keys())
+                for i in range(SENSOR_COUNT):
+                    if i not in mapped:
+                        self._plc.write_sensor(i, 0.0, 0.0, active=False)
+
             elif TMS_MARK_INACTIVE_ON_FAILURE:
-                for i in range(8):
+                # Fallo total: desactivar todos los sensores
+                for i in range(SENSOR_COUNT):
                     self._plc.write_sensor(i, 0.0, 0.0, active=False)
 
             time.sleep(self._interval)
