@@ -7,18 +7,15 @@ export function computeAlarmLevel(
   thresholds: Thresholds | null,
 ): 'green' | 'yellow' | 'red' {
   if (!thresholds) return 'green'
-  if (thresholds.alarm_active) return 'red'
 
   for (const s of sensors) {
     if (!s.active) continue
-    if (s.temperature >= thresholds.temp_max || s.temperature <= thresholds.temp_min) return 'red'
-    if (s.humidity >= thresholds.humid_max) return 'red'
-    if (
-      s.temperature >= thresholds.temp_max - WARN_MARGIN ||
-      s.temperature <= thresholds.temp_min + WARN_MARGIN
-    )
-      return 'yellow'
-    if (s.humidity >= thresholds.humid_max - WARN_MARGIN) return 'yellow'
+    const hasTemp = s.temperature > 0
+    const hasHumid = s.humidity > 0
+    if (hasTemp && (s.temperature >= thresholds.temp_max || s.temperature <= thresholds.temp_min)) return 'red'
+    if (hasHumid && s.humidity >= thresholds.humid_max) return 'red'
+    if (hasTemp && (s.temperature >= thresholds.temp_max - WARN_MARGIN || s.temperature <= thresholds.temp_min + WARN_MARGIN)) return 'yellow'
+    if (hasHumid && s.humidity >= thresholds.humid_max - WARN_MARGIN) return 'yellow'
   }
   return 'green'
 }

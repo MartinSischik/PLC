@@ -11,13 +11,214 @@
 Sistema de control y monitoreo para silos de almacenamiento de granos en
 Costa Rica (proyecto ILG). Compuesto por:
 
-  1. SCADA PLC — Control industrial de N silos con sensores de temperatura/
-     humedad y 8 motores (7 arrancadores suaves + 1 VFD)
-  2. Weather App — Pronóstico meteorológico en tiempo real (independiente)
+  1. SCADA PLC — Control industrial de 4 silos con sensores, motores,
+     ventiladores, compuertas de paso y sistema de refrigeración Frigotec
+  2. Weather App — Pronóstico meteorológico + datos de humedad/temperatura
+     exterior usados como variable de control (API The Weather Company)
   3. TMS Bridge — Puente Modbus TCP para sensores AgroLog TMS6000
 
 El sistema es 100% config-driven: el número de silos, motores y sensores
 se define en config.py y todo (GUI, lógica, comunicación) se auto-genera.
+
+================================================================================
+ACTUALIZACION DE ALCANCE — 2026-03-20
+================================================================================
+
+CONFIRMADO:
+  - 4 silos (reducido de 8 estimados)
+  - Sistema de refrigeración por Frigotec (empresa alemana) — integración TBD
+  - Ventiladores por silo — controlados como motores adicionales
+  - Compuertas de paso por silo — actuadores DQ con retroalimentación DI
+  - Sensores adicionales por silo — tipo/cantidad TBD (pendiente planos PLC)
+
+PENDIENTE:
+  - Planos eléctricos del PLC (en camino)
+  - Manuales Frigotec y otros equipos
+  - Mapeo definitivo motor/sensor → silo
+  - Coordenadas precisas de Limón para weather API
+  - Rediseño de UI web (base actual funcional en Vite + React)
+
+================================================================================
+PLANOS ELECTRICOS — Proyecto IGL 25052025.pdf (Rev.02, 258 pags, 25/05/2025)
+================================================================================
+FUENTE: PDF analizado completo con pdfplumber.
+Cliente: ILG Logistics | Proyecto: F26_001_AgriTech | San José, Costa Rica
+Tensión control: 24VDC / 230VAC
+Rev.01 (27/02/2025): 6 silos → Rev.02 (25/05/2025): 4 silos ACTUAL
+
+=== ESTRUCTURA DEL TABLERO (TCP = Tablero Control Principal) ===
+El proyecto tiene MÚLTIPLES gabinetes/secciones:
+  - S1/S2: Gabinete control principal (CPU PLC, fuente 24V, distribución)
+  - S3/S4: Gabinetes de potencia
+  - SA:    Servicios auxiliares
+  - SC:    Sistema de control (módulos ET200SP)
+  - SP:    Sistema de potencia (motores)
+  - TC:    Tablero de control de campo
+
+Tensión potencia: 480 VAC (sistema norteamericano/centroamericano)
+Fuente 24VDC: SITOP PSU300S 24V/5A (6EP1433-2BA20)
+Transformador control: 480/220VAC, 2500VA
+
+=== COMUNICACION PROFINET ===
+Switch PROFINET: FL SWITCH 1005N (5 puertos RJ45, Phoenix Contact)
+Topología: CPU → Switch → módulos ET200SP (A03001-A03009+)
+También hay conexión VPN remota (pág. 179)
+
+=== RACK DE CONTROL ET200SP ===
+Interfaz: 6ES7155-6AU02-0BN0 (IM155-6 PN, con BA 2xRJ45)
+Módulos DI (6ES7131-6BH01-0BA0, 16x24VDC ST):
+  A03002: DI0-DI15 — confirmaciones y fallas de equipos de proceso
+  A03003: DI0-DI15 — señales de campo tolvas/compuertas silos
+  A03004: DI0-DI15 — señales de campo
+  A03005: DI0-DI15 — sensores de nivel (HL/LL por silo)
+  A03006: DI0-DI15 — señales compuertas laterales, TMS, temperaturas
+  A03007: DI0-DI15 — emergencias, fallas 24VDC, señales seguridad
+  A03008: DQ — arranques de motores principales (CC100A, FC101A, etc.)
+  A03009: DI — señales interconexión TCP
+
+=== CIRCUITO DE SEGURIDAD ===
+- Paro de emergencia en tablero (S03701)
+- Serie de paros de emergencia distribuidos en campo (págs. 181-182)
+- Relé de seguridad K03701
+- Interconexión señales TC y TCP (pág. 185)
+
+=== EQUIPOS POR SECCIÓN ===
+
+Cliente: ILG Logistics | Proyecto: F26_001_AgriTech | San José, Costa Rica
+Tensión control: 24VDC / 230VAC
+Rev.01 (27/02/2025): 6 silos → Rev.02 (25/05/2025): 4 silos (VERSIÓN ACTUAL)
+
+--- LAYOUT GENERAL (Plano E240229FD001_D, AGI EMEA) ---
+Flujo de material:
+  RECEPCIÓN → FC101A (banda) + CC101B → CC103/104 o CC105/106 →  SILOS 1-4
+  SILOS → FC201A/B/C/D + FC301 → BE302 (elevador) → DESCARGA/DESPACHO
+  Barredoras S260R-S1 a S4: limpian el fondo de cada silo
+
+--- EQUIPOS DE TRANSPORTE Y PROCESO ---
+NOTA: Las primeras bandas de recepción son CC100A/CC100B (11 kW), no FC101A.
+NOTA: El VFD G120 (90 kW) controla el elevador BE102 (pág. 135, 145-146).
+CC100A   Banda recepción principal    11 kW, 480VAC   (primera banda, DQ arranque ET200SP A03008)
+CC100B   Banda recepción secundaria   11 kW, 480VAC   (segunda banda, DQ arranque ET200SP A03008)
+FC101A   Banda recepción grande       45 kW, 480VAC   (arrancador suave 3RW55)
+CC101B   Banda recepción              22 kW, 480VAC
+CC103    Banda distribución           15 kW, 480VAC
+CC104    Banda distribución           15 kW, 480VAC
+CC105    Banda distribución           22 kW, 480VAC
+CC106    Banda distribución           22 kW, 480VAC
+FC201A   Banda descarga Silo 1        15 kW, 480VAC
+FC201B   Banda descarga Silo 2        15 kW, 480VAC
+FC201C   Banda descarga Silo 3        15 kW, 480VAC
+FC201D   Banda descarga Silo 4        15 kW, 480VAC
+FC301    Banda descarga final         22 kW, 480VAC
+BE102    Elevador bucket              90 kW, 480VAC   ← VFD G120 PM240-2 (págs. 135, 145-146)
+S260R-S1 Barredora de producto Silo 1  18.5 kW, 480VAC
+S260R-S2 Barredora de producto Silo 2  18.5 kW, 480VAC
+S260R-S3 Barredora de producto Silo 3  18.5 kW, 480VAC
+S260R-S4 Barredora de producto Silo 4  18.5 kW, 480VAC
+
+--- VENTILADORES DE SILO (Silo Fans) ---
+8 ventiladores total (2 por silo x 4 silos): SILO FAN 01 al 08
+  - Potencia: 18.5 kW, 480VAC
+  - Contactor: KM (3RT2035-1AN20, AC3:18.5kW/400V)
+  - Protección: 3RV2031-4EA10 (22-32A)
+  - Control PLC: DQ arranque → DI confirmación + DI falla eléctrica
+  - Planos: pags. 137-140
+
+--- EXTRACTORES DE AIREACIÓN/REFRIGERACIÓN (RFans) ---
+12 extractores total (3 por silo x 4 silos): RFAN 01 al 12
+  - Potencia: 1.5 kW, 480VAC
+  - Protección: 3RV2011-1EA10 (2.8-4A)
+  - Control PLC: DQ arranque extractor → DI confirmación + DI falla
+  - Planos: pags. 29-40
+  NOTA: estos extractores forman parte del sistema de aireación
+  (no son del sistema Frigotec — Frigotec aún no documentado)
+
+--- SENSORES DE NIVEL POR SILO (Bocinas/Tolvas) ---
+Sensores de nivel bajo/alto: 2 por silo = 8 total (módulo A03005)
+  LL-S1, HL-S1  → Silo 1 (nivel bajo, nivel alto)
+  LL-S2, HL-S2  → Silo 2
+  LL-S3, HL-S3  → Silo 3
+  LL-S4, HL-S4  → Silo 4
+  - Tipo: sensor inductivo KI503A, Sn=15mm, 24VDC
+  - Entrada PLC: DI digital (módulo ET200SP A03005)
+  - Planos: pags. 211-212
+
+Sensores de posición tolva/compuerta (módulo A03003, por Silo S1 — replicar S2-S4):
+  LS-S1.1 a LS-S1.7  → 7 sensores posición inductivos IG514A, Sn=10mm, 24VDC
+  LL-S1.1 a LL-S1.4  → 4 sensores nivel bajo KI503A, Sn=15mm, 24VDC
+  TH-S1.1             → 1 sensor térmico (detección sobrecalentamiento)
+  Total por silo: 7 LS + 4 LL + 1 TH = 12 sensores campo en tolvas/compuertas
+  NOTA: Los LS indican posición de compuertas. Los LL indican nivel de grano.
+
+--- COMPUERTAS DE DISTRIBUCIÓN Y DESCARGA ---
+Compuertas eléctricas motorizadas (actuadores DQ abrir/cerrar + DI fin de carrera):
+
+  Distribución (entrada a silos):
+    V102      → Compuerta distribución, motor 0.55 kW, 480VAC
+    V302      → Compuerta distribución adicional
+
+  Descarga por silo (salida de silos):
+    Silo 1:   compuerta central
+    Silo 2:   compuerta central + compuerta lateral
+    Silo 3:   compuerta central + compuerta lateral
+    Silo 4:   compuerta central + compuerta lateral
+    CR01:     compuerta adicional (retorno/bypass)
+
+  Control PLC por compuerta:
+    DQ "Abrir"     → activa motor apertura
+    DQ "Cerrar"    → activa motor cierre
+    DI "Fin proc." → confirma posición final (fin de carrera abierto o cerrado)
+  Planos compuertas: pags. 227-252
+
+--- INTEGRACIÓN TMS6000 ↔ AIREACIÓN ---
+El TMS6000 tiene salidas de relé (contacto NO) que se conectan al PLC:
+  Por silo: 3x "Arranque ExtractorX_Sistema" + 2x "Arranque VentiladorX_Sistema"
+  El PLC lee estas señales como DI y coordina el arranque con su propia lógica
+  Planos: pags. 217-220
+
+INTEGRACION WEATHER → CONTROL:
+  - Solo ubicación LIMÓN (coordenadas por confirmar)
+  - Mostrar humedad relativa exterior en página de clima
+  - Temperatura y humedad exterior como variable adicional para:
+    * Arrancar/detener ventiladores
+    * Activar/desactivar sistema de refrigeración Frigotec
+    * Ajustar lógica de automatización de motores
+  - Requiere extender AutomationService para recibir datos de weather
+
+================================================================================
+FUNCIONALIDADES DE GESTION — PENDIENTES DE IMPLEMENTAR
+================================================================================
+
+1. ESTADO DE CALIDAD DEL SILO
+   - Estados: libre | ok | cuarentena
+   - cuarentena bloquea TODO en ese silo (motores, ventiladores, compuertas, refrigeración)
+   - Visible en tarjeta del silo, editable desde UI
+   - Persistencia en SQLite
+
+2. ORDENES DE TRABAJO (Work Orders)
+   - Tipos: aireación | enfriamiento | fumigación (extensible)
+   - Campos: tipo, silo, fecha_inicio, fecha_fin, usuario, notas, estado
+   - Registra tiempo de funcionamiento de cada motor durante la orden
+   - Historial completo consultable desde UI
+   - Persistencia: SQLite
+
+3. PROGRAMACION DE ACCIONES
+   - Scheduler: programar acciones futuras sobre equipos de un silo
+   - Tipos de acción: arrancar motor, detener motor, abrir compuerta, cerrar compuerta, activar refrigeración
+   - Configurar: hora inicio + duración
+   - Persistencia: SQLite
+
+4. REGISTRO DE TIEMPO DE FUNCIONAMIENTO
+   - Acumular horas por motor
+   - Asociar tiempo a orden de trabajo activa
+   - Dashboard de horas acumuladas por motor
+
+5. SENSORES DE NIVEL (BOCINAS / TOLVAS)
+   - Miden cantidad de material en el silo (grano, maíz, soja, etc.)
+   - Tipo: discreto (lleno/vacío) o analógico (% llenado)
+   - Mostrar en tarjeta del silo
+   - Lógica: si silo vacío → no arrancar ventilador automáticamente
+   - Hardware: TBD según planos (probablemente DI discreto o AI analógico)
 
 ================================================================================
 2. HARDWARE — INVENTARIO COMPLETO
@@ -98,9 +299,10 @@ Sistema de monitoreo de granos. ATEX certificado (TÜV).
 | M4    | soft_starter  | 3RW5524       |   47 A    | TBD          |
 | M5    | soft_starter  | 3RW5526       |   77 A    | TBD          |
 | M6    | soft_starter  | 3RW5527       |   93 A    | TBD          |
-| M7    | vfd (G120)    | PM240-2       |   90 kW   | TBD          |
+| M7    | vfd (G120)    | PM240-2       |   90 kW   | BE102 (Elevador bucket) |
 
-Nota: El mapeo motor→silo/función es TBD. Número de silos no confirmado.
+Nota: M7 confirmado → BE102 elevador (VFD G120, págs. 135+145-146).
+      M0-M6 (arrancadores suaves): mapeo a bandas/barredoras TBD hasta recibir planos PLC.
 
 ================================================================================
 4. TIA PORTAL — CONFIGURACIÓN ACTUAL
@@ -604,6 +806,77 @@ python silo-control/main_gui.py
 
 # Weather App (independiente)
 python silo-control/weather_app.py
+
+================================================================================
+17. ÍNDICE DE PÁGINAS — Proyecto IGL 25052025.pdf (selección págs. 131-258)
+================================================================================
+(Páginas 1-130 contienen: portada, recepción producto, distribución, ventiladores
+RFANs, descarga, barredoras, etc. — ver secciones anteriores de este documento)
+
+P131  Rack de control (ET200SP)
+P132  Circuito de Seguridad
+P133  Iluminación
+P134  Ventilación: Arrancadores directos        ← RFANs (1.5 kW, arranque directo)
+P135  Ventilación: VFD BE102                    ← G120 PM240-2 controla elevador BE102
+P136  Calefacción
+P137-138  Silo Fan 1 / 2
+P139-140  Silo Fan 3 / 4
+P141-142  Silo Fan 5 / 6
+P143-144  Silo Fan 7 / 8
+P145-146  Elevador BE102                        ← circuito potencia elevador VFD
+P147-154  Tablero SP (potencia): portada, aparamenta, barraje riline60, tierra
+P159-161  Tablero SC (control): portada, código colores, nomenclaturas
+P162      Incoming (acometida)
+P163-164  Distribución 480 VAC
+P165      Distribución de tierras
+P166      Transformador de control 480/220VAC
+P167-168  Distribución tensión control AC
+P169      Fuente 24 VDC (SITOP PSU300S)
+P170-173  Distribución y protecciones 24 VDC
+P174      Tierra de control
+P175      Circuitos auxiliares suministro eléctrico control
+P176-177  Rack de control (ET200SP, módulos A03001-A03009)
+P178      Comunicación PROFINET (FL SWITCH 1005N)
+P179      Comunicación VPN remoto
+P180      Circuito de Seguridad
+P181-182  Serie de Paros de Emergencia (pt 1 y pt 2)
+P183      Señales de paros de emergencia
+P184      Instrucciones conexionado paros
+P185      Interconexión señales TC y TCP
+P186      Baliza (beacon de alarma)
+P187-188  Señales de Campo - Recepción de Producto   (CC100A/B, FC101A)
+P189-190  Señales de Campo - Elevadores de Producto  (BE102)
+P191-193  Señales de Campo - Distribución de Producto (CC103-106)
+P194-195  Señales de Campo - Descarga de Producto     (FC201A-D, FC301)
+P196-198  Señales de Campo - Tolvas y Compuertas S1
+P199-202  Señales de Campo - Tolvas y Compuertas S2
+P203-206  Señales de Campo - Tolvas y Compuertas S3
+P207-210  Señales de Campo - Tolvas y Compuertas S4
+P211      Señales de Campo - Nivel alto y bajo S1 y S2 (HL/LL sensores KI503A)
+P212      Señales de Campo - Nivel alto y bajo S3 y S4
+P213      Señales de Campo - CR01 (compuerta retorno/bypass)
+P214      Señales de Campo - Control Compuertas S1 y S2
+P215      Señales de Campo - Control Compuertas S3
+P216      Señales de Campo - Control Compuertas S4
+P217-220  Señales de Interconexión - Reserva con termometría (TMS → PLC relé NO)
+P221      Señales de Interconexión - TCP
+P222      Iluminación
+P223      Calefacción
+P224      Toma de servicio
+P225-226  Distribuidor V102 (0.55 kW, distribución)
+P227-230  Compuertas eléctricas - Distribución producto S1/S2
+P231-234  Compuertas eléctricas - Distribución producto S3/S4
+P235-236  Distribuidor V302
+P237-238  Compuerta eléctrica - Descarga CR01
+P239-240  Compuerta eléctrica - Descarga S1
+P241-242  Compuerta eléctrica - Descarga Central S2
+P243-244  Compuerta eléctrica - Descarga Lateral S2
+P245-246  Compuerta eléctrica - Descarga Central S3
+P247-248  Compuerta eléctrica - Descarga Lateral S3
+P249-250  Compuerta eléctrica - Descarga Central S4
+P251-252  Compuerta eléctrica - Descarga Lateral S4
+P253-257  Tablero TC (campo): portada, aparamenta, doblefondo, tierra, calefacción
+P258      Tablero Control (TC) — layout general
 
 ================================================================================
 FIN DEL DOCUMENTO

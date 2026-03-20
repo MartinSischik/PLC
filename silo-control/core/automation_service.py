@@ -93,14 +93,14 @@ class AutomationService:
                 s = sensor_map.get(si)
                 if s is None or not s.active:
                     continue
+                has_temp  = s.temperature > 0
+                has_humid = s.humidity > 0
                 if not currently_alarm:
-                    # Condicion de activacion: superar umbral
-                    if s.temperature > temp_max or s.humidity > humid_max:
+                    if (has_temp and s.temperature > temp_max) or (has_humid and s.humidity > humid_max):
                         new_alarm = True
                         break
                 else:
-                    # Condicion de desactivacion: bajar del umbral con margen
-                    if s.temperature > (temp_max - HYSTERESIS) or s.humidity > (humid_max - HYSTERESIS):
+                    if (has_temp and s.temperature > (temp_max - HYSTERESIS)) or (has_humid and s.humidity > (humid_max - HYSTERESIS)):
                         new_alarm = True
                         break
                     else:

@@ -1,0 +1,23242 @@
+# Proyecto IGL - Sistema Almacenamiento Producto Granel
+
+> **Cliente:** ILG Logistics
+> **Proyecto:** F26_001_AgriTech
+> **Ubicacion:** San Jose, Costa Rica
+> **Tension:** 24 VDC, 230 VAC
+> **Total paginas:** 258
+> **Revisiones:** 01 (Version 6 Silos, 27/02/2025), 02 (Version 4 Silos, 25/05/2025)
+
+---
+
+## Pagina 1/258 - Hoja de título / portada
+
+&EAC/I
+Descripción de proyecto
+Número de páginas
+Comisión
+Modificado
+01
+Creado
+24 VDC, 230 VAC
+Número de proyecto
+San Jose Costarica
+258
+Producto
+F26_001_AgriTech
+Tension de control
+Fabricante (empresa)
+Nombre de proyecto
+Proyecto IGL
+Tension
+Tel.
+Empresa/cliente
+Lugar de instalación
+de (abreviatura)
+
+---
+
+## Pagina 2/258 - Tren de celdas (TCP)
+
+&EAA/1
+800 mm
+1200 mm
+800 mm
+4000 mm
+2200 mm
+200 mm
+2400 mm
+1200 mm
+600 mm
+S1
+S2
+S3
+S4
+
+---
+
+## Pagina 3/258 - Tren de celdas (TCP): Accesorios para doble fondos y barraje
+
+-U08   80 x 80 (W x H)    L: 1039 mm
+-U10   60 x 80 (W x H)    L: 630 mm
+-U03   60 x 80 (W x H)    L: 720 mm
+-U12   60 x 80 (W x H)    L: 1039 mm
+-U02   60 x 80 (W x H)    L: 490 mm
+-U04   60 x 80 (W x H)    L: 489 mm
+-U08   60 x 80 (W x H)    L: 321 mm
+-U17   60 x 80 (W x H)    L: 350 mm
+-U10   60 x 80 (W x H)    L: 639 mm
+-U12   60 x 80 (W x H)    L: 639 mm
+-U14   60 x 80 (W x H)    L: 639 mm
+-U07   60 x 80 (W x H)    L: 920 mm
+-U11   60 x 80 (W x H)    L: 300 mm
+-U13   60 x 80 (W x H)    L: 300 mm
+-U01   60 x 80 (W x H)    L: 1990 mm
+-U15   60 x 80 (W x H)    L: 350 mm
+-U01   60 x 80 (W x H)    L: 1099 mm
+-U05   60 x 80 (W x H)    L: 359 mm
+-U04   40 x 80 (W x H)     L: 359 mm
+-U03   40 x 80 (W x H)     L: 360 mm
+-U16   60 x 80 (W x H)    L: 350 mm
+-U09   60 x 80 (W x H)    L: 220 mm
+-U06   60 x 80 (W x H)
+L: 160 mm
+-U02   40 x 80 (W x H)     L: 800 mm
+-U05   60 x 80 (W x H)    L: 1660 mm
+-U06   40 x 80 (W x H)     L: 480 mm
+-U03   60 x 80 (W x H)    L: 699 mm
+-U01   60 x 80 (W x H)    L: 699 mm
+-U02   60 x 80 (W x H)    L: 390 mm
+-U05   60 x 80 (W x H)    L: 1099 mm
+-U06   60 x 80 (W x H)    L: 1650 mm
+-U09   60 x 80 (W x H)    L: 1650 mm
+-U10   60 x 80 (W x H)    L: 470 mm
+-U13   40 x 80 (W x H)     L: 470 mm
+-U15   40 x 80 (W x H)     L: 200 mm
+-U17   40 x 80 (W x H)     L: 470 mm
+-U07   40 x 80 (W x H)     L: 200 mm
+-U08   40 x 80 (W x H)     L: 200 mm
+-U14   60 x 80 (W x H)    L: 810 mm
+-U16   40 x 80 (W x H)     L: 210 mm
+-U09   40 x 80 (W x H)     L: 630 mm
+-U11   40 x 80 (W x H)     L: 630 mm
+-U07   40 x 80 (W x H)     L: 480 mm
+-U04   40 x 80 (W x H)     L: 386 mm
+-U01   40 x 80 (W x H)     L: 1059 mm
+-U02   40 x 80 (W x H)     L: 346 mm
+-U03   40 x 80 (W x H)
+L: 109 mm
+-U04   60 x 80 (W x H)    L: 760 mm
+-U06   60 x 80 (W x H)
+L: 100 mm
+-U05   60 x 80 (W x H)
+L: 100 mm
+-U11   40 x 80 (W x H)     L: 470 mm
+-U01   100 x 80 (W x H)    L: 1587,5 mm
+-U13   40 x 80 (W x H)     L: 1099 mm
+Bandeja base intermedia ref. 9340140
+Nota: La bandeja base intermedia y la canaleta  se instalan entre los perfiles posteriones de los bastidores(entre secciones)
+Canaleta 100 x 80 (W x H)
+Perfil posterior bastidor S1
+Perfil posterior bastidor S2
+Perfil posterior bastidor S2
+Perfil posterior bastidor S3
+Perfil posterior bastidor S3
+Perfil posterior bastidor S4
+Doblefondos alineados con bastidores
+
+---
+
+## Pagina 4/258 - Tren de celdas (TCP): Doblefondos Secciones (sin aparamenta)
+
+J
+-U10   60 x 80 (W x H)    L: 630 mm
+-U03   60 x 80 (W x H)    L: 720 mm
+-U12   60 x 80 (W x H)    L: 1039 mm
+-U02   60 x 80 (W x H)    L: 490 mm
+-U04   60 x 80 (W x H)    L: 489 mm
+-U08   60 x 80 (W x H)    L: 321 mm
+-U17   60 x 80 (W x H)    L: 350 mm
+-U10   60 x 80 (W x H)    L: 639 mm
+-U12   60 x 80 (W x H)    L: 639 mm
+-U14   60 x 80 (W x H)    L: 639 mm
+-U07   60 x 80 (W x H)    L: 920 mm
+-U11   60 x 80 (W x H)    L: 300 mm
+-U13   60 x 80 (W x H)    L: 300 mm
+-U01   60 x 80 (W x H)    L: 1990 mm
+-U15   60 x 80 (W x H)    L: 350 mm
+-U01   60 x 80 (W x H)    L: 1099 mm
+-U05   60 x 80 (W x H)    L: 359 mm
+-U04   40 x 80 (W x H)     L: 359 mm
+-U03   40 x 80 (W x H)     L: 360 mm
+-U16   60 x 80 (W x H)    L: 350 mm
+-U09   60 x 80 (W x H)    L: 220 mm
+-U06   60 x 80 (W x H)
+L: 160 mm
+-U02   40 x 80 (W x H)     L: 800 mm
+-U05   60 x 80 (W x H)    L: 1660 mm
+-U06   40 x 80 (W x H)     L: 480 mm
+-U03   60 x 80 (W x H)    L: 699 mm
+-U01   60 x 80 (W x H)    L: 699 mm
+-U02   60 x 80 (W x H)    L: 390 mm
+-U05   60 x 80 (W x H)    L: 1099 mm
+-U09   60 x 80 (W x H)    L: 1650 mm
+-U09   40 x 80 (W x H)     L: 630 mm
+-U11   40 x 80 (W x H)     L: 630 mm
+-U07   40 x 80 (W x H)     L: 480 mm
+-U04   40 x 80 (W x H)     L: 386 mm
+-U01   40 x 80 (W x H)     L: 1059 mm
+-U02   40 x 80 (W x H)     L: 346 mm
+-U03   40 x 80 (W x H)
+L: 109 mm
+-U04   60 x 80 (W x H)    L: 760 mm
+-U06   60 x 80 (W x H)
+L: 100 mm
+-U05   60 x 80 (W x H)
+L: 100 mm
+-U01   100 x 80 (W x H)    L: 1587,5 mm
+-U08   80 x 80 (W x H)    L: 1039 mm
+-U06   60 x 80 (W x H)    L: 1650 mm
+-U10   60 x 80 (W x H)    L: 470 mm
+-U13   40 x 80 (W x H)     L: 470 mm
+-U15   40 x 80 (W x H)     L: 200 mm
+-U17   40 x 80 (W x H)     L: 470 mm
+-U07   40 x 80 (W x H)     L: 200 mm
+-U08   40 x 80 (W x H)     L: 200 mm
+-U14   60 x 80 (W x H)    L: 810 mm
+-U16   40 x 80 (W x H)     L: 210 mm
+-U11   40 x 80 (W x H)     L: 470 mm
+-U13   40 x 80 (W x H)     L: 1099 mm
+
+---
+
+## Pagina 5/258 - IV Conexion Barras de tierra
+
+=.S1+INF&EAA/2
+J
+1202 mm
+799 mm
+Conector simple de barra ref. 9320020
+Nota: Barra de cobre de tierra va hasta el centro de la union entre perfiles de bastidores
+
+---
+
+## Pagina 6/258
+
+Ref.: nº
+Firma
+Núm. de documento
+Contr. téc.
+Nº orig invent.
+Formato А4
+Firma & fecha
+Fabricante
+Confirm.
+Cart.
+Fecha
+Hoja
+Firma & fecha
+Nº invent. sust.
+Control.
+Conduc.
+Prim. aplicac.
+Copia por
+Contr. especific.
+Rev.
+Nº invent. dupl
+Hoja
+Hoja
+Descripción de página
+Observación
+Número de diseño
+Hoja
+I:\Agri tecnology Solutions\Plantillas planos\Agritech Logo - copia.PNG
+Índice de páginas : =TCP.S1+INF&EAA/2 - =TCP.S1+SP&EAB/103.b
+Índice de páginas : =TCP.S1+SP&EAB/104 - =TCP.S1&EAC/p
+2.a
+Portada
+Codigo de colores y calibres estandar
+Nomenclaturas
+Incoming
+Distribucion 480 VAC
+Distribucion de tierras
+Indicadores de monitoreo 480 VAC
+Señales de Interconexion - TCP
+84
+Iluminacion
+90
+Ventilacion
+91
+Calefaccion
+92
+Portada
+a
+Aparamenta puertas
+b
+Barraje pre-ensamblado riline60
+c
+Aparataje Barraje riline60
+d
+Barraje pre-ensamblado riline PLS 1600
+e
+Aparataje Barraje riline PLS 1600
+f
+Doblefondo 1
+h
+Doblefondo 2
+i
+Doblefondo 2 : Medidas para Instalacion
+j
+Doblefondo 2 : Doble fondo basculante
+k
+Barraje de tierra
+l
+Superficies de montaje - Sistema Calefaccion
+p
+
+---
+
+## Pagina 7/258 - Portada
+
+&EAA/2
+PLANOS ELECTRICOS
+S1
+
+---
+
+## Pagina 8/258 - Codigo de colores y calibres estandar
+
+NOTA: EN CASO DE SER EMPLEADA  UNA SECCION DIFERENTE, SE
+ESTIPULARA LA INFOMACION EN EL PLANO CORRESPONDIENTE
+COLOR Y SECCION DE CONDUCTORES ESTANDAR
+DESCRIPCION/FUNCION
+COLOR
+ACRONIMO
+COLOR
+SECCION (AWG)
+CIRCUITOS DE POTENCIA FASE
+Negro
+BK
+14
+CIRCUITOS DE CONTROL A TENSION NOMINAL
+Negro
+BK
+18
+CIRCUITOS DE CONTROL TENSION AC
+Rojo
+RD
+18
+CIRCUITOS DE CONTROL TENISION AC (NEUTRO)
+Blanco Rojo
+RDWH
+18
+CIRCUITOS DE CONTROL 24 VDC (+)
+Azul
+BU
+18
+CIRCUITO DE CONTROL 24 VDC (-)
+Blanco Azul
+BUWH
+18
+CIRCUITOS VIVOS DC CON PANEL DESENERGIZADO
+(+)
+Naranja
+OG
+18
+CIRCUITOS VIVOS AC CON PANEL DESENERGIZADO
+(FASE)
+Amarillo
+YE
+18
+CIRCUITOS VIVOS AC/DC DE EXTERNOS
+Violeta
+VT
+18
+
+---
+
+## Pagina 9/258 - Nomenclaturas
+
++SEP/1
+NUMERO DE PÁGINA
+NUMERO CONSECUTIVO ELEMENTO
+NUMERACION APARAMENTA
+NUMERACION BORNES DOBLE PISO
+NUMERACION PAR
+NUMERACION IMPAR
+NUMERACION CABLES/HILOS
+XXX-YY
+NUMERO DE PAGINA
+CONSECUTIVO HILO/CABLE
+ESTRUCTURA NOMBRE PUNTOS DE INTERRUPCION
+AAA.BB+CCC-XXXX.XX_YYY_ZZZ
+NOMBRE SEÑAL/POTENCIAL
+DISPOSITIVO QUE GENERA LA SEÑAL/POTENCIA
+O SUB INDICE (OPCIONAL)
+NUMERO DE PAGINA DESTINO
+DISPOSITIVO DESTINO DE LA
+SEÑAL/ POTENCIAL (OPCIONAL)
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION ELEMENTO
+DESCRIPCIONES FUNCIONALES
+INF - INFORMACION
+SEP - SUMINISTRO ELECTRICO DE POTENCIA
+SEC - SUMINISTRO ELECTRICO DE CONTROL
+SC - SISTEMA DE CONTROL
+SA - SERVICIOS AUXILIARES
+SP - SISTEMA DE POTENCIA
+LETRA DESCRIPTIVA ELEMENTO
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION DISPOSITIVO
+QUE GENERA LA SEÑAL/POTENCIAL (OPCIONAL)
+=TCP.S1+INF-FIII01
+I>
+I>
+I>
+
+---
+
+## Pagina 10/258 - Incoming
+
++INF/III
+ACOPLE BARRAJE
+SISTEMA DE BARRA RILINE60  S1
+SISTEMA DE BARRA RILINE60 S2
+W2_R:1
+W2_S:1
+W2_T:1
+=.S2-W2_R:10
+=.S2-W2_S:2
+=.S2-W2_T:2
+R1_S1S2
+/
+2.8
+S1_S1S2
+/
+2.8
+T1_S1S2
+/
+2.8
+=.S2-R1 / =.S2+SP/200.0
+=.S2-S1 / =.S2+SP/200.0
+=.S2-T1 / =.S2+SP/200.0
+
+---
+
+## Pagina 11/258 - Distribución 480 VAC
+
+-W00201
+125A
+1SNL312510R0000
+-W00202
+125A
+1SNL312510R0000
+-W00203
+125A
+1SNL312510R0000
+W2_R:2
+W2_S:2
+W2_T:2
+2 AWG
+BK
+002-01
+2 AWG
+BK
+002-08
+2 AWG
+BK
+002-09
+R2_16
+/
++SEC/16.1
+R2_100
+/
++SP/100.1
+R2_102
+/
++SP/102.1
+R2_103
+/
++SP/103.1
+R2_104
+/
++SP/104.1
+R2_105
+/
++SP/105.1
+S2_16
+/
++SEC/16.1
+S2_100
+/
++SP/100.1
+S2_102
+/
++SP/102.1
+S2_103
+/
++SP/103.1
+S2_104
+/
++SP/104.1
+S2_105
+/
++SP/105.1
+T2_100
+/
++SP/100.1
+T2_102
+/
++SP/102.1
+T2_103
+/
++SP/103.1
+T2_104
+/
++SP/104.1
+T2_105
+/
++SP/105.1
+R1
+/
++SEC/19.9
+S1
+/
++SEC/19.9
+T1
+/
++SEC/19.9
+R1_S1S2 / 1.1
+S1_S1S2 / 1.1
+T1_S1S2 / 1.1
+
+---
+
+## Pagina 12/258 - Distribucion de tierras
+
++SEC/16
+Acople simble barra ref. 9320020
+-W_PE.S1:1
+PE
+Doble fondo
+PE
+Puerta
+PE
+Gabinete
+10
+11
+12
+13
+14
+15
+16
+17
+18
+6 AWG
+GNYE
+003-01
+12 AWG
+GNYE
+003-03
+6 AWG
+GNYE
+003-02
+003-04
+003-05
+003-06
+003-07
+003-08
+003-11
+003-10
+003-09
+003-12
+003-13
+003-14
+003-15
+003-16
+003-17
+=.S2-PE_S1 / =.S2/3.0
+PE_100
+/
++SP/100.2
+PE_101
+/
++SP/101.2
+PE_102_X10201
+/
++SP/102.3
+PE_102_X10202
+/
++SP/102.5
+PE_102_X10203
+/
++SP/102.7
+PE_103_X10301
+/
++SP/103.3
+PE_103_X10302
+/
++SP/103.5
+PE_103_X10303
+/
++SP/103.7
+PE_105_X10501
+/
++SP/105.3
+PE_105_X10502
+/
++SP/105.5
+PE_105_X10503
+/
++SP/105.7
+PE_104_X10401
+/
++SP/104.3
+PE_104_X10402
+/
++SP/104.5
+PE_104_X10403
+/
++SP/104.7
+
+---
+
+## Pagina 13/258 - Tension Control AC: Transformador de control 480 / 220 VAC
+
++SEP/3
+17
+16
+IN
+PE
+OUT
+11
+-T01601
+86154
+86154
+P: 2500VA
+IN: 208...550VAC
+OUT: 2x115VAC
+10
+OUT
+12
++SC-A03006
+Falla Cortocircuito Trafo 230 VAC
+11
+DI10
++SC-A03006
+Falla Sobrecarga Trafo 230 VAC
+12
+DI11
+-Q01601
+4,5...6,3A
+3RV2411-1GA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/16.6
+66
+65
+/29.1
+77
+78
+/16.8
+85
+86
+/29.1
+PE
+57
+58
+-Q01601
+/16.2
+77
+78
+-Q01601
+/16.2
+20 AWG
+BU
+016-09
+20 AWG
+BU
+016-10
+14 AWG
+BK
+016-03
+14 AWG
+BK
+016-04
+14 AWG
+BK
+016-01
+14 AWG
+BK
+002-02
+14 AWG
+BK
+002-10
+20 AWG
+BU
+021-01
+14 AWG
+BK
+016-05
+12 AWG
+RD
+016-07
+12 AWG
+RDWH
+016-02
+12 AWG
+RD
+016-06
+20 AWG
+BU
+016-08
+N_18
+18.1
+230VAC_17
+17.1
++SEP-S2_16
++SEP/2.4
++SEP-R2_16
++SEP/2.1
+24VDC.1_16
+21.3
+N
+230VAC
+
+---
+
+## Pagina 14/258 - Tension Control AC: Distribucion tension Control
+
+16
+17.a
+17
+230 VAC CONTROL
+230 VAC SERVICIOS AUX. 1
+230 VAC SERVICIOS AUX. 2
+-F01701
+/17.a.2
+230/400V 10kA
+1 polo, C, 4A
+-X01701
+-F01702
+/17.a.4
+230/400V 10kA
+1 polo, C, 6A
+-F01703
+/17.a.6
+230/400V 10kA
+1 polo, C, 2A
+-X01702
+14 AWG
+RD
+017-02
+14 AWG
+RD
+017-04
+14 AWG
+RD
+017-07
+-W01701
+-X01703
+1/L1
+2/T1
+-KM02901
+/29.3
+12 AWG
+RD
+017-01
+14 AWG
+RD
+017-03
+14 AWG
+RD
+017-05
+14 AWG
+RD
+017-08
+017-06
+230VAC_90
+/
++SA/90.1
+230VAC_17
+/
+16.3
+230VAC_S2
+/
+=.S2/17.1
+230VAC_92
+/
++SA/92.1
+230VAC_AUX1_S2
+/
+=.S2/17.1
+230VAC_AUX2_S2
+/
+=.S2/17.1
+
+---
+
+## Pagina 15/258 - Tension Control AC: Señales disparo protecciones Tencion Control AC
+
+17
+18
+17.a
++SC-A03006
+Falla 230 VAC Control
+13
+DI12
++SC-A03006
+Falla 230 VAC Servicios Aux 1
+14
+DI13
++SC-A03006
+Falla 230 VAC Servicios Aux 2
+15
+DI14
+13
+14
+-F01701
+/17.2
+13
+14
+-F01702
+/17.4
+13
+14
+-F01703
+/17.6
+20 AWG
+BU
+17.a-02
+20 AWG
+BU
+17.a-04
+20 AWG
+BU
+17.a-05
+20 AWG
+BU
+17.a-01
+20 AWG
+BU
+17.a-03
+20 AWG
+BU
+021-02
+24VDC.1_17
+/
+21.3
+
+---
+
+## Pagina 16/258 - Tension Control AC: Distribucion Neutro
+
+17.a
+19
+18
+-X01801
+12 AWG
+RDWH
+016-02
+14 AWG
+RDWH
+018-05
+12 AWG
+RDWH
+018-01
+018-04
+N_90
+/
++SA/90.1
+N_92
+/
++SA/92.1
+N_18
+/
+16.2
+N_S2
+/
+=.S2/18.1
+
+---
+
+## Pagina 17/258 - Tension Control DC: Fuente 24 VDC
+
+18
+20
+19
+SIEMENS
+L1
+PE
+1+
+2+
+1-
+2-
+14
+13
+24V O.K.
+-T01901
+/28.4
+IN: 400-500 V AC
+OUT: 24 V/5 A DC
+SITOP PSU300S 24 V/5 A
+Fuente de alimentación SITOP smart
+6EP1433-2BA20
+L2
+L3
+ADJUST
+24...28V
+DEFAULT VALUE
+24V
+-Q01901
+2,2...3,2A
+Ir = 3 A
+3RV2011-1DA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+W2_R:3
+W2_S:3
+W2_T:3
+14 AWG
+BK
+019-01
+14 AWG
+BK
+019-04
+14 AWG
+BK
+019-07
+14 AWG
+BK
+019-02
+14 AWG
+BK
+019-05
+14 AWG
+BK
+019-08
+14 AWG
+BU
+019-03
+14 AWG
+BU
+019-06
+14 AWG
+BUWH
+019-10
+PE
+24VDC_20
+/
+20.1
+24VDC.SUP_20
+/
+20.1
+0VDC_22
+/
+22.0
++SEP-T1 / +SEP/2.0
++SEP-S1 / +SEP/2.0
++SEP-R1 / +SEP/2.0
+24VDC
+0VDC
+
+---
+
+## Pagina 18/258 - Tension Control DC: Protecciones tension control DC
+
+19
+21
+20
+ALIMENTACION MODULO PERIFERIA
+ALIMENTACION CIRCUITOS DE
+SEGURIDAD Y AUXILIARES
+ALIMENTACION 24 VDC(+1)
+ALIMENTACION 24 VDC(+2)
+ALIMENTACION 24 VDC(+3)
++SC-A03006
+24 VDC Circuitos Seguridad - ok
+16
+DI15
++SC-A03007
+24 VDC(+1) - ok
+DI0
++SC-A03007
+24 VDC (+2) - ok
+DI1
+24 VDC (+3) - ok
+DI2
+-F02002
+230/400 V 10 kA
+1 polo, b, 1A
+-F02001
+230/400 V 10 kA
+1 polo, b, 1A
+14 AWG
+RD
+019-06
+020-01
+20 AWG
+BU
+020-02
+16 AWG
+BU
+020-03
+-F02003
+230/400 V 10 kA
+1 polo, b, 1A
+-F02004
+230/400 V 10kA
+1-pole, B, 2A
+20 AWG
+BU
+020-05
+-F02005
+230/400 V 10kA
+1-pole, B, 2A
+14 AWG
+RD
+019-03
+20 AWG
+BU
+020-07
+20 AWG
+BU
+020-09
+-W02001
+-W02002
+12
+11
+14
+-K02901
+/29.4
+10 A
+16 AWG
+BU
+020-06
+16 AWG
+BU
+020-08
+16 AWG
+BU
+020-10
+14 AWG
+RD
+020-04
+24VDC_30
+/
++SC/30.1
+24VDC_21
+/
+21.0
+24VDC.1_21
+/
+21.0
+24VDC.2_21
+/
+21.0
+24VDC.3_21
+/
+21.0
+24VDC.SUP_20
+/
+19.4
+24VDC_20
+/
+19.4
+
+---
+
+## Pagina 19/258 - Tension Control DC: Distribucion tension control DC
+
+20
+22
+21
+24VDC Ctos seguridad y Auxiliares
+24VDC Señales
+24VDC Salidas Cto 1
+24VDC Salidas Cto 2
+-X02103
+-X02102
+10
+11
+12
+-X02104
+021-25
+021-28
+021-07
+021-02
+1/L1
+2/T1
+-KM02902
+/29.7
+3/L2
+4/T2
+-KM02902
+/29.7
+-X02101
+021-06
+021-14
+021-18
+021-11
+021-31
+16 AWG
+BU
+020-06
+16 AWG
+BU
+020-03
+16 AWG
+BU
+020-08
+16 AWG
+BU
+020-10
+16 AWG
+BU
+021-26
+16 AWG
+BU
+021-29
+16 AWG
+BU
+021-08
+16 AWG
+BU
+021-27
+16 AWG
+BU
+021-30
+021-01
+16 AWG
+BU
+021-03
+24VDC_91
+/
+24VDC.1_100
+/
++SP/100.5
+24VDC.1_102
+/
++SP/102.b.1
+24VDC.1_104
+/
++SP/104.b.1
+24VDC.1_105
+/
++SP/105.b.1
+24VDC.1_103
+/
++SP/103.b.1
+24VDC.3_21
+/
+20.8
+24VDC.2_21
+/
+20.6
+24VDC.1_21
+/
+20.4
+24VDC.1_S2
+/
+=.S2/21.1
+24VDC_S2
+/
+=.S2/21.1
+24VDC.1_92
+/
++SA/92.6
+24VDC.1_16
+/
+16.6
+24VDC.1_17
+/
+17.a.1
+24VDC_28
+/
+28.1
+24VDC_21
+/
+20.3
+24VDC_29
+/
+29.0
+24VDC.1_29
+/
+29.0
+24VDC.1_37
+/
++SC/37.1
+24VDC.1_30
+/
++SC/30.1
+24VDC.2_30
+/
++SC/30.1
+24VDC.3_30
+/
++SC/30.1
+
+---
+
+## Pagina 20/258 - Tension Control DC: Distribucion referencia 0 VDC
+
+21
+28
+22
+-X02201
+10
+022-10
+022-11
+022-12
+022-13
+022-14
+16
+BUWH
+022-04
+022-02
+022-03
+022-09
+14 AWG
+BUWH
+019-10
+14 AWG
+BUWH
+022-01
+0VDC_100
+/
++SP/100.4
+0VDC_102
+/
++SP/102.a.1
+0VDC_103
+/
++SP/103.a.1
+0VDC_104
+/
++SP/104.a.1
+0VDC_105
+/
++SP/105.a.1
+0VDC_22
+/
+19.5
+0VDC_S2 / =.S2/22.3
+0VDC_29
+/
+29.0
+0VDC_28
+/
+28.1
+0VDC_37
+/
++SC/37.1
+0VDC_30
+/
++SC/30.1
+
+---
+
+## Pagina 21/258 - Pilotos indicacion Suministro electrico control
+
+22
+29
+28
+230 VAC HABILITADO
+24 VDC HABILITADO
+-P02802
+24VDC, Green
+24 VDC Control Operativo
+1SFA619403R5022
+X1
+X2
+-P02801
+24VDC, Green
+230 VAC Control Operativo
+1SFA619403R5022
+X1
+X2
+13
+14
+-T01901
+/19.4
+.3
+.4
+-KM02901
+/29.3
+028-03
+028-04
+021-04
+028-01
+021-05
+022-02
+028-02
+.3
+.4
+-KM02902
+/29.7
+0VDC_28
+/
+22.4
+24VDC_28
+/
+21.1
+
+---
+
+## Pagina 22/258 - Circuitos Auxiliares Suministro Electrico control
+
+28
++SC/30
+29
+Habilitacion 230 VAC
+Habilitacion 24 VDC
+TCP S3
++SC-A03007
+230 VAC Control Habilitado
+DI3
++SC-A03007
+24 VDC Control Habilitado
+DI4
+-S02901
+1SFA619202R1076
+13
+14
+-KM02901
+AC-3, 7,5KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2018-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /17.2
+3/L2
+4/T2
+5/L3
+6/T3
+14
+13
+/29.2
+.2
+.1
+.4
+.3
+/28.2
+.4
+.3
+/29.5
+.4
+.3
+A1.
+A2.
+13
+NO
+14
+NO
+-KM02901
+/29.3
+-S02902
+1SFA619202R1076
+13
+14
+-KM02902
+AC-3, 3KW/400V, 1S, DC 24V,
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /21.6
+3/L2
+4/T2 /21.8
+5/L3
+6/T3
+14
+13
+/29.8
+.2
+.1
+.4
+.3
+/28.4
+.4
+.3
+/29.8
+.4
+.3
+A1.
+A2.
+13
+NO
+14
+NO
+-KM02902
+/29.7
+.3
+.4
+-KM02901
+/29.3
+12
+11
+14
++SC-K03701
++SC/37.9
+10 A
+029-01
+029-12
+029-13
+029-14
+029-02
+029-03
+029-15
+20 AWG
+BU
+029-11
+20 AWG
+BU
+029-16
+021-10
+021-06
+.3
+.4
+-KM02902
+/29.7
+022-03
+14
+13
+=.S3+SEP-K00404
+=.S3+SEP/4.8
+250 VDC/VAC, 6A
+029-06
+-K02901
+24VDC
+RXG13BDPV
+A1
+A2
+12
+11
+14
+/20.4
+029-08
+029-09
+66
+65
+-Q01601
+/16.2
+85
+86
+-Q01601
+/16.2
+029-05
+20 AWG
+BU
+029-10
+029-07
+20 AWG
+BU
+021-09
+029-04
+24VDC_29
+/
+21.1
+0VDC_29
+/
+22.4
+24VDC.1_29
+/
+21.4
+
+---
+
+## Pagina 23/258 - Rack de control
+
++SEC/29
+37
+30
+-A03001
+1M
+1L+
+X80
+2M
+2L+
+RNER MT
+SIEMENS
+BA 2xRJ45
+P1R
+P2R
+LK1
+LK2
+SIMATIC
+ET 200SP
+PWR
+IM155-6PN ST
+X1  Xn
+PROFINET
+(LAN)
+6ES7193-6AR00-0AA0
+6ES7155-6AU02-0BN0
+MAC ADDRESS
+X80
+24VDC
+1L+
+2L+
+2M
+1M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
++SP/100.6
+-A03002
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
+=.S2+SP/203.a.8
+-A03003
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
+=.S2+SP/206.7
+-A03004
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
++SP/103.b.4
+-A03005
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
+=.S2+SEC/17.a.1
+-A03006
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
++SEC/20.5
+-A03007
+L+
+M
+DQ
+DIAG
+16x24VDC/0,5A
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7132-6BH01-0BA0
+ST
+DQa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DQb
+P1
+P2
+AUX
+10
+12
+14
+16
+11
+13
+15
+10
++SP/100.5
+-A03008
+L+
+M
+DQ
+DIAG
+16x24VDC/0,5A
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7132-6BH01-0BA0
+ST
+DQa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DQb
+P1
+P2
+AUX
+10
+12
+14
+16
+11
+13
+15
+10
+=.S2+SP/204.b.5
+-A03009
+L+
+M
+DQ
+DIAG
+16x24VDC/0,5A
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7132-6BH01-0BA0
+ST
+DQa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DQb
+P1
+P2
+AUX
+10
+12
+14
+16
+11
+13
+15
+10
++SP/102.a.7
+-A03010
+L+
+M
+020-01
+022-05
+021-11
+021-28
+030-03
+022-06
+022-07
+030-04
+022-08
+021-31
+030-02
+030-01
++SEC-24VDC_30
+/
++SEC/20.1
++SEC-24VDC.1_30
+/
++SEC/21.4
++SEC-24VDC.2_30
+/
++SEC/21.6
++SEC-24VDC.3_30
+/
++SEC/21.8
++SEC-0VDC_30
+/
++SEC/22.4
+
+---
+
+## Pagina 24/258 - Circuito Seguridad
+
+30
++SA/90
+37
+TC
+-A03007
+Parada de emergencia tablero de
+potencia
+DI5
+-S03701
+11
+12
+-X03701
+-X03703
+-K03701
+24VDC
+RXG13BDPV
+A1
+A2
+12
+11
+14
++SEC/29.7
+022-09
+20 AWG
+BU
+021-12
+20 AWG
+BU
+037-01
+=TC-X03703
+=TC-X03703
+3/L2
+4/T2
+=TC/37.6
+=TC-KM03701
+300/500 V
+4x1
+ÖLFLEX® CLASSIC 135 CH
+=TC/37.e.1
+-W03701
+037-03
+037-08
+037-05
+037-06
+021-13
+18 AWG
+VT
+037-02
+18 AWG
+VT
+037-04
+037-07
+/37.4
+21
+22
+=TC-X03701
++SEC-0VDC_37
+/
++SEC/22.4
++SEC-24VDC.1_37
+/
++SEC/21.4
+
+---
+
+## Pagina 25/258 - Iluminacion
+
++SC/37
+92
+90
+ALA 1
+ALA 2
+L
+N
+-E09001
+L
+N
+-E09002
+13
+14
+-B09001
+13
+14
+-B09002
+018-03
+090-01
+017-10
+090-02
+017-09
+018-02
++SEC-230VAC_90
+/
++SEC/17.6
++SEC-N_90
+/
++SEC/18.4
+
+---
+
+## Pagina 26/258 - Calefaccion
+
+90
++SP/100
+92
+-U09201
+CS 028
+02800.0-00
+02800.0-00
+L
+N
+M
+1~
++SC-A03006
+Alerta temperatura Seccion 1
+DI8
+-S09202
+10 A @250VAC
+Tr = 50°C
+TRT-10A230V-NO
+13
+14
+20 AWG
+BU
+021-14
+20 AWG
+BU
+092-02
+-S09201
+10 A @250VAC
+TRT-10A230V-NC
+11
+12
+017-06
+092-01
+018-04
++SEC-230VAC_92
+/
++SEC/17.4
++SEC-N_92
+/
++SEC/18.4
++SEC-24VDC.1_92
+/
++SEC/21.4
+
+---
+
+## Pagina 27/258 - Banda recepcion CC100A
+
++SA/92
+101
++SC-A03008
+Arranque Banda CC100A
+DQ0
++SC-A03002
+Confirmacion arranque Banda
+DI0
++SC-A03002
+Falla electrica Banda recepcion CC100A
+DI1
+-Q10001
+18...25A
+3RV2021-4DA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/100.8
+66
+65
+/100.5
+77
+78
+/100.8
+85
+86
+/100.5
+-KM10001
+AC-3, 11KW/400V, 1S+1OE, DC 24V,
+3RT2026-1BB40
+A1
++
+A2
+-
+1/L1
+2/T1 /100.2
+3/L2
+4/T2 /100.2
+5/L3
+6/T3 /100.2
+14
+13
+/100.6
+21
+22
+1/L1
+2/T1
+-KM10001
+/100.5
+3/L2
+4/T2
+5/L3
+6/T3
+13
+NO
+14
+NO
+-KM10001
+/100.5
+-W10001
+U1
+V1
+W1
+PE
+-M10001
+11 kW, 480 VAC
+18,5 A
+M
+U
+66
+65
+-Q10001
+/100.2
+85
+86
+-Q10001
+/100.2
+57
+58
+-Q10001
+/100.2
+77
+78
+-X10001
+20 AWG
+BU
+100-05
+20 AWG
+BU
+100-06
+20 AWG
+BU
+021-16
+20 AWG
+BU
+100-10
+10 AWG
+BK
+100-01
+10 AWG
+BK
+100-02
+10 AWG
+BK
+100-03
+6 AWG
+BK
+002-03
+6 AWG
+BK
+002-11
+6 AWG
+BK
+002-16
+20 AWG
+BU
+100-04
+20 AWG
+BU
+100-12
+20 AWG
+BU
+100-13
+20 AWG
+BU
+100-09
+20 AWG
+BU
+100-11
+10 AWG
+GNYE
+003-04
+100-07
+022-10
+20 AWG
+BU
+021-15
+20 AWG
+BU
+100-08
+-W10002
++SEC-24VDC.1_100 / 101.4
++SEC-0VDC_100
+/
++SEC/22.5
++SEP-T2_100
+/
++SEP/2.8
++SEP-S2_100
+/
++SEP/2.5
++SEP-R2_100
+/
++SEP/2.2
++SEC-24VDC.1_100
+/
++SEC/21.4
++SEP-PE_100 / +SEP/3.3
++SEC-0VDC_100 / 101.4
+24VDC.1_101 / 101.4
+R2_101 / 101.1
+S2_101 / 101.1
+T2_101 / 101.1
+
+---
+
+## Pagina 28/258 - Banda recepcion CC100B
+
+102
+101
++SC-A03008
+Arranque Banda CC100B
+DQ1
++SC-A03002
+Confirmacion arranque Banda
+DI2
++SC-A03002
+Falla electrica Banda recepcion CC100B
+DI3
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10101
+18...25A
+3RV2021-4DA10
+I>
+I>
+I>
+57
+58
+/101.8
+66
+65
+/101.5
+77
+78
+/101.8
+85
+86
+/101.5
+A1
++
+A2
+-
+-KM10101
+AC-3, 11KW/400V, 1S+1OE, DC 24V,
+3RT2026-1BB40
+1/L1
+2/T1 /101.2
+3/L2
+4/T2 /101.2
+5/L3
+6/T3 /101.2
+14
+13
+/101.6
+21
+22
+1/L1
+2/T1
+-KM10101
+/101.5
+3/L2
+4/T2
+5/L3
+6/T3
+13
+NO
+14
+NO
+-KM10101
+/101.5
+-W10101
+U1
+V1
+W1
+PE
+-M10101
+11 kW, 480 VAC
+18,5 A
+M
+U
+66
+65
+-Q10101
+/101.2
+85
+86
+-Q10101
+/101.2
+57
+58
+-Q10101
+/101.2
+77
+78
+-X10101
+20 AWG
+BU
+101-05
+20 AWG
+BU
+101-06
+20 AWG
+BU
+101-08
+10 AWG
+BK
+101-01
+10 AWG
+BK
+101-02
+10 AWG
+BK
+101-03
+20 AWG
+BU
+101-07
+20 AWG
+BU
+101-09
+20 AWG
+BU
+101-10
+20 AWG
+BU
+101-04
+20 AWG
+BU
+100-11
+20
+BUWH
+100-07
+10 AWG
+GNYE
+003-05
+20 AWG
+BU
+100-08
++SEC-0VDC_100
+/
+100.8
+T2_101
+/
+100.3
+S2_101
+/
+100.3
+R2_101
+/
+100.3
++SEC-24VDC.1_100
+/
+100.8
++SEP-PE_101 / +SEP/3.3
+24VDC.1_101
+/
+100.8
+
+---
+
+## Pagina 29/258 - Silo RFan 01 / 02 / 03
+
+101
+102.a
+102
+RFAN 01
+RFAN 02
+RFAN 03
+-Q10201
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/102.b.3
+66
+65
+/102.a.1
+77
+78
+/102.b.3
+85
+86
+/102.a.1
+-Q10202
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/102.b.6
+66
+65
+/102.a.4
+77
+78
+/102.b.6
+85
+86
+/102.a.4
+-Q10203
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/102.b.8
+66
+65
+/102.a.7
+77
+78
+/102.b.9
+85
+86
+/102.a.7
+-W10204
+1/L1
+2/T1
+-KM10201
+/102.a.1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10202
+/102.a.4
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10203
+/102.a.7
+3/L2
+4/T2
+5/L3
+6/T3
+-W10201
+-W10202
+-W10203
+U1
+V1
+W1
+PE
+-M10201
+1,5 kW, 480 VAC
+3,1 A
+M
+U1
+V1
+W1
+PE
+-M10202
+1,5 kW, 480 VAC
+3,1 A
+M
+U1
+V1
+W1
+PE
+-M10203
+1,5 kW, 480 VAC
+3,1 A
+M
+-X10201
+-X10202
+-X10203
+14 AWG
+BK
+102-01
+14 AWG
+BK
+102-02
+14 AWG
+BK
+102-03
+14 AWG
+BK
+102-04
+14 AWG
+BK
+102-05
+14 AWG
+BK
+102-06
+14 AWG
+BK
+102-07
+14 AWG
+BK
+102-08
+14 AWG
+BK
+102-09
+14 AWG
+GNYE
+003-06
+14 AWG
+GNYE
+003-07
+14 AWG
+GNYE
+003-08
+10 AWG
+BK
+002-04
+10 AWG
+BK
+002-12
+10 AWG
+BK
+002-17
++SEP-T2_102
++SEP/2.8
++SEP-S2_102
++SEP/2.5
++SEP-R2_102
++SEP/2.2
++SEP-PE_102_X10201 / +SEP/3.4
++SEP-PE_102_X10202 / +SEP/3.4
++SEP-PE_102_X10203 / +SEP/3.4
+
+---
+
+## Pagina 30/258 - Silo RFan 01 / 02 / 03
+
+102
+102.b
+102.a
++SC-A03009
+Arranque Extractor Rfan01
+15
+DQ14
++SC-A03009
+Arranque Extractor Rfan02
+16
+DQ15
++SC-A03010
+Arranque Extractor Rfan03
+DQ0
+-KM10201
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /102.2
+3/L2
+4/T2 /102.3
+5/L3
+6/T3 /102.3
+14
+13
+/102.b.1
+-KM10202
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /102.4
+3/L2
+4/T2 /102.5
+5/L3
+6/T3 /102.5
+14
+13
+/102.b.4
+-KM10203
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /102.7
+3/L2
+4/T2 /102.7
+5/L3
+6/T3 /102.7
+14
+13
+/102.b.7
+66
+65
+-Q10201
+/102.2
+85
+86
+-Q10201
+/102.2
+66
+65
+-Q10202
+/102.4
+85
+86
+-Q10202
+/102.4
+66
+65
+-Q10203
+/102.7
+85
+86
+-Q10203
+/102.7
+A1.
+A2.
+A1.
+A2.
+A1.
+A2.
+20 AWG
+BU
+102.a-02
+20 AWG
+BU
+102.a-06
+20 AWG
+BU
+102.a-07
+20 AWG
+BU
+102.a-10
+20 AWG
+BU
+102.a-11
+20 AWG
+BU
+102.a-01
+20 AWG
+BU
+102.a-03
+20 AWG
+BU
+102.a-05
+20 AWG
+BU
+102.a-09
+102.a-08
+102.a-04
+022-11
++SEC-0VDC_102
++SEC/22.5
+
+---
+
+## Pagina 31/258 - Silo RFan 01 / 02 / 03
+
+102.a
+103
+102.b
++SC-A03004
+Confirmacion arranque Rfan 1
+DI8
++SC-A03004
+Falla electrica Rfan 1
+10
+DI9
++SC-A03004
+Confirmacion arranque Rfan 2
+11
+DI10
++SC-A03004
+Falla electrica Rfan 2
+12
+DI11
++SC-A03004
+Confirmacion arranque Rfan 3
+13
+DI12
++SC-A03004
+Falla electrica Rfan 3
+14
+DI13
+57
+58
+-Q10201
+/102.2
+77
+78
+57
+58
+-Q10202
+/102.4
+77
+78
+57
+58
+-Q10203
+/102.7
+77
+78
+13
+NO
+14
+NO
+-KM10201
+/102.a.1
+13
+NO
+14
+NO
+-KM10202
+/102.a.4
+13
+NO
+14
+NO
+-KM10203
+/102.a.7
+20 AWG
+BU
+102.b-03
+20 AWG
+BU
+102.b-09
+20 AWG
+BU
+102.b-14
+20 AWG
+BU
+021-18
+20 AWG
+BU
+102.b-04
+20 AWG
+BU
+102.b-10
+20 AWG
+BU
+102.b-02
+20 AWG
+BU
+102.b-05
+20 AWG
+BU
+102.b-06
+20 AWG
+BU
+102.b-08
+20 AWG
+BU
+102.b-11
+20 AWG
+BU
+102.b-12
+20 AWG
+BU
+102.b-13
+20 AWG
+BU
+102.b-15
+20 AWG
+BU
+102.b-16
+20 AWG
+BU
+021-17
+20 AWG
+BU
+102.b-01
+20 AWG
+BU
+102.b-07
++SEC-24VDC.1_102
++SEC/21.4
+
+---
+
+## Pagina 32/258 - Silo RFan 04 / 05 / 06
+
+102.b
+103.a
+103
+RFAN 04
+RFAN 05
+RFAN 06
+-Q10301
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/103.b.3
+66
+65
+/103.a.2
+77
+78
+/103.b.3
+85
+86
+/103.a.2
+-Q10302
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/103.b.6
+66
+65
+/103.a.4
+77
+78
+/103.b.6
+85
+86
+/103.a.4
+-Q10303
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/103.b.8
+66
+65
+/103.a.7
+77
+78
+/103.b.9
+85
+86
+/103.a.7
+-W10304
+1/L1
+2/T1
+-KM10301
+/103.a.2
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10302
+/103.a.4
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10303
+/103.a.7
+3/L2
+4/T2
+5/L3
+6/T3
+-W10301
+-W10302
+-W10303
+U1
+V1
+W1
+PE
+-M10301
+1,5 kW, 480 VAC
+3,1 A
+M
+U1
+V1
+W1
+PE
+-M10302
+1,5 kW, 480 VAC
+3,1 A
+M
+U1
+V1
+W1
+PE
+-M10303
+1,5 kW, 480 VAC
+3,1 A
+M
+-X10301
+-X10302
+-X10303
+14 AWG
+BK
+103-01
+14 AWG
+BK
+103-02
+14 AWG
+BK
+103-03
+14 AWG
+BK
+103-04
+14 AWG
+BK
+103-05
+14 AWG
+BK
+103-06
+14 AWG
+BK
+103-07
+14 AWG
+BK
+103-08
+14 AWG
+BK
+103-09
+14 AWG
+GNYE
+003-11
+14 AWG
+GNYE
+003-10
+14 AWG
+GNYE
+003-09
+10 AWG
+BK
+002-05
+10 AWG
+BK
+002-13
+10 AWG
+BK
+002-18
++SEP-T2_103
++SEP/2.8
++SEP-S2_103
++SEP/2.5
++SEP-R2_103
++SEP/2.2
++SEP-PE_103_X10301 / +SEP/3.5
++SEP-PE_103_X10302 / +SEP/3.5
++SEP-PE_103_X10303 / +SEP/3.5
+
+---
+
+## Pagina 33/258 - Silo RFan 04 / 05 / 06
+
+103
+103.b
+103.a
++SC-A03010
+Arranque Extractor Rfan04
+DQ1
++SC-A03010
+Arranque Extractor Rfan05
+DQ2
++SC-A03010
+Arranque Extractor Rfan06
+DQ3
+-KM10301
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /103.2
+3/L2
+4/T2 /103.3
+5/L3
+6/T3 /103.3
+14
+13
+/103.b.1
+-KM10302
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /103.4
+3/L2
+4/T2 /103.5
+5/L3
+6/T3 /103.5
+14
+13
+/103.b.4
+-KM10303
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /103.7
+3/L2
+4/T2 /103.7
+5/L3
+6/T3 /103.7
+14
+13
+/103.b.7
+66
+65
+-Q10301
+/103.2
+85
+86
+-Q10301
+/103.2
+66
+65
+-Q10302
+/103.4
+85
+86
+-Q10302
+/103.4
+66
+65
+-Q10303
+/103.7
+85
+86
+-Q10303
+/103.7
+A1.
+A2.
+A1.
+A2.
+A1.
+A2.
+20 AWG
+BU
+103.a-02
+20 AWG
+BU
+103.a-03
+20 AWG
+BU
+103.a-06
+20 AWG
+BU
+103.a-07
+20 AWG
+BU
+103.a-10
+20 AWG
+BU
+103.a-11
+20 AWG
+BU
+103.a-01
+20 AWG
+BU
+103.a-05
+20 AWG
+BU
+103.a-09
+103.a-04
+103.a-08
+022-12
++SEC-0VDC_103
++SEC/22.5
+
+---
+
+## Pagina 34/258 - Silo RFan 04 / 05 / 06
+
+103.a
+104
+103.b
++SC-A03004
+Confirmacion arranque Rfan 4
+15
+DI14
++SC-A03004
+Falla electrica Rfan 4
+16
+DI15
++SC-A03005
+Confirmacion arranque Rfan 5
+DI0
++SC-A03005
+Falla electrica Rfan 5
+DI1
++SC-A03005
+Confirmacion arranque Rfan 6
+DI2
++SC-A03005
+Falla electrica Rfan 6
+DI3
+57
+58
+-Q10301
+/103.2
+77
+78
+57
+58
+-Q10302
+/103.4
+77
+78
+57
+58
+-Q10303
+/103.7
+77
+78
+13
+NO
+14
+NO
+-KM10301
+/103.a.2
+13
+NO
+14
+NO
+-KM10302
+/103.a.4
+13
+NO
+14
+NO
+-KM10303
+/103.a.7
+20 AWG
+BU
+103.b-03
+20 AWG
+BU
+103.b-09
+20 AWG
+BU
+103.b-14
+20 AWG
+BU
+021-20
+20 AWG
+BU
+103.b-01
+20 AWG
+BU
+103.b-07
+20 AWG
+BU
+103.b-04
+20 AWG
+BU
+103.b-10
+20 AWG
+BU
+103.b-02
+20 AWG
+BU
+103.b-05
+20 AWG
+BU
+103.b-06
+20 AWG
+BU
+103.b-08
+20 AWG
+BU
+103.b-11
+20 AWG
+BU
+103.b-12
+20 AWG
+BU
+103.b-13
+20 AWG
+BU
+103.b-15
+20 AWG
+BU
+103.b-16
+20 AWG
+BU
+021-19
++SEC-24VDC.1_103
++SEC/21.5
+
+---
+
+## Pagina 35/258 - Silo RFan 07 / 08 / 09
+
+103.b
+104.a
+104
+RFAN 07
+RFAN 08
+RFAN 09
+-Q10401
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/104.b.3
+66
+65
+/104.a.1
+77
+78
+/104.b.3
+85
+86
+/104.a.1
+-Q10402
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/104.b.6
+66
+65
+/104.a.4
+77
+78
+/104.b.6
+85
+86
+/104.a.4
+-Q10403
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/104.b.8
+66
+65
+/104.a.7
+77
+78
+/104.b.9
+85
+86
+/104.a.7
+-W10404
+1/L1
+2/T1
+-KM10401
+/104.a.1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10402
+/104.a.4
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10403
+/104.a.7
+3/L2
+4/T2
+5/L3
+6/T3
+-W10401
+-W10402
+-W10403
+U1
+V1
+W1
+PE
+-M10401
+1,5 kW, 480 VAC
+3,2 A
+M
+U1
+V1
+W1
+PE
+-M10402
+1,5 kW, 480 VAC
+3,2 A
+M
+U1
+V1
+W1
+PE
+-M10403
+1,5 kW, 480 VAC
+3,2 A
+M
+-X10401
+-X10402
+-X10403
+14 AWG
+BK
+104-01
+14 AWG
+BK
+104-02
+14 AWG
+BK
+104-03
+14 AWG
+BK
+104-04
+14 AWG
+BK
+104-05
+14 AWG
+BK
+104-06
+14 AWG
+BK
+104-07
+14 AWG
+BK
+104-08
+14 AWG
+BK
+104-09
+14 AWG
+GNYE
+003-12
+14 AWG
+GNYE
+003-13
+14 AWG
+GNYE
+003-14
+10 AWG
+BK
+002-06
+10 AWG
+BK
+002-14
+10 AWG
+BK
+002-19
++SEP-T2_104
++SEP/2.8
++SEP-S2_104
++SEP/2.6
++SEP-R2_104
++SEP/2.2
++SEP-PE_104_X10401 / +SEP/3.5
++SEP-PE_104_X10402 / +SEP/3.6
++SEP-PE_104_X10403 / +SEP/3.6
+
+---
+
+## Pagina 36/258 - Silo RFan 07 / 08 / 09
+
+104
+104.b
+104.a
++SC-A03010
+Arranque Extractor Rfan07
+DQ4
++SC-A03010
+Arranque Extractor Rfan08
+DQ5
++SC-A03010
+Arranque Extractor Rfan09
+DQ6
+-KM10401
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /104.2
+3/L2
+4/T2 /104.3
+5/L3
+6/T3 /104.3
+14
+13
+/104.b.1
+-KM10402
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /104.4
+3/L2
+4/T2 /104.5
+5/L3
+6/T3 /104.5
+14
+13
+/104.b.4
+-KM10403
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /104.7
+3/L2
+4/T2 /104.7
+5/L3
+6/T3 /104.7
+14
+13
+/104.b.7
+66
+65
+-Q10401
+/104.2
+85
+86
+-Q10401
+/104.2
+66
+65
+-Q10402
+/104.4
+85
+86
+-Q10402
+/104.4
+66
+65
+-Q10403
+/104.7
+85
+86
+-Q10403
+/104.7
+A1.
+A2.
+A1.
+A2.
+A1.
+A2.
+20 AWG
+BU
+104.a-02
+20 AWG
+BU
+104.a-03
+20 AWG
+BU
+104.a-06
+20 AWG
+BU
+104.a-07
+20 AWG
+BU
+104.a-10
+20 AWG
+BU
+104.a-11
+20 AWG
+BU
+104.a-01
+20 AWG
+BU
+104.a-05
+20 AWG
+BU
+104.a-09
+104.a-04
+104.a-08
+022-13
++SEC-0VDC_104
++SEC/22.5
+
+---
+
+## Pagina 37/258 - Silo RFan 07 / 08 / 09
+
+104.a
+105
+104.b
++SC-A03005
+Confirmacion arranque Rfan 7
+DI4
++SC-A03005
+Falla electrica Rfan 7
+DI5
++SC-A03005
+Confirmacion arranque Rfan 8
+DI6
++SC-A03005
+Falla electrica Rfan 8
+DI7
++SC-A03005
+Confirmacion arranque Rfan 9
+DI8
++SC-A03005
+Falla electrica Rfan 9
+10
+DI9
+57
+58
+-Q10401
+/104.2
+77
+78
+57
+58
+-Q10402
+/104.4
+77
+78
+57
+58
+-Q10403
+/104.7
+77
+78
+13
+NO
+14
+NO
+-KM10401
+/104.a.1
+13
+NO
+14
+NO
+-KM10402
+/104.a.4
+13
+NO
+14
+NO
+-KM10403
+/104.a.7
+20 AWG
+BU
+104.b-03
+20 AWG
+BU
+104.b-09
+20 AWG
+BU
+104.b-14
+20 AWG
+BU
+021-22
+20 AWG
+BU
+104.b-07
+20 AWG
+BU
+104.b-10
+20 AWG
+BU
+104.b-04
+20 AWG
+BU
+104.b-01
+20 AWG
+BU
+104.b-02
+20 AWG
+BU
+104.b-05
+20 AWG
+BU
+104.b-06
+20 AWG
+BU
+104.b-08
+20 AWG
+BU
+104.b-11
+20 AWG
+BU
+104.b-12
+20 AWG
+BU
+104.b-13
+20 AWG
+BU
+104.b-15
+20 AWG
+BU
+104.b-16
+20 AWG
+BU
+021-21
++SEC-24VDC.1_104
++SEC/21.5
+
+---
+
+## Pagina 38/258 - Silo RFan 10 / 11 / 12
+
+104.b
+105.a
+105
+RFAN 10
+RFAN 11
+RFAN 12
+-Q10501
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/105.b.3
+66
+65
+/105.a.1
+77
+78
+/105.b.3
+85
+86
+/105.a.1
+-Q10502
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/105.b.6
+66
+65
+/105.a.4
+77
+78
+/105.b.6
+85
+86
+/105.a.4
+-Q10503
+2,8...4A
+3RV2011-1EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/105.b.8
+66
+65
+/105.a.7
+77
+78
+/105.b.9
+85
+86
+/105.a.7
+-W10504
+1/L1
+2/T1
+-KM10501
+/105.a.1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10502
+/105.a.4
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM10503
+/105.a.7
+3/L2
+4/T2
+5/L3
+6/T3
+-W10501
+-W10502
+-W10503
+U1
+V1
+W1
+PE
+-M10501
+1,5 kW, 460 VAC
+3,2 A
+M
+U1
+V1
+W1
+PE
+-M10502
+1,5 kW, 460 VAC
+3,2 A
+M
+U1
+V1
+W1
+PE
+-M10503
+1,5 kW, 460 VAC
+3,2 A
+M
+-X10501
+-X10502
+-X10503
+14 AWG
+BK
+105-01
+14 AWG
+BK
+105-02
+14 AWG
+BK
+105-03
+14 AWG
+BK
+105-04
+14 AWG
+BK
+105-05
+14 AWG
+BK
+105-06
+14 AWG
+BK
+105-07
+14 AWG
+BK
+105-08
+14 AWG
+BK
+105-09
+14 AWG
+GNYE
+003-15
+14 AWG
+GNYE
+003-16
+14 AWG
+GNYE
+003-17
+10 AWG
+BK
+002-07
+10 AWG
+BK
+002-15
+10 AWG
+BK
+002-20
++SEP-T2_105
++SEP/2.9
++SEP-S2_105
++SEP/2.6
++SEP-R2_105
++SEP/2.3
++SEP-PE_105_X10501 / +SEP/3.6
++SEP-PE_105_X10502 / +SEP/3.7
++SEP-PE_105_X10503 / +SEP/3.7
+
+---
+
+## Pagina 39/258 - Silo RFan 10 / 11 / 12
+
+105
+105.b
+105.a
++SC-A03010
+Arranque Extractor Rfan10
+DQ7
++SC-A03010
+Arranque Extractor Rfan11
+DQ8
++SC-A03010
+Arranque Extractor Rfan12
+DQ9
+-KM10501
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /105.2
+3/L2
+4/T2 /105.3
+5/L3
+6/T3 /105.3
+14
+13
+/105.b.1
+-KM10502
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /105.4
+3/L2
+4/T2 /105.5
+5/L3
+6/T3 /105.5
+14
+13
+/105.b.4
+-KM10503
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /105.7
+3/L2
+4/T2 /105.7
+5/L3
+6/T3 /105.7
+14
+13
+/105.b.7
+66
+65
+-Q10501
+/105.2
+85
+86
+-Q10501
+/105.2
+66
+65
+-Q10502
+/105.4
+85
+86
+-Q10502
+/105.4
+66
+65
+-Q10503
+/105.7
+85
+86
+-Q10503
+/105.7
+A1.
+A2.
+A1.
+A2.
+A1.
+A2.
+20 AWG
+BU
+105.a-02
+20 AWG
+BU
+105.a-03
+20 AWG
+BU
+105.a-06
+20 AWG
+BU
+105.a-07
+20 AWG
+BU
+105.a-10
+20 AWG
+BU
+105.a-11
+20 AWG
+BU
+105.a-01
+20 AWG
+BU
+105.a-05
+20 AWG
+BU
+105.a-09
+105.a-08
+105.a-04
+022-14
++SEC-0VDC_105
++SEC/22.5
+
+---
+
+## Pagina 40/258 - Silo RFan 10 / 11 / 12
+
+105.a
++&EAC/a
+105.b
++SC-A03005
+Confirmacion arranque Rfan 10
+DI10
++SC-A03005
+Falla electrica Rfan 10
+DI11
++SC-A03005
+Confirmacion arranque Rfan 11
+13
+DI12
++SC-A03005
+Falla electrica Rfan 11
+14
+DI13
++SC-A03005
+Confirmacion arranque Rfan 12
+15
+DI14
++SC-A03005
+Falla electrica Rfan 12
+16
+DI15
+57
+58
+-Q10501
+/105.2
+77
+78
+57
+58
+-Q10502
+/105.4
+77
+78
+57
+58
+-Q10503
+/105.7
+77
+78
+13
+NO
+14
+NO
+-KM10501
+/105.a.1
+13
+NO
+14
+NO
+-KM10502
+/105.a.4
+13
+NO
+14
+NO
+-KM10503
+/105.a.7
+20 AWG
+BU
+105.b-03
+20 AWG
+BU
+105.b-09
+20 AWG
+BU
+105.b-14
+20 AWG
+BU
+105.b-07
+20 AWG
+BU
+105.b-04
+20 AWG
+BU
+105.b-10
+20 AWG
+BU
+021-24
+20 AWG
+BU
+105.b-01
+20 AWG
+BU
+105.b-02
+20 AWG
+BU
+105.b-05
+20 AWG
+BU
+105.b-06
+20 AWG
+BU
+105.b-08
+20 AWG
+BU
+105.b-11
+20 AWG
+BU
+105.b-12
+20 AWG
+BU
+105.b-13
+20 AWG
+BU
+105.b-15
+20 AWG
+BU
+105.b-16
+20 AWG
+BU
+021-23
++SEC-24VDC.1_105
++SEC/21.5
+
+---
+
+## Pagina 41/258 - Portada
+
++SP&EAB/105.b
+b
+PLANOS MECANICOS
+S1
+
+---
+
+## Pagina 42/258 - Aparamenta puertas
+
+c
+b
+396 mm
+1000 mm
+150 mm
+60 mm60 mm
+100 mm
+336 mm
+Selector
+Piloto
+Piloto
+Selector
+S02901
+S02902
+S03701
+S02801
+S02802
+
+---
+
+## Pagina 43/258 - Barraje pre-ensamblado riline60
+
+c
+200 mm
+120 mm
+25 mm
+135 mm
+220 mm
+Bandeja base
+Soporte barraje ref. 9340000
+Acople de barras ref. 9320030
+Barra de cobre 30 x 10 mm
+
+---
+
+## Pagina 44/258 - Aparataje Barraje
+
+c
+h
+d
+NOTA 1: LA POSICION DE LOS ADAPTADORES SE AJUSTAN EN FABRICACION, SEGUN LA FACILIDAD PARA CABLEAR HACIA LOS ELEMENTOS DESTINO.
+NOTA 2: LAS DIMENSIONES Y CORTES DE LA CUBIERTA EN EL PLANO SON ILUSTRATIVOS, ESTAS SE DEBERAN CORTAN SEGUN EL POSICIONAMIENTO DE LOS
+ADAPTADORES DE CONEXION Y OM
+Cubierta barraje
+Adaptador OM ref. 9340340
+Adaptador de conexion ref. 9342240
+Cubierta final barraje ref.9340070
+
+---
+
+## Pagina 45/258 - Doblefondo
+
+h
+125 mm
+125 mm
+120 mm
+95 mm
+-U08   60 x 80 (W x H)    L: 321 mm
+-U17   60 x 80 (W x H)    L: 350 mm
+-U10   60 x 80 (W x H)    L: 639 mm
+-U12   60 x 80 (W x H)    L: 639 mm
+-U14   60 x 80 (W x H)    L: 639 mm
+-U07   60 x 80 (W x H)    L: 920 mm
+-U11   60 x 80 (W x H)    L: 300 mm
+-U13   60 x 80 (W x H)    L: 300 mm
+-U01   60 x 80 (W x H)    L: 1990 mm
+-U15   60 x 80 (W x H)    L: 350 mm
+-U05   60 x 80 (W x H)    L: 359 mm
+-U04   40 x 80 (W x H)     L: 359 mm
+-U03   40 x 80 (W x H)     L: 360 mm
+-U16   60 x 80 (W x H)    L: 350 mm
+-U09   60 x 80 (W x H)    L: 220 mm
+-U06   60 x 80 (W x H)
+L: 160 mm
+-U02   40 x 80 (W x H)     L: 800 mm
+236 mm
+170 mm
+220 mm
+160 mm
+130 mm
+169 mm
+300 mm
+300 mm
+170 mm
+409 mm
+350 mm
+250 mm
+220 mm
+336 mm
+153 mm
+153 mm
+153 mm
+220 mm
+359 mm
+6 mm
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+T01601
+Q01601
+F01701
+F01702
+F01703
+KM02901
+F02001
+F02002
+F02003
+F02004
+F02005
+KM02902
+K02901
+A03001
+K03701
+SM09201
+SM09202
+X01701
+X01702
+X01703
+X01801
+X02101
+X02102
+X02103
+X02104
+X02201
+Q10001
+KM10001
+KM10101
+Q10101
+Q10201
+Q10202
+Q10203
+KM10203
+KM10202
+KM10201
+KM10301
+KM10302
+KM10303
+Q10303
+Q10302
+Q10301
+Q10401
+Q10402
+Q10403
+KM10403
+KM10402
+KM10401
+KM10501
+KM10502 KM10503
+Q10503
+Q10502
+Q10501
+X03701
+X03703
+X10001
+X10101
+X10201
+X10203
+X10202
+X10301
+X10302
+X10303
+X10401
+X10402
+X10403
+X10501
+X10502
+X10503
+T01901
+Q01901
+
+---
+
+## Pagina 46/258 - Barraje de tierra
+
+h
+p
+l
+195 mm
+Vista Superior
+Vista isometrica
+Soporte de tierra ref. 9340030
+Barra de cobre 30 x 10 mm
+Perfil base vertical derecho delantero
+
+---
+
+## Pagina 47/258 - Superficies de montaje - Sistema Calefaccion
+
+=.S2+INF&EAA/1
+200 mm
+105 mm
+378 mm
+Chasis de montaje ref. 8617130
+Resistencia Calefaccion 150 W ref. 02800.0-00
+Zocalo tablero
+Instalado por el interior del bastidor
+Frente tablero
+Vista Lateral izquierdo Tablero
+Nota: Resistencia de calefaccion, centrada sobre riel DIN
+Tapa Lateral Izquierdo S1
+
+---
+
+## Pagina 48/258
+
+Ref.: nº
+Firma
+22/05/2025
+Núm. de documento
+Contr. téc.
+Nº orig invent.
+Formato А4
+Firma & fecha
+Fabricante
+Confirm.
+Cart.
+Fecha
+Hoja
+Firma & fecha
+Nº invent. sust.
+Control.
+Conduc.
+Prim. aplicac.
+Copia por
+Contr. especific.
+Rev.
+Nº invent. dupl
+Hoja
+Hoja
+Descripción de página
+Observación
+Número de diseño
+Hoja
+I:\Agri tecnology Solutions\Plantillas planos\Agritech Logo - copia.PNG
+Índice de páginas : =TCP.S2+INF&EAA/1 - =TCP.S2+SP&EAB/207
+Índice de páginas : =TCP.S2+SP&EAB/207.a - =TCP.S2&EAC/p
+1.a
+Portada
+Codigo de colores y calibres estandar
+Nomenclaturas
+Incoming
+Distribucion de tierras
+Tension Control AC: Distribucion tension Control
+17
+Tension Control AC: Señales disparo protecciones Tencion Control AC
+17.a
+Tension Control AC: Distribucion Neutro
+18
+Tension Control DC: Distribucion tension control DC
+21
+Tension Control DC: Distribucion referencia 0 VDC
+22
+Tierra de control
+27
+Iluminacion
+90
+Ventilacion
+91
+Calefaccion
+92
+Banda recepcion FC101A
+200
+Banda recepcion CC101B
+201
+Banda distribucion de producto CC103 / CC104
+202
+Banda distribucion de producto CC103 / CC104
+202.a
+Banda distribucion de producto CC105 / CC106
+203
+Banda distribucion de producto CC105 / CC106
+203.a
+Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+204
+Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+204.a
+Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+204.b
+Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+204.c
+Banda descarga de producto FC301
+205
+Elevador BE302
+206
+Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+207
+
+---
+
+## Pagina 49/258
+
+Ref.: nº
+Nº orig invent.
+Formato А4
+Firma & fecha
+Firma & fecha
+Nº invent. sust.
+Prim. aplicac.
+Nº invent. dupl
+Firma
+Núm. de documento
+Fecha
+Hoja
+Copia por
+Rev.
+Hoja
+1.a
+Descripción de página
+Observación
+Número de diseño
+Hoja
+Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+207.a
+Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+207.b
+Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+207.c
+Portada
+a
+Aparamenta puertas
+b
+Barraje pre-ensamblado riline60
+c
+Aparataje Barraje
+d
+Doblefondo pt1
+h
+Doblefondo pt 2
+i
+Barraje de tierra
+l
+Superficies de montaje - Sistema Calefaccion
+p
+
+---
+
+## Pagina 50/258 - Portada
+
+&EAA/1.a
+PLANOS ELECTRICOS
+S2
+
+---
+
+## Pagina 51/258 - Codigo de colores y calibres estandar
+
+NOTA: EN CASO DE SER EMPLEADA  UNA SECCION DIFERENTE, SE
+ESTIPULARA LA INFOMACION EN EL PLANO CORRESPONDIENTE
+COLOR Y SECCION DE CONDUCTORES ESTANDAR
+DESCRIPCION/FUNCION
+COLOR
+ACRONIMO
+COLOR
+SECCION (AWG)
+CIRCUITOS DE POTENCIA FASE
+Negro
+BK
+14
+CIRCUITOS DE CONTROL A TENSION NOMINAL
+Negro
+BK
+18
+CIRCUITOS DE CONTROL TENSION AC
+Rojo
+RD
+18
+CIRCUITOS DE CONTROL TENISION AC (NEUTRO)
+Blanco Rojo
+RDWH
+18
+CIRCUITOS DE CONTROL 24 VDC (+)
+Azul
+BU
+18
+CIRCUITO DE CONTROL 24 VDC (-)
+Blanco Azul
+BUWH
+18
+CIRCUITOS VIVOS DC CON PANEL DESENERGIZADO
+(+)
+Naranja
+OG
+18
+CIRCUITOS VIVOS AC CON PANEL DESENERGIZADO
+(FASE)
+Amarillo
+YE
+18
+CIRCUITOS VIVOS AC/DC DE EXTERNOS
+Violeta
+VT
+18
+
+---
+
+## Pagina 52/258 - Nomenclaturas
+
++SEP/1
+NUMERO DE PÁGINA
+NUMERO CONSECUTIVO ELEMENTO
+NUMERACION APARAMENTA
+NUMERACION BORNES DOBLE PISO
+NUMERACION PAR
+NUMERACION IMPAR
+NUMERACION CABLES/HILOS
+XXX-YY
+NUMERO DE PAGINA
+CONSECUTIVO HILO/CABLE
+ESTRUCTURA NOMBRE PUNTOS DE INTERRUPCION
+AAA.BB+CCC-XXXX.XX_YYY_ZZZ
+NOMBRE SEÑAL/POTENCIAL
+DISPOSITIVO QUE GENERA LA SEÑAL/POTENCIA
+O SUB INDICE (OPCIONAL)
+NUMERO DE PAGINA DESTINO
+DISPOSITIVO DESTINO DE LA
+SEÑAL/ POTENCIAL (OPCIONAL)
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION ELEMENTO
+DESCRIPCIONES FUNCIONALES
+INF - INFORMACION
+SEP - SUMINISTRO ELECTRICO DE POTENCIA
+SEC - SUMINISTRO ELECTRICO DE CONTROL
+SC - SISTEMA DE CONTROL
+SA - SERVICIOS AUXILIARES
+SP - SISTEMA DE POTENCIA
+LETRA DESCRIPTIVA ELEMENTO
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION DISPOSITIVO
+QUE GENERA LA SEÑAL/POTENCIAL (OPCIONAL)
+=TCP.S2+INF-FIII01
+I>
+I>
+I>
+
+---
+
+## Pagina 53/258 - Incoming
+
++INF/III
+ACOPLE BARRAJE
+SISTEMA DE BARRA RILINE60  S2
+SISTEMA DE BARRA RILINE60 S3
+=.S3-W2_R:2
+=.S3-W2_S:2
+=.S3-W2_T:1
+W2_R:1
+W2_S:1
+W2_T:1
+=.S3-R1_S3 / =.S3/2.0
+=.S3-S1_S3 / =.S3/2.0
+=.S3-T1_S3 / =.S3/2.0
+R1_S3S2
+/
++SP/207.1
+S1_S3S2
+/
++SP/207.1
+T1_S3S2
+/
++SP/207.1
+
+---
+
+## Pagina 54/258 - Distribucion de tierras
+
++SEC/17
+Barra de tierra S2
+Acople simble barra ref. 9320020
+Acople simble barra ref. 9320020
+-W_PE.S2:1
+-W_PE.S2:2
+PE
+Doble fondo
+PE
+Puerta
+PE
+Gabinete
+10
+11
+12
+13
+14
+15
+6 AWG
+GNYE
+003-18
+12 AWG
+GNYE
+003-19
+6 AWG
+GNYE
+003-20
+003-24
+003-25
+003-26
+003-27
+003-28
+003-29
+003-30
+003-31
+003-32
+003-33
+16
+17
+18
+19
+003-22
+003-23
+003-34
+003-35
+003-36
+003-37
+20
+21
+22
+003-21
+PE_202_X20201
+/
++SP/202.a.1
+PE_205
+/
++SP/205.3
+PE_206
+/
++SP/206.3
+PE_202_X20202
+/
++SP/202.a.2
+PE_204_X20401
+/
++SP/204.a.1
+PE_204_X20402
+/
++SP/204.a.3
+PE_204_X20403
+/
++SP/204.a.5
+PE_204_X20404
+/
++SP/204.a.7
+PE_203_X20301
+/
++SP/203.a.1
+PE_203_X20302
+/
++SP/203.a.2
+PE_207_X20701
+/
++SP/207.a.1
+PE_207_X20702
+/
++SP/207.a.3
+PE_207_X20703
+/
++SP/207.a.5
+PE_207_X20704
+/
++SP/207.a.7
+PE_200
+/
++SP/200.3
+PE_201
+/
++SP/201.2
+PE_27
+/
++SEC/27.1
+PE_S1
+/
+=.S1/3.8
+=.S3-PE_S2 / =.S3/3.1
+
+---
+
+## Pagina 55/258 - Tension Control AC: Distribucion tension Control
+
++SEP/3
+17.a
+17
+Proteccion Arrancador FC101A
+Proteccion Arrancador CC101B
+Proteccion arrancador CC103/CC104
+Proteccion Arrancador CC105/CC106
+Proteccion arrancador FC201A / FC201B
+FC201C / FC201D
+Proteccion arrancador FC301
+Proteccion arrancador BE302
+Proteccion arrancador  S260R-S1 / S260R-S2
+S260R-S3 / S260R-S4
+-F01703
+/17.a.4
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+-F01704
+/17.a.6
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+-F01705
+/17.a.8
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+-F01706
+/17.a.1
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+-F01707
+/17.a.3
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+-W01701
+017-16
+017-17
+017-21
+017-22
+017-23
+-F01701
+/17.a.1
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+-F01702
+/17.a.3
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+017-15
+017-13
+-F01708
+/17.a.4
+230/400V 10kA
+1 polo, C, 1A
+5SY4101-7
+017-30
+14 AWG
+RD
+017-08
+-X01701
+-X01702
+-X01703
+14 AWG
+RD
+017-03
+14 AWG
+RD
+017-05
+16 AWG
+RD
+017-14
+017-19
+017-20
+017-25
+017-28
+017-29
+14 AWG
+RD
+017-11
+14 AWG
+RD
+017-18
+14 AWG
+RD
+017-24
+16 AWG
+RD
+017-12
+230VAC_202_A20201
+/
++SP/202.3
+230VAC_203_A20301
+/
++SP/203.4
+230VAC_204_A20401
+/
++SP/204.3
+230VAC_205_A20501
+/
++SP/205.5
+230VAC_206_A20601
+/
++SP/206.3
+=.S1-230VAC_S2
+/
+=.S1/17.2
+230VAC_201_A20101
+/
++SP/201.4
+230VAC_200_A20001
+/
++SP/200.4
+230VAC_207_A20701
+/
++SP/207.3
+230VAC_92
+/
++SA/92.2
+230VAC_202
+/
++SP/202.a.3
+=.S1-230VAC_AUX1_S2
+/
+=.S1/17.4
+=.S1-230VAC_AUX2_S2
+/
+=.S1/17.6
+230VAC_91
+/
++SA/91.1
+230VAC_90
+/
++SA/90.1
+230VAC_90_S3
+/
+=.S3+SA/90.1
+230VAC_91_S3
+/
+=.S3+SA/91.1
+230VAC_92_S3
+/
+=.S3+SA/92.1
+
+---
+
+## Pagina 56/258 - Tension Control AC: Señales disparo protecciones Tencion Control AC
+
+17
+18
+17.a
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+FC101A
+DI0
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+CC101B
+DI1
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+CC103/CC104
+DI2
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+CC105/CC106
+DI3
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+FC201A / FC201B / FC201C / FC201D
+DI4
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+FC301
+DI5
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+BE302
+DI6
+=.S1+SC-A03006
+Falla eléctrica alimentacion Arrancador
+S260R-S1 S260R-S2 S260R-S3
+S260R-S4
+DI7
+20 AWG
+BU
+17.a-11
+20 AWG
+BU
+17.a-06
+20 AWG
+BU
+17.a-15
+20 AWG
+BU
+17.a-18
+20 AWG
+BU
+17.a-09
+20 AWG
+BU
+17.a-12
+20 AWG
+BU
+17.a-16
+20 AWG
+BU
+17.a-19
+20 AWG
+BU
+17.a-20
+20 AWG
+BU
+17.a-07
+20 AWG
+BU
+17.a-10
+20 AWG
+BU
+17.a-14
+20 AWG
+BU
+17.a-13
+20 AWG
+BU
+17.a-17
+20 AWG
+BU
+17.a-08
+20 AWG
+BU
+17.a-09
+13
+14
+-F01701
+/17.2
+13
+14
+-F01702
+/17.3
+13
+14
+-F01703
+/17.3
+13
+14
+-F01704
+/17.4
+13
+14
+-F01705
+/17.5
+13
+14
+-F01706
+/17.6
+13
+14
+-F01707
+/17.6
+13
+14
+-F01708
+/17.7
+20 AWG
+BU
+021-32
+24VDC.1_17
+/
+21.5
+24VDC.1_17a / 17.a.1
+24VDC.1_17a
+/
+17.a.9
+
+---
+
+## Pagina 57/258 - Tension Control AC: Distribucion Neutro
+
+17.a
+21
+18
+-X01801
+10
+14
+RDWH
+018-05
+018-20
+018-22
+018-23
+018-10
+018-14
+018-17
+018-11
+018-24
+018-09
+018-18
+11
+12
+14
+RDWH
+018-06
+018-07
+018-08
+018-25
+018-26
+018-19
+018-21
+N_202_A20201 / +SP/202.3
+N_202
+/
++SP/202.a.3
+N_90
+/
++SA/90.1
+=.S1-N_S2
+/
+=.S1/18.4
+N_91
+/
++SA/91.1
+N_203_A20301 / +SP/203.4
+N_204_A20401 / +SP/204.3
+N_203
+/
++SP/203.a.3
+N_204
+/
++SP/204.b.1
+N_207_A20701 / +SP/207.3
+N_206_A20601 / +SP/206.4
+N_205_A20501 / +SP/205.4
+N_201_A20101
+/
++SP/201.4
+N_200_A20001
+/
++SP/200.4
+N_207
+/
++SP/207.b.1
+N_92
+/
++SA/92.2
+N_90_S3
+/
+=.S3+SA/90.1
+N_91_S3
+/
+=.S3+SA/91.1
+N_92_S3
+/
+=.S3+SA/92.1
+
+---
+
+## Pagina 58/258 - Tension Control DC: Distribucion tension control DC
+
+18
+22
+21
+-X02101
+021-57
+021-34
+021-25
+-X02102
+10
+11
+12
+021-07
+13
+14
+021-32
+021-35
+021-33
+021-36
+=.S1-24VDC.1_S2
+/
+=.S1/21.5
+24VDC_91
+/
++SA/91.5
+=.S1-24VDC_S2
+/
+=.S1/21.2
+24VDC.1_200
+/
++SP/200.4
+24VDC.1_201
+/
++SP/201.3
+24VDC.1_202
+/
++SP/202.3
+24VDC.1_203
+/
++SP/203.4
+24VDC.1_204
+/
++SP/204.2
+24VDC.1_205
+/
++SP/205.4
+24VDC.1_206
+/
++SP/206.3
+24VDC.1_207
+/
++SP/207.2
+24VDC.1_17
+/
+17.a.1
+24VDC.1_91
+/
++SA/91.5
+24VDC_S3
+/
+=.S3+SEP/4.1
+
+---
+
+## Pagina 59/258 - Tension Control DC: Distribucion referencia 0 VDC
+
+21
+27
+22
+-X02201
+10
+022-22
+022-23
+022-24
+022-25
+16
+BUWH
+022-04
+022-21
+022-20
+022-16
+022-17
+022-19
+022-26
+022-18
+16
+BUWH
+022-15
+=.S1-0VDC_S2
+/
+=.S1/22.4
+0VDC_202
+/
++SP/202.3
+0VDC_91
+/
++SA/91.5
+0VDC_203
+/
++SP/203.4
+0VDC_204
+/
++SP/204.2
+0VDC_205
+/
++SP/205.4
+0VDC_206
+/
++SP/206.3
+0VDC_202a
+/
++SP/202.a.3
+0VDC_200
+/
++SP/200.4
+0VDC_201
+/
++SP/201.3
+0VDC_207
+/
++SP/207.3
+0VDC_S3 / =.S3+SEP/4.1
+
+---
+
+## Pagina 60/258 - Tierra de control
+
+22
++SA/90
+27
+-X02701
+14 AWG
+GNYE
+003-21
++SEP-PE_27
+/
++SEP/3.3
+
+---
+
+## Pagina 61/258 - Iluminacion
+
++SEC/27
+91
+90
+ALA 1
+ALA 2
+L
+N
+-E09001
+L
+N
+-E09002
+13
+14
+-B09001
+13
+14
+-B09002
+018-13
+090-03
+017-27
+090-04
+017-26
+018-12
++SEC-230VAC_90
+/
++SEC/17.7
++SEC-N_90
+/
++SEC/18.4
+
+---
+
+## Pagina 62/258 - Ventilacion
+
+90
+92
+91
+=.S1+SC-A03006
+Alerta temperatura Seccion 2
+10
+DI9
+-KM09101
+AC-3, 3KW/400V, 1S, DC 24V,
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /91.2
+3/L2
+4/T2 /91.3
+5/L3
+6/T3
+14
+13
+-S09101
+10 A @25VAC
+Tr=40°C
+TRT-10A230V-NO
+13
+14
+-S09102
+10 A @25VAC
+Tr = 50°C
+TRT-10A230V-NO
+13
+14
+A1.
+A2.
+-M09101
+20 m3/h ; 230 VAC; 0,1A
+3237700
+PE
+M
+1~
+-M09102
+20 m3/h ; 230 VAC; 0,1A
+3237700
+PE
+M
+1~
+PE
+PE
+091-05
+20 AWG
+BU
+021-57
+20 AWG
+BU
+091-06
+091-03
+018-16
+091-02
+091-04
+017-28
+022-16
+018-16
+1/L1
+2/T1
+-KM09101
+/91.6
+3/L2
+4/T2
+018-15
+091-01
+021-34
++SEC-24VDC.1_91
+/
++SEC/21.5
++SEC-0VDC_91
+/
++SEC/22.3
++SEC-230VAC_91
+/
++SEC/17.7
++SEC-N_91
+/
++SEC/18.4
++SEC-24VDC_91
+/
++SEC/21.2
+
+---
+
+## Pagina 63/258 - Calefaccion
+
+91
++SP/200
+92
+-U09201
+250W
+CSL 028
+02811.0-00
+02811.0-00
+L
+N
+M
+1~
+-S09201
+10 A @250VAC
+TRT-10A230V-NC
+11
+12
++SEC-230VAC_92
+/
++SEC/17.5
++SEC-N_92
+/
++SEC/18.5
+
+---
+
+## Pagina 64/258 - Banda recepcion FC101A
+
++SA/92
+201
+200
+SIEMENS
+>
+-A20001
+200-690 V 93 A, AC 110-250 V
+3RW5527-1HA16
+AQ I+
+PQW14
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I3.4
+DI 1
+I3.5
+DI 2
+I3.6
+DI 3
+I3.7
+DI 4
+95
+96
+98
+13
+14
+23
+24
+43
+44
+13
+NO
+14
+23
+NO
+24
+43
+NO
+44
+96
+NC
+95
+98
+NO
+=.S1+SC-A03008
+Arranque Banda FC101A
+DQ2
+=.S1+SC-A03008
+Reset Arrancador FC101A
+DQ3
+=.S1+SC-A03002
+Confirmacion arranque Banda
+DI4
+=.S1+SC-A03002
+Falla electrica sobrecarga Banda
+DI6
+=.S1+SC-A03002
+Falla electrica cortocircuito Banda
+DI5
+U1
+V1
+W1
+PE
+-M20001
+45 kW, 480 VAC
+69,3 A
+M
+.2
+.1
+.4
+-Q20001
+/200.1
+.2
+.1
+.4
+-Q20001
+/200.1
+-X20001
+2 AWG
+BK
+200-01
+2 AWG
+BK
+200-03
+2 AWG
+BK
+200-05
+20 AWG
+BU
+200-08
+2 AWG
+BK
+200-02
+2 AWG
+BK
+200-04
+2 AWG
+BK
+200-06
+017-13
+20 AWG
+BU
+200-10
+20 AWG
+BU
+200-07
+20 AWG
+BU
+200-09
+20 AWG
+BU
+021-38
+20 AWG
+BU
+200-11
+20 AWG
+BU
+200-12
+20 AWG
+BU
+200-13
+018-26
+022-17
+6 AWG
+GNYE
+003-22
+-Q20001
+/200.5
+IR=64A ...160A,  II=15 X IN
+ICU=110KA  415 V
+3VA2216-7MN32-0AA0
+I>
+I>>
+I>
+I>>
+I>
+I>>
+20 AWG
+BU
+021-37
++SEP-W2_R:2
++SEP-W2_S:2
++SEP-W2_T:2
++SEC-230VAC_200_A20001 / +SEC/17.2
++SEC-N_200_A20001
+/
++SEC/18.6
++SEC-24VDC.1_200
+/
++SEC/21.4
++SEC-0VDC_200
+/
++SEC/22.4
++SEP-PE_200 / +SEP/3.3
++SEP-T1
+/
+=.S1+SEP/1.8
++SEP-S1
+/
+=.S1+SEP/1.8
++SEP-R1
+/
+=.S1+SEP/1.8
++SEP-T1 / 201.0
++SEP-S1 / 201.0
++SEP-R1 / 201.0
+
+---
+
+## Pagina 65/258 - Banda recepcion CC101B
+
+200
+202
+201
+SIEMENS
+>
+13
+14
+23
+24
+43
+44
+95
+96
+98
+-A20101
+200-690 V 47 A, AC 110-250 V
+3RW5524-1HA16
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+AQ I+
+PQW4
+AQ U+
+AQ-
+I1.0
+DI 1
+I1.1
+DI 2
+I1.2
+DI 3
+I1.3
+DI 4
+L+
+M
+T1
+T2
+13
+NO
+14
+23
+NO
+24
+96
+NC
+95
+98
+NO
+43
+NO
+44
+=.S1+SC-A03002
+Confirmacion arranque Banda
+DI7
+=.S1+SC-A03002
+Falla electrica sobrecarga Banda
+DI9
+=.S1+SC-A03002
+Falla electrica cortocircuito Banda
+DI8
+=.S1+SC-A03008
+Arranque Banda CC101B
+DQ4
+=.S1+SC-A03008
+Reset Arrancador CC101B
+DQ5
+-Q20101
+54...65A
+3RV2032-4JA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/201.8
+66
+65
+/201.5
+77
+78
+/201.9
+85
+86
+/201.5
+U1
+V1
+W1
+PE
+-M20101
+22 kW, 480 VAC
+35,6 A
+M
+-X20101
+66
+65
+-Q20101
+/201.1
+85
+86
+-Q20101
+/201.1
+57
+58
+-Q20101
+/201.1
+77
+78
+6 AWG
+BK
+201-01
+6 AWG
+BK
+201-03
+6 AWG
+BK
+201-05
+6 AWG
+BK
+201-02
+6 AWG
+BK
+201-04
+6 AWG
+BK
+201-06
+20 AWG
+BU
+201-11
+20 AWG
+BU
+201-08
+20 AWG
+BU
+201-09
+017-15
+20 AWG
+BU
+201-12
+20 AWG
+BU
+201-13
+20 AWG
+BU
+201-15
+20 AWG
+BU
+201-16
+20 AWG
+BU
+201-07
+20 AWG
+BU
+021-40
+20 AWG
+BU
+201-10
+018-25
+022-19
+6 AWG
+GNYE
+003-23
+20 AWG
+BU
+201-14
+20 AWG
+BU
+021-39
++SEP-W2_R:3
++SEP-W2_S:3
++SEP-W2_T:3
++SEC-230VAC_201_A20101 / +SEC/17.3
++SEC-N_201_A20101 / +SEC/18.6
++SEC-0VDC_201
+/
++SEC/22.4
++SEC-24VDC.1_201
+/
++SEC/21.4
++SEP-PE_201 / +SEP/3.4
++SEP-T1
+/
+200.2
++SEP-S1
+/
+200.2
++SEP-R1
+/
+200.2
++SEP-T1 / 202.1
++SEP-S1 / 202.1
++SEP-R1 / 202.1
+
+---
+
+## Pagina 66/258 - Banda distribucion de producto CC103 / CC104
+
+201
+202.a
+202
+SIEMENS
+>
+-A20201
+200-600 V 32 A, AC 110-250 V
+3RW5516-1HA15
+AQ I+
+PQW0
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I0.0
+DI 1
+I0.1
+DI 2
+I0.2
+DI 3
+I0.3
+DI 4
+95
+96
+98
+96
+NC
+95
+98
+NO
+-K3
+13
+NO
+14
+-K1
+13
+14
+23
+NO
+24
+-K2
+23
+24
+43
+NO
+44
+-K4
+43
+44
+=.S1+SC-A03008
+Arranque Banda CC103/CC104
+DQ8
+=.S1+SC-A03008
+Reset Arrancador CC103/CC104
+DQ9
+=.S1+SC-A03002
+Confirmacion arranque Banda
+recepcion CC103 / CC104
+13
+DI12
+=.S1+SC-A03002
+Falla electrica sobrecarga Banda
+recepcion CC103 / CC104
+15
+DI14
+=.S1+SC-A03002
+Falla electrica cortocircuito Banda
+recepcion CC103 / CC104
+14
+DI13
+-Q20201
+35...45A
+3RV2032-4VA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/202.8
+66
+65
+/202.4
+77
+78
+/202.8
+85
+86
+/202.4
+66
+65
+-Q20201
+/202.1
+85
+86
+-Q20201
+/202.1
+57
+58
+-Q20201
+/202.1
+77
+78
+.3
+.4
+-KM20201
+/202.a.5
+.3
+.4
+-KM20202
+/202.a.8
+8 AWG
+BK
+202-01
+8 AWG
+BK
+202-03
+8 AWG
+BK
+202-05
+20 AWG
+BU
+202-08
+20 AWG
+BU
+202-17
+8 AWG
+BK
+202-02
+8 AWG
+BK
+202-04
+8 AWG
+BK
+202-06
+017-16
+20 AWG
+BU
+202-07
+20 AWG
+BU
+202-15
+20 AWG
+BU
+202-16
+20 AWG
+BU
+202-18
+20 AWG
+BU
+202-19
+20 AWG
+BU
+021-43
+20 AWG
+BU
+202-14
+20 AWG
+BU
+202-13
+018-19
+20 AWG
+BU
+202-09
+20 AWG
+BU
+202-11
+20 AWG
+BU
+202-10
+20 AWG
+BU
+202-12
+022-20
+20 AWG
+BU
+021-41
+20 AWG
+BU
+021-42
++SEP-W2_R:4
++SEP-W2_S:4
++SEP-W2_T:4
++SEC-230VAC_202_A20201 / +SEC/17.3
+T1.A20201_202a
+202.a.0
+T2.A20201_202a
+202.a.0
+T3.A20201_202a
+202.a.1
++SEC-24VDC.1_202 / 202.a.3
++SEC-N_202_A20201 / +SEC/18.5
++SEC-24VDC.1_202
++SEC/21.4
++SEC-0VDC_202
++SEC/22.4
++SEP-T1
+201.2
++SEP-S1
+201.2
++SEP-R1
+201.2
++SEP-T1 / 203.0
++SEP-S1 / 203.0
++SEP-R1 / 203.0
+
+---
+
+## Pagina 67/258 - Banda distribucion de producto CC103 / CC104
+
+202
+203
+202.a
+=.S1+SC-A03008
+Selección Banda CC103
+DQ6
+=.S1+SC-A03008
+Selección Banda CC104
+DQ7
+=.S1+SC-A03002
+Confirmacion selección Banda
+recepcion CC103
+11
+DI10
+=.S1+SC-A03002
+Confirmacion selección Banda
+recepcion CC104
+12
+DI11
+-KM20201
+AC-3, 15KW/400V
+1S+1OE, AC 220V 50/60HZ
+3RT2027-1AN20
+A1
+A2
+1/L1
+2/T1 /202.a.0
+3/L2
+4/T2 /202.a.0
+5/L3
+6/T3 /202.a.1
+14
+13
+/202.a.6
+21
+22
+/202.a.8
+.2
+.1
+.4
+.3
+/202.4
+1/L1
+2/T1
+-KM20201
+/202.a.5
+3/L2
+4/T2
+5/L3
+6/T3
+-KM20202
+AC-3, 15KW/400V
+1S+1OE, AC 220V 50/60HZ
+3RT2027-1AN20
+A1
+A2
+1/L1
+2/T1 /202.a.2
+3/L2
+4/T2 /202.a.2
+5/L3
+6/T3 /202.a.2
+14
+13
+/202.a.9
+21
+22
+/202.a.5
+.2
+.1
+.4
+.3
+/202.5
+1/L1
+2/T1
+-KM20202
+/202.a.8
+3/L2
+4/T2
+5/L3
+6/T3
+U1
+V1
+W1
+PE
+-M20201
+15kW, 480 VAC
+24,9A
+M
+U1
+V1
+W1
+PE
+-M20202
+15kW, 480 VAC
+24,9A
+M
+/200.1
+-W20201
+13
+NO
+14
+NO
+-KM20201
+/202.a.5
+21
+NC
+22
+NC
+-KM20201
+/202.a.5
+13
+NO
+14
+NO
+-KM20202
+/202.a.8
+21
+NC
+22
+NC
+-KM20202
+/202.a.8
+-X20201
+-X20202
+U
+U
++SC-K10201
+24 VDC
+2903361
+A1
+A2
+13
+14
+/202.a.5
++SC-K10202
+24 VDC
+2903361
+A1
+A2
+13
+14
+/202.a.8
+14
+13
++SC-K10201
+/202.a.4
+250 VDC/VAC, 6A
+14
+13
++SC-K10202
+/202.a.7
+250 VDC/VAC, 6A
+8 AWG
+BK
+202.a-01
+8 AWG
+BK
+202.a-02
+8 AWG
+BK
+202.a-03
+8 AWG
+BK
+202.a-04
+8 AWG
+BK
+202.a-05
+8 AWG
+BK
+202.a-06
+8 AWG
+BK
+202-02
+8 AWG
+BK
+202-04
+8 AWG
+BK
+202-06
+20 AWG
+BU
+202.a-12
+20 AWG
+BU
+202.a-07
+16 AWG
+RD
+017-14
+20 AWG
+BU
+202.a-11
+20 AWG
+BU
+202.a-16
+202.a-08
+202.a-09
+202.a-14
+202.a-15
+8 AWG
+GNYE
+003-24
+8 AWG
+GNYE
+003-25
+022-21
+018-20
+202.a-10
+20 AWG
+BU
+202.a-13
+20 AWG
+BU
+021-43
+T1.A20201_202a / 202.1
+T2.A20201_202a / 202.2
+T3.A20201_202a / 202.2
++SEC-N_202
++SEC/18.5
++SEC-0VDC_202a
++SEC/22.4
++SEC-230VAC_202
++SEC/17.2
++SEC-24VDC.1_202
+202.8
++SEP-PE_202_X20201 / +SEP/3.4
++SEP-PE_202_X20202 / +SEP/3.4
++SEC-0VDC_202a / 203.a.3
+230VAC_202 / 203.a.3
+
+---
+
+## Pagina 68/258 - Banda distribucion de producto CC105 / CC106
+
+202.a
+203.a
+203
+SIEMENS
+>
+-A20301
+200-690 V 47 A, AC 110-250 V
+3RW5524-1HA16
+AQ I+
+PQW2
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I0.4
+DI 1
+I0.5
+DI 2
+I0.6
+DI 3
+I0.7
+DI 4
+95
+96
+98
+13
+14
+23
+24
+43
+44
+13
+NO
+14
+23
+NO
+24
+43
+NO
+44
+96
+NC
+95
+98
+NO
+=.S1+SC-A03003
+Confirmacion arranque Banda
+recepcion CC105 / CC106
+DI1
+=.S1+SC-A03003
+Falla electrica sobrecarga Banda
+recepcion CC105 / CC106
+DI3
+=.S1+SC-A03003
+Falla electrica cortocircuito Banda
+recepcion CC105 / CC106
+DI2
+=.S1+SC-A03008
+Arranque Banda CC105/CC106
+13
+DQ12
+=.S1+SC-A03008
+Reset Arrancador CC105/CC106
+14
+DQ13
+.3
+.4
+-KM20301
+/203.a.5
+.3
+.4
+-KM20302
+/203.a.8
+20 AWG
+BU
+203-14
+20 AWG
+BU
+203-11
+20 AWG
+BU
+203-12
+20 AWG
+BU
+203-10
+6 AWG
+BK
+203-02
+6 AWG
+BK
+203-04
+6 AWG
+BK
+203-06
+6 AWG
+BK
+203-01
+6 AWG
+BK
+203-03
+6 AWG
+BK
+203-05
+20 AWG
+BU
+203-08
+017-17
+20 AWG
+BU
+203-07
+20 AWG
+BU
+021-44
+20 AWG
+BU
+203-15
+20 AWG
+BU
+203-16
+20 AWG
+BU
+203-19
+021-46
+022-22
+018-21
+20 AWG
+BU
+203-13
+20 AWG
+BU
+021-45
+-Q20301
+54...65A
+3RV2032-4JA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/203.8
+66
+65
+/203.5
+77
+78
+/203.9
+85
+86
+/203.5
+66
+65
+-Q20301
+/203.1
+20 AWG
+BU
+203-09
+57
+58
+-Q20301
+/203.1
+85
+86
+-Q20301
+/203.1
+77
+78
+20 AWG
+BU
+203-18
+20 AWG
+BU
+203-17
++SEP-W2_R:5
++SEP-W2_S:5
++SEP-W2_T:5
+T1.A20301_203a
+203.a.0
+T2.A20301_203a
+203.a.0
+T3.A20301_203a
+203.a.1
++SEC-24VDC.1_203 / 203.a.3
++SEC-230VAC_203_A20301 / +SEC/17.4
++SEC-N_203_A20301
++SEC/18.5
++SEC-24VDC.1_203
++SEC/21.4
++SEC-0VDC_203
++SEC/22.4
++SEP-T1
+202.2
++SEP-S1
+202.2
++SEP-R1
+202.2
++SEP-T1 / 204.0
++SEP-S1 / 204.0
++SEP-R1 / 204.0
+
+---
+
+## Pagina 69/258 - Banda distribucion de producto CC105 / CC106
+
+203
+204
+203.a
+=.S1+SC-A03002
+Confirmacion selección Banda
+recepcion CC105
+16
+DI15
+=.S1+SC-A03003
+Confirmacion selección Banda
+recepcion CC106
+DI0
+=.S1+SC-A03008
+Selección Banda CC105
+11
+DQ10
+=.S1+SC-A03008
+Selección Banda CC106
+12
+DQ11
+-KM20301
+AC3:22KW/400V, AC 220V
+3RT2036-1AN20
+A1
+A2
+1/L1
+2/T1 /203.a.0
+3/L2
+4/T2 /203.a.0
+5/L3
+6/T3 /203.a.1
+14
+13
+/203.a.6
+21
+22
+/203.a.8
+.2
+.1
+.4
+.3
+/203.5
+1/L1
+2/T1
+-KM20301
+/203.a.5
+3/L2
+4/T2
+5/L3
+6/T3
+13
+NO
+14
+NO
+-KM20301
+/203.a.5
+21
+NC
+22
+NC
+-KM20301
+/203.a.5
+-KM20302
+AC3:22KW/400V, AC 220V
+3RT2036-1AN20
+A1
+A2
+1/L1
+2/T1 /203.a.2
+3/L2
+4/T2 /203.a.2
+5/L3
+6/T3 /203.a.2
+14
+13
+/203.a.8
+21
+22
+/203.a.5
+.2
+.1
+.4
+.3
+/203.6
+1/L1
+2/T1
+-KM20302
+/203.a.8
+3/L2
+4/T2
+5/L3
+6/T3
+13
+NO
+14
+NO
+-KM20302
+/203.a.8
+21
+NC
+22
+NC
+-KM20302
+/203.a.8
+-W20301
+U1
+V1
+W1
+PE
+-M20301
+22kW, 480 VAC
+33,7 A
+M
+U1
+V1
+W1
+PE
+-M20302
+22kW, 480 VAC
+33,7 A
+M
+-X20301
+-X20302
++
+-
++
+-
++SC-K10301
+24 VDC
+2903361
+A1
+A2
+13
+14
+/203.a.5
++SC-K10302
+24 VDC
+2903361
+A1
+A2
+13
+14
+/203.a.8
+14
+13
++SC-K10301
+/203.a.4
+250 VDC/VAC, 6A
+14
+13
++SC-K10302
+/203.a.6
+250 VDC/VAC, 6A
+203.a-09
+203.a-15
+6 AWG
+BK
+203.a-01
+6 AWG
+BK
+203.a-02
+6 AWG
+BK
+203.a-03
+6 AWG
+BK
+203.a-04
+6 AWG
+BK
+203.a-05
+6 AWG
+BK
+203.a-06
+6 AWG
+BK
+203-02
+6 AWG
+BK
+203-04
+6 AWG
+BK
+203-06
+20 AWG
+BU
+203.a-07
+203.a-08
+203.a-14
+20 AWG
+BU
+203.a-13
+20 AWG
+BU
+203.a-12
+20 AWG
+BU
+203.a-16
+6 AWG
+GNYE
+003-26
+6 AWG
+GNYE
+003-27
+018-22
+203.a-10
+20 AWG
+BU
+021-46
+20 AWG
+BU
+203.a-11
+T1.A20301_203a / 203.1
+T2.A20301_203a / 203.1
+T3.A20301_203a / 203.2
++SEC-N_203
++SEC/18.5
+230VAC_202
+202.a.8
++SEC-0VDC_202a
+202.a.8
++SEC-24VDC.1_203
+203.8
++SEP-PE_203_X20301 / +SEP/3.4
++SEP-PE_203_X20302 / +SEP/3.5
++SEC-0VDC_202a / 204.b.1
+230VAC_202 / 204.b.1
+
+---
+
+## Pagina 70/258 - Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+
+203.a
+204.a
+204
+SIEMENS
+>
+-A20401
+200-600 V 32 A, AC 110-250 V
+3RW5516-1HA15
+AQ I+
+PQW4
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I1.0
+DI 1
+I1.1
+DI 2
+I1.2
+DI 3
+I1.3
+DI 4
+95
+96
+98
+96
+NC
+95
+98
+NO
+13
+NO
+14
+13
+14
+23
+NO
+24
+23
+24
+43
+NO
+44
+43
+44
+=.S1+SC-A03009
+Arranque Banda
+FC201A/FC202B/FC201C/FC201D
+DQ2
+=.S1+SC-A03009
+Reset Arrancador Banda
+FC201A/FC202B/FC201C/FC201D
+DQ3
+=.S1+SC-A03003
+Confirmacion arranque Banda descarga
+DI8
+=.S1+SC-A03003
+Falla electrica cortocircuito Banda
+descarga FC201A / FC201B / FC201C /
+10
+DI9
+=.S1+SC-A03003
+Falla electrica sobrecarga Banda
+descarga FC201A / FC201B / FC201C /
+11
+DI10
+-Q20401
+35...45A
+3RV2032-4VA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/204.7
+66
+65
+/204.3
+77
+78
+/204.8
+85
+86
+/204.3
+.3
+.4
+-KM20401
+/204.b.2
+.3
+.4
+-KM20402
+/204.b.4
+.3
+.4
+-KM20403
+/204.b.6
+.3
+.4
+-KM20404
+/204.b.8
+66
+65
+-Q20401
+/204.1
+85
+86
+-Q20401
+/204.1
+57
+58
+-Q20401
+/204.1
+77
+78
+8 AWG
+BK
+204-01
+8 AWG
+BK
+204-03
+8 AWG
+BK
+204-05
+20 AWG
+BU
+204-16
+20 AWG
+BU
+204-17
+20 AWG
+BU
+204-08
+20 AWG
+BU
+204-21
+20 AWG
+BU
+204-11
+20 AWG
+BU
+204-09
+20 AWG
+BU
+204-10
+20 AWG
+BU
+204-12
+20 AWG
+BU
+204-13
+20 AWG
+BU
+204-14
+20 AWG
+BU
+204-18
+8 AWG
+BK
+204-02
+8 AWG
+BK
+204-04
+8 AWG
+BK
+204-06
+017-21
+20 AWG
+BU
+021-47
+20 AWG
+BU
+204-19
+20 AWG
+BU
+204-20
+20 AWG
+BU
+204-22
+20 AWG
+BU
+204-23
+20 AWG
+BU
+204-07
+20 AWG
+BU
+204-15
+022-23
+018-09
+20 AWG
+BU
+021-48
++SEP-W2_R:6
++SEP-W2_S:6
++SEP-W2_T:6
+20 AWG
+BU
+021-49
+T1.A20401_204a
+204.a.1
+T2.A20401_204a
+204.a.1
+T3.A20401_204a
+204.a.1
++SEC-24VDC.1_204 / 204.c.1
++SEC-N_204_A20401 / +SEC/18.4
++SEC-230VAC_204_A20401 / +SEC/17.5
++SEC-0VDC_204
++SEC/22.5
++SEC-24VDC.1_204
++SEC/21.4
++SEP-T1
+203.2
++SEP-S1
+203.2
++SEP-R1
+203.2
++SEP-T1 / 205.1
++SEP-S1 / 205.1
++SEP-R1 / 205.1
+
+---
+
+## Pagina 71/258 - Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+
+204
+204.b
+204.a
+1/L1
+2/T1
+-KM20401
+/204.b.2
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM20402
+/204.b.4
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM20403
+/204.b.6
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM20404
+/204.b.8
+3/L2
+4/T2
+5/L3
+6/T3
+-W20401
+-W20402
+U1
+V1
+W1
+PE
+-M20401
+15 kW, 480 VAC
+24,9 A
+M
+U1
+V1
+W1
+PE
+-M20402
+15 kW, 480 VAC
+24,9 A
+M
+U1
+V1
+W1
+PE
+-M20403
+15 kW, 480 VAC
+24,9 A
+M
+U1
+V1
+W1
+PE
+-M20404
+15 kW, 480 VAC
+24,9 A
+M
+-X20401
+-X20402
+-X20403
+-X20404
+8 AWG
+204.a-04
+8 AWG
+204.a-06
+8 AWG
+204.a-08
+8 AWG
+BK
+204.a-01
+8 AWG
+BK
+204.a-02
+8 AWG
+BK
+204.a-03
+8 AWG
+BK
+204.a-05
+8 AWG
+BK
+204.a-07
+8 AWG
+BK
+204.a-09
+8 AWG
+BK
+204.a-10
+8 AWG
+BK
+204.a-11
+8 AWG
+BK
+204.a-12
+8 AWG
+BK
+204.a-13
+8 AWG
+BK
+204.a-14
+8 AWG
+BK
+204.a-15
+8 AWG
+BK
+204-02
+8 AWG
+BK
+204-04
+8 AWG
+BK
+204-06
+8 AWG
+003-28
+8 AWG
+GNYE
+003-29
+8 AWG
+GNYE
+003-30
+8 AWG
+GNYE
+003-31
+T1.A20401_204a / 204.1
+T2.A20401_204a / 204.1
+T3.A20401_204a / 204.1
++SEP-PE_204_X20401 / +SEP/3.5
++SEP-PE_204_X20402 / +SEP/3.5
++SEP-PE_204_X20403 / +SEP/3.6
++SEP-PE_204_X20404 / +SEP/3.6
+
+---
+
+## Pagina 72/258 - Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+
+204.a
+204.c
+204.b
+=.S1+SC-A03008
+Selección Banda FC201A
+15
+DQ14
+=.S1+SC-A03008
+Selección Banda FC201B
+16
+DQ15
+=.S1+SC-A03009
+Selección Banda FC201C
+DQ0
+=.S1+SC-A03009
+Selección Banda FC201D
+DQ1
+-KM20402
+AC-3, 15KW/400V,
+1S+1OE, AC 220V 50/60HZ,
+3RT2027-1AN20
+A1
+A2
+1/L1
+2/T1 /204.a.3
+3/L2
+4/T2 /204.a.3
+5/L3
+6/T3 /204.a.3
+14
+13
+/204.c.4
+21
+22
+.2
+.1
+/204.b.2
+.2
+.1
+/204.b.6
+.2
+.1
+/204.b.8
+.4
+.3
+/204.4
+-KM20403
+AC-3, 15KW/400V,
+1S+1OE, AC 220V 50/60HZ,
+3RT2027-1AN20
+A1
+A2
+1/L1
+2/T1 /204.a.4
+3/L2
+4/T2 /204.a.5
+5/L3
+6/T3 /204.a.5
+14
+13
+/204.c.6
+21
+22
+.2
+.1
+/204.b.2
+.2
+.1
+/204.b.4
+.2
+.1
+/204.b.8
+.4
+.3
+/204.4
+-KM20404
+AC-3, 15KW/400V,
+1S+1OE, AC 220V 50/60HZ,
+3RT2027-1AN20
+A1
+A2
+1/L1
+2/T1 /204.a.6
+3/L2
+4/T2 /204.a.6
+5/L3
+6/T3 /204.a.7
+14
+13
+/204.c.7
+21
+22
+.2
+.1
+/204.b.2
+.2
+.1
+/204.b.4
+.2
+.1
+/204.b.6
+.4
+.3
+/204.5
+-KM20401
+AC-3, 15KW/400V,
+1S+1OE, AC 220V 50/60HZ,
+3RT2027-1AN20
+A1
+A2
+1/L1
+2/T1 /204.a.1
+3/L2
+4/T2 /204.a.1
+5/L3
+6/T3 /204.a.1
+14
+13
+/204.c.2
+21
+22
+.2
+.1
+/204.b.4
+.2
+.1
+/204.b.6
+.2
+.1
+/204.b.8
+.4
+.3
+/204.3
+.1
+.2
+-KM20404
+/204.b.8
+.1
+.2
+-KM20402
+/204.b.4
+.1
+.2
+-KM20403
+/204.b.6
+.1
+.2
+-KM20401
+/204.b.2
+.1
+.2
+.1
+.2
+.1
+.2
+.1
+.2
+-KM20402
+/204.b.4
+.1
+.2
+.1
+.2
+.1
+.2
+.1
+.2
+-KM20403
+/204.b.6
+U
+U
+U
+U
++SC-K10401
+24 VDC
+2903361
+A1
+A2
+13
+14
+/204.b.2
++SC-K10402
+24 VDC
+2903361
+A1
+A2
+13
+14
+/204.b.4
++SC-K10403
+24 VDC
+2903361
+A1
+A2
+13
+14
+/204.b.6
++SC-K10404
+24 VDC
+2903361
+A1
+A2
+13
+14
+/204.b.8
+14
+13
++SC-K10401
+/204.b.1
+250 VDC/VAC, 6A
+14
+13
++SC-K10402
+/204.b.3
+250 VDC/VAC, 6A
+14
+13
++SC-K10403
+/204.b.5
+250 VDC/VAC, 6A
+14
+13
++SC-K10404
+/204.b.7
+250 VDC/VAC, 6A
+204.b-05
+204.b-03
+204.b-04
+204.b-09
+204.b-10
+204.b-11
+204.b-15
+204.b-16
+204.b-17
+204.b-21
+204.b-22
+204.b-23
+20 AWG
+BU
+204.b-01
+20 AWG
+BU
+204.b-07
+20 AWG
+BU
+204.b-13
+20 AWG
+BU
+204.b-19
+204.b-02
+204.b-08
+204.b-14
+204.b-20
+018-23
+204.b-06
+204.b-12
+204.b-18
++SEC-N_204
++SEC/18.5
++SEC-0VDC_202a
+203.a.8
+230VAC_202
+203.a.8
+230VAC_202 / 207.b.1
++SEC-0VDC_202a / 207.b.1
+
+---
+
+## Pagina 73/258 - Banda descarga de producto FC201A / FC201B / FC201C /FC201D
+
+204.b
+205
+204.c
+=.S1+SC-A03003
+Confirmacion selección Banda descarga
+DI4
+=.S1+SC-A03003
+Confirmacion selección Banda descarga
+DI5
+=.S1+SC-A03003
+Confirmacion selección Banda descarga
+DI6
+=.S1+SC-A03003
+Confirmacion selección Banda descarga
+DI7
+13
+NO
+14
+NO
+-KM20401
+/204.b.2
+13
+NO
+14
+NO
+-KM20402
+/204.b.4
+13
+NO
+14
+NO
+-KM20403
+/204.b.6
+13
+NO
+14
+NO
+-KM20404
+/204.b.8
+20 AWG
+BU
+204.c-01
+20 AWG
+BU
+204.c-03
+20 AWG
+BU
+204.c-05
+20 AWG
+BU
+204.c-02
+20 AWG
+BU
+204.c-04
+20 AWG
+BU
+204.c-06
+20 AWG
+BU
+204.c-07
+20 AWG
+BU
+021-49
++SEC-24VDC.1_204
+204.8
+
+---
+
+## Pagina 74/258 - Banda descarga de producto FC301
+
+204.c
+206
+205
+SIEMENS
+>
+-A20501
+200-690 V 47 A, AC 110-250 V
+3RW5524-1HA16
+AQ I+
+PQW18
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I4.4
+DI 1
+I4.5
+DI 2
+I4.6
+DI 3
+I4.7
+DI 4
+95
+96
+98
+13
+14
+23
+24
+43
+44
+13
+NO
+14
+23
+NO
+24
+43
+NO
+44
+96
+NC
+95
+98
+NO
+=.S1+SC-A03003
+Confirmacion arranque Banda descarga
+12
+DI11
+=.S1+SC-A03003
+Falla electrica sobrecarga Banda
+descarga FC301
+14
+DI13
+=.S1+SC-A03003
+Falla electrica cortocircuito Banda
+descarga FC301
+13
+DI12
+=.S1+SC-A03009
+Arranque Banda FC301
+DQ4
+=.S1+SC-A03009
+Reset Arrancador Banda FC301
+DQ5
+U1
+V1
+W1
+PE
+-M20501
+22 kW, 480 VAC
+35,6 A
+M
+-X20501
+6 AWG
+BK
+205-01
+6 AWG
+BK
+205-03
+6 AWG
+BK
+205-05
+20 AWG
+BU
+205-09
+20 AWG
+BU
+205-11
+6 AWG
+BK
+205-02
+6 AWG
+BK
+205-04
+6 AWG
+BK
+205-06
+017-22
+20 AWG
+BU
+205-08
+20 AWG
+BU
+205-10
+20 AWG
+BU
+021-51
+20 AWG
+BU
+205-12
+20 AWG
+BU
+205-13
+6 AWG
+GNYE
+003-32
+022-24
+018-11
+20 AWG
+BU
+021-50
+-Q20501
+54...65A
+3RV2032-4JA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/205.8
+66
+65
+/205.5
+77
+78
+/205.9
+85
+86
+/205.5
+66
+65
+-Q20501
+/205.1
+85
+86
+-Q20501
+/205.1
+20 AWG
+BU
+205-07
+57
+58
+-Q20501
+/205.1
+77
+78
++SEP-W2_R:7
++SEP-W2_S:7
++SEP-W2_T:7
+20 AWG
+BU
+205-15
+20 AWG
+BU
+205-14
++SEC-230VAC_205_A20501 / +SEC/17.6
++SEC-N_205_A20501
+/
++SEC/18.4
++SEP-PE_205 / +SEP/3.6
++SEC-0VDC_205
+/
++SEC/22.5
++SEC-24VDC.1_205
+/
++SEC/21.5
++SEP-T1
+/
+204.2
++SEP-S1
+/
+204.2
++SEP-R1
+/
+204.2
++SEP-T1 / 206.1
++SEP-S1 / 206.1
++SEP-R1 / 206.1
+
+---
+
+## Pagina 75/258 - Elevador BE302
+
+205
+207
+206
+SIEMENS
+>
+-A20601
+200-690 V 77 A, AC 110-250 V
+3RW5526-1HA16
+AQ I+
+PQW20
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I5.0
+DI 1
+I5.1
+DI 2
+I5.2
+DI 3
+I5.3
+DI 4
+95
+96
+98
+96
+NC
+95
+98
+NO
+13
+NO
+14
+13
+14
+23
+NO
+24
+23
+24
+43
+NO
+44
+43
+44
+=.S1+SC-A03009
+Arranque Elevador BE302
+DQ6
+=.S1+SC-A03009
+Reset arrancador Elevador BE302
+DQ7
+=.S1+SC-A03003
+Confirmacion arranque Elevador BE302
+15
+DI14
+=.S1+SC-A03004
+Falla electrica sobrecarga Elevador
+DI0
+=.S1+SC-A03003
+Falla electrica cortocircuito Elevador
+16
+DI15
+U1
+V1
+W1
+PE
+-M20601
+30 kW, 480 VAC
+49,2 A
+M
+-X20601
+4 AWG
+BK
+206-01
+4 AWG
+BK
+206-02
+4 AWG
+BK
+206-03
+4 AWG
+BK
+206-05
+4 AWG
+BK
+206-04
+4 AWG
+BK
+206-06
+20 AWG
+BU
+206-08
+20 AWG
+BU
+206-10
+017-23
+20 AWG
+BU
+206-07
+20 AWG
+BU
+206-09
+20 AWG
+BU
+206-11
+20 AWG
+BU
+021-53
+20 AWG
+BU
+206-12
+20 AWG
+BU
+206-13
+6 AWG
+GNYE
+003-33
+022-25
+018-14
+20 AWG
+BU
+021-52
+.2
+.1
+.4
+-Q20601
+/206.1
+.2
+.1
+.4
+-Q20601
+/206.4
+IR=40A ...100A,  II=15 X IN
+ICU=110KA  415 V
+3VA2110-7MN32-0AA0
+I>
+I>>
+I>
+I>>
+I>
+I>>
++SEP-W2_R:8
++SEP-W2_S:8
++SEP-W2_T:8
++SEC-230VAC_206_A20601 / +SEC/17.6
++SEC-N_206_A20601 / +SEC/18.4
++SEP-PE_206 / +SEP/3.6
++SEC-0VDC_206
+/
++SEC/22.5
++SEC-24VDC.1_206
+/
++SEC/21.5
++SEP-T1
+/
+205.2
++SEP-S1
+/
+205.2
++SEP-R1
+/
+205.2
++SEP-T1 / 207.0
++SEP-S1 / 207.0
++SEP-R1 / 207.0
+
+---
+
+## Pagina 76/258 - Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+
+206
+207.a
+207
+SIEMENS
+>
+-A20701
+200-600 V 38 A, AC 110-250 V
+3RW5517-1HA15
+AQ I+
+PQW22
+AQ U+
+AQ-
+1/L1
+2/T1
+3/L2
+5/L3
+A2
+4/T2
+6/T3
+A1
+T1
+T2
+L+
+M
+I5.4
+DI 1
+I5.5
+DI 2
+I5.6
+DI 3
+I5.7
+DI 4
+95
+96
+98
+96
+NC
+95
+98
+NO
+13
+NO
+14
+13
+14
+23
+NO
+24
+23
+24
+43
+NO
+44
+43
+44
+=.S1+SC-A03004
+Confirmacion arranque Barredoras
+S260R-S1 S260R-S2 S260R-S3
+DI5
+=.S1+SC-A03004
+Falla electrica Sobrecarga Barredoras
+S260R-S1 S260R-S2 S260R-S3
+DI7
+=.S1+SC-A03004
+Falla electrica cortocircuito Barredoras
+S260R-S1 S260R-S2 S260R-S3
+DI6
+=.S1+SC-A03009
+Arranque Barredoras S260R-S1
+S260R-S2 S260R-S3 S260R-S4
+13
+DQ12
+=.S1+SC-A03009
+Reset Barredoras S260R-S1 S260R-S2
+S260R-S3 S260R-S4
+14
+DQ13
+-Q20701
+42...52A
+3RV2032-4WA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/207.7
+66
+65
+/207.3
+77
+78
+/207.8
+85
+86
+/207.3
+.3
+.4
+-KM20701
+/207.b.2
+.3
+.4
+-KM20702
+/207.b.4
+.3
+.4
+-KM20703
+/207.b.6
+.3
+.4
+-KM20704
+/207.b.8
+66
+65
+-Q20701
+/207.1
+85
+86
+-Q20701
+/207.1
+57
+58
+-Q20701
+/207.1
+77
+78
+6 AWG
+BK
+207-01
+6 AWG
+BK
+207-03
+6 AWG
+BK
+207-05
+20 AWG
+BU
+207-16
+20 AWG
+BU
+207-17
+20 AWG
+BU
+207-08
+20 AWG
+BU
+207-21
+20 AWG
+BU
+207-11
+20 AWG
+BU
+207-09
+20 AWG
+BU
+207-10
+20 AWG
+BU
+207-12
+20 AWG
+BU
+207-13
+20 AWG
+BU
+207-14
+20 AWG
+BU
+207-18
+6 AWG
+BK
+207-02
+6 AWG
+BK
+207-04
+6 AWG
+BK
+207-06
+017-30
+20 AWG
+BU
+021-54
+20 AWG
+BU
+207-19
+20 AWG
+BU
+207-20
+20 AWG
+BU
+207-22
+20 AWG
+BU
+207-23
+20 AWG
+BU
+207-07
+20 AWG
+BU
+207-15
+022-26
+018-17
+20 AWG
+BU
+021-55
++SEP-W2_R:9
++SEP-W2_S:9
++SEP-W2_T:9
+20 AWG
+BU
+021-56
+T1.A20701_207a
+207.a.1
+T2.A20701_207a
+207.a.1
+T3.A20701_207a
+207.a.1
++SEC-24VDC.1_207 / 207.c.1
++SEC-N_207_A20701 / +SEC/18.5
++SEC-230VAC_207_A20701 / +SEC/17.7
++SEC-24VDC.1_207
++SEC/21.5
++SEC-0VDC_207 / +SEC/22.5
++SEP-T1
+206.2
++SEP-S1
+206.2
++SEP-R1
+206.2
++SEP-R1_S3S2 / +SEP/1.1
++SEP-S1_S3S2 / +SEP/1.1
++SEP-T1_S3S2 / +SEP/1.1
+
+---
+
+## Pagina 77/258 - Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+
+207
+207.b
+207.a
+1/L1
+2/T1
+-KM20701
+/207.b.2
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM20702
+/207.b.4
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM20703
+/207.b.6
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+2/T1
+-KM20704
+/207.b.8
+3/L2
+4/T2
+5/L3
+6/T3
+-W20701
+-W20702
+U1
+V1
+W1
+PE
+-M20701
+18,5 kW, 480 VAC
+30,3 A
+M
+U1
+V1
+W1
+PE
+-M20702
+18,5 kW, 480 VAC
+30,3 A
+M
+U1
+V1
+W1
+PE
+-M20703
+18,5 kW, 480 VAC
+30,3 A
+M
+U1
+V1
+W1
+PE
+-M20704
+18,5 kW, 480 VAC
+30,3 A
+M
+-X20701
+-X20702
+-X20703
+-X20704
+6 AWG
+207.a-04
+6 AWG
+207.a-06
+6 AWG
+207.a-08
+6 AWG
+BK
+207.a-01
+6 AWG
+BK
+207.a-02
+6 AWG
+BK
+207.a-03
+6 AWG
+BK
+207.a-05
+6 AWG
+BK
+207.a-07
+6 AWG
+BK
+207.a-09
+6 AWG
+BK
+207.a-10
+6 AWG
+BK
+207.a-11
+6 AWG
+BK
+207.a-12
+6 AWG
+BK
+207.a-13
+6 AWG
+BK
+207.a-14
+6 AWG
+BK
+207.a-15
+6 AWG
+BK
+207-02
+6 AWG
+BK
+207-04
+6 AWG
+BK
+207-06
+6 AWG
+003-34
+6 AWG
+GNYE
+003-35
+6 AWG
+GNYE
+003-36
+6 AWG
+GNYE
+003-37
+T1.A20701_207a / 207.1
+T2.A20701_207a / 207.1
+T3.A20701_207a / 207.1
++SEP-PE_207_X20701 / +SEP/3.7
++SEP-PE_207_X20702 / +SEP/3.7
++SEP-PE_207_X20703 / +SEP/3.7
++SEP-PE_207_X20704 / +SEP/3.8
+
+---
+
+## Pagina 78/258 - Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+
+207.a
+207.c
+207.b
+=.S1+SC-A03009
+Selección S260R-S1
+DQ8
+=.S1+SC-A03009
+Selección S260R-S2
+10
+DQ9
+=.S1+SC-A03009
+Seleccion S260R-S3
+11
+DQ10
+=.S1+SC-A03009
+Selección S260R-S4
+12
+DQ11
+-KM20702
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /207.a.3
+3/L2
+4/T2 /207.a.3
+5/L3
+6/T3 /207.a.3
+14
+13
+/207.c.4
+21
+22
+.2
+.1
+/207.b.2
+.2
+.1
+/207.b.6
+.2
+.1
+/207.b.8
+.4
+.3
+/207.4
+-KM20703
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /207.a.4
+3/L2
+4/T2 /207.a.5
+5/L3
+6/T3 /207.a.5
+14
+13
+/207.c.6
+21
+22
+.2
+.1
+/207.b.2
+.2
+.1
+/207.b.4
+.2
+.1
+/207.b.8
+.4
+.3
+/207.4
+-KM20704
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /207.a.6
+3/L2
+4/T2 /207.a.6
+5/L3
+6/T3 /207.a.7
+14
+13
+/207.c.7
+21
+22
+.2
+.1
+/207.b.2
+.2
+.1
+/207.b.4
+.2
+.1
+/207.b.6
+.4
+.3
+/207.5
+-KM20701
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /207.a.1
+3/L2
+4/T2 /207.a.1
+5/L3
+6/T3 /207.a.1
+14
+13
+/207.c.2
+21
+22
+.2
+.1
+/207.b.4
+.2
+.1
+/207.b.6
+.2
+.1
+/207.b.8
+.4
+.3
+/207.3
+.1
+.2
+-KM20704
+/207.b.8
+.1
+.2
+-KM20702
+/207.b.4
+.1
+.2
+-KM20703
+/207.b.6
+.1
+.2
+-KM20701
+/207.b.2
+.1
+.2
+.1
+.2
+.1
+.2
+.1
+.2
+-KM20702
+/207.b.4
+.1
+.2
+.1
+.2
+.1
+.2
+.1
+.2
+-KM20703
+/207.b.6
+U
+U
+U
+U
++SC-K10701
+24 VDC
+2903361
+A1
+A2
+13
+14
+/207.b.2
++SC-K10702
+24 VDC
+2903361
+A1
+A2
+13
+14
+/207.b.4
++SC-K10703
+24 VDC
+2903361
+A1
+A2
+13
+14
+/207.b.6
++SC-K10704
+24 VDC
+2903361
+A1
+A2
+13
+14
+/207.b.8
+14
+13
++SC-K10701
+/207.b.1
+250 VDC/VAC, 6A
+14
+13
++SC-K10702
+/207.b.3
+250 VDC/VAC, 6A
+14
+13
++SC-K10703
+/207.b.5
+250 VDC/VAC, 6A
+14
+13
++SC-K10704
+/207.b.7
+250 VDC/VAC, 6A
+207.b-05
+207.b-03
+207.b-04
+207.b-09
+207.b-10
+207.b-11
+207.b-15
+207.b-16
+207.b-17
+207.b-21
+207.b-22
+207.b-23
+20 AWG
+BU
+207.b-01
+20 AWG
+BU
+207.b-07
+20 AWG
+BU
+207.b-13
+20 AWG
+BU
+207.b-19
+207.b-02
+207.b-08
+207.b-14
+207.b-20
+018-24
+207.b-06
+207.b-12
+207.b-18
++SEC-N_207
++SEC/18.5
++SEC-0VDC_202a
+204.b.8
+230VAC_202
+204.b.8
+
+---
+
+## Pagina 79/258 - Barredoras de Producto S260R-S1 / S260R-S2 / S260R-S3 / S260R-S4
+
+207.b
++&EAC/a
+207.c
+=.S1+SC-A03004
+Confirmacion Selección Barredoras
+DI1
+=.S1+SC-A03004
+Confirmacion Selección Barredoras
+DI2
+=.S1+SC-A03004
+Confirmacion Selección Barredoras
+DI3
+=.S1+SC-A03004
+Confirmacion Selección Barredoras
+DI4
+13
+NO
+14
+NO
+-KM20701
+/207.b.2
+13
+NO
+14
+NO
+-KM20702
+/207.b.4
+13
+NO
+14
+NO
+-KM20703
+/207.b.6
+13
+NO
+14
+NO
+-KM20704
+/207.b.8
+20 AWG
+BU
+207.c-01
+20 AWG
+BU
+207.c-03
+20 AWG
+BU
+207.c-05
+20 AWG
+BU
+207.c-02
+20 AWG
+BU
+207.c-04
+20 AWG
+BU
+207.c-06
+20 AWG
+BU
+207.c-07
+20 AWG
+BU
+021-56
++SEC-24VDC.1_207
+207.8
+
+---
+
+## Pagina 80/258 - Portada
+
++SP&EAB/207.c
+b
+PLANOS MECANICOS
+S2
+
+---
+
+## Pagina 81/258 - Aparamenta puertas
+
+c
+b
+200 mm
+316,5 mm
+200 mm
+296 mm
+296 mm
+Filtro salida
+Ventilador
+
+---
+
+## Pagina 82/258 - Barraje pre-ensamblado riline60
+
+c
+25 mm
+314 mm
+340 mm
+315 mm
+25 mm
+1099 mm
+120 mm
+1139 mm
+Soporte barraje ref.9340000
+Bandeja base ref. 9340130
+Acople barraje ref. 9320030
+Barra de cobre 30 x 10 mm
+
+---
+
+## Pagina 83/258 - Aparataje Barraje
+
+c
+h
+d
+NOTA 1: LA POSICION DE LOS ADAPTADORES SE AJUSTAN EN FABRICACION, SEGUN LA FACILIDAD PARA CABLEAR HACIA LOS ELEMENTOS DESTINO.
+NOTA 2: LAS DIMENSIONES Y CORTES DE LA CUBIERTA EN EL PLANO SON ILUSTRATIVOS, ESTAS SE DEBERAN CORTAN SEGUN EL POSICIONAMIENTO DE LOS
+ADAPTADORES DE CONEXION Y OM
+Cubierta barraje
+Adaptador OM Ref. 9340430
+Adaptador OM Ref. 9345610
+
+---
+
+## Pagina 84/258 - Doblefondo pt1
+
+i
+h
+Q20101
+Q20201
+Q20301
+Q20401
+Q20501
+Q20601
+Q20701
+A20001
+A20101
+A20501
+A20601
+A20201
+A20301
+A20401
+A20701
+KM20201
+KM20202
+KM20301
+KM20302
+KM20401
+KM20402
+KM20404
+KM20403
+KM20701
+KM20701
+KM20701
+KM20701
+A-A
+B-B
+C-C
+A-A
+K10201
+K10202
+K10301
+K10302
+K10401
+K10402
+K10403
+K10404
+K10701
+K10702
+K10703
+K10704
+F01701
+F01702
+F01703
+F01704
+F01705
+F01706
+F01707
+F01708
+X01801
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+X02101
+X02102
+X02201
+S09101
+S09102
+KM09101
+B-B
+Q20001
+X20001
+X20101
+X20201
+X20202
+X20301
+X20302
+X20401
+X20402
+X20403
+X20404
+X20501
+X20601
+X20701
+X20702
+X20703
+X20704
+C-C
+S09201
+X01701
+X01702
+X01703
+X02701
+
+---
+
+## Pagina 85/258 - Doblefondo pt 2
+
+h
+i
+180 mm
+480 mm
+630 mm
+200 mm
+220 mm
+200 mm
+490 mm
+376 mm
+225 mm
+225 mm
+224,5 mm
+169,9 mm
+-U08   80 x 80 (W x H)    L: 1039 mm
+-U10   60 x 80 (W x H)    L: 630 mm
+-U03   60 x 80 (W x H)    L: 720 mm
+-U12   60 x 80 (W x H)    L: 1039 mm
+-U02   60 x 80 (W x H)    L: 490 mm
+-U04   60 x 80 (W x H)    L: 489 mm
+-U01   60 x 80 (W x H)    L: 1099 mm
+-U05   60 x 80 (W x H)    L: 1660 mm
+-U06   40 x 80 (W x H)     L: 480 mm
+-U09   40 x 80 (W x H)     L: 630 mm
+-U11   40 x 80 (W x H)     L: 630 mm
+-U07   40 x 80 (W x H)     L: 480 mm
+279 mm
+489 mm
+224,5 mm
+-U13   40 x 80 (W x H)     L: 1099 mm
+6 mm
+95 mm
+237,4 mm
+254 mm
+87 mm
+105 mm
+77,4 mm
+97 mm
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+
+---
+
+## Pagina 86/258 - Barraje de tierra
+
+p
+l
+440,5 mm
+460 mm
+195 mm
+Vista isometrica
+Vista Superior
+Soporte de barra ref. 9340030
+Carril de montaje ref. 8617720
+Barra de cobre 30 x 10 mm
+Perfil base vertical
+derecho delantero
+
+---
+
+## Pagina 87/258 - Superficies de montaje - Sistema Calefaccion
+
+=.S3+INF&EAA/2
+200 mm
+105 mm
+378 mm
+Chasis de montaje ref. 8617130
+Resistencia Calefaccion 250 W ref. 02811.0-00
+Zocalo tablero
+Instalado por el interior del bastidor
+Frente tablero
+Vista Lateral derecho Tablero
+Nota: Resistencia de calefaccion, centrada sobre riel DIN
+Lateral derecho S2
+Direccionador de aire ref. 252017 -  Ajustado a 45°
+
+---
+
+## Pagina 88/258
+
+Ref.: nº
+Firma
+22/05/2025
+Núm. de documento
+Contr. téc.
+Nº orig invent.
+Formato А4
+Firma & fecha
+Fabricante
+Confirm.
+Cart.
+Fecha
+Hoja
+Firma & fecha
+Nº invent. sust.
+Control.
+Conduc.
+Prim. aplicac.
+Copia por
+Contr. especific.
+Rev.
+Nº invent. dupl
+Hoja
+Hoja
+Descripción de página
+Observación
+Número de diseño
+Hoja
+I:\Agri tecnology Solutions\Plantillas planos\Agritech Logo - copia.PNG
+Índice de páginas : =TCP.S3+INF&EAA/2 - =TCP.S3&EAC/p
+Portada
+Codigo de colores y calibres estandar
+Nomenclaturas
+Incoming
+Distribución 480 VAC
+Distribucion de tierras
+Tension Control AC: Transformador de control 480 / 220 VAC
+16
+Tension Control AC: Distribucion tension Control
+17
+Tension Control AC: Señales disparo protecciones Tencion Control AC
+17.a
+Tension Control AC: Distribucion Neutro
+18
+Tension Control DC: Fuente 24 VDC
+19
+Tension Control DC: Protecciones tension control DC
+20
+Tension Control DC: Distribucion tension control DC
+21
+Tension Control DC: Distribucion referencia 0 VDC
+22
+Pilotos indicacion Suministro electrico control
+28
+Circuitos Auxiliares Suministro Electrico control
+29
+Rack de control
+30
+Circuito Seguridad
+37
+Iluminacion
+90
+Calefaccion
+92
+Banda recepcion CC100A
+100
+Banda recepcion CC100B
+101
+Silo RFan 01 / 02 / 03
+102
+Silo RFan 01 / 02 / 03
+102.a
+Silo RFan 01 / 02 / 03
+102.b
+Silo RFan 04 / 05 / 06
+103
+Silo RFan 04 / 05 / 06
+103.a
+Silo RFan 04 / 05 / 06
+103.b
+
+---
+
+## Pagina 89/258
+
+Ref.: nº
+Nº orig invent.
+Formato А4
+Firma & fecha
+Firma & fecha
+Nº invent. sust.
+Prim. aplicac.
+Nº invent. dupl
+Firma
+Núm. de documento
+Fecha
+Hoja
+Copia por
+Rev.
+Hoja
+2.a
+Descripción de página
+Observación
+Número de diseño
+Hoja
+Silo RFan 07 / 08 / 09
+104
+Silo RFan 07 / 08 / 09
+104.a
+Silo RFan 07 / 08 / 09
+104.b
+Silo RFan 10 / 11 / 12
+105
+Silo RFan 10 / 11 / 12
+105.a
+Silo RFan 10 / 11 / 12
+105.b
+Portada
+a
+Aparamenta puertas
+b
+Barraje pre-ensamblado riline60
+c
+Aparataje Barraje
+d
+Doblefondo
+h
+Barraje de tierra
+l
+Superficies de montaje - Sistema Calefaccion
+p
+
+---
+
+## Pagina 90/258 - Portada
+
+&EAA/2.a
+PLANOS ELECTRICOS
+S3
+
+---
+
+## Pagina 91/258 - Codigo de colores y calibres estandar
+
+NOTA: EN CASO DE SER EMPLEADA  UNA SECCION DIFERENTE, SE
+ESTIPULARA LA INFOMACION EN EL PLANO CORRESPONDIENTE
+COLOR Y SECCION DE CONDUCTORES ESTANDAR
+DESCRIPCION/FUNCION
+COLOR
+ACRONIMO
+COLOR
+SECCION (AWG)
+CIRCUITOS DE POTENCIA FASE
+Negro
+BK
+14
+CIRCUITOS DE CONTROL A TENSION NOMINAL
+Negro
+BK
+18
+CIRCUITOS DE CONTROL TENSION AC
+Rojo
+RD
+18
+CIRCUITOS DE CONTROL TENISION AC (NEUTRO)
+Blanco Rojo
+RDWH
+18
+CIRCUITOS DE CONTROL 24 VDC (+)
+Azul
+BU
+18
+CIRCUITO DE CONTROL 24 VDC (-)
+Blanco Azul
+BUWH
+18
+CIRCUITOS VIVOS DC CON PANEL DESENERGIZADO
+(+)
+Naranja
+OG
+18
+CIRCUITOS VIVOS AC CON PANEL DESENERGIZADO
+(FASE)
+Amarillo
+YE
+18
+CIRCUITOS VIVOS AC/DC DE EXTERNOS
+Violeta
+VT
+18
+
+---
+
+## Pagina 92/258 - Nomenclaturas
+
++SEP/1
+NUMERO DE PÁGINA
+NUMERO CONSECUTIVO ELEMENTO
+NUMERACION APARAMENTA
+NUMERACION BORNES DOBLE PISO
+NUMERACION PAR
+NUMERACION IMPAR
+NUMERACION CABLES/HILOS
+XXX-YY
+NUMERO DE PAGINA
+CONSECUTIVO HILO/CABLE
+ESTRUCTURA NOMBRE PUNTOS DE INTERRUPCION
+AAA.BB+CCC-XXXX.XX_YYY_ZZZ
+NOMBRE SEÑAL/POTENCIAL
+DISPOSITIVO QUE GENERA LA SEÑAL/POTENCIA
+O SUB INDICE (OPCIONAL)
+NUMERO DE PAGINA DESTINO
+DISPOSITIVO DESTINO DE LA
+SEÑAL/ POTENCIAL (OPCIONAL)
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION ELEMENTO
+DESCRIPCIONES FUNCIONALES
+INF - INFORMACION
+SEP - SUMINISTRO ELECTRICO DE POTENCIA
+SEC - SUMINISTRO ELECTRICO DE CONTROL
+SC - SISTEMA DE CONTROL
+SA - SERVICIOS AUXILIARES
+SP - SISTEMA DE POTENCIA
+LETRA DESCRIPTIVA ELEMENTO
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION DISPOSITIVO
+QUE GENERA LA SEÑAL/POTENCIAL (OPCIONAL)
+=TCP.S3+INF-FIII01
+I>
+I>
+I>
+
+---
+
+## Pagina 93/258 - Incoming
+
++INF/III
+-F00101
+gG 14x51,  690 V, 50A
+31118
+RM22TR33
+<U<
+L1
+L2
+L3
+-A00101
+/4.7
+L1
+L2
+L3
+12
+11
+14
+11
+12
+14
+22
+21
+24
+21
+22
+24
+SISTEMA DE BARRA RILINE60 PLS 1600
+SISTEMA DE BARRA RILINE60 PLS 1600
+SISTEMA DE BARRA RILINE60 PLS 1600
+-F00102
+690 V
+31113
+PE
+-R00101
+/4.3
+2910372
+U
+-W_R:2
+-W_S:2
+-W_T:2
+-W_R:1
+-W_T:1 -W_S:1
+6 AWG
+YE
+001-04
+6 AWG
+YE
+001-01
+6 AWG
+YE
+001-09
+6 AWG
+YE
+001-02
+6 AWG
+YE
+001-08
+6 AWG
+YE
+001-05
+6 AWG
+GNYE
+001-03
+-Q00101
+3VA2125-5HK32-0AA0
+I>
+I>>
+I>
+I>>
+I>
+I>>
+-X00101
+10 AWG
+YE
+001-10
+10 AWG
+YE
+001-14
+10 AWG
+YE
+001-18
+16 AWG
+YE
+001-19
+16 AWG
+YE
+001-15
+16 AWG
+YE
+001-11
+10 AWG
+BK
+001-12
+10 AWG
+BK
+001-16
+10 AWG
+BK
+001-20
+4G6
+ÖLFLEX® TRAY II CY
+=TC/1.4
+-W00105
+001-13
+GNYE
+001-23
+001-17
+001-21
+6 AWG
+GNYE
+001-06
+6 AWG
+GNYE
+001-07
+16 AWG
+YE
+001-24
+16 AWG
+YE
+001-25
+16 AWG
+YE
+001-26
+10 AWG
+GNYE
+001-22
+T / 2.0
+S / 2.0
+R / 2.0
+PE / 3.1
+PE_S5 / 3.6
+Alimentacion_S5
+/
+=TC/1.5
+R
+S
+T
+PE
+
+---
+
+## Pagina 94/258 - Distribucion 480 VAC
+
+BARRA FLEXIBLE AISLADA:  10 x 24 x 1 mm
+SISTEMA DE BARRA RILINE60 S3
+BARRA FLEXIBLE AISLADA:  10 x 24 x 1 mm
+BARRA FLEXIBLE AISLADA:  10 x 24 x1 mm
+BARRA FLEXIBLE AISLADA:  10 x 24 x 1 mm
+SISTEMA DE BARRA RILINE60 PLS 1600
+SISTEMA DE BARRA RILINE60 PLS 1600
+SISTEMA DE BARRA RILINE60
+-W_R:4
+-W_S:4
+-W_T:4
+-Q00201
++SC/84.5
+3VA1450-5EF32-0AA0
+I>
+I>>
+I>
+I>>
+I>
+I>>
+-Q00202
++SC/84.6
+3VA1340-5EF32-0AA0
+I>
+I>>
+I>
+I>>
+I>
+I>>
+-W2_R:1
+-W2_S:1
+-W2_T:1
+-W3_R:1
+-W3_S:1
+-W3_T:1
+T
+/
+1.9
+S
+/
+1.9
+R
+/
+1.9
+T2 / =.S4/1.0
+S2 / =.S4/1.0
+R2 / =.S4/1.0
+R1_S3
+/
+=.S2/1.8
+S1_S3
+/
+=.S2/1.8
+T1_S3
+/
+=.S2/1.8
+
+---
+
+## Pagina 95/258 - Distribucion de tierras
+
+Acople simble barra ref. 9320020
+Barra de tierra S3
+Acople simble barra ref. 9320020
+-W_PE.S3:1
+PE
+Doble fondo
+PE
+Puerta
+PE
+Gabinete
+12 AWG
+GNYE
+003-40
+6 AWG
+GNYE
+003-38
+6 AWG
+GNYE
+003-39
+10 AWG
+GNYE
+001-22
+PE
+/
+1.9
+PE_S2
+/
+=.S2/3.9
+PE_S4 / =.S4/3.0
+PE_S5
+/
+1.6
+
+---
+
+## Pagina 96/258 - Indicadores de monitoreo 480 VAC
+
++SC/84
+12
+11
+14
+-R00101
+/1.2
+Pole 1
+12
+11
+14
+-R00101
+/1.2
+Pole 2
+12
+11
+14
+-R00101
+/1.2
+Pole 3
+-P00401
+24VDC, Red
+Cartucho DPS Dañado
+1SFA619403R5021
+X1
+X2
+12
+11
+14
+-A00101
+/1.7
+-P00402
+24VDC, Red
+Condicion anormal suministro 480 VAC
+1SFA619403R5021
+X1
+X2
+004-05
+004-11
+004-12
+004-02
+004-07
+022-18
+004-01
+004-13
+18 AWG
+BU
+004-14
+004-03
+-X00401
+-X00402
+-K00401
+24 VDC
+2903361
+A1
+A2
+13
+14
+/4.2
+-K00402
+24 VDC
+2903361
+A1
+A2
+13
+14
++SC/84.4
+14
+13
+-K00401
+/4.4
+250 VDC/VAC, 6A
+004-09
+004-15
+021-35
+-K00403
+24 VDC
+2903361
+A1
+A2
+13
+14
+/4.6
+-K00404
+24 VDC
+2903361
+A1
+A2
+13
+14
+=.S1+SEC/29.1
+-K00405
+24 VDC
+2903361
+A1
+A2
+13
+14
+=.S4+SEC/29.1
+14
+13
+-K00403
+/4.7
+250 VDC/VAC, 6A
+004-06
+18 AWG
+BU
+004-17
+004-04
+004-08
+004-16
+004-18
+004-20
+004-19
+004-21
+004-10
+=.S2+SEC-0VDC_S3
+/
+=.S2+SEC/22.4
+=.S2+SEC-24VDC_S3
+/
+=.S2+SEC/21.2
+
+---
+
+## Pagina 97/258 - Señales de Interconexion - TCP
+
++SEP/4
++SA/90
+84
+TABLERO TC
+-X08402
+-X08402
+.2
+.1
+.4
++SEP-Q00201
++SEP/2.3
+.2
+.1
+.4
++SEP-Q00202
++SEP/2.6
+22
+21
+24
++SEP-A00101
++SEP/1.7
+=TC-X08401
+300/500 V
+5x1
+ÖLFLEX® CLASSIC 135 CH
+-W08401
+084-02
+084-18
+084-05
+084-10
+084-13
+18 AWG
+VT
+084-03
+18 AWG
+VT
+084-08
+18 AWG
+VT
+084-11
+18 AWG
+VT
+084-16
+18 AWG
+VT
+084-06
+18 AWG
+VT
+084-07
+18 AWG
+VT
+084-15
+18 AWG
+VT
+084-14
+14
+13
++SEP-K00402
++SEP/4.4
+250 VDC/VAC, 6A
+-X08401
+18 AWG
+VT
+084-04
+18 AWG
+VT
+084-09
+18 AWG
+VT
+084-12
+18 AWG
+VT
+084-17
+18 AWG
+VT
+084-14
+18 AWG
+VT
+084-01
+
+---
+
+## Pagina 98/258 - Iluminacion
+
++SC/84
+91
+90
+L
+N
+-E09001
+13
+14
+-B09001
+090-05
+018-07
+017-25
+=.S2+SEC-230VAC_90_S3
+/
+=.S2+SEC/17.7
+=.S2+SEC-N_90_S3
+/
+=.S2+SEC/18.4
+
+---
+
+## Pagina 99/258 - Ventilacion
+
+90
+92
+91
+-S09101
+10 A @25VAC
+Tr=50°C
+TRT-10A230V-NO
+13
+14
+-M09101
+20 m3/h ; 230 VAC; 0,1A
+3237700
+PE
+M
+1~
+PE
+091-08
+091-07
+017-29
+018-08
+=.S2+SEC-230VAC_91_S3
+/
+=.S2+SEC/17.7
+=.S2+SEC-N_91_S3
+/
+=.S2+SEC/18.4
+
+---
+
+## Pagina 100/258 - Calefaccion
+
+91
++&EAC/a
+92
+-U09201
+CS 028
+02800.0-00
+02800.0-00
+L
+N
+M
+1~
+-S09201
+10 A @250VAC
+TRT-10A230V-NC
+11
+12
+092-03
+018-10
+017-19
+=.S2+SEC-N_92_S3
+/
+=.S2+SEC/18.4
+=.S2+SEC-230VAC_92_S3
+/
+=.S2+SEC/17.4
+
+---
+
+## Pagina 101/258 - Portada
+
++SA&EAB/92
+b
+PLANOS MECANICOS
+S3
+
+---
+
+## Pagina 102/258 - Aparamenta puertas
+
+c
+b
+396 mm
+60 mm
+60 mm
+1250 mm
+200 mm
+316,5 mm
+200 mm
+396 mm
+Piloto
+P00101
+P00102
+Filtro
+Ventilador
+
+---
+
+## Pagina 103/258 - Barraje pre-ensamblado riline60
+
+c
+120 mm
+250 mm
+25 mm
+185 mm
+120 mm
+350 mm
+25 mm
+285 mm
+99 mm
+270 mm
+370 mm
+Soporte barraje ref. 9340000
+Bandeja base
+BARRA FEEDER S1-S2
+BARRA FEEDER S4
+Soporte barraje ref. 9340000
+Barra de 30 x 10 mm
+Barra de 30 x 10 mm
+Acople barraje ref. 9320030
+Bandeja base
+
+---
+
+## Pagina 104/258 - Aparataje Barraje riline60
+
+c
+d
+NOTA 1: LA POSICION DE LOS ADAPTADORES SE AJUSTAN EN FABRICACION, SEGUN LA FACILIDAD PARA CABLEAR HACIA LOS ELEMENTOS DESTINO.
+NOTA 2: LAS DIMENSIONES Y CORTES DE LA CUBIERTA DEL PLANO SON ILUSTRATIVOS, ESTAS SE DEBEN CORTAN SEGUN EL POSICIONAMIENTO
+DE LOS ADAPTADORES DE CONEXION Y OM
+Cubierta final barraje ref. 9340070
+Cubierta barraje
+Adaptador de conexión ref. 9342300
+
+---
+
+## Pagina 105/258 - Barraje pre-ensamblado riline PLS 1600
+
+f
+988 mm
+699 mm
+295 mm
+296 mm
+Bandeja base ref. 9342110
+Barra PLS 1600 ref. 3528000
+Soporte barraje ref. 9342000
+
+---
+
+## Pagina 106/258 - Aparataje Barraje riline PLS 1600
+
+h
+f
+Adaptador de conexión ref. 9342300
+Adaptador de conexión ref. 9342280
+Adaptador de conexión ref. 9342200
+Cubierta final barraje PLS1600 ref. 9342070
+Cubierta barraje
+
+---
+
+## Pagina 107/258 - Doblefondo 1
+
+i
+h
+-U03   60 x 80 (W x H)    L: 699 mm
+-U01   60 x 80 (W x H)    L: 699 mm
+-U02   60 x 80 (W x H)    L: 390 mm
+-U04   60 x 80 (W x H)    L: 760 mm
+-U06   60 x 80 (W x H)
+L: 100 mm
+-U05   60 x 80 (W x H)
+L: 100 mm
+270 mm
+369 mm
+396 mm
+390 mm
+140 mm
+70 mm
+40 mm
+92 mm
+92 mm
+139 mm
+Q00201
+Q00202
+X08401
+X00101
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+
+---
+
+## Pagina 108/258 - Doblefondo 2
+
+h
+j
+i
+120 mm
+229 mm
+139,5 mm
+230 mm
+139,5 mm
+179,5 mm
+-U07   40 x 80 (W x H)     L: 699 mm
+-U08   40 x 80 (W x H)     L: 319 mm
+-U09   40 x 80 (W x H)     L: 319 mm
+-U13   40 x 80 (W x H)     L: 619 mm
+-U10   40 x 80 (W x H)     L: 319 mm
+-U12   40 x 80 (W x H)
+L: 139,5 mm
+-U11   40 x 80 (W x H)
+L: 230 mm
+80 mm
+80 mm
+F00101
+R00101
+Q00101
+F00102
+A00101
+X00401
+X00402
+K00401
+K00402
+K00403
+K00404
+K00405
+X08402
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+Chapa
+
+---
+
+## Pagina 109/258 - Doblefondo 2 : Medidas para Instalacion
+
+k
+j
+485 mm
+644,25 mm
+854,5 mm
+222 mm
+236,5 mm
+Referencia de medida, soporte
+Referencia de medida, bastidor
+kit de bastidor movil ref. 8619610
+Carril de montaje ref. 8617130
+Placa de montaje parcial ref. 8617570
+Kit fijacion con bisagras ref. 8617650
+Nota: Para el montaje del doble fondo basculante, revisar procedimiento rittal del kit de bastidor movil ref. 8619610 y el procedimiento del kit fijacion con bisagras ref. 8617650
+
+---
+
+## Pagina 110/258 - Doblefondo 2 : Doble fondo basculante
+
+j
+k
+
+---
+
+## Pagina 111/258 - Barraje de tierra
+
+k
+p
+l
+195 mm
+Vista Superior
+Vista isometrica
+Soporte de tierra ref. 9340030
+Barra de cobre 30 x 10 mm
+Perfil base vertical derecho delantero
+
+---
+
+## Pagina 112/258 - Superficies de montaje - Sistema Calefaccion
+
+=.S4+INF&EAA/2
+200 mm
+105 mm
+378 mm
+Chasis de montaje ref. 8617130
+Resistencia Calefaccion 150 W ref. 02800.0-00
+Zocalo tablero
+Instalado por el interior del bastidor
+Frente tablero
+Vista Lateral derecho Tablero
+Nota: Resistencia de calefaccion, centrada sobre riel DIN
+Lateral izquierdo S3
+
+---
+
+## Pagina 113/258
+
+Ref.: nº
+Firma
+22/05/2025
+Núm. de documento
+Contr. téc.
+Nº orig invent.
+Formato А4
+Firma & fecha
+Fabricante
+Confirm.
+Cart.
+Fecha
+Hoja
+Firma & fecha
+Nº invent. sust.
+Control.
+Conduc.
+Prim. aplicac.
+Copia por
+Contr. especific.
+Rev.
+Nº invent. dupl
+Hoja
+Hoja
+Descripción de página
+Observación
+Número de diseño
+Hoja
+I:\Agri tecnology Solutions\Plantillas planos\Agritech Logo - copia.PNG
+Índice de páginas : =TCP.S4+INF&EAA/2 - =TCP.S4+SP&EAB/402
+Índice de páginas : =TCP.S4+SP&EAB/402.a - =TCP.S4&EAC/p
+2.a
+Portada
+Codigo de colores y calibres estandar
+Nomenclaturas
+Incoming
+Distribucion de tierras
+Tension Control AC: Transformador de control 480 / 220 VAC
+16
+Tension Control AC: Distribucion tension Control
+17
+Tension Control AC: Señales disparo protecciones Tencion Control AC
+17.a
+Tension Control AC: Distribucion Neutro
+18
+Tension Control DC: Fuente 24 VDC
+19
+Tension Control DC: Protecciones tension control DC
+20
+Tension Control DC: Distribucion tension control DC
+21
+Tension Control DC: Distribucion referencia 0 VDC
+22
+Tierra de control
+27
+Pilotos indicacion Suministro electrico control
+28
+Circuitos Auxiliares Suministro Electrico control
+29
+Rack de control
+30
+Circuito Seguridad
+37
+Iluminacion
+90
+Ventilacion: Arrancadores directos
+91
+Ventilacion: VFD BE102
+91.a
+Calefaccion
+92
+Silo Fan 1 / 2
+400
+Silo Fan 1 / 2
+400.a
+Silo Fan 3 / 4
+401
+Silo Fan 3 / 4
+401.a
+Silo Fan 5 / 6
+402
+
+---
+
+## Pagina 114/258
+
+Ref.: nº
+Nº orig invent.
+Formato А4
+Firma & fecha
+Firma & fecha
+Nº invent. sust.
+Prim. aplicac.
+Nº invent. dupl
+Firma
+Núm. de documento
+Fecha
+Hoja
+Copia por
+Rev.
+Hoja
+2.a
+Descripción de página
+Observación
+Número de diseño
+Hoja
+Silo Fan 5 / 6
+402.a
+Silo Fan 7 / 8
+403
+Silo Fan 7 / 8
+403.a
+Elevador BE102
+404
+Elevador BE102
+404.a
+Portada
+a
+Aparamenta puertas
+b
+Barraje pre-ensamblado riline60
+e
+Aparataje Barraje
+f
+Doblefondo pt 1
+h
+Doblefondo pt 2
+i
+Barraje de tierra
+l
+Superficies de montaje - Sistema Calefaccion
+p
+
+---
+
+## Pagina 115/258 - Portada
+
+&EAA/2.a
+PLANOS ELECTRICOS
+S4
+
+---
+
+## Pagina 116/258 - Codigo de colores y calibres estandar
+
+NOTA: EN CASO DE SER EMPLEADA  UNA SECCION DIFERENTE, SE
+ESTIPULARA LA INFOMACION EN EL PLANO CORRESPONDIENTE
+COLOR Y SECCION DE CONDUCTORES ESTANDAR
+DESCRIPCION/FUNCION
+COLOR
+ACRONIMO
+COLOR
+SECCION (AWG)
+CIRCUITOS DE POTENCIA FASE
+Negro
+BK
+14
+CIRCUITOS DE CONTROL A TENSION NOMINAL
+Negro
+BK
+18
+CIRCUITOS DE CONTROL TENSION AC
+Rojo
+RD
+18
+CIRCUITOS DE CONTROL TENISION AC (NEUTRO)
+Blanco Rojo
+RDWH
+18
+CIRCUITOS DE CONTROL 24 VDC (+)
+Azul
+BU
+18
+CIRCUITO DE CONTROL 24 VDC (-)
+Blanco Azul
+BUWH
+18
+CIRCUITOS VIVOS DC CON PANEL DESENERGIZADO
+(+)
+Naranja
+OG
+18
+CIRCUITOS VIVOS AC CON PANEL DESENERGIZADO
+(FASE)
+Amarillo
+YE
+18
+CIRCUITOS VIVOS AC/DC DE EXTERNOS
+Violeta
+VT
+18
+
+---
+
+## Pagina 117/258 - Nomenclaturas
+
++SEP/1
+NUMERO DE PÁGINA
+NUMERO CONSECUTIVO ELEMENTO
+NUMERACION APARAMENTA
+NUMERACION BORNES DOBLE PISO
+NUMERACION PAR
+NUMERACION IMPAR
+NUMERACION CABLES/HILOS
+XXX-YY
+NUMERO DE PAGINA
+CONSECUTIVO HILO/CABLE
+ESTRUCTURA NOMBRE PUNTOS DE INTERRUPCION
+AAA.BB+CCC-XXXX.XX_YYY_ZZZ
+NOMBRE SEÑAL/POTENCIAL
+DISPOSITIVO QUE GENERA LA SEÑAL/POTENCIA
+O SUB INDICE (OPCIONAL)
+NUMERO DE PAGINA DESTINO
+DISPOSITIVO DESTINO DE LA
+SEÑAL/ POTENCIAL (OPCIONAL)
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION ELEMENTO
+DESCRIPCIONES FUNCIONALES
+INF - INFORMACION
+SEP - SUMINISTRO ELECTRICO DE POTENCIA
+SEC - SUMINISTRO ELECTRICO DE CONTROL
+SC - SISTEMA DE CONTROL
+SA - SERVICIOS AUXILIARES
+SP - SISTEMA DE POTENCIA
+LETRA DESCRIPTIVA ELEMENTO
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION DISPOSITIVO
+QUE GENERA LA SEÑAL/POTENCIAL (OPCIONAL)
+=TCP.S4+INF-FIII01
+I>
+I>
+I>
+
+---
+
+## Pagina 118/258 - Incoming
+
++INF/III
+ACOPLE BARRAJE
+BARRAJE PREEMSAMBLADO S3
+BARRAJE PREEMSAMBLADO S4
+=.S3-W3_T:2
+=.S3-W3_S:2
+=.S3-W3_R:2
+W3_R:1
+W3_S:1
+W3_T:1
+=.S3-T2
+/
+=.S3/2.8
+=.S3-S2
+/
+=.S3/2.8
+=.S3-R2
+/
+=.S3/2.8
+R2_S3S4 / +SEC/16.1
+S2_S3S4 / +SEC/16.1
+T2_S3S4 / +SEC/16.1
+
+---
+
+## Pagina 119/258 - Distribucion de tierras
+
++SEC/16
+Acople simble barra ref. 9320020
+-W_PE.S4:1
+PE
+Doble fondo
+PE
+Puerta
+PE
+Gabinete
+10
+11
+12
+13
+14
+15
+16
+6 AWG
+GNYE
+003-41
+12 AWG
+GNYE
+003-43
+6 AWG
+GNYE
+003-42
+003-45
+003-46
+003-47
+003-48
+003-49
+003-50
+003-51
+003-52
+003-44
+=.S3-PE_S4
+/
+=.S3/3.9
+PE_400_X40001
+/
++SP/400.1
+PE_400_X40002
+/
++SP/400.3
+PE_401_X40101
+/
++SP/401.1
+PE_401_X40102
+/
++SP/401.3
+PE_402_X40201
+/
++SP/402.1
+PE_402_X40202
+/
++SP/402.3
+PE_403_X40301
+/
++SP/403.1
+PE_403_X40302
+/
++SP/403.3
+PE_27
+/
++SEC/27.1
+
+---
+
+## Pagina 120/258 - Tension Control AC: Transformador de control 480 / 220 VAC
+
++SEP/3
+17
+16
+IN
+PE
+OUT
+11
+-T01601
+86151
+86151
+P: 1000VA
+IN: 208...550VAC
+OUT: 2x115VAC
+10
+OUT
+12
++SC-A03003
+Falla Cortocircuito Trafo 230 VAC
+DI5
++SC-A03003
+Falla Sobrecarga Trafo 230 VAC
+DI6
+-Q01601
+1,8...2,5A
+3RV2411-1CA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/16.7
+65
+66
+/29.1
+77
+78
+/16.8
+85
+86
+/29.1
+PE
+57
+58
+-Q01601
+/16.2
+77
+78
+-Q01601
+/16.2
+20 AWG
+BU
+016-20
+20 AWG
+BU
+016-21
+20 AWG
+BU
+016-19
+20 AWG
+BU
+021-58
+14 AWG
+RDWH
+016-13
+14 AWG
+RD
+016-18
++SEP-W3_R:2
++SEP-W3_S:2
+14 AWG
+BK
+016-11
+14 AWG
+BK
+016-14
+14 AWG
+BK
+016-15
+14 AWG
+BK
+016-16
+14 AWG
+BK
+016-12
+14 AWG
+BK
+016-17
+N_18
+18.1
+230VAC_17
+17.1
+24VDC.1_16
+21.3
++SEP-R2_S3S4
++SEP/1.9
++SEP-S2_S3S4
++SEP/1.9
++SEP-T2_S3S4
++SEP/1.9
++SEP-R2 / 19.1
++SEP-S2 / 19.1
++SEP-T2 / 19.1
+N
+230VAC
+
+---
+
+## Pagina 121/258 - Tension Control AC: Distribucion tension Control
+
+16
+17.a
+17
+230 VAC CONTROL
+230 VAC SERVICIOS AUX. 1
+230 VAC SERVICIOS AUX. 2
+-F01701
+/17.a.2
+230/400V 10kA
+1 polo, C, 4A
+-X01701
+-F01702
+/17.a.4
+230/400V 10kA
+1 polo, C, 6A
+-F01703
+/17.a.6
+230/400V 10kA
+1 polo, C, 2A
+-X01702
+14 AWG
+RD
+017-32
+16 AWG
+RD
+017-34
+14 AWG
+RD
+017-35
+14 AWG
+RD
+017-39
+-W01701
+-X01703
+017-41
+017-37
+1/L1
+2/T1
+-KM02901
+/29.3
+14 AWG
+RD
+016-18
+14 AWG
+RD
+017-31
+14 AWG
+RD
+017-38
+14 AWG
+RD
+017-33
+14 AWG
+RD
+017-36
+14 AWG
+RD
+017-40
+230VAC_91
+/
++SA/91.1
+230VAC_17
+/
+16.3
+230VAC_91a
+/
++SA/91.a.1
+230VAC_400
+/
++SP/400.4
+230VAC_90
+/
++SA/90.1
+230VAC_92
+/
++SA/92.2
+
+---
+
+## Pagina 122/258 - Tension Control AC: Señales disparo protecciones Tencion Control AC
+
+17
+18
+17.a
++SC-A03003
+Falla 230 VAC Control
+DI7
++SC-A03003
+Falla 230 VAC Servicios Aux 1
+DI8
++SC-A03003
+Falla 230 VAC Servicios Aux 2
+10
+DI9
+13
+14
+-F01701
+/17.3
+13
+14
+-F01702
+/17.5
+13
+14
+-F01703
+/17.7
+20 AWG
+BU
+17.a-22
+20 AWG
+BU
+17.a-24
+20 AWG
+BU
+17.a-25
+20 AWG
+BU
+17.a-21
+20 AWG
+BU
+17.a-23
+20 AWG
+BU
+021-59
+24VDC.1_17
+/
+21.3
+
+---
+
+## Pagina 123/258 - Tension Control AC: Distribucion Neutro
+
+17.a
+19
+18
+-X01801
+018-30
+018-31
+018-33
+018-35
+14 AWG
+RDWH
+016-13
+14 AWG
+RDWH
+018-27
+14 AWG
+RDWH
+018-32
+N_90
+/
++SA/90.1
+N_91
+/
++SA/91.1
+N_18
+/
+16.2
+N_400
+/
++SP/400.4
+N_402
+/
++SP/402.4
+N_91a
+/
++SA/91.a.1
+N_92
+/
++SA/92.2
+N_401
+/
++SP/401.4
+N_403
+/
++SP/403.4
+
+---
+
+## Pagina 124/258 - Tension Control DC: Fuente 24 VDC
+
+18
+20
+19
+SIEMENS
+L1
+PE
+1+
+2+
+1-
+2-
+14
+13
+24V O.K.
+-T01901
+/28.4
+IN: 400-500 V AC
+OUT: 24 V/5 A DC
+SITOP PSU300S 24 V/5 A
+Fuente de alimentación SITOP smart
+6EP1433-2BA20
+L2
+L3
+ADJUST
+24...28V
+DEFAULT VALUE
+24V
++SEP-W3_R:2
++SEP-W3_S:2
++SEP-W3_T:2
+-Q01901
+2,2...3,2A
+Ir = 3 A
+3RV2011-1DA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+14 AWG
+BK
+019-11
+14 AWG
+BK
+019-14
+14 AWG
+BK
+019-17
+14 AWG
+BK
+019-12
+14 AWG
+BK
+019-15
+14 AWG
+BK
+019-18
+14 AWG
+BU
+019-13
+14 AWG
+BU
+019-16
+14 AWG
+BUWH
+019-20
+PE
+24VDC_20
+/
+20.1
+24VDC.SUP_20
+/
+20.1
+0VDC_21
+/
+22.1
++SEP-R2 / +SP/400.0
++SEP-S2 / +SP/400.0
++SEP-T2 / +SP/400.0
++SEP-R2
+/
+16.4
++SEP-S2
+/
+16.4
++SEP-T2
+/
+16.4
+24VDC
+0VDC
+
+---
+
+## Pagina 125/258 - Tension Control DC: Protecciones tension control DC
+
+19
+21
+20
+ALIMENTACION MODULO PERIFERIA
+ALIMENTACION CIRCUITOS DE
+SEGURIDAD Y AUXILIARES
+ALIMENTACION 24 VDC(+1)
+ALIMENTACION 24 VDC(+2)
+24 VDC UNIDAD CONTROL VFD
++SC-A03003
+24 VDC Circuitos Seguridad - ok
+11
+DI10
++SC-A03003
+24 VDC(+1) - ok
+12
+DI11
++SC-A03003
+24 VDC (+2) - ok
+13
+DI12
++SC-A03003
+Falla alimentacion 24 VDC Unidad de
+control VFD BE102
+14
+DI13
+-F02002
+230/400 V 10 kA
+1 polo, b, 1A
+-F02001
+230/400 V 10 kA
+1 polo, b, 1A
+14 AWG
+BU
+019-16
+020-11
+20 AWG
+BU
+020-12
+-F02003
+230/400 V 10 kA
+1 polo, b, 1A
+-F02004
+230/400 V 10kA
+1-pole, B, 2A
+20 AWG
+BU
+020-15
+-F02005
+230/400 V 10kA
+1-pole, B, 2A
+14 AWG
+BU
+019-13
+20 AWG
+BU
+020-17
+20 AWG
+BU
+020-19
+-W02001
+-W02002
+12
+11
+14
+-K02901
+/29.4
+10 A
+14 AWG
+BU
+020-14
+16 AWG
+BU
+020-13
+16 AWG
+BU
+020-16
+16 AWG
+BU
+020-18
+16 AWG
+BU
+020-20
+24VDC_30
+/
++SC/30.2
+24VDC_21
+/
+21.1
+24VDC.1_21
+/
+21.1
+24VDC.2_21
+/
+21.1
+24VDC.404
+/
++SP/404.a.2
+24VDC.SUP_20
+/
+19.4
+24VDC_20
+/
+19.4
+
+---
+
+## Pagina 126/258 - Tension Control DC: Distribucion tension control DC
+
+20
+22
+21
+24VDC Ctos seguridad y Auxiliares
+24VDC Señales
+24VDC Salidas Cto 1
+-X02103
+-X02102
+10
+11
+12
+021-65
+1/L1
+2/T1
+-KM02902
+/29.7
+-X02101
+021-63
+021-86
+021-72
+16 AWG
+BU
+020-13
+16 AWG
+BU
+020-16
+16 AWG
+BU
+020-18
+16 AWG
+BU
+021-83
+16 AWG
+BU
+021-84
+16 AWG
+BU
+021-66
+16 AWG
+BU
+021-60
+021-69
+021-73
+021-58
+021-59
+021-85
+021-64
+24VDC_91
+/
++SA/91.5
+24VDC.2_21
+/
+20.6
+24VDC.1_21
+/
+20.4
+24VDC_91a
+/
++SA/91.a.5
+24VDC.1_16
+/
+16.6
+24VDC.1_17
+/
+17.a.1
+24VDC_28
+/
+28.1
+24VDC_21
+/
+20.3
+24VDC_29
+/
+29.0
+24VDC.1_29
+/
+29.0
+24VDC.1_37
+/
++SC/37.1
+24VDC.1_400
+/
++SP/400.a.1
+24VDC.1_402
+/
++SP/402.a.1
+24VDC.1_404_EFM
+/
++SP/404.7
+24VDC.2_404_DO
+/
++SP/404.a.4
+24VDC.1_91
+/
++SA/91.5
+24VDC.1_91a
+/
++SA/91.a.5
+24VDC.1_30
+/
++SC/30.2
+24VDC.2_30
+/
++SC/30.2
+24VDC.1_401
+/
++SP/401.a.1
+24VDC.1_403
+/
++SP/403.a.1
+
+---
+
+## Pagina 127/258 - Tension Control DC: Distribucion referencia 0 VDC
+
+21
+27
+22
+-X02201
+10
+022-28
+022-29
+022-33
+022-34
+022-35
+022-36
+022-37
+14 AWG
+BUWH
+019-20
+14 AWG
+BUWH
+022-27
+0VDC_21
+/
+19.5
+0VDC_29
+/
+29.0
+0VDC_28
+/
+28.1
+0VDC_37
+/
++SC/37.1
+0VDC_400
+/
++SP/400.4
+0VDC_404
+/
++SP/404.a.2
+0VDC_91
+/
++SA/91.5
+0VDC_91a
+/
++SA/91.a.5
+0VDC_30
+/
++SC/30.2
+
+---
+
+## Pagina 128/258 - Tierra de control
+
+22
+28
+27
+-X02701
+14 AWG
+GNYE
+003-44
++SEP-PE_27
+/
++SEP/3.4
+
+---
+
+## Pagina 129/258 - Pilotos indicacion Suministro electrico control
+
+27
+29
+28
+230 VAC OPERATIVO
+FUENTE 24 VDC OK
+-P02802
+24VDC, Green
+24 VDC Control Operativo
+1SFA619403R5022
+X1
+X2
+-P02801
+24VDC, Green
+230 VAC Control Operativo
+1SFA619403R5022
+X1
+X2
+13
+14
+-T01901
+/19.4
+.3
+.4
+-KM02901
+/29.3
+028-07
+028-08
+028-05
+021-62
+022-28
+021-61
+028-06
+.3
+.4
+-KM02902
+/29.7
+0VDC_28
+/
+22.4
+24VDC_28
+/
+21.1
+
+---
+
+## Pagina 130/258 - Circuitos Auxiliares Suministro Electrico control
+
+28
++SC/30
+29
+Habilitacion 230 VAC
+Habilitacion 24 VDC
+TCP S3
++SC-A03003
+230 VAC Control Habilitado
+15
+DI14
++SC-A03003
+24 VDC Control Habilitado
+16
+DI15
+-S02901
+1SFA619202R1076
+13
+14
+-KM02901
+AC-3, 7,5KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2018-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /17.3
+3/L2
+4/T2
+5/L3
+6/T3
+14
+13
+/29.2
+.2
+.1
+.4
+.3
+/28.2
+.4
+.3
+/29.5
+.4
+.3
+A1.
+A2.
+13
+NO
+14
+NO
+-KM02901
+/29.3
+-S02902
+1SFA619202R1076
+13
+14
+-KM02902
+AC-3, 3KW/400V, 1S, DC 24V,
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /21.6
+3/L2
+4/T2
+5/L3
+6/T3
+14
+13
+/29.8
+.2
+.1
+.4
+.3
+/28.4
+.4
+.3
+/29.8
+.4
+.3
+A1.
+A2.
+13
+NO
+14
+NO
+-KM02902
+/29.7
+.3
+.4
+-KM02901
+/29.3
+12
+11
+14
++SC-K03701
++SC/37.9
+10 A
+029-17
+029-28
+029-22
+029-29
+029-30
+029-21
+029-18
+029-19
+029-31
+20 AWG
+BU
+029-27
+20 AWG
+BU
+029-32
+029-25
+021-67
+021-68
+021-63
+.3
+.4
+-KM02902
+/29.7
+022-29
+-K02901
+24VDC
+RXG13BDPV
+A1
+A2
+12
+11
+14
+/20.4
+029-24
+65
+66
+-Q01601
+/16.2
+85
+86
+-Q01601
+/16.2
+14
+13
+=.S3+SEP-K00405
+=.S3+SEP/4.9
+250 VDC/VAC, 6A
+029-20
+029-23
+029-26
+24VDC_29
+/
+21.1
+0VDC_29
+/
+22.4
+24VDC.1_29
+/
+21.4
+
+---
+
+## Pagina 131/258 - Rack de control
+
++SEC/29
+37
+30
+-A03001
+1M
+1L+
+X80
+2M
+2L+
+RNER MT
+SIEMENS
+BA 2xRJ45
+P1R
+P2R
+LK1
+LK2
+SIMATIC
+ET 200SP
+PWR
+IM155-6PN ST
+X1  Xn
+PROFINET
+(LAN)
+6ES7193-6AR00-0AA0
+6ES7155-6AU02-0BN0
+MAC ADDRESS
+X80
+24VDC
+1L+
+2L+
+2M
+1M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
++SP/404.a.5
+-A03002
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
++SP/403.a.3
+-A03003
+L+
+M
+DI
+DIAG
+16x24VDC
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7131-6BH01-0BA0
+ST
+DIa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DIb
+P1
+P2
+AUX
+10
+12
+14
+16
+10
+11
+13
+15
+/37.1
+-A03004
+L+
+M
+DQ
+DIAG
+16x24VDC/0,5A
+.0
+.2
+.4
+.6
+PWR
+CC00
+.1
+.5
+.7
+.3
+6ES7132-6BH01-0BA0
+ST
+DQa
+.0
+.2
+.4
+.6
+.1
+.3
+.5
+.7
+DQb
+P1
+P2
+AUX
+10
+12
+14
+16
+11
+13
+15
+10
++SP/404.a.5
+-A03005
+L+
+M
+020-11
+022-30
+021-69
+030-05
+030-07
+030-06
+030-08
+022-31
+022-32
+021-85
++SEC-24VDC_30
+/
++SEC/20.1
++SEC-24VDC.1_30
+/
++SEC/21.4
++SEC-24VDC.2_30
+/
++SEC/21.6
++SEC-0VDC_30
+/
++SEC/22.4
+
+---
+
+## Pagina 132/258 - Circuito Seguridad
+
+30
++SA/90
+37
+TC
+-A03004
+Parada de emergencia tablero de
+potencia
+DI0
+11
+12
+-S03701
+=TC/37.e.7
+21
+22
+-X03701
+-X03703
+-K03701
+24VDC
+RXG13BDPV
+A1
+A2
+12
+11
+14
++SEC/29.7
+021-70
+022-33
+20 AWG
+BU
+037-09
+=TC-X03703
+18 AWG
+VT
+037-10
+18 AWG
+VT
+037-12
+5/L3
+6/T3
+=TC/37.6
+=TC-KM03701
+037-15
+021-71
+300/500 V
+4x1
+ÖLFLEX® CLASSIC 135 CH
+=TC/37.e.6
+-W03701
+037-11
+037-13
+037-14
+037-16
+=TC-X03701
++SEC-0VDC_37
+/
++SEC/22.4
++SEC-24VDC.1_37
+/
++SEC/21.4
+
+---
+
+## Pagina 133/258 - Iluminacion
+
++SC/37
+91
+90
+ALA 1
+ALA 2
+L
+N
+-E09001
+13
+14
+-B09001
+090-06
+017-42
+018-28
+L
+N
+-E09002
+13
+14
+-B09002
+090-07
+017-43
+018-29
++SEC-230VAC_90
+/
++SEC/17.7
++SEC-N_90
+/
++SEC/18.4
+
+---
+
+## Pagina 134/258 - Ventilacion: Arrancadores directos
+
+90
+91.a
+91
++SC-A03003
+Alerta temperatura Seccion 4 -
+DI3
+-KM09101
+AC-3, 3KW/400V, 1S, DC 24V,
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /91.1
+3/L2
+4/T2
+5/L3
+6/T3
+14
+13
+-S09101
+10 A @25VAC
+Tr=37°C
+TRT-10A230V-NO
+13
+14
+-S09102
+10 A @25VAC
+Tr = 50°C
+TRT-10A230V-NO
+13
+14
+A1.
+A2.
+-M09101
+60 m3/h; 230 VAC; 0,12A
+3238700
+PE
+M
+1~
+PE
+091-11
+20 AWG
+BU
+021-72
+091-10
+20 AWG
+BU
+091-12
+017-41
+018-30
+021-64
+022-34
+1/L1
+2/T1
+-KM09101
+/91.6
+091-09
++SEC-24VDC_91
+/
++SEC/21.2
++SEC-0VDC_91
+/
++SEC/22.5
++SEC-230VAC_91
+/
++SEC/17.7
++SEC-N_91
+/
++SEC/18.4
++SEC-24VDC.1_91
+/
++SEC/21.4
+
+---
+
+## Pagina 135/258 - Ventilacion: VFD BE102
+
+91
+92
+91.a
++SC-A03003
+Alerta temperatura Seccion 4 - VFD
+DI4
+-KM09102
+AC-3, 3KW/400V, 1S, DC 24V,
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /91.a.2
+3/L2
+4/T2
+5/L3
+6/T3
+14
+13
+-S09103
+10 A @25VAC
+Tr=40°C
+TRT-10A230V-NO
+13
+14
+-S09104
+10 A @25VAC
+Tr = 50°C
+TRT-10A230V-NO
+13
+14
+A1.
+A2.
+-M09102
+590 m3/h; 230 VAC; 0,47 A
+3243700
+PE
+M
+1~
+PE
+91.a-03
+20 AWG
+BU
+021-73
+91.a-02
+017-37
+018-31
+022-35
+20 AWG
+BU
+91.a-04
+021-65
+1/L1
+2/T1
+-KM09102
+/91.a.6
+91.a-01
++SEC-230VAC_91a
+/
++SEC/17.5
++SEC-N_91a
+/
++SEC/18.4
++SEC-24VDC.1_91a
+/
++SEC/21.4
++SEC-0VDC_91a
+/
++SEC/22.5
++SEC-24VDC_91a
+/
++SEC/21.2
+
+---
+
+## Pagina 136/258 - Calefaccion
+
+91.a
++SP/400
+92
+-U09201
+250W
+CSL 028
+02811.0-00
+02811.0-00
+L
+N
+M
+1~
+-S09201
+10 A @250VAC
+TRT-10A230V-NC
+11
+12
+14 AWG
+RD
+017-38
+14 AWG
+RD
+092-04
+14 AWG
+RDWH
+018-32
++SEC-230VAC_92
+/
++SEC/17.5
++SEC-N_92
+/
++SEC/18.4
+
+---
+
+## Pagina 137/258 - Silo Fan 1 / 2
+
++SA/92
+400.a
+400
+SILO FAN 01
+SILO FAN 02
++SC-A03005
+Perif 2 Modulo 5 - Entrada 3
+DQ2
++SC-A03005
+Perif 2 Modulo 5 - Entrada 4
+DQ3
+-Q40001
+22...32A
+3RV2031-4EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/400.a.3
+66
+65
+/400.6
+77
+78
+/400.a.4
+85
+86
+/400.6
+-Q40002
+22...32A
+3RV2031-4EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/400.a.6
+66
+65
+/400.8
+77
+78
+/400.a.7
+85
+86
+/400.8
+-W40003
+-KM40001
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /400.1
+3/L2
+4/T2 /400.1
+5/L3
+6/T3 /400.1
+14
+13
+/400.a.1
+21
+22
+1/L1
+2/T1
+-KM40001
+/400.6
+3/L2
+4/T2
+5/L3
+6/T3
+-KM40002
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /400.3
+3/L2
+4/T2 /400.3
+5/L3
+6/T3 /400.3
+14
+13
+/400.a.5
+21
+22
+1/L1
+2/T1
+-KM40002
+/400.8
+3/L2
+4/T2
+5/L3
+6/T3
+-W40001
+-W40002
+U1
+V1
+W1
+PE
+-M40001
+15 kW, 480 VAC
+24,9 A
+M
+U1
+V1
+W1
+PE
+-M40002
+15 kW, 480 VAC
+24,9 A
+M
+-X40001
+-X40002
+66
+65
+-Q40001
+/400.1
+85
+86
+-Q40001
+/400.1
+66
+65
+-Q40002
+/400.3
+85
+86
+-Q40002
+/400.3
++
+-
++
+-
++SC-K30001
+24 VDC
+2903361
+A1
+A2
+13
+14
+/400.6
+14
+13
++SC-K30001
+/400.5
+250 VDC/VAC, 6A
++SC-K30002
+24 VDC
+2903361
+A1
+A2
+13
+14
+/400.8
+14
+13
++SC-K30002
+/400.7
+250 VDC/VAC, 6A
+8 AWG
+BK
+400-02
+8 AWG
+BK
+400-04
+8 AWG
+BK
+400-06
+8 AWG
+BK
+400-07
+8 AWG
+BK
+400-08
+8 AWG
+BK
+400-09
+400-12
+400-13
+400-17
+400-18
+4 AWG
+BK
+400-01
+4 AWG
+BK
+400-03
+4 AWG
+BK
+400-05
+400-11
+20 AWG
+BU
+400-10
+20 AWG
+BU
+400-15
+400-16
+16 AWG
+RD
+017-34
+022-36
+8 AWG
+GNYE
+003-45
+8 AWG
+GNYE
+003-46
+400-14
+018-33
++SEP-W3_R:3
++SEP-W3_S:3
++SEP-W3_T:3
++SEP-T2
++SEC/19.8
++SEP-S2
++SEC/19.8
++SEP-R2
++SEC/19.8
++SEC-N_400
++SEC/18.5
++SEP-T2 / 401.0
++SEP-S2 / 401.0
++SEP-R2 / 401.0
++SEC-230VAC_400
++SEC/17.3
++SEC-0VDC_400
++SEC/22.5
++SEC-0VDC_400 / 401.4
++SEP-PE_400_X40001 / +SEP/3.4
++SEP-PE_400_X40002 / +SEP/3.4
++SEC-230VAC_400 / 401.4
+
+---
+
+## Pagina 138/258 - Silo Fan 1 / 2
+
+400
+401
+400.a
++SC-A03002
+Confirmacion arranque fan 1
+DI3
++SC-A03002
+Falla electrica fan 1
+DI4
++SC-A03002
+Confirmacion arranque fan 2
+DI5
++SC-A03002
+Falla electrica fan 2
+DI6
+13
+NO
+14
+NO
+-KM40001
+/400.6
+13
+NO
+14
+NO
+-KM40002
+/400.8
+57
+58
+-Q40001
+/400.1
+77
+78
+57
+58
+-Q40002
+/400.3
+77
+78
+20 AWG
+BU
+400.a-01
+20 AWG
+BU
+400.a-03
+20 AWG
+BU
+400.a-08
+20 AWG
+BU
+021-75
+20 AWG
+BU
+400.a-04
+20 AWG
+BU
+400.a-02
+20 AWG
+BU
+400.a-05
+20 AWG
+BU
+400.a-06
+20 AWG
+BU
+400.a-07
+20 AWG
+BU
+400.a-09
+20 AWG
+BU
+400.a-10
+20 AWG
+BU
+021-74
++SEC-24VDC.1_400
++SEC/21.4
+
+---
+
+## Pagina 139/258 - Silo Fan 3 / 4
+
+400.a
+401.a
+401
+SILO FAN 03
+SILO FAN 04
++SC-A03005
+Arranque Ventilador Silo Fan 03
+DQ4
++SC-A03005
+Arranque Ventilador Silo Fan 04
+DQ5
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q40101
+22...32A
+3RV2031-4EA10
+I>
+I>
+I>
+57
+58
+/401.a.3
+66
+65
+/401.6
+77
+78
+/401.a.4
+85
+86
+/401.6
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q40102
+22...32A
+3RV2031-4EA10
+I>
+I>
+I>
+57
+58
+/401.a.6
+66
+65
+/401.8
+77
+78
+/401.a.7
+85
+86
+/401.8
+-W40103
+A1
+A2
+-KM40101
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+1/L1
+2/T1 /401.1
+3/L2
+4/T2 /401.1
+5/L3
+6/T3 /401.1
+14
+13
+/401.a.2
+21
+22
+1/L1
+2/T1
+-KM40101
+/401.6
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM40102
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+1/L1
+2/T1 /401.3
+3/L2
+4/T2 /401.3
+5/L3
+6/T3 /401.3
+14
+13
+/401.a.5
+21
+22
+1/L1
+2/T1
+-KM40102
+/401.8
+3/L2
+4/T2
+5/L3
+6/T3
+-W40101
+-W40102
+U1
+V1
+W1
+PE
+-M40101
+15 kW, 460 VAC
+26 A
+M
+U1
+V1
+W1
+PE
+-M40102
+15 kW, 460 VAC
+26 A
+M
+-X40101
+-X40102
+66
+65
+-Q40101
+/401.1
+85
+86
+-Q40101
+/401.1
+66
+65
+-Q40102
+/401.3
+85
+86
+-Q40102
+/401.3
++
+-
++
+-
+A1
+A2
++SC-K30101
+24 VDC
+2903361
+13
+14
+/401.6
+A1
+A2
++SC-K30102
+24 VDC
+2903361
+13
+14
+/401.8
+14
+13
++SC-K30101
+/401.5
+250 VDC/VAC, 6A
+14
+13
++SC-K30102
+/401.7
+250 VDC/VAC, 6A
+8 AWG
+BK
+401-02
+8 AWG
+BK
+401-04
+8 AWG
+BK
+401-06
+8 AWG
+BK
+401-07
+8 AWG
+BK
+401-08
+8 AWG
+BK
+401-09
+401-12
+401-13
+401-17
+401-18
+4 AWG
+BK
+401-01
+4 AWG
+BK
+401-03
+4 AWG
+BK
+401-05
+401-11
+401-16
+20 AWG
+BU
+401-10
+20 AWG
+BU
+401-15
+8 AWG
+GNYE
+003-47
+8 AWG
+GNYE
+003-48
+401-14
+018-34
++SEP-W3_R:4
++SEP-W3_S:4
++SEP-W3_T:4
++SEC-N_401
++SEC/18.5
++SEP-T2
+400.2
++SEP-S2
+400.2
++SEP-R2
+400.2
++SEP-T2 / 402.0
++SEP-S2 / 402.0
++SEP-R2 / 402.0
++SEC-0VDC_400
+400.8
++SEC-230VAC_400
+400.8
++SEC-0VDC_400 / 402.4
++SEP-PE_401_X40101 / +SEP/3.5
++SEP-PE_401_X40102 / +SEP/3.5
++SEC-230VAC_400 / 402.4
+
+---
+
+## Pagina 140/258 - Silo Fan 3 / 4
+
+401
+402
+401.a
++SC-A03002
+Confirmacion arranque fan 3
+DI7
++SC-A03002
+Falla electrica fan 3
+DI8
++SC-A03002
+Confirmacion arranque fan 4
+10
+DI9
++SC-A03002
+Falla electrica fan 4
+11
+DI10
+13
+NO
+14
+NO
+-KM40101
+/401.6
+13
+NO
+14
+NO
+-KM40102
+/401.8
+57
+58
+-Q40101
+/401.1
+77
+78
+57
+58
+-Q40102
+/401.3
+77
+78
+20 AWG
+BU
+401.a-01
+20 AWG
+BU
+401.a-03
+20 AWG
+BU
+401.a-08
+20 AWG
+BU
+401.a-04
+20 AWG
+BU
+401.a-02
+20 AWG
+BU
+401.a-05
+20 AWG
+BU
+401.a-06
+20 AWG
+BU
+401.a-07
+20 AWG
+BU
+401.a-09
+20 AWG
+BU
+401.a-10
+20 AWG
+BU
+021-77
+20 AWG
+BU
+021-76
++SEC-24VDC.1_401
++SEC/21.5
+
+---
+
+## Pagina 141/258 - Silo Fan 5 / 6
+
+401.a
+402.a
+402
+SILO FAN 05
+SILO FAN 06
++SC-A03005
+Arranque Ventilador Silo Fan 05
+DQ6
++SC-A03005
+Arranque Ventilador Silo Fan 06
+DQ7
+-Q40201
+22...32A
+3RV2031-4EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/402.a.3
+66
+65
+/402.6
+77
+78
+/402.a.4
+85
+86
+/402.6
+-Q40202
+22...32A
+3RV2031-4EA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/402.a.6
+66
+65
+/402.8
+77
+78
+/402.a.7
+85
+86
+/402.8
+-W40203
+-KM40201
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /402.1
+3/L2
+4/T2 /402.1
+5/L3
+6/T3 /402.1
+14
+13
+/402.a.1
+21
+22
+1/L1
+2/T1
+-KM40201
+/402.6
+3/L2
+4/T2
+5/L3
+6/T3
+-KM40202
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+A1
+A2
+1/L1
+2/T1 /402.3
+3/L2
+4/T2 /402.3
+5/L3
+6/T3 /402.3
+14
+13
+/402.a.5
+21
+22
+1/L1
+2/T1
+-KM40202
+/402.8
+3/L2
+4/T2
+5/L3
+6/T3
+-W40201
+-W40202
+U1
+V1
+W1
+PE
+-M40201
+15 kW, 460 VAC
+26 A
+M
+U1
+V1
+W1
+PE
+-M40202
+15 kW, 460 VAC
+26 A
+M
+-X40201
+-X40202
+66
+65
+-Q40201
+/402.1
+85
+86
+-Q40201
+/402.1
+66
+65
+-Q40202
+/402.3
+85
+86
+-Q40202
+/402.3
++
+-
++
+-
++SC-K30201
+24 VDC
+2903361
+A1
+A2
+13
+14
+/402.6
++SC-K30202
+24 VDC
+2903361
+A1
+A2
+13
+14
+/402.8
+14
+13
++SC-K30201
+/402.5
+250 VDC/VAC, 6A
+14
+13
++SC-K30202
+/402.7
+250 VDC/VAC, 6A
+8 AWG
+BK
+402-02
+8 AWG
+BK
+402-04
+8 AWG
+BK
+402-06
+8 AWG
+BK
+402-07
+8 AWG
+BK
+402-08
+8 AWG
+BK
+402-09
+402-12
+402-13
+402-17
+402-18
+4 AWG
+BK
+402-01
+4 AWG
+BK
+402-03
+4 AWG
+BK
+402-05
+20 AWG
+BU
+402-10
+20 AWG
+BU
+402-15
+402-11
+402-16
+8 AWG
+GNYE
+003-49
+8 AWG
+GNYE
+003-50
+018-35
+402-14
++SEP-W3_R:5
++SEP-W3_S:5
++SEP-W3_T:5
++SEC-N_402
++SEC/18.5
++SEP-T2
+401.2
++SEP-S2
+401.2
++SEP-R2
+401.2
++SEP-T2 / 403.0
++SEP-S2 / 403.0
++SEP-R2 / 403.0
++SEC-0VDC_400
+401.8
++SEC-230VAC_400
+401.8
++SEC-0VDC_400 / 403.4
++SEP-PE_402_X40201 / +SEP/3.5
++SEP-PE_402_X40202 / +SEP/3.6
++SEC-230VAC_400 / 403.4
+
+---
+
+## Pagina 142/258 - Silo Fan 5 / 6
+
+402
+403
+402.a
++SC-A03002
+Confirmacion arranque fan 5
+12
+DI11
++SC-A03002
+Falla electrica fan 5
+13
+DI12
++SC-A03002
+Confirmacion arranque fan 6
+14
+DI13
++SC-A03002
+Falla electrica fan 6
+15
+DI14
+13
+NO
+14
+NO
+-KM40201
+/402.6
+13
+NO
+14
+NO
+-KM40202
+/402.8
+57
+58
+-Q40201
+/402.1
+77
+78
+57
+58
+-Q40202
+/402.3
+77
+78
+20 AWG
+BU
+402.a-04
+20 AWG
+BU
+402.a-03
+20 AWG
+BU
+402.a-08
+20 AWG
+BU
+021-79
+20 AWG
+BU
+402.a-01
+20 AWG
+BU
+402.a-02
+20 AWG
+BU
+402.a-05
+20 AWG
+BU
+402.a-06
+20 AWG
+BU
+402.a-07
+20 AWG
+BU
+402.a-09
+20 AWG
+BU
+402.a-10
+20 AWG
+BU
+021-78
++SEC-24VDC.1_402
++SEC/21.5
+
+---
+
+## Pagina 143/258 - Silo Fan 7 / 8
+
+402.a
+403.a
+403
+SILO FAN 07
+SILO FAN 08
++SC-A03005
+Arranque Ventilador Silo Fan 07
+DQ8
++SC-A03005
+Arranque Ventilador Silo Fan 08
+10
+DQ9
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q40301
+22...32A
+3RV2031-4EA10
+I>
+I>
+I>
+57
+58
+/403.a.3
+66
+65
+/403.6
+77
+78
+/403.a.4
+85
+86
+/403.6
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q40302
+22...32A
+3RV2031-4EA10
+I>
+I>
+I>
+57
+58
+/403.a.6
+66
+65
+/403.8
+77
+78
+/403.a.7
+85
+86
+/403.8
+-W40303
+A1
+A2
+-KM40301
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+1/L1
+2/T1 /403.1
+3/L2
+4/T2 /403.1
+5/L3
+6/T3 /403.1
+14
+13
+/403.a.1
+21
+22
+1/L1
+2/T1
+-KM40301
+/403.6
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM40302
+AC3:18,5KW/400V, AC 220V
+3RT2035-1AN20
+1/L1
+2/T1 /403.3
+3/L2
+4/T2 /403.3
+5/L3
+6/T3 /403.3
+14
+13
+/403.a.5
+21
+22
+1/L1
+2/T1
+-KM40302
+/403.8
+3/L2
+4/T2
+5/L3
+6/T3
+-W40301
+-W40302
+U1
+V1
+W1
+PE
+-M40301
+15 kW, 460 VAC
+26 A
+M
+U1
+V1
+W1
+PE
+-M40302
+15 kW, 460 VAC
+26 A
+M
+-X40301
+-X40302
+66
+65
+-Q40301
+/403.1
+85
+86
+-Q40301
+/403.1
+66
+65
+-Q40302
+/403.3
+85
+86
+-Q40302
+/403.3
++
+-
++
+-
+A1
+A2
++SC-K30301
+24 VDC
+2903361
+13
+14
+/403.6
+A1
+A2
++SC-K30302
+24 VDC
+2903361
+13
+14
+/403.8
+14
+13
++SC-K30301
+/403.5
+250 VDC/VAC, 6A
+14
+13
++SC-K30302
+/403.7
+250 VDC/VAC, 6A
+8 AWG
+BK
+403-02
+8 AWG
+BK
+403-04
+8 AWG
+BK
+403-06
+8 AWG
+BK
+403-07
+8 AWG
+BK
+403-08
+8 AWG
+BK
+403-09
+403-12
+403-13
+403-17
+403-18
+4 AWG
+BK
+403-01
+4 AWG
+BK
+403-03
+4 AWG
+BK
+403-05
+403-11
+20 AWG
+BU
+403-10
+20 AWG
+BU
+403-15
+403-16
+8 AWG
+GNYE
+003-51
+8 AWG
+GNYE
+003-52
+018-36
+403-14
++SEP-W3_R:6
++SEP-W3_S:6
++SEP-W3_T:6
++SEC-N_403
++SEC/18.5
++SEP-T2
+402.2
++SEP-S2
+402.2
++SEP-R2
+402.2
++SEP-T2 / 404.0
++SEP-S2 / 404.0
++SEP-R2 / 404.0
++SEC-0VDC_400
+402.8
++SEC-230VAC_400
+402.8
++SEP-PE_403_X40301 / +SEP/3.6
++SEP-PE_403_X40302 / +SEP/3.6
+
+---
+
+## Pagina 144/258 - Silo Fan 7 / 8
+
+403
+404
+403.a
++SC-A03002
+Confirmacion arranque fan 7
+16
+DI15
++SC-A03003
+Falla electrica fan 7
+DI0
++SC-A03003
+Confirmacion arranque fan 8
+DI1
++SC-A03003
+Falla electrica fan 8
+DI2
+13
+NO
+14
+NO
+-KM40301
+/403.6
+13
+NO
+14
+NO
+-KM40302
+/403.8
+57
+58
+-Q40301
+/403.1
+77
+78
+57
+58
+-Q40302
+/403.3
+77
+78
+20 AWG
+BU
+403.a-01
+20 AWG
+BU
+403.a-03
+20 AWG
+BU
+403.a-08
+20 AWG
+BU
+403.a-04
+20 AWG
+BU
+403.a-02
+20 AWG
+BU
+403.a-05
+20 AWG
+BU
+403.a-06
+20 AWG
+BU
+403.a-09
+20 AWG
+BU
+403.a-10
+20 AWG
+BU
+403.a-07
+20 AWG
+BU
+021-81
+20 AWG
+BU
+021-80
++SEC-24VDC.1_403
++SEC/21.5
+
+---
+
+## Pagina 145/258 - Elevador BE102
+
+403.a
+404.a
+404
+SIEMENS
+shield connection
+from STO on CU
+..
+SAFE_TORQUE
+OFF: STO is locked
+STO_B
+STO_A
+XCU
+.
+CU IF
+XBREL
+.
+BRAKE RELAY
+SH(1)
+SHIELD
+XLINE
+L1
+L2
+L3
+PE(1)
+XLOAD
+U2
+V2
+W2
+PE(2)
+XBR
+F3
+N.C.
+STO_A
+0V
+24V
+DCP
+DC LINK
+XDC
+DCN
+DC LINK
+STO_B
+0V
+24V
+-A40401
+/404.a.0
+A_400V_110kW
+SINAMICS PM240-2 IP20-FSF-A-400V-110kW
+SINAMICS G120
+6SL3210-1PE32-1AL0
+SH(2)
+SHIELD
+EFM10
+BARRA FLEXIBLE AISLADA 6X15,5X0,8
+BARRA FLEXIBLE AISLADA 6X15,5X0,8
+=.S4+SC-A03002
+Falla electrica alimentador (Fusibles)
+DI2
+-F40401
+/404.8
+300A, gG
+3NA3250
+-X40401
+U1
+V1
+W1
+PE
+-M40401
+90 kW, 480 VAC
+138,3 A
+M
+PE
+PE
+PE
+12
+11
+14
+-F40401
+/404.1
+2 AWG
+GNYE
+404-02
+2 AWG
+GNYE
+404-03
+20 AWG
+BU
+404-04
+20 AWG
+BU
+021-82
++SEP-W3_R:7
++SEP-W3_S:7
++SEP-W3_T:7
+2 AWG
+GNYE
+404-01
++SEC-24VDC.1_404_EFM
+/
++SEC/21.5
++SEP-T2
+/
+403.2
++SEP-S2
+/
+403.2
++SEP-R2
+/
+403.2
+
+---
+
+## Pagina 146/258 - Elevador BE102
+
+404
++&EAC/a
+404.a
+ANALOG_INPUT_1
+UANALOG_INPUT_0
+..
+SIEMENS
+x
+X22
+USB TO PC
+PROFINET
+X150 P1
+PROFINET
+X150 P2
+XBOP
+.
+BOP-2/IOP IF
+XPM
+-A40401
+/404.1
+A_400V_110kW
+SINAMICS PM240-2 IP20-FSF-A-400V-110kW
+SINAMICS G120
+6SL3210-1PE32-1AL0
+XMMC
+.
+MMC-CARD
+AI 1
+AI 0
+I/U
+I/U
+U
+F-DI 0
+X130
+AI 1+
+11
+AI 1-
+X130
+26
+AO 1+
+27
+GND
+31
++24V IN
+32
+GND IN
+34
+DI COM 2
+X132
++10V OUT
+GND
+X132
+AI 0+
+AI 0-
+X132
+12
+AO 0+
+13
+GND
+X132
+14
+T1 MOTOR
+15
+T2 MOTOR
+X132
+21
+DO 1+
+22
+DO 1-
+X133
+DI 0
+DI 1
+DI 2
+DI 3
++24V OUT
+16
+DI 4
+17
+DI 5
+28
+GND
+69
+DI COM 1
+X134
+18
+DO 0 NC
+19
+DO 0 NO
+20
+DO 0 COM
+X134
+23
+DO 2 NC
+24
+DO 2 NO
+25
+DO 2 COM
+=.S4+SC-A03002
+Confirmacion arranque Elevador BE102
+DI0
+=.S4+SC-A03002
+Falla electrica Elevador BE102
+DI1
+=.S4+SC-A03005
+Arranque Elevador BE102
+DQ0
+=.S4+SC-A03005
+Reset Arrancador BE102
+DQ1
+404.a-02
+404.a-01
+404.a-08
+20 AWG
+BU
+404.a-06
+022-37
+20 AWG
+BU
+404.a-04
+20 AWG
+BU
+404.a-03
+20 AWG
+BU
+021-86
+020-20
+20 AWG
+BU
+404.a-05
+20 AWG
+BU
+404.a-07
++SEC-24VDC.404
+/
++SEC/20.8
++SEC-0VDC_404
+/
++SEC/22.5
++SEC-24VDC.2_404_DO
+/
++SEC/21.6
+
+---
+
+## Pagina 147/258 - Portada
+
++SP&EAB/404.a
+b
+PLANOS MECANICOS
+S4
+
+---
+
+## Pagina 148/258 - Aparamenta puertas
+
+b
+296 mm
+296,27 mm
+296 mm
+100 mm
+1000 mm
+150 mm
+296,27 mm
+Filtro salida
+Ventilador
+Selector
+Piloto
+Piloto
+Selector
+S02901
+S02902
+P02801
+P02802
+
+---
+
+## Pagina 149/258 - Barraje pre-ensamblado riline60
+
+f
+120 mm
+229 mm
+25 mm
+230 mm
+230 mm
+305 mm
+870 mm
+890 mm
+Soporte barraje ref.9340000
+Bandeja base ref. 9340130
+Barra de cobre 30 x 10 mm
+
+---
+
+## Pagina 150/258 - Aparataje Barraje
+
+h
+f
+NOTA 2: LAS DIMENSIONES Y CORTES DE LA CUBIERTA EN EL PLANO SON ILUSTRATIVOS, ESTAS SE DEBERAN CORTAN SEGUN EL POSICIONAMIENTO DE LOS
+ADAPTADORES DE CONEXION Y OM
+Cubierta barraje
+Adaptador de conexion Ref. 9342210
+Adaptador OM Ref. 9340340
+NOTA 1: LA POSICION DE LOS ADAPTADORES SE AJUSTAN EN FABRICACION, SEGUN LA FACILIDAD PARA CABLEAR HACIA LOS ELEMENTOS DESTINO.
+Cubierta final barraje ref. 9340070
+Seccionador-Fusible ref. 3NP1153-1JC12
+
+---
+
+## Pagina 151/258 - Doblefondo pt 1
+
+i
+h
+A-A
+B-B
+A-A
+K30001
+K30002
+K30101
+K30102
+K30201
+K30202
+K30301
+K30302
+F01701
+F01702
+F01703
+Q01601
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+X02101
+X02102
+X02201
+S09101
+S09102
+KM09101
+B-B
+X40001
+X40002
+X40101
+X40102
+X40201
+X40202
+X40301
+X40302
+Q01901
+F40401
+Q40001
+Q40002
+Q40102
+Q40101
+A03001
+T01901
+T01601
+KM40001 KM40002
+KM40102
+KM40101
+Q40201
+Q40202
+Q40302
+Q40301
+KM40301 KM40302
+KM40402
+KM40401
+A40401
+X40401
+KM09102
+S09103
+S09104
+X02103
+C-C
+F02001
+F02002
+F02003
+F02004
+F02005
+K03701
+KM02902
+X01701
+X01702
+X01801
+X01703
+KM02901
+K02901
+X03701
+X03703
+C-C
+X02701
+
+---
+
+## Pagina 152/258 - Doblefondo pt 2
+
+h
+i
+200 mm
+160 mm
+160 mm
+385 mm
+385 mm
+139,9 mm
+346 mm
+153 mm
+153 mm
+140 mm
+70 mm
+180 mm
+470 mm
+210 mm
+220 mm
+200 mm
+210 mm
+590 mm
+142 mm
+-U05   60 x 80 (W x H)    L: 1099 mm
+-U06   60 x 80 (W x H)    L: 1650 mm
+-U09   60 x 80 (W x H)    L: 1650 mm
+-U10   60 x 80 (W x H)    L: 470 mm
+-U13   40 x 80 (W x H)     L: 470 mm
+-U15   40 x 80 (W x H)     L: 200 mm
+-U17   40 x 80 (W x H)     L: 470 mm
+-U07   40 x 80 (W x H)     L: 200 mm
+-U08   40 x 80 (W x H)     L: 200 mm
+-U14   60 x 80 (W x H)    L: 810 mm
+-U16   40 x 80 (W x H)     L: 210 mm
+-U04   40 x 80 (W x H)     L: 386 mm
+-U01   40 x 80 (W x H)     L: 1059 mm
+-U02   40 x 80 (W x H)     L: 346 mm
+-U03   40 x 80 (W x H)
+L: 109 mm
+-U11   40 x 80 (W x H)     L: 470 mm
+509 mm
+109 mm
+80 mm
+124 mm
+175 mm
+86 mm
+124 mm
+175 mm
+86 mm
+109,9 mm
+79 mm
+273 mm
+20 mm
+120 mm85 mm
+120 mm
+120 mm
+120 mm
+120 mm
+120 mm
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+Perfil en C
+
+---
+
+## Pagina 153/258 - Barraje de tierra
+
+p
+l
+440,5 mm
+460 mm
+195 mm
+Vista isometrica
+Vista Superior
+Soporte de barra ref. 9340030
+Carril de montaje ref. 8617720
+Barra de cobre 30 x 10 mm
+Perfil base vertical
+derecho delantero
+
+---
+
+## Pagina 154/258 - Superficies de montaje - Sistema Calefaccion
+
+=TC+INF&EAA/2
+378 mm
+105 mm
+200 mm
+Chasis de montaje ref. 8617130
+Resistencia Calefaccion 250 W ref. 02811.0-00
+Zocalo tablero
+Instalado por el interior del bastidor
+Frente tablero
+Vista Lateral izquierdo Tablero
+Nota: Resistencia de calefaccion, centrada sobre riel DIN
+Lateral Izquierdo S4
+Direccionador de aire ref. 252017 -  Ajustado a 45°
+
+---
+
+## Pagina 155/258
+
+Ref.: nº
+Firma
+Núm. de documento
+Contr. téc.
+Nº orig invent.
+Formato А4
+Firma & fecha
+Fabricante
+Confirm.
+Cart.
+Fecha
+Hoja
+Firma & fecha
+Nº invent. sust.
+Control.
+Conduc.
+Prim. aplicac.
+Copia por
+Contr. especific.
+Rev.
+Nº invent. dupl
+Tablero de control
+Hoja
+Hoja
+Descripción de página
+Observación
+Número de diseño
+Hoja
+I:\Agri tecnology Solutions\Plantillas planos\Agritech Logo - copia.PNG
+Índice de páginas : =TC+INF&EAA/2 - =TC+SC&EAB/37.c
+Índice de páginas : =TC+SC&EAB/37.d - =TC+SC&EAB/78
+2.a
+Índice de páginas : =TC+SC&EAB/79 - =TC+SP&EAB/107.b
+2.b
+Índice de páginas : =TC+SP&EAB/107.c - =TC&EAC/p
+2.c
+Portada
+Codigo de colores y calibres estandar
+Nomenclaturas
+Incoming
+Distribucion 480 VAC
+Distribucion 480 VAC
+2.a
+Distribucion de tierras
+Tension Control AC: Transformador de control 480 / 220 VAC
+16
+Tension Control AC: Distribucion tension Control
+17
+Tension Control AC: Distribucion Neutro
+18
+Tension Control DC: Fuente 24 VDC
+19
+Tension Control DC: Protecciones tension control DC
+20
+Tension Control DC: Distribucion tension control DC
+21
+Tension Control DC: Distribucion tension control DC
+21.b
+Tension Control DC: Distribucion referencia 0 VDC
+22
+Tierra de control
+27
+Circuitos Auxiliares Suministro Electrico control
+29
+Rack de control
+30
+Rack de control
+30.a
+Comunicacion - Profinet
+35
+Comunicacion - VPN Remoto
+36
+Circuito de Seguridad
+37
+Circuito de Seguridad - Serie Paros de Emergencia pt 1
+37.a
+Circuito de Seguridad - Serie Paros de Emergencia pt 2
+37.b
+Circuito de Seguridad - Señales Paros de emergencia a sistema de control
+37.c
+
+---
+
+## Pagina 156/258
+
+Ref.: nº
+Nº orig invent.
+Formato А4
+Firma & fecha
+Firma & fecha
+Nº invent. sust.
+Prim. aplicac.
+Nº invent. dupl
+Firma
+Núm. de documento
+Fecha
+Hoja
+Copia por
+Rev.
+Hoja
+2.a
+Descripción de página
+Observación
+Número de diseño
+Hoja
+Circuito de Seguridad - Instrucciones conexionado Paro de Emergencia
+37.d
+Circuito de Seguridad - Interconexion señales TC y TCP
+37.e
+Baliza
+40
+Señales de Campo - Recepcion Producto
+50
+Señales de Campo - Recepcion Producto
+51
+Señales de Campo - Elevadores de producto
+52
+Señales de Campo - Elevadores de producto
+53
+Señales de Campo - Distribucion Producto
+54
+Señales de Campo - Distribucion Producto
+55
+Señales de Campo - Distribucion Producto
+56
+Señales de Campo - Descarga de Producto
+57
+Señales de Campo - Descarga de Producto
+58
+Señales de Campo - Tolvas y compuertas S1
+59
+Señales de Campo - Tolvas y Compuertas S1
+60
+Señales de Campo - Tolvas y Compuertas S1
+61
+Señales de Campo - Tolvas y Compuertas S2
+62
+Señales de Campo - Tolvas y Compuertas S2
+63
+Señales de Campo - Tolvas y Compuertas S2
+64
+Señales de Campo - Tolvas y Compuertas S2
+65
+Señales de Campo - Tolvas y Compuertas S3
+66
+Señales de Campo - Tolvas y Compuertas S3
+67
+Señales de Campo - Tolvas y Compuertas S3
+68
+Señales de Campo - Tolvas y Compuertas S3
+69
+Señales de Campo - Tolvas y Compuertas S4
+70
+Señales de Campo - Tolvas y Compuertas S4
+71
+Señales de Campo - Tolvas y Compuertas S4
+72
+Señales de Campo - Tolvas y Compuertas S4
+73
+Señales de Campo - Nivel alto y bajo S1 y S2
+74
+Señales de Campo - Nivel alto y bajo S3 y S4
+75
+Señales de Campo - CR01
+76
+Señales de Campo - Control Compuertas S1 y S2
+77
+Señales de Campo - Control Compuertas S3
+78
+
+---
+
+## Pagina 157/258
+
+Ref.: nº
+Nº orig invent.
+Formato А4
+Firma & fecha
+Firma & fecha
+Nº invent. sust.
+Prim. aplicac.
+Nº invent. dupl
+Firma
+Núm. de documento
+Fecha
+Hoja
+Copia por
+Rev.
+Hoja
+2.b
+Descripción de página
+Observación
+Número de diseño
+Hoja
+Señales de Campo - Control Compuertas S4
+79
+Señales de Interconexion - Reserva con termometria S1
+80
+Señales de Interconexion - Reserva con termometria S2
+81
+Señales de Interconexion - Reserva con termometria S3
+82
+Señales de Interconexion - Reserva con termometria S4
+83
+Señales de Interconexion - TCP
+84
+Iluminacion
+90
+Calefaccion
+92
+Toma de servicio
+93
+Distribuidor V102
+100
+Distribuidor V102
+100.a
+Compuertas electricas Distribucion de producto S1 / S2
+101
+Compuertas electricas Distribucion de producto S1 / S2
+101.a
+Compuertas electricas Distribucion de producto S1 / S2
+101.b
+Compuertas electricas Distribucion de producto S1 / S2
+101.c
+Compuertas electricas Distribucion de producto S3 / S4
+102
+Compuertas electricas Distribucion de producto S3 / S4
+102.a
+Compuertas electricas Distribucion de producto S3 / S4
+102.b
+Compuertas electricas Distribucion de producto S3 / S4
+102.c
+Distribuidor V302
+103
+Distribuidor V302
+103.a
+Compuertas electrica Descarga CR01
+104
+Compuertas electrica Descarga CR01
+104.a
+Compuertas electrica Descarga S1
+105
+Compuertas electrica Descarga S1
+105.a
+Compuertas electrica Descarga Central S2
+106
+Compuertas electrica Descarga Central S2
+106.a
+Compuertas electrica Descarga Lateral S2
+106.b
+Compuertas electrica Descarga Lateral S2
+106.c
+Compuertas electrica Descarga Central S3
+107
+Compuertas electrica Descarga Central S3
+107.a
+Compuertas electrica Descarga Lateral S3
+107.b
+
+---
+
+## Pagina 158/258
+
+Ref.: nº
+Nº orig invent.
+Formato А4
+Firma & fecha
+Firma & fecha
+Nº invent. sust.
+Prim. aplicac.
+Nº invent. dupl
+Firma
+Núm. de documento
+Fecha
+Hoja
+Copia por
+Rev.
+Hoja
+2.c
+Descripción de página
+Observación
+Número de diseño
+Hoja
+Compuertas electrica Descarga Lateral S3
+107.c
+Compuertas electrica Descarga Central S4
+108
+Compuertas electrica Descarga Central S4
+108.a
+Compuertas electrica Descarga Lateral S4
+108.b
+Compuertas electrica Descarga Lateral S4
+108.c
+Portada
+a
+Aparamenta puertas
+b
+Doblefondo
+h
+Barraje de tierra
+i
+Superficies de montaje - Sistema Calefaccion
+p
+
+---
+
+## Pagina 159/258 - Portada
+
+&EAA/2.c
+PLANOS ELECTRICOS
+TC
+
+---
+
+## Pagina 160/258 - Codigo de colores y calibres estandar
+
+NOTA: EN CASO DE SER EMPLEADA  UNA SECCION DIFERENTE, SE
+ESTIPULARA LA INFOMACION EN EL PLANO CORRESPONDIENTE
+COLOR Y SECCION DE CONDUCTORES ESTANDAR
+DESCRIPCION/FUNCION
+COLOR
+ACRONIMO
+COLOR
+SECCION (AWG)
+CIRCUITOS DE POTENCIA FASE
+Negro
+BK
+14
+CIRCUITOS DE CONTROL A TENSION NOMINAL
+Negro
+BK
+18
+CIRCUITOS DE CONTROL TENSION AC
+Rojo
+RD
+18
+CIRCUITOS DE CONTROL TENISION AC (NEUTRO)
+Blanco Rojo
+RDWH
+18
+CIRCUITOS DE CONTROL 24 VDC (+)
+Azul
+BU
+18
+CIRCUITO DE CONTROL 24 VDC (-)
+Blanco Azul
+BUWH
+18
+CIRCUITOS VIVOS DC CON PANEL DESENERGIZADO
+(+)
+Naranja
+OG
+18
+CIRCUITOS VIVOS AC CON PANEL DESENERGIZADO
+(FASE)
+Amarillo
+YE
+18
+CIRCUITOS VIVOS AC/DC DE EXTERNOS
+Violeta
+VT
+18
+
+---
+
+## Pagina 161/258 - Nomenclaturas
+
++SEP/1
+NUMERO DE PÁGINA
+NUMERO CONSECUTIVO ELEMENTO
+NUMERACION APARAMENTA
+NUMERACION BORNES DOBLE PISO
+NUMERACION PAR
+NUMERACION IMPAR
+NUMERACION CABLES/HILOS
+XXX-YY
+NUMERO DE PAGINA
+CONSECUTIVO HILO/CABLE
+ESTRUCTURA NOMBRE PUNTOS DE INTERRUPCION
+AAA.BB+CCC-XXXX.XX_YYY_ZZZ
+NOMBRE SEÑAL/POTENCIAL
+DISPOSITIVO QUE GENERA LA SEÑAL/POTENCIA
+O SUB INDICE (OPCIONAL)
+NUMERO DE PAGINA DESTINO
+DISPOSITIVO DESTINO DE LA
+SEÑAL/ POTENCIAL (OPCIONAL)
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION ELEMENTO
+DESCRIPCIONES FUNCIONALES
+INF - INFORMACION
+SEP - SUMINISTRO ELECTRICO DE POTENCIA
+SEC - SUMINISTRO ELECTRICO DE CONTROL
+SC - SISTEMA DE CONTROL
+SA - SERVICIOS AUXILIARES
+SP - SISTEMA DE POTENCIA
+LETRA DESCRIPTIVA ELEMENTO
+DESCRIPCION FUNCIONAL EN PLANO
+SITIO INSTALACION DISPOSITIVO
+QUE GENERA LA SEÑAL/POTENCIAL (OPCIONAL)
+=TC+INF-FIII01
+I>
+I>
+I>
+
+---
+
+## Pagina 162/258 - Incoming
+
++INF/III
+-X00101
+10 AWG
+BK
+001-02
+10 AWG
+GNYE
+001-04
+10 AWG
+BK
+001-01
+10 AWG
+BK
+001-03
+=TCP.S3/1.5
+=TCP.S3-W00105
+001-13
+GNYE
+001-23
+001-17
+001-21
+R_2
+/
+2.0
+S_2
+/
+2.0
+T_2
+/
+2.0
+PE_2
+/
+3.0
+=TCP.S3-Alimentacion_S5 / =TCP.S3/1.6
+
+---
+
+## Pagina 163/258 - Distribucion 480 VAC
+
+2.a
+-X00201
+/2.2
+125A
+1SNL312510R0000
+-X00202
+/2.7
+125A
+1SNL312510R0000
+10 AWG
+BK
+002-01
+10 AWG
+BK
+001-02
+002-14
+002-02
+002-15
+002-03
+002-16
+002-04
+002-17
+002-05
+002-06
+002-18
+002-07
+002-19
+002-09
+002-10
+002-11
+002-12
+002-08
+10 AWG
+BK
+001-01
+10 AWG
+BK
+002-13
+002-20
+002-22
+002-21
+002-23
+002-24
+R_2 / 1.4
+S_2 / 1.5
+T_2 / 1.5
+R_16
+/
++SEC/16.2
+S_16
+/
++SEC/16.2
+R_19
+/
++SEC/19.1
+S_19
+/
++SEC/19.1
+R_100
+/
++SP/100.1
+R_101
+/
++SP/101.1
+R_102
+/
++SP/102.1
+R_103
+/
++SP/103.1
+R_105
+/
++SP/105.1
+R_106
+/
++SP/106.1
+R_107
+/
++SP/107.1
+R_108
+/
++SP/108.1
+R_104
++SP/104.1
+S_100
+/
++SP/100.1
+S_101
+/
++SP/101.1
+S_102
+/
++SP/102.1
+S_103
+/
++SP/103.1
+S_105
+/
++SP/105.1
+S_106
+/
++SP/106.1
+S_107
+/
++SP/107.1
+S_108
+/
++SP/108.1
+S_104
++SP/104.1
+T_2a / 2.a.1
+
+---
+
+## Pagina 164/258 - Distribucion 480 VAC
+
+2.a
+-X00203
+/2.a.5
+125A
+1SNL312510R0000
+125A
+10 AWG
+BK
+2.a-01
+2.a-07
+10 AWG
+BK
+001-03
+2.a-03
+2.a-04
+2.a-02
+2.a-05
+2.a-06
+2.a-09
+2.a-08
+2.a-10
+2.a-11
+T_19
+/
++SEC/19.1
+T_100
+/
++SP/100.1
+T_101
+/
++SP/101.1
+T_102
+/
++SP/102.1
+T_103
+/
++SP/103.1
+T_105
+/
++SP/105.1
+T_106
+/
++SP/106.1
+T_107
+/
++SP/107.1
+T_108
+/
++SP/108.1
+T_104
++SP/104.1
+T_2a
+/
+2.7
+
+---
+
+## Pagina 165/258 - Distribucion de tierras
+
+2.a
++SEC/16
+-W_PE:1
+PE
+Doble fondo
+PE
+Puerta
+PE
+Gabinete
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+12 AWG
+GNYE
+003-01
+12 AWG
+GNYE
+003-02
+12 AWG
+GNYE
+003-03
+10 AWG
+GNYE
+001-04
+003-04
+003-06
+003-05
+003-07
+003-08
+003-09
+003-10
+003-11
+003-14
+003-16
+003-17
+003-18
+003-19
+003-18
+003-13
+003-15
+003-12
+-PE_2
+/
+1.5
+PE_27
+/
++SEC/27.1
+PE_16
+/
++SEC/16.2
+PE_19
+/
++SEC/19.5
+PE_100
+/
++SP/100.3
+PE_101_X10102
+/
++SP/101.b.1
+PE_101_X10103
+/
++SP/101.b.2
+PE_102_X10202
+/
++SP/102.b.1
+PE_102_X10203
+/
++SP/102.b.2
+PE_103
+/
++SP/103.2
+PE_105
+/
++SP/105.2
+PE_106_X10601
+/
++SP/106.2
+PE_106_X10602
+/
++SP/106.b.2
+PE_107_X10701
+/
++SP/107.2
+PE_107_X10702
+/
+3.7
+PE_108_X10801
+/
++SP/108.3
+PE_107_X10702
+/
+3.7
+PE_104
+/
++SP/104.3
+
+---
+
+## Pagina 166/258 - Tension Control AC: Transformador de control 480 / 220 VAC
+
++SEP/3
+17
+16
+IN
+PE
+OUT
+11
+-T01601
+86151
+86151
+P: 1000VA
+IN: 208...550VAC
+OUT: 2x115VAC
+10
+OUT
+12
+I>
+I>
+I>
+-Q01601
+1,8...2,5A
+3RV2411-1CA10
+PE
+14 AWG
+BK
+016-05
+14 AWG
+BK
+016-01
+14 AWG
+BK
+016-04
+14 AWG
+BK
+016-06
+14 AWG
+RD
+016-08
+14 AWG
+RD
+016-07
+14 AWG
+RDWH
+016-03
+14 AWG
+RDWH
+016-02
+14 AWG
+BK
+002-14
+14 AWG
+BK
+002-02
+14 AWG
+GNYE
+003-04
++SEP-PE_16
++SEP/3.3
++SEP-S_16
++SEP/2.5
++SEP-R_16
++SEP/2.1
+120VAC_17
+17.1
+N_18
+18.0
+N
+120VAC
+
+---
+
+## Pagina 167/258 - Tension Control AC: Distribucion tension Control
+
+16
+18
+17
+-F01701
+230/400V 10kA
+1 polo, C, 6A
+5SY4106-7
+-F01702
+230/400V 10kA
+1 polo, C, 6A
+5SY4106-7
+-X01701
+14 AWG
+RD
+017-06
+14 AWG
+RD
+016-08
+-W01701
+14 AWG
+RD
+017-01
+14 AWG
+RD
+017-05
+14 AWG
+RD
+017-02
+120VAC_17
+/
+16.5
+120VAC_93
+/
++SA/93.3
+120VAC_90
+/
++SA/90.2
+120VAC_92
+/
++SA/92.1
+
+---
+
+## Pagina 168/258 - Tension Control AC: Distribucion Neutro
+
+17
+19
+18
+-X01801
+14 AWG
+RDWH
+018-05
+14 AWG
+RDWH
+016-03
+14 AWG
+RDWH
+018-04
+14 AWG
+RDWH
+018-01
+N_90
+/
++SA/90.2
+N_92
+/
++SA/92.1
+N_93
+/
++SA/93.3
+N_18
+/
+16.4
+
+---
+
+## Pagina 169/258 - Tension Control DC: Fuente 24 VDC
+
+18
+20
+19
+SIEMENS
+L1
+PE
+1+
+2+
+1-
+2-
+14
+13
+24V O.K.
+-T01901
+/29.8
+IN: 400-500 V AC
+OUT: 24 V/10 A DC
+SITOP PSU300S 24 V/10 A
+Fuente de alimentación SITOP smart
+6EP1434-2BA20
+L2
+L3
+ADJUST
+24...28V
+DEFAULT VALUE
+24V
+-Q01901
+2,2...3,2A
+Ir = 3 A
+3RV2011-1DA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+14 AWG
+BK
+019-01
+14 AWG
+BK
+019-03
+14 AWG
+BK
+019-05
+14 AWG
+BK
+002-15
+14 AWG
+BK
+002-03
+14 AWG
+GNYE
+003-05
+14 AWG
+BK
+2.a-02
+PE
+14 AWG
+BU
+019-02
+14 AWG
+BU
+019-04
+14 AWG
+BUWH
+019-07
++SEP-T_19
+/
++SEP/2.a.4
++SEP-S_19
+/
++SEP/2.6
++SEP-R_19
+/
++SEP/2.1
++SEP-PE_19 / +SEP/3.3
+0VDC_22
+/
+22.0
+24VDC_20
+/
+20.0
+24VDC.SUP_20
+/
+20.0
+24VDC
+0VDC
+
+---
+
+## Pagina 170/258 - Tension Control DC: Protecciones tension control DC
+
+19
+21
+20
+ALIMENTACION PLC
+ALIMENTACION CIRCUITOS DE
+SEGURIDAD Y AUXILIARES
+ALIMENTACION SENSORICA
+24VDC (+2)
+ALIMENTACION SWTICH
+ALIMENTACION ROUTER VPN
+24 VDC (+1)
++SC-A03008
+X10
+24 VDC Circuitos Seguridad - ok
+34
+DI d
++SC-A03008
+X10
+24 VDC Sensorica ok
+35
+DI d
++SC-A03008
+X10
+24 VDC (+1) ok
+36
+DI d
++SC-A03008
+X10
+24 VDC (+2) ok
+37
+DI d
+-F02001
+5SY4102-6
+-F02002
+5SY4101-6
+-F02003
+5SY4102-6
+-F02005
+5SY4103-6
+-F02007
+5SY4103-6
+-W02001
+14 AWG
+BU
+019-02
+020-01
+020-02
+020-03
+14 AWG
+BU
+019-04
+-F02004
+5SY4101-6
+-F02006
+5SY4101-6
+020-05
+-W02002
+20 AWG
+BU
+020-04
+20 AWG
+BU
+020-06
+20 AWG
+BU
+020-08
+20 AWG
+BU
+020-10
+16 AWG
+BU
+020-07
+16 AWG
+BU
+020-09
+16 AWG
+BU
+020-11
+24VDC_30_A03001
+/
++SC/30.1
+24VDC_35_A03501
+/
++SC/35.0
+24VDC_36_A03601
+/
++SC/36.5
+24VDC_20
+/
+19.4
+24VDC.SUP_20
+/
+19.4
+24VDC_21
+/
+21.0
+24VDC.0_21
+/
+21.b.1
+24VDC.1_21
+/
+21.0
+24VDC.2_21
+/
+21.0
+
+---
+
+## Pagina 171/258 - Tension Control DC: Distribucion tension control DC
+
+20
+21.b
+21
+-X02103
+-X02102
+10
+-X02101
+021-08
+11
+12
+13
+14
+15
+16
+17
+18
+10
+021-45
+021-46
+021-47
+021-48
+021-49
+021-50
+16 AWG
+BU
+020-05
+16 AWG
+BU
+020-09
+16 AWG
+BU
+021-01
+16 AWG
+BU
+021-10
+16 AWG
+BU
+021-42
+16 AWG
+BU
+021-41
+16 AWG
+BU
+020-11
+021-11
+1/L1
+2/T1
+-KM02901
+/29.3
+021-09
+24VDC_29
+/
+29.1
+24VDC_37
+/
++SC/37.1
+24VDC_37_X03702
+/
++SC/37.a.3
+24VDC_21
+/
+20.3
+24VDC.1_21
+/
+20.6
+24VDC.2_21
+/
+20.8
+24VDC.1_100
+/
++SP/100.a.1
+24VDC.1_101
+/
++SP/101.a.1
+24VDC.1_102
+/
++SP/102.a.1
+24VDC.2_100
+/
++SP/100.4
+24VDC.1_103
+/
++SP/103.a.1
+24VDC.2_103
+/
++SP/103.4
+24VDC.2_101
+/
++SP/101.4
+24VDC.2_102
+/
++SP/102.3
+24VDC.1_104
+/
++SP/104.a.1
+24VDC.1_105
+/
++SP/105.a.1
+24VDC.2_104
+/
++SP/104.4
+24VDC.1_106
+/
++SP/106.a.1
+24VDC.2_106
+/
++SP/106.5
+24VDC.2_105
+/
++SP/105.4
+24VDC.1_107
+/
++SP/107.a.1
+24VDC.1_108
+/
++SP/108.a.1
+24VDC.2_107
+/
++SP/107.4
+24VDC.2_108
+/
++SP/108.4
+24VDC.2_30
+/
++SC/30.a.1
+24VDC.1_30
+/
++SC/30.1
+24VDC.1_29
+/
+29.1
+24VDC_40
+/
++SC/40.1
+
+---
+
+## Pagina 172/258 - Tension Control DC: Distribucion tension control DC
+
+21
+22
+21.b
+-X02104
+16 AWG
+BU
+020-07
+21.b-02
+21.b-05
+21.b-03
+21.b-04
+21.b-06
+16 AWG
+BU
+21.b-01
+24VDC.0_21
+/
+20.4
+24VDC.0_58
+/
++SC/58.9
+24VDC.0_68
+/
++SC/68.4
+24VDC.0_83
+/
++SC/83.9
+24VDC.0_78
+/
++SC/78.5
+24VDC.0_84
+/
++SC/84.2
+
+---
+
+## Pagina 173/258 - Tension Control DC: Distribucion referencia 0 VDC
+
+21.b
+27
+22
+-X02204
+10
+11
+12
+13
+14
+022-09
+15
+16
+17
+18
+19
+20
+21
+22
+14 AWG
+BUWH
+019-07
+022-10
+022-14
+022-15
+022-16
+022-17
+022-24
+022-25
+022-26
+022-31
+022-18
+022-19
+022-27
+022-32
+0VDC_100
+/
++SP/100.3
+0VDC_101
+/
++SP/101.3
+0VDC_102
+/
++SP/102.3
+0VDC_103
+/
++SP/103.3
+0VDC_105
+/
++SP/105.3
+0VDC_106
+/
++SP/106.3
+0VDC_107
+/
++SP/107.3
+0VDC_108
+/
++SP/108.3
+0VDC_104
+/
++SP/104.3
+0VDC_30
+/
++SC/30.1
+0VDC_35
+/
++SC/35.1
+0VDC_36
+/
++SC/36.5
+0VDC_58
+/
++SC/58.9
+0VDC_68
+/
++SC/68.4
+0VDC_78
+/
++SC/78.6
+0VDC_83
+/
++SC/83.9
+0VDC_37
+/
++SC/37.1
+0VDC_29
+/
+29.1
+0VDC_100_K10001
+/
++SP/100.3
+0VDC_22
+/
+19.4
+0VDC_40
+/
++SC/40.1
+
+---
+
+## Pagina 174/258 - Tierra de control
+
+22
+29
+27
+-X02701
+18 AWG
+GNYE
+027-02
+18 AWG
+GNYE
+027-04
+18 AWG
+GNYE
+027-05
+18 AWG
+GNYE
+027-06
+18 AWG
+GNYE
+027-07
+18 AWG
+GNYE
+027-01
+14 AWG
+GNYE
+003-06
+18 AWG
+GNYE
+027-03
++SEP-PE_27
+/
++SEP/3.3
+PE_35
++SC/35.1
+PE_36
++SC/36.5
+PE_58
++SC/58.9
+PE_68
++SC/68.4
+PE_78
++SC/78.6
+PE_83
++SC/83.9
+PE_93
++SA/93.3
+
+---
+
+## Pagina 175/258 - Circuitos Auxiliares Suministro Electrico control
+
+27
++SC/30
+29
++SC-A03008
+X10
+24 VDC Habilitado
+38
+DI d
+-S02901
+1SFA619202R1076
+13
+14
+-KM02901
+AC-3, 3KW/400V, 1S, DC 24V,
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /21.7
+3/L2
+4/T2
+5/L3
+6/T3
+14
+13
+/29.4
+.2
+.1
+.4
+.3
+/29.5
+.4
+.3
+/29.8
+.4
+.3
+A1.
+A2.
+13
+NO
+14
+NO
+-KM02901
+/29.3
+029-01
+20 AWG
+BU
+021-11
+20 AWG
+BU
+029-05
+029-02
+029-03
+029-04
+022-01
+021-02
+-P02901
+24VDC, Green
+24 VDC Control Operativo
+1SFA619403R5022
+X1
+X2
+021-03
+022-02
+.3
+.4
+-KM02901
+/29.3
+13
+14
+-T01901
+/19.4
+029-06
+029-07
+1/L1
+2/T1
++SC-KM03701
++SC/37.6
+.3
+.4
+-KM02901
+/29.3
+24VDC_29
+/
+21.2
+0VDC_29
+/
+22.4
+24VDC.1_29
+/
+21.3
+
+---
+
+## Pagina 176/258 - Rack de control
+
++SEC/29
+30.a
+30
+PROFINET (LAN)
+MAC ADD4
+MAC ADD1
+X2 P1
+STOP
+RUN
+OK
+ESC
+SIMATIC S7-1500
+X1 P2R
+X1 P1R
+X2P1
+X1P2
+X1P1
+STOP ACTIVE
+1L+
+X80
+2L+
+1M
+2M
+-A03001
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+/50.1
+-A03002
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+/56.4
+-A03003
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+/62.2
+-A03004
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+/69.1
+-A03005
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+/76.1
+-A03006
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+/82.7
+-A03007
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+P
+DI 32x24VDC HF
+6ES7521-1BL00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
++SP/103.a.2
+-A03008
+40
+2M
+39
+2L+
+19
+1L+
+X10
+20
+1M
+020-01
+022-03
+030-01
+030-03
+030-05
+030-07
+030-09
+021-13
+030-11
+030-13
+030-15
+030-17
+030-19
+021-14
+030-21
+021-12
+022-04
+030-04
+030-06
+030-08
+030-10
+022-05
+030-12
+030-14
+030-16
+030-18
+030-20
+022-06
+030-22
+022-08
+030-02
+030-23
+030-24
++SEC-24VDC_30_A03001
+/
++SEC/20.1
++SEC-24VDC.1_30
+/
++SEC/21.4
++SEC-0VDC_30
+/
++SEC/22.4
++SEC-0VDC_30 / 30.a.1
+24VDC.1_30a / 30.a.1
+0VDC_30.a / 30.a.1
+
+---
+
+## Pagina 177/258 - Rack de control
+
+30
+35
+30.a
+P
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+DQ 32x24VDC/0.5A HF
+6ES7522-1BL01-0AB0
++SP/100.5
+-A03010
+10
+1M
+1L+
+X10
+40
+4M
+39
+4L+
+19
+2L+
+20
+2M
+29
+3L+
+30
+3M
+P
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+P
+-A03011
+10
+1M
+1L+
+X10
+40
+39
+19
+2L+
+20
+2M
+29
+30
+P
+DI 16x24VDC HF
+6ES7521-1BH00-0AB0
+b
+10
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+/84.3
+-A03009
+20
+M
+19
+L+
+X10
+40
+39
+30.a-03
+30.a-05
+30.a-07
+30.a-01
+30.a-10
+021-44
+030-23
+021-43
+030-24
+30.a-09
+022-07
+30.a-04
+30.a-06
+30.a-08
+022-08
+30.a-02
++SEC-24VDC.2_30
+/
++SEC/21.7
+24VDC.1_30a
+/
+30.8
++SEC-0VDC_30
+/
+30.8
+0VDC_30.a
+/
+30.8
+
+---
+
+## Pagina 178/258 - Comunicacion - Profinet
+
+30.a
+36
+35
+US1
+US
+GND
+-A03501
+FL SWITCH 1005N
+RJ45
+RJ45
+RJ45
+RJ45
+RJ45
+PE
+020-02
+022-09
+18 AWG
+GNYE
+027-02
++SEC-24VDC_35_A03501 / +SEC/20.1
++SEC-0VDC_35 / +SEC/22.4
++SEC-PE_35 / +SEC/27.2
+
+---
+
+## Pagina 179/258 - Comunicacion - VPN Remoto
+
+35
+37
+36
+-A03601
++
+L+
+M
+PE
+PE
+020-03
+022-10
+18 AWG
+GNYE
+027-04
++SEC-24VDC_36_A03601 / +SEC/20.2
++SEC-0VDC_36 / +SEC/22.4
++SEC-PE_36 / +SEC/27.3
+
+---
+
+## Pagina 180/258 - Circuito de Seguridad
+
+36
+37.a
+37
+Logic
+Autostart / Monitored Start
+SIEMENS
+IN
+F/S
+A2
+-
+IN1
+IN2
+T2
+T3
+IN3
+T4
+T1
+A1
++
+13
+23
+33
+41
+14
+24
+34
+42
+-A03701
+3SK1111-2AB30
+MODULO SEGURIDAD SIRIUS STD R3+1
+ARRANQUE MONITOREADO
+-A03009
+X10
+PE General (Rele seguridad)
+DI a
+-A03009
+X10
+Paro de emergencia tablero de control
+DI a
+-KM03701
+AC-3, 3KW/400V, 1OE, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB42
+A1
++
+A2
+-
+1/L1
+2/T1 +SEC/29.3
+3/L2
+4/T2 =TCP.S1/37.6
+5/L3
+6/T3 =TCP.S4/37.7
+21
+22
+/37.6
+.2
+.1
+.4
+.3
+/37.9
+.4
+.3
+.4
+.3
+3/L2
+4/T2 /37.e.4
+5/L3
+6/T3 /37.e.8
+11
+12
+-S03701
+21
+22
+13
+14
+-S03702
+/37.9
+x1
+x2
+-S03702
+/37.5
+24 VDC
+GREEN
+21
+NC
+22
+NC
+-KM03701
+/37.6
+A1.
+A2.
+037-04
+037-07
+037-08
+20 AWG
+BU
+037-01
+021-05
+037-02
+20 AWG
+BU
+021-04
+20 AWG
+BU
+037-10
+037-03
+037-06
+037-11
+037-13
+037-05
+037-09
+022-12
+022-13
+021-06
+021-07
+022-11
+20 AWG
+BU
+037-12
+.3
+.4
+-KM03701
+/37.6
++SEC-0VDC_37
+/
++SEC/22.4
++SEC-24VDC_37
+/
++SEC/21.2
+37.e
+/
+37.e.2
+37.c / 37.b.9
+
+---
+
+## Pagina 181/258 - Circuito de Seguridad - Serie Paros de Emergencia pt 1
+
+37
+37.b
+37.a
+PE 1 - RECEPCION
+PE 2 - RECEPCION
+PE 1 - DESCARGA
+PE 2 - DESCARGA
+PE 1 - SILO 1
+PE 2 - SILO 1
+PE 1 - SILO 2
+PE 2 - SILO 2
+-X03701
+12
+14
+10
+11
+13
+16
+15
+18
+17
+-X03701
+20
+19
+-X03702
+14
+12
+10
+13
+11
+-X03702
+16
+15
+37.a-18
+37.a-26
+37.a-33
+37.a-29
+37.a-21
+37.a-12
+37.a-08
+37.a-04
+021-08
+37.a-13
+37.a-14
+37.a-17
+37.a-22
+37.a-25
+37.a-30
+37.a-32
+37.a-27
+37.a-28
+37.a-24
+37.a-19
+37.a-20
+37.a-16
+37.a-10
+37.a-11
+37.a-09
+37.a-06
+37.a-07
+37.a-05
+37.a-02
+37.a-03
+37.a-31
+37.a-23
+37.a-15
+37.b
+/
+37.b.0
+P_Emerg_1
+37.c.0
+P_Emerg_2
+37.c.2
+P_Emerg_3
+37.c.3
+P_Emerg_4
+37.c.4
++SEC-24VDC_37_X03702
+/
++SEC/21.2
+P_Emerg_5
+37.c.6
+P_Emerg_6
+37.c.7
+P_Emerg_7
+37.c.8
+P_Emerg_8
+37.c.0
+24VDC.X03702
+/
+37.b.1
+37.a
+/
+37.e.7
+
+---
+
+## Pagina 182/258 - Circuito de Seguridad - Serie Paros de Emergencia pt 2
+
+37.a
+37.c
+37.b
+PE 2 - SILO 3
+PE 1 - SILO 4
+PE 2 - SILO 4
+PE 1 - CR01
+PE 1 - SILO 3
+-X03701
+21
+23
+25
+27
+29
+22
+24
+26
+28
+30
+-X03702
+19
+21
+23
+25
+20
+22
+24
+26
+37.b-04
+37.b-07
+37.b-11
+37.b-15
+37.b-19
+37.a-01
+37.b-01
+37.b-03
+37.b-06
+37.b-08
+37.b-10
+37.b-12
+37.b-14
+37.b-16
+37.b-18
+37.b-02
+37.b-05
+37.b-09
+37.b-13
+37.b-17
+18
+-X03702
+17
+37.b
+/
+37.a.0
+24VDC.X03702
+/
+37.a.0
+P_Emerg_10
+37.c.3
+P_Emerg_11
+37.c.4
+P_Emerg_12
+37.c.6
+P_Emerg_13
+37.c.7
+37.c
+37.3
+P_Emerg_9
+37.c.2
+
+---
+
+## Pagina 183/258 - Circuito de Seguridad - Señales Paros de emergencia a sistema de control
+
+37.b
+37.d
+37.c
+-A03007
+X10
+PE Zona recepcion Lado 1
+DI a
+-A03007
+X10
+PE Zona recepcion Lado 2
+DI a
+-A03007
+X10
+PE Zona Descarga Lado 1
+11
+DI b
+-A03007
+X10
+PE Zona Descarga Lado 2
+12
+DI b
+-A03007
+X10
+PE Zona Silo 1 Lado 1
+13
+DI b
+-A03007
+X10
+PE Zona Silo 1 Lado 2
+14
+DI b
+-A03007
+X10
+PE Zona Silo 2 Lado 1
+15
+DI b
+-A03007
+X10
+PE Zona Silo 2 Lado 2
+16
+DI b
+-A03007
+X10
+PE Zona Silo 3 Lado 1
+17
+DI b
+-A03007
+X10
+PE Zona Silo 3 Lado 2
+18
+DI b
+-A03007
+X10
+PE Zona Silo 4 Lado 1
+21
+DI c
+-A03007
+X10
+PE Zona Silo 4 Lado 2
+22
+DI c
+-A03007
+X10
+PE Zona CR01
+23
+DI c
+20 AWG
+BU
+37.a-18
+20 AWG
+BU
+37.a-26
+20 AWG
+BU
+37.a-33
+20 AWG
+BU
+37.a-29
+20 AWG
+BU
+37.a-21
+20 AWG
+BU
+37.a-12
+20 AWG
+BU
+37.a-08
+20 AWG
+BU
+37.a-04
+20 AWG
+BU
+37.b-04
+20 AWG
+BU
+37.b-07
+20 AWG
+BU
+37.b-11
+20 AWG
+BU
+37.b-15
+20 AWG
+BU
+37.b-19
+P_Emerg_1
+37.a.5
+P_Emerg_2
+37.a.7
+P_Emerg_3
+37.a.9
+P_Emerg_4
+37.a.8
+P_Emerg_5
+37.a.6
+P_Emerg_6
+37.a.4
+P_Emerg_7
+37.a.3
+P_Emerg_8
+37.a.1
+P_Emerg_9
+37.b.2
+P_Emerg_10
+37.b.3
+P_Emerg_11
+37.b.5
+P_Emerg_12
+37.b.7
+P_Emerg_13
+37.b.9
+
+---
+
+## Pagina 184/258 - Circuito de Seguridad - Instrucciones conexionado Paro de Emergencia
+
+37.c
+37.e
+37.d
+INSTRUCCIONES PARA CONEXION DE UNA SETA DE SEGURIDAD EN CAMPO
+PE - XYZ
+-X03701
+A
+B
+1) RETIRAR EL PUENTE  ENTRE LOS BORNES A Y B DE -X03701 CORRESPONDIENTES.
+PUENTE CONEXION SERIE PAROS DE EMERGENCIA
+HABILITACION DE RELE DE SEGURIDAD
+-X03702
+D
+PUENTE DE SEÑAL DE PARO DE EMERGENCIA XYZ
+SEÑAL DE PARO EMERGENCIA SISTEMA DE CONTROL
+PE - XYZ
+-X03701
+A
+B
+-X03702
+D
+2) RETIRAR EL PUENTE ENTRE LOS BORNES C Y D DE -X03702 CORRESPONDIENTES.
+3) INSTALAR SETA DE EMERGENCIA CON 2 NC.
+4) REALIZAR LA CONEXION A BORNES: A Y B DE X03701 Y BORNES C Y D DE X03702 SEGUN CORRESPONDA
+NOTA: SE REQUIEREN CABLE DE 4 HILOS POR CADA PARO DE EMERGENCIA
+11
+12
+-S03703
+21
+22
+
+---
+
+## Pagina 185/258 - Circuito de Seguridad - Interconexion señales TC y TCP
+
+37.d
+40
+37.e
+TCP-S1
+TCP-S4
+-X03703
+5/L3
+6/T3
+-KM03701
+/37.6
+18 AWG
+VT
+37.e-02
+18 AWG
+VT
+37.e-03
+-X03703
+18 AWG
+VT
+37.e-04
+18 AWG
+VT
+37.e-05
+3/L2
+4/T2
+-KM03701
+/37.6
+=TCP.S1-X03703
+=TCP.S4-X03703
+=TCP.S1-X03701
+=TCP.S4-X03701
+=TCP.S1-S03701
+=TCP.S1/37.4
+21
+22
+21
+22
+=TCP.S4-S03701
+=TCP.S4/37.4
+300/500 V
+4x1
+ÖLFLEX® CLASSIC 135 CH
+=TCP.S1/37.3
+=TCP.S1-W03701
+37.e-03
+37.e-04
+37.e-01
+37.e-02
+300/500 V
+4x1
+ÖLFLEX® CLASSIC 135 CH
+=TCP.S4/37.3
+=TCP.S4-W03701
+37.e-07
+37.e-08
+37.e-05
+37.e-06
+-X03701
+-X03701
+37.e-01
+37.a-13
+37.e-01
+037-02
+37.e
+/
+37.3
+37.a
+/
+37.a.3
+
+---
+
+## Pagina 186/258 - Baliza
+
+37.e
+50
+40
+-P04001
+3 Tiers,L-bracket/Cable
+-
++
+RD
+OG
+GN
+x1
+x2
+x1
+x2
+x1
+x2
+-A03010
+X10
+Baliza verde
+DQ d
+35
+-A03010
+X10
+Baliza naranja
+DQ d
+36
+-A03010
+X10
+Baliza Roja
+DQ d
+37
+-X04001
+040-02
+040-04
+20 AWG
+BU
+040-05
+20 AWG
+BU
+040-03
+20 AWG
+BU
+040-01
+20 AWG
+BU
+040-06
+20 AWG
+BU
+040-07
+20 AWG
+BU
+040-08
+022-14
+021-09
++SEC-24VDC_40
+/
++SEC/21.2
++SEC-0VDC_40
+/
++SEC/22.4
+
+---
+
+## Pagina 187/258 - Señales de Campo - Recepcion Producto
+
+40
+51
+50
+-A03002
+X10
+OS-CC100A
+DI a
+-A03002
+X10
+SMS-CC100A
+DI a
+-A03002
+X10
+OS-CC100B
+DI a
+-A03002
+X10
+SMS-CC100B
+DI a
+-A03002
+X10
+OS-FC101A
+DI a
+-A03002
+X10
+SMS-FC101A
+DI a
+-B05001
+Sn=15mm
+KI505A
++
+-X05001
+-X05001
+-B05002
+Sn = 10 mm
+DI103A
+13
+14
+-B05003
+Sn=15mm
+KI505A
++
+-B05004
+Sn = 10 mm
+DI103A
+13
+14
+-B05005
+Sn=15mm
+KI505A
++
+-B05006
+Sn = 10 mm
+DI103A
+13
+14
+20 AWG
+BU
+050-01
+20 AWG
+BU
+050-02
+20 AWG
+BU
+050-03
+20 AWG
+BU
+050-04
+20 AWG
+BU
+050-05
+20 AWG
+BU
+050-06
+24VDC.X05001 / 51.1
+0VDC.X05001 / 51.1
+PE.X05001 / 51.1
+
+---
+
+## Pagina 188/258 - Señales de Campo - Recepcion Producto
+
+50
+52
+51
+-A03002
+X10
+OS-CC101B
+DI a
+-A03002
+X10
+SMS-CC101B
+DI a
+-B05101
+Sn=15mm
+KI505A
++
+-B05102
+Sn = 10 mm
+DI103A
+13
+14
+-X05001
+-X05001
+20 AWG
+BU
+051-01
+20 AWG
+BU
+051-02
+24VDC.X05001 / 52.0
+0VDC.X05001 / 52.0
+PE.X05001 / 52.0
+24VDC.X05001
+/
+50.9
+0VDC.X05001
+/
+50.9
+PE.X05001
+/
+50.9
+
+---
+
+## Pagina 189/258 - Señales de Campo - Elevadores de producto
+
+51
+53
+52
+-A03002
+X10
+BA-BE102.1
+11
+DI b
+-A03002
+X10
+BA-BE102.2
+12
+DI b
+-A03002
+X10
+BA-BE102.3
+13
+DI b
+-A03002
+X10
+BA-BE102.4
+14
+DI b
+-A03002
+X10
+SMS-BE102
+15
+DI b
+-A03002
+X10
+BA-BE302.1
+16
+DI b
+-B05201
+Sn=10mm
+IM511A
++
+-X05001
+10
+10
+10
+11
+11
+11
+12
+12
+12
+-X05001
+10
+11
+12
+-B05202
+Sn=10mm
+IM511A
++
+-B05203
+Sn=10mm
+IM511A
++
+-B05204
+Sn=10mm
+IM511A
++
+-B05205
+Sn = 10 mm
+DI103A
+13
+14
+-B05206
+Sn=10mm
+IM511A
++
+13
+13
+13
+14
+14
+14
+-X05001
+13
+14
+20 AWG
+BU
+052-01
+20 AWG
+BU
+052-02
+20 AWG
+BU
+052-03
+20 AWG
+BU
+052-04
+20 AWG
+BU
+052-05
+20 AWG
+BU
+052-06
+24VDC.X05001 / 53.0
+0VDC.X05001 / 53.0
+PE.X05001 / 53.0
+24VDC.X05001
+/
+51.4
+0VDC.X05001
+/
+51.4
+PE.X05001
+/
+51.4
+
+---
+
+## Pagina 190/258 - Señales de Campo - Elevadores de producto
+
+52
+54
+53
+-A03002
+X10
+BA-BE302.2
+17
+DI b
+-A03002
+X10
+BA-BE302.3
+18
+DI b
+-A03002
+X10
+BA-BE302.4
+21
+DI c
+-A03002
+X10
+SMS-BE302
+22
+DI c
+-X05001
+15
+15
+15
+16
+16
+16
+17
+17
+17
+18
+18
+18
+-X05001
+15
+16
+17
+18
+-B05301
+Sn=10mm
+IM511A
++
+-B05302
+Sn=10mm
+IM511A
++
+-B05303
+Sn=10mm
+IM511A
++
+-B05304
+Sn = 10 mm
+DI103A
+13
+14
+20 AWG
+BU
+053-01
+20 AWG
+BU
+053-02
+20 AWG
+BU
+053-03
+20 AWG
+BU
+053-04
+24VDC.X05001 / 54.0
+0VDC.X05001 / 54.0
+PE.X05001 / 54.0
+24VDC.X05001
+/
+52.9
+0VDC.X05001
+/
+52.9
+PE.X05001
+/
+52.9
+
+---
+
+## Pagina 191/258 - Señales de Campo - Distribucion Producto
+
+53
+55
+54
+-A03002
+X10
+LS-V102.1
+23
+DI c
+-A03002
+X10
+LS-V102.2
+24
+DI c
+-A03002
+X10
+OS-CC103
+25
+DI c
+-A03002
+X10
+SMS-CC103
+26
+DI c
+-A03002
+X10
+OS-CC104
+27
+DI c
+-A03002
+X10
+SMS-CC104
+28
+DI c
+-B05401
+Sn=10mm
+IG514A
++
+19
+-X05001
+19
+19
+20
+20
+20
+21
+21
+21
+22
+22
+22
+23
+23
+23
+24
+24
+24
+-X05001
+19
+20
+21
+22
+23
+24
+-B05402
+Sn=10mm
+IG514A
++
+-B05403
+Sn=15mm
+KI505A
++
+-B05405
+Sn=15mm
+KI505A
++
+-B05404
+Sn = 10 mm
+DI103A
+13
+14
+-B05406
+Sn = 10 mm
+DI103A
+13
+14
+20 AWG
+BU
+054-01
+20 AWG
+BU
+054-02
+20 AWG
+BU
+054-03
+20 AWG
+BU
+054-04
+20 AWG
+BU
+054-05
+20 AWG
+BU
+054-06
+24VDC.X05001 / 55.1
+0VDC.X05001 / 55.1
+PE.X05001 / 55.1
+24VDC.X05001
+/
+53.6
+0VDC.X05001
+/
+53.6
+PE.X05001
+/
+53.6
+
+---
+
+## Pagina 192/258 - Señales de Campo - Distribucion Producto
+
+54
+56
+55
+-A03002
+X10
+OS-CC105
+31
+DI d
+-A03002
+X10
+SMS-CC105
+32
+DI d
+-A03002
+X10
+OS-CC106
+33
+DI d
+-A03002
+X10
+SMS-CC106
+34
+DI d
+-A03002
+X10
+LS-CC105.1
+35
+DI d
+-A03002
+X10
+LS-CC105.2
+36
+DI d
+-B05501
+Sn=15mm
+KI505A
++
+-X05001
+25
+25
+-X05001
+25
+25
+-B05502
+Sn = 10 mm
+DI103A
+13
+14
+-B05503
+Sn=15mm
+KI505A
++
+-B05504
+Sn = 10 mm
+DI103A
+13
+14
+-B05505
+Sn=10mm
+IG514A
++
+-B05506
+Sn=10mm
+IG514A
+13
+14
+26
+26
+26
+26
+27
+27
+27
+27
+28
+28
+28
+28
+29
+29
+29
+29
+30
+30
+30
+30
+20 AWG
+BU
+055-01
+20 AWG
+BU
+055-02
+20 AWG
+BU
+055-03
+20 AWG
+BU
+055-04
+20 AWG
+BU
+055-05
+20 AWG
+BU
+055-06
+24VDC.X05001 / 56.1
+0VDC.X05001 / 56.1
+PE.X05001 / 56.1
+24VDC.X05001
+/
+54.9
+0VDC.X05001
+/
+54.9
+PE.X05001
+/
+54.9
+
+---
+
+## Pagina 193/258 - Señales de Campo - Distribucion Producto
+
+55
+57
+56
+-A03002
+X10
+LS-CC105.3
+37
+DI d
+-A03002
+X10
+LS-CC105.4
+38
+DI d
+-A03003
+X10
+LS-CC106.1
+DI a
+-A03003
+X10
+LS-CC106.2
+DI a
+-A03003
+X10
+LS-CC106.3
+DI a
+-A03003
+X10
+LS-CC106.4
+DI a
+-B05601
+Sn=10mm
+IG514A
++
+-X05001
+31
+31
+-X05001
+31
+31
+-B05603
+Sn=10mm
+IG514A
++
+-B05605
+Sn=10mm
+IG514A
++
+32
+32
+32
+32
+33
+33
+33
+33
+34
+34
+34
+34
+35
+35
+35
+35
+36
+36
+36
+36
+-B05602
+Sn=10mm
+IG514A
++
+-B05604
+Sn=10mm
+IG514A
++
+-B05606
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+056-01
+20 AWG
+BU
+056-02
+20 AWG
+BU
+056-03
+20 AWG
+BU
+056-04
+20 AWG
+BU
+056-05
+20 AWG
+BU
+056-06
+24VDC.X05001 / 57.0
+0VDC.X05001 / 57.0
+PE.X05001 / 57.0
+24VDC.X05001
+/
+55.9
+0VDC.X05001
+/
+55.9
+PE.X05001
+/
+55.9
+
+---
+
+## Pagina 194/258 - Señales de Campo - Descarga de Producto
+
+56
+58
+57
+-A03003
+X10
+OS-FC201A
+DI a
+-A03003
+X10
+SMS-FC201A
+DI a
+-A03003
+X10
+OS-FC201B
+DI a
+-A03003
+X10
+SMS-FC201B
+DI a
+-A03003
+X10
+OS-FC201C
+11
+DI b
+-A03003
+X10
+SMS-FC201C
+12
+DI b
+-B05703
+Sn=15mm
+KI505A
++
+39
+39
+39
+39
+-B05704
+Sn = 10 mm
+DI103A
+13
+14
+-B05705
+Sn=15mm
+KI505A
++
+-B05706
+Sn = 10 mm
+DI103A
+13
+14
+40
+40
+40
+40
+41
+41
+41
+41
+42
+42
+42
+42
+-B05702
+Sn = 10 mm
+DI103A
+13
+14
+38
+38
+38
+38
+-X05001
+37
+37
+37
+-X05001
+37
+20 AWG
+BU
+057-03
+20 AWG
+BU
+057-04
+20 AWG
+BU
+057-05
+20 AWG
+BU
+057-06
+20 AWG
+BU
+057-02
+20 AWG
+BU
+057-01
+-B05701
+Sn=15mm
+KI505A
++
+24VDC.X05001 / 58.0
+0VDC.X05001 / 58.0
+PE.X05001 / 58.0
+24VDC.X05001
+/
+56.9
+0VDC.X05001
+/
+56.9
+PE.X05001
+/
+56.9
+
+---
+
+## Pagina 195/258 - Señales de Campo - Descarga de Producto
+
+57
+59
+58
+-A03003
+X10
+OS-FC201D
+13
+DI b
+-A03003
+X10
+SMS-FC201D
+14
+DI b
+-A03003
+X10
+OS-FC301
+15
+DI b
+-A03003
+X10
+SMS-FC301
+16
+DI b
+-A03003
+X10
+LS-V301.1
+17
+DI b
+-A03003
+X10
+LS-V301.2
+18
+DI b
+-B05801
+Sn=15mm
+KI505A
++
+-B05802
+Sn = 10 mm
+DI103A
+13
+14
+-X05001
+43
+43
+43
+-X05001
+43
+44
+44
+44
+44
+49
+49
+49
+20 AWG
+BU
+058-01
+20 AWG
+BU
+058-02
+022-15
+027-05
+21.b-02
+-B05803
+Sn=15mm
+KI505A
++
+-B05804
+Sn = 10 mm
+DI103A
+13
+14
+45
+45
+45
+45
+46
+46
+46
+46
+20 AWG
+BU
+058-03
+20 AWG
+BU
+058-04
+47
+47
+47
+47
+48
+48
+48
+-B05805
+Sn=10mm
+IG514A
++
+-B05806
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+058-05
+20 AWG
+BU
+058-06
+48
++SEC-24VDC.0_58
+/
++SEC/21.b.2
++SEC-0VDC_58
+/
++SEC/22.5
++SEC-PE_58
+/
++SEC/27.4
+24VDC.X05001
+/
+57.9
+0VDC.X05001
+/
+57.9
+PE.X05001
+/
+57.9
+
+---
+
+## Pagina 196/258 - Señales de Campo - Tolvas y compuertas S1
+
+58
+60
+59
+-A03003
+X10
+LS-S1.1
+21
+DI c
+-A03003
+X10
+LS-S1.2
+22
+DI c
+-A03003
+X10
+LS-S1.3
+23
+DI c
+-A03003
+X10
+LS-S1.4
+24
+DI c
+-A03003
+X10
+LS-S1.5
+25
+DI c
+-A03003
+X10
+LS-S1.6
+26
+DI c
+-X05901
+-X05901
+20 AWG
+BU
+059-01
+20 AWG
+BU
+059-02
+20 AWG
+BU
+059-03
+20 AWG
+BU
+059-04
+20 AWG
+BU
+059-05
+20 AWG
+BU
+059-06
+-B05905
+Sn=10mm
+IG514A
++
+-B05906
+Sn=10mm
+IG514A
++
+-B05903
+Sn=10mm
+IG514A
++
+-B05904
+Sn=10mm
+IG514A
++
+-B05901
+Sn=10mm
+IG514A
++
+-B05902
+Sn=10mm
+IG514A
++
+24VDC_X05901 / 60.0
+0VDC_X05901 / 60.0
+PE_X05901 / 60.0
+
+---
+
+## Pagina 197/258 - Señales de Campo - Tolvas y Compuertas S1
+
+59
+61
+60
+-A03003
+X10
+LS-S1.7
+27
+DI c
+-A03003
+X10
+LL-S1.1
+28
+DI c
+-A03003
+X10
+LL-S1.2
+31
+DI d
+-A03003
+X10
+LL-S1.3
+32
+DI d
+-A03003
+X10
+LL-S1.4
+33
+DI d
+-A03003
+X10
+TH-S1.1
+34
+DI d
+-X05901
+-X05901
+10
+10
+10
+10
+11
+11
+11
+11
+12
+12
+12
+12
+-B06005
+Sn=15mm
+KI503A
++
+-B06006
+Sn=15mm
+KI503A
++
+-B06003
+Sn=15mm
+KI503A
++
+-B06004
+Sn=15mm
+KI503A
++
+-B06001
+Sn=10mm
+IG514A
++
+-B06002
+Sn=15mm
+KI503A
++
+-X05901
+-X05901
+20 AWG
+BU
+060-03
+20 AWG
+BU
+060-04
+20 AWG
+BU
+060-05
+20 AWG
+BU
+060-06
+20 AWG
+BU
+060-02
+20 AWG
+BU
+060-01
+24VDC_X05901 / 61.0
+0VDC_X05901 / 61.0
+PE_X05901 / 61.0
+24VDC_X05901
+/
+59.8
+0VDC_X05901
+/
+59.8
+PE_X05901
+/
+59.8
+
+---
+
+## Pagina 198/258 - Señales de Campo - Tolvas y Compuertas S1
+
+60
+62
+61
+-A03003
+X10
+TH-S1.2
+35
+DI d
+-A03003
+X10
+TH-S1.3
+36
+DI d
+-A03003
+X10
+TH-S1.4
+37
+DI d
+-X05901
+15
+15
+15
+15
+-B06103
+Sn=15mm
+KI503A
++
+-X05901
+13
+13
+13
+-X05901
+13
+14
+14
+14
+14
+-B06101
+Sn=15mm
+KI503A
++
+-B06102
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+061-03
+20 AWG
+BU
+061-01
+20 AWG
+BU
+061-02
+24VDC_X05901 / 62.0
+0VDC_X05901 / 62.0
+PE_X05901 / 62.0
+24VDC_X05901
+/
+60.9
+0VDC_X05901
+/
+60.9
+PE_X05901
+/
+60.9
+
+---
+
+## Pagina 199/258 - Señales de Campo - Tolvas y Compuertas S2
+
+61
+63
+62
+-A03003
+X10
+LS-S2.1
+38
+DI d
+-A03004
+X10
+LS-S2.2
+DI a
+-A03004
+X10
+LS-S2.3
+DI a
+-A03004
+X10
+LS-S2.4
+DI a
+-A03004
+X10
+LS-S2.5
+DI a
+-A03004
+X10
+LS-S2.6
+DI a
+21
+21
+21
+21
+-B06206
+Sn=10mm
+IG514A
++
+17
+17
+17
+17
+18
+18
+18
+18
+19
+19
+19
+19
+20
+20
+20
+20
+-B06202
+Sn=10mm
+IG514A
++
+-B06203
+Sn=10mm
+IG514A
++
+-B06204
+Sn=10mm
+IG514A
++
+-B06205
+Sn=10mm
+IG514A
++
+-B06201
+Sn=10mm
+IG514A
++
+-X05901
+16
+16
+16
+-X05901
+16
+20 AWG
+BU
+062-06
+20 AWG
+BU
+062-02
+20 AWG
+BU
+062-03
+20 AWG
+BU
+062-04
+20 AWG
+BU
+062-05
+20 AWG
+BU
+062-01
+24VDC_X05901 / 63.1
+0VDC_X05901 / 63.1
+PE_X05901 / 63.1
+24VDC_X05901
+/
+61.5
+0VDC_X05901
+/
+61.5
+PE_X05901
+/
+61.5
+
+---
+
+## Pagina 200/258 - Señales de Campo - Tolvas y Compuertas S2
+
+62
+64
+63
+-A03004
+X10
+LS-S2.7
+DI a
+-A03004
+X10
+LS-S2.8
+DI a
+-A03004
+X10
+LS-S2.9
+DI a
+-A03004
+X10
+LS-S2.10
+11
+DI b
+-A03004
+X10
+LS-S2.11
+12
+DI b
+-A03004
+X10
+LL-S2.1
+13
+DI b
+23
+23
+23
+23
+24
+24
+24
+24
+25
+25
+25
+25
+26
+26
+26
+26
+-B06302
+Sn=10mm
+IG514A
++
+-B06303
+Sn=10mm
+IG514A
++
+-B06304
+Sn=10mm
+IG514A
++
+-B06305
+Sn=10mm
+IG514A
++
+-B06301
+Sn=10mm
+IG514A
++
+-X05901
+22
+22
+22
+-X05901
+22
+27
+27
+27
+27
+-B06306
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+063-02
+20 AWG
+BU
+063-03
+20 AWG
+BU
+063-04
+20 AWG
+BU
+063-05
+20 AWG
+BU
+063-01
+20 AWG
+BU
+063-06
+24VDC_X05901 / 64.0
+0VDC_X05901 / 64.0
+PE_X05901 / 64.0
+24VDC_X05901
+/
+62.9
+0VDC_X05901
+/
+62.9
+PE_X05901
+/
+62.9
+
+---
+
+## Pagina 201/258 - Señales de Campo - Tolvas y Compuertas S2
+
+63
+65
+64
+-A03004
+X10
+LL-S2.2
+14
+DI b
+-A03004
+X10
+LL-S2.3
+15
+DI b
+-A03004
+X10
+LL-S2.4
+16
+DI b
+-A03004
+X10
+TH-S2.1
+17
+DI b
+-A03004
+X10
+TH-S2.2
+18
+DI b
+-A03004
+X10
+TH-S2.3
+21
+DI c
+-X05901
+28
+28
+28
+-X05901
+28
+29
+29
+29
+29
+30
+30
+30
+30
+31
+31
+31
+31
+32
+32
+32
+32
+-B06402
+Sn=15mm
+KI503A
++
+-B06403
+Sn=15mm
+KI503A
++
+-B06404
+Sn=15mm
+KI503A
++
+-B06405
+Sn=15mm
+KI503A
++
+-B06401
+Sn=15mm
+KI503A
++
+33
+33
+33
+33
+-B06406
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+064-01
+20 AWG
+BU
+064-02
+20 AWG
+BU
+064-04
+20 AWG
+BU
+064-03
+20 AWG
+BU
+064-05
+20 AWG
+BU
+064-06
+24VDC_X05901 / 65.1
+0VDC_X05901 / 65.1
+PE_X05901 / 65.1
+24VDC_X05901
+/
+63.9
+0VDC_X05901
+/
+63.9
+PE_X05901
+/
+63.9
+
+---
+
+## Pagina 202/258 - Señales de Campo - Tolvas y Compuertas S2
+
+64
+66
+65
+-A03004
+X10
+TH-S2.4
+22
+DI c
+-X05901
+34
+34
+34
+-X05901
+34
+-B06501
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+065-01
+24VDC_X05901 / 66.0
+0VDC_X05901 / 66.0
+PE_X05901 / 66.0
+24VDC_X05901
+/
+64.9
+0VDC_X05901
+/
+64.9
+PE_X05901
+/
+64.9
+
+---
+
+## Pagina 203/258 - Señales de Campo - Tolvas y Compuertas S3
+
+65
+67
+66
+-A03004
+X10
+LS-S3.1
+23
+DI c
+-A03004
+X10
+LS-S3.2
+24
+DI c
+-A03004
+X10
+LS-S3.3
+25
+DI c
+-A03004
+X10
+LS-S3.4
+26
+DI c
+-A03004
+X10
+LS-S3.5
+27
+DI c
+-A03004
+X10
+LS-S3.6
+28
+DI c
+-X05901
+35
+35
+35
+-X05901
+35
+36
+36
+36
+36
+37
+37
+37
+37
+38
+38
+38
+38
+-B06601
+Sn=10mm
+IG514A
++
+-B06602
+Sn=10mm
+IG514A
++
+-B06603
+Sn=10mm
+IG514A
++
+-B06604
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+066-01
+20 AWG
+BU
+066-02
+20 AWG
+BU
+066-03
+20 AWG
+BU
+066-04
+39
+39
+39
+39
+40
+40
+40
+40
+-B06605
+Sn=10mm
+IG514A
++
+-B06606
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+066-05
+20 AWG
+BU
+066-06
+24VDC_X05901
+/
+65.2
+0VDC_X05901
+/
+65.2
+PE_X05901
+/
+65.2
+24VDC_X05901 / 67.0
+0VDC_X05901 / 67.0
+PE_X05901 / 67.0
+
+---
+
+## Pagina 204/258 - Señales de Campo - Tolvas y Compuertas S3
+
+66
+68
+67
+-A03004
+X10
+LS-S3.7
+31
+DI d
+-A03004
+X10
+LS-S3.8
+32
+DI d
+-A03004
+X10
+LS-S3.9
+33
+DI d
+-A03004
+X10
+LS-S3.10
+34
+DI d
+-A03004
+X10
+LS-S3.11
+35
+DI d
+-A03004
+X10
+LL-S3.1
+36
+DI d
+-X05901
+41
+41
+41
+-X05901
+41
+42
+42
+42
+42
+43
+43
+43
+43
+44
+44
+44
+44
+-B06701
+Sn=10mm
+IG514A
++
+-B06702
+Sn=10mm
+IG514A
++
+-B06703
+Sn=10mm
+IG514A
++
+-B06704
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+067-01
+20 AWG
+BU
+067-02
+20 AWG
+BU
+067-03
+20 AWG
+BU
+067-04
+45
+45
+45
+45
+46
+46
+46
+46
+-B06706
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+067-05
+20 AWG
+BU
+067-06
+-B06705
+Sn=10mm
+IG514A
++
+24VDC_X05901
+/
+66.9
+0VDC_X05901
+/
+66.9
+PE_X05901
+/
+66.9
+24VDC_X05901 / 68.0
+0VDC_X05901 / 68.0
+PE_X05901 / 68.0
+
+---
+
+## Pagina 205/258 - Señales de Campo - Tolvas y Compuertas S3
+
+67
+69
+68
+-A03004
+X10
+LL-S3.2
+37
+DI d
+-A03004
+X10
+LL-S3.3
+38
+DI d
+-X05901
+47
+47
+47
+-X05901
+47
+48
+48
+48
+48
+-B06801
+Sn=15mm
+KI503A
++
+-B06802
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+068-01
+20 AWG
+BU
+068-02
+21.b-03
+022-16
+027-06
+49
+49
+49
+24VDC_X05901
+/
+67.9
+0VDC_X05901
+/
+67.9
+PE_X05901
+/
+67.9
++SEC-24VDC.0_68
+/
++SEC/21.b.2
++SEC-0VDC_68
+/
++SEC/22.5
++SEC-PE_68
+/
++SEC/27.4
+
+---
+
+## Pagina 206/258 - Señales de Campo - Tolvas y Compuertas S3
+
+68
+70
+69
+-A03005
+X10
+TH-S3.2
+DI a
+-A03005
+X10
+TH-S3.3
+DI a
+-A03005
+X10
+TH-S3.4
+DI a
+-A03005
+X10
+LL-S3.4
+DI a
+-A03005
+X10
+TH-S3.1
+DI a
+-B06905
+Sn=15mm
+KI503A
++
+-B06903
+Sn=15mm
+KI503A
++
+-B06904
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+069-03
+20 AWG
+BU
+069-04
+20 AWG
+BU
+069-05
+-X06701
+-X06701
+-B06901
+Sn=15mm
+KI503A
++
+-B06902
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+069-01
+20 AWG
+BU
+069-02
+24VDC_X06701 / 70.0
+0VDC_X06701 / 70.0
+PE_X06701 / 70.0
+
+---
+
+## Pagina 207/258 - Señales de Campo - Tolvas y Compuertas S4
+
+69
+71
+70
+-A03005
+X10
+LS-S4.1
+DI a
+-A03005
+X10
+LS-S4.2
+DI a
+-A03005
+X10
+LS-S4.3
+DI a
+-A03005
+X10
+LS-S4.4
+11
+DI b
+-A03005
+X10
+LS-S4.5
+12
+DI b
+-A03005
+X10
+LS-S4.6
+13
+DI b
+-X06701
+-X06701
+-B07001
+Sn=10mm
+IG514A
++
+-B07002
+Sn=10mm
+IG514A
++
+-B07003
+Sn=10mm
+IG514A
++
+-X06701
+10
+10
+10
+10
+11
+11
+11
+11
+-B07006
+Sn=10mm
+IG514A
++
+-B07004
+Sn=10mm
+IG514A
++
+-B07005
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+070-01
+20 AWG
+BU
+070-02
+20 AWG
+BU
+070-03
+20 AWG
+BU
+070-04
+20 AWG
+BU
+070-05
+20 AWG
+BU
+070-06
+24VDC_X06701
+/
+69.9
+0VDC_X06701
+/
+69.9
+PE_X06701
+/
+69.9
+24VDC_X06701 / 71.0
+0VDC_X06701 / 71.0
+PE_X06701 / 71.0
+
+---
+
+## Pagina 208/258 - Señales de Campo - Tolvas y Compuertas S4
+
+70
+72
+71
+-A03005
+X10
+LS-S4.7
+14
+DI b
+-A03005
+X10
+LS-S4.8
+15
+DI b
+-A03005
+X10
+LS-S4.9
+16
+DI b
+-A03005
+X10
+LS-S4.10
+17
+DI b
+-A03005
+X10
+LS-S4.11
+18
+DI b
+-A03005
+X10
+LL-S4.1
+21
+DI c
+-X06701
+12
+12
+12
+-X06701
+12
+13
+13
+13
+13
+14
+14
+14
+14
+-B07101
+Sn=10mm
+IG514A
++
+-B07102
+Sn=10mm
+IG514A
++
+-B07103
+Sn=10mm
+IG514A
++
+15
+15
+15
+15
+16
+16
+16
+16
+17
+17
+17
+17
+-B07106
+Sn=15mm
+KI503A
++
+-B07104
+Sn=10mm
+IG514A
++
+-B07105
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+071-01
+20 AWG
+BU
+071-02
+20 AWG
+BU
+071-03
+20 AWG
+BU
+071-04
+20 AWG
+BU
+071-05
+20 AWG
+BU
+071-06
+24VDC_X06701
+/
+70.9
+0VDC_X06701
+/
+70.9
+PE_X06701
+/
+70.9
+24VDC_X06701 / 72.1
+0VDC_X06701 / 72.1
+PE_X06701 / 72.1
+
+---
+
+## Pagina 209/258 - Señales de Campo - Tolvas y Compuertas S4
+
+71
+73
+72
+-A03005
+X10
+LL-S4.2
+22
+DI c
+-A03005
+X10
+LL-S4.3
+23
+DI c
+-A03005
+X10
+LL-S4.4
+24
+DI c
+-A03005
+X10
+TH-S4.1
+25
+DI c
+-A03005
+X10
+TH-S4.2
+26
+DI c
+-A03005
+X10
+TH-S4.3
+27
+DI c
+-X06701
+18
+18
+18
+-X06701
+18
+19
+19
+19
+19
+20
+20
+20
+20
+-B07201
+Sn=15mm
+KI503A
++
+-B07202
+Sn=15mm
+KI503A
++
+-B07203
+Sn=15mm
+KI503A
++
+-X06701
+21
+21
+-X06701
+21
+21
+22
+22
+22
+22
+23
+23
+23
+23
+-B07206
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+072-01
+20 AWG
+BU
+072-02
+20 AWG
+BU
+072-03
+20 AWG
+BU
+072-04
+20 AWG
+BU
+072-05
+20 AWG
+BU
+072-06
+-B07204
+Sn=15mm
+KI503A
++
+-B07205
+Sn=15mm
+KI503A
++
+24VDC_X06701
+/
+71.8
+0VDC_X06701
+/
+71.8
+PE_X06701
+/
+71.8
+24VDC_X06701 / 73.1
+0VDC_X06701 / 73.1
+PE_X06701 / 73.1
+
+---
+
+## Pagina 210/258 - Señales de Campo - Tolvas y Compuertas S4
+
+72
+74
+73
+-A03005
+X10
+TH-S4.4
+28
+DI c
+-X06701
+24
+24
+24
+-X06701
+24
+-B07301
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+073-01
+24VDC_X06701
+/
+72.9
+0VDC_X06701
+/
+72.9
+PE_X06701
+/
+72.9
+24VDC_X06701 / 74.0
+0VDC_X06701 / 74.0
+PE_X06701 / 74.0
+
+---
+
+## Pagina 211/258 - Señales de Campo - Nivel alto y bajo S1 y S2
+
+73
+75
+74
+-A03005
+X10
+LL-S1
+31
+DI d
+-A03005
+X10
+HL-S1
+32
+DI d
+-A03005
+X10
+LL-S2
+33
+DI d
+-A03005
+X10
+HL-S2
+34
+DI d
+-X06701
+25
+25
+-X06701
+25
+25
+26
+26
+26
+26
+27
+27
+27
+27
+28
+28
+28
+28
+-B07403
+Sn=15mm
+KI503A
++
+-B07404
+Sn=15mm
+KI503A
++
+-B07401
+Sn=15mm
+KI503A
++
+-B07402
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+074-01
+20 AWG
+BU
+074-02
+20 AWG
+BU
+074-03
+20 AWG
+BU
+074-04
+24VDC_X06701 / 75.0
+0VDC_X06701 / 75.0
+PE_X06701 / 75.0
+24VDC_X06701
+/
+73.2
+0VDC_X06701
+/
+73.2
+PE_X06701
+/
+73.2
+
+---
+
+## Pagina 212/258 - Señales de Campo - Nivel alto y bajo S3 y S4
+
+74
+76
+75
+-A03005
+X10
+LL-S3
+35
+DI d
+-A03005
+X10
+HL-S3
+36
+DI d
+-A03005
+X10
+LL-S4
+37
+DI d
+-A03005
+X10
+HL-S4
+38
+DI d
+-X06701
+29
+29
+-X06701
+29
+29
+30
+30
+30
+30
+31
+31
+31
+31
+32
+32
+32
+32
+-B07503
+Sn=15mm
+KI503A
++
+-B07504
+Sn=15mm
+KI503A
++
+-B07501
+Sn=15mm
+KI503A
++
+-B07502
+Sn=15mm
+KI503A
++
+20 AWG
+BU
+075-01
+20 AWG
+BU
+075-02
+20 AWG
+BU
+075-03
+20 AWG
+BU
+075-04
+24VDC_X06701
+/
+74.8
+0VDC_X06701
+/
+74.8
+PE_X06701
+/
+74.8
+24VDC_X06701 / 76.0
+0VDC_X06701 / 76.0
+PE_X06701 / 76.0
+
+---
+
+## Pagina 213/258 - Señales de Campo - CR01
+
+75
+77
+76
+-A03006
+X10
+LS-CR1.1
+DI a
+-A03006
+X10
+LS-CR1.2
+DI a
+-A03006
+X10
+LS-CR1.3
+DI a
+-A03006
+X10
+LS-CR1.4
+DI a
+-A03006
+X10
+LL-CR1
+DI a
+-A03006
+X10
+HL-CR1
+DI a
+-X06701
+33
+33
+-X06701
+33
+33
+34
+34
+34
+34
+35
+35
+35
+35
+36
+36
+36
+36
+37
+37
+37
+37
+38
+38
+38
+38
+-B07603
+Sn=10mm
+IG514A
++
+-B07604
+Sn=10mm
+IG514A
++
+-B07605
+Sn=15mm
+KI503A
++
+-B07606
+Sn=15mm
+KI503A
++
+-B07601
+Sn=10mm
+IG514A
++
+-B07602
+Sn=10mm
+IG514A
++
+20 AWG
+BU
+076-01
+20 AWG
+BU
+076-02
+20 AWG
+BU
+076-03
+20 AWG
+BU
+076-04
+20 AWG
+BU
+076-05
+20 AWG
+BU
+076-06
+24VDC_X06701
+/
+75.8
+0VDC_X06701
+/
+75.8
+PE_X06701
+/
+75.8
+24VDC_X06701 / 77.0
+0VDC_X06701 / 77.0
+PE_X06701 / 77.0
+
+---
+
+## Pagina 214/258 - Señales de Campo - Control Compuertas S1 y S2
+
+76
+78
+77
+CONTROL COMPUERTAS S1
+CONTROL COMPUERTAS S2
+-A03006
+X10
+Abrir compuerta Lateral S1
+DI a
+-A03006
+X10
+Cerrar Compuerta Lateral S1
+DI a
+-A03006
+X10
+Finalizacion de proceso S1
+11
+DI b
+-A03006
+X10
+Abrir compuerta Lateral S2
+12
+DI b
+-A03006
+X10
+Cerrar Compuerta Lateral S2
+13
+DI b
+-A03006
+X10
+Finalizacion de proceso S2
+14
+DI b
+-X06701
+39
+39
+-X06701
+39
+39
+40
+40
+40
+40
+41
+41
+41
+41
+42
+42
+42
+42
+43
+43
+43
+43
+44
+44
+44
+44
+13
+14
+-S07701
+13
+14
+-S07702
+13
+14
+-S07703
+13
+14
+-S07704
+13
+14
+-S07705
+13
+14
+-S07706
+20 AWG
+BU
+077-01
+20 AWG
+BU
+077-02
+20 AWG
+BU
+077-03
+20 AWG
+BU
+077-04
+20 AWG
+BU
+077-05
+20 AWG
+BU
+077-06
+24VDC_X06701
+/
+76.9
+0VDC_X06701
+/
+76.9
+PE_X06701
+/
+76.9
+24VDC_X06701 / 78.1
+0VDC_X06701 / 78.1
+PE_X06701 / 78.1
+
+---
+
+## Pagina 215/258 - Señales de Campo - Control Compuertas S3
+
+77
+79
+78
+CONTROL COMPUERTAS S3
+-A03006
+X10
+Abrir compuerta Lateral S3
+15
+DI b
+-A03006
+X10
+Cerrar Compuerta Lateral S3
+16
+DI b
+-A03006
+X10
+Finalizacion de proceso S3
+17
+DI b
+-X06701
+45
+45
+-X06701
+45
+45
+46
+46
+46
+46
+47
+47
+47
+47
+13
+14
+-S07801
+13
+14
+-S07802
+13
+14
+-S07803
+20 AWG
+BU
+078-01
+20 AWG
+BU
+078-02
+20 AWG
+BU
+078-03
+21.b-04
+022-17
+027-07
+48
+48
+48
+24VDC_X06701
+/
+77.9
+0VDC_X06701
+/
+77.9
+PE_X06701
+/
+77.9
++SEC-24VDC.0_78
+/
++SEC/21.b.2
++SEC-0VDC_78
+/
++SEC/22.5
++SEC-PE_78
+/
++SEC/27.5
+
+---
+
+## Pagina 216/258 - Señales de Campo - Control Compuertas S4
+
+78
+80
+79
+-A03006
+X10
+Abrir compuerta Lateral S4
+18
+DI b
+-A03006
+X10
+Cerrar Compuerta Lateral S4
+21
+DI c
+-A03006
+X10
+Finalizacion de proceso S4
+22
+DI c
+CONTROL COMPUERTAS S4
+-X07901
+-X07901
+13
+14
+-S07804
+13
+14
+-S07805
+13
+14
+-S07806
+20 AWG
+BU
+079-01
+20 AWG
+BU
+079-02
+20 AWG
+BU
+079-03
+24VDC_X07901 / 80.0
+0VDC_X07901 / 80.0
+PE_X07901 / 80.0
+
+---
+
+## Pagina 217/258 - Señales de Interconexion - Reserva con termometria S1
+
+79
+81
+80
+AIREACION TERMOMETRIA TMS6000
+-A03006
+X10
+Arranque Extractor1_Sistema
+23
+DI c
+-A03006
+X10
+Arranque Extractor2_Sistema
+24
+DI c
+-A03006
+X10
+Arranque Extractor3_Sistema
+25
+DI c
+-A03006
+X10
+Arranque Vetilador1_Sistema
+26
+DI c
+-A03006
+X10
+Arranque Vetilador2_Sistema
+27
+DI c
+La conexión debe realizarse únicamente
+siguiendo el esquema eléctrico indicado,
+siempre y cuando el sistema de aireación
+disponga de una salida a relé o un contacto
+normalmente abierto (NO).
+Si el sistema cuenta con un tipo de salida
+diferente, será necesario modificar el
+esquema de conexión para garantizar
+un funcionamiento adecuado y seguro.
+-X07901
+-X07901
+20 AWG
+BU
+080-01
+20 AWG
+BU
+080-02
+20 AWG
+BU
+080-03
+20 AWG
+BU
+080-04
+20 AWG
+BU
+080-05
+13
+14
+13
+14
+13
+14
+13
+14
+13
+14
+24VDC_X07901 / 81.1
+0VDC_X07901 / 81.1
+PE_X07901 / 81.1
+24VDC_X07901
+/
+79.9
+0VDC_X07901
+/
+79.9
+PE_X07901
+/
+79.9
+
+---
+
+## Pagina 218/258 - Señales de Interconexion - Reserva con termometria S2
+
+80
+82
+81
+AIREACION TERMOMETRIA TMS6000
+-A03006
+X10
+Arranque Extractor1_Sistema
+28
+DI c
+-A03006
+X10
+Arranque Extractor2_Sistema
+31
+DI d
+-A03006
+X10
+Arranque Extractor3_Sistema
+32
+DI d
+-A03006
+X10
+Arranque Vetilador1_Sistema
+33
+DI d
+-A03006
+X10
+Arranque Vetilador2_Sistema
+34
+DI d
+La conexión debe realizarse únicamente
+siguiendo el esquema eléctrico indicado,
+siempre y cuando el sistema de aireación
+disponga de una salida a relé o un contacto
+normalmente abierto (NO).
+Si el sistema cuenta con un tipo de salida
+diferente, será necesario modificar el
+esquema de conexión para garantizar
+un funcionamiento adecuado y seguro.
+-X07901
+-X07901
+10
+10
+10
+10
+11
+11
+11
+11
+20 AWG
+BU
+081-01
+20 AWG
+BU
+081-02
+20 AWG
+BU
+081-03
+12
+12
+12
+12
+20 AWG
+BU
+081-04
+13
+13
+13
+13
+20 AWG
+BU
+081-05
+13
+14
+13
+14
+13
+14
+13
+14
+13
+14
+24VDC_X07901 / 82.0
+0VDC_X07901 / 82.0
+PE_X07901 / 82.0
+24VDC_X07901
+/
+80.8
+0VDC_X07901
+/
+80.8
+PE_X07901
+/
+80.8
+
+---
+
+## Pagina 219/258 - Señales de Interconexion - Reserva con termometria S3
+
+81
+83
+82
+AIREACION TERMOMETRIA TMS6000
+-A03006
+X10
+Arranque Extractor1_Sistema
+35
+DI d
+-A03006
+X10
+Arranque Extractor2_Sistema
+36
+DI d
+-A03006
+X10
+Arranque Extractor3_Sistema
+37
+DI d
+-A03006
+X10
+Arranque Vetilador1_Sistema
+38
+DI d
+-A03007
+X10
+Arranque Vetilador2_Sistema
+DI a
+La conexión debe realizarse únicamente
+siguiendo el esquema eléctrico indicado,
+siempre y cuando el sistema de aireación
+disponga de una salida a relé o un contacto
+normalmente abierto (NO).
+Si el sistema cuenta con un tipo de salida
+diferente, será necesario modificar el
+esquema de conexión para garantizar
+un funcionamiento adecuado y seguro.
+-X07901
+14
+14
+14
+-X07901
+14
+15
+15
+15
+15
+16
+16
+16
+16
+20 AWG
+BU
+082-01
+20 AWG
+BU
+082-02
+20 AWG
+BU
+082-03
+17
+17
+17
+17
+20 AWG
+BU
+082-04
+18
+18
+18
+18
+20 AWG
+BU
+082-05
+13
+14
+13
+14
+13
+14
+13
+14
+13
+14
+24VDC_X07901 / 83.0
+0VDC_X07901 / 83.0
+PE_X07901 / 83.0
+24VDC_X07901
+/
+81.9
+0VDC_X07901
+/
+81.9
+PE_X07901
+/
+81.9
+
+---
+
+## Pagina 220/258 - Señales de Interconexion - Reserva con termometria S4
+
+82
+84
+83
+AIREACION TERMOMETRIA TMS6000
+-A03007
+X10
+Arranque Extractor1_Sistema
+DI a
+-A03007
+X10
+Arranque Extractor2_Sistema
+DI a
+-A03007
+X10
+Arranque Extractor3_Sistema
+DI a
+-A03007
+X10
+Arranque Vetilador1_Sistema
+DI a
+-A03007
+X10
+Arranque Vetilador2_Sistema
+DI a
+La conexión debe realizarse únicamente
+siguiendo el esquema eléctrico indicado,
+siempre y cuando el sistema de aireación
+disponga de una salida a relé o un contacto
+normalmente abierto (NO).
+Si el sistema cuenta con un tipo de salida
+diferente, será necesario modificar el
+esquema de conexión para garantizar
+un funcionamiento adecuado y seguro.
+-X07901
+19
+19
+19
+-X07901
+19
+20
+20
+20
+20
+21
+21
+21
+21
+20 AWG
+BU
+083-01
+20 AWG
+BU
+083-02
+20 AWG
+BU
+083-03
+22
+22
+22
+22
+20 AWG
+BU
+083-04
+23
+23
+23
+23
+20 AWG
+BU
+083-05
+13
+14
+13
+14
+13
+14
+13
+14
+13
+14
+21.b-05
+027-01
+022-18
+24
+24
+24
+24VDC_X07901
+/
+82.8
+0VDC_X07901
+/
+82.8
+PE_X07901
+/
+82.8
++SEC-24VDC.0_83
+/
++SEC/21.b.2
++SEC-0VDC_83
+/
++SEC/22.5
++SEC-PE_83
+/
++SEC/27.2
+
+---
+
+## Pagina 221/258 - Señales de Interconexion - TCP
+
+83
++SA/90
+84
+-A03009
+X10
+Condiciones anormales suministro 480
+VAC
+DI a
+-A03009
+X10
+Proteccion sobretension activada
+DI a
+-A03009
+X10
+Falla electrica Totalizador TCP1
+DI a
+-A03009
+X10
+Falla electrica Totalizador TCP2
+DI a
+TABLERO TCP S3
+-X08401
+=TCP.S3-X08402
+300/500 V
+5x1
+ÖLFLEX® CLASSIC 135 CH
+-W08401
+084-19
+084-23
+084-20
+084-21
+084-22
+20 AWG
+BU
+084-01
+20 AWG
+BU
+084-02
+20 AWG
+BU
+084-03
+20 AWG
+BU
+084-04
+21.b-06
++SEC-24VDC.0_84
+/
++SEC/21.b.3
+
+---
+
+## Pagina 222/258 - Iluminacion
+
++SC/84
+92
+90
+ALA 1
+ALA 2
+L
+N
+-E09001
+13
+14
+-B09001
+090-01
+017-03
+018-02
+L
+N
+-E09002
+13
+14
+-B09002
+090-02
+017-04
+018-03
++SEC-120VAC_90
+/
++SEC/17.2
++SEC-N_90
+/
++SEC/18.4
+
+---
+
+## Pagina 223/258 - Calefaccion
+
+90
+93
+92
+-U09201
+250W
+CSL 028
+02811.9-00
+02811.9-00
+L
+N
+M
+1~
+-S09201
+10 A @250VAC
+TRT-10A230V-NC
+11
+12
+14 AWG
+RD
+017-05
+14 AWG
+RD
+092-01
+14 AWG
+RDWH
+018-04
++SEC-120VAC_92
+/
++SEC/17.3
++SEC-N_92
+/
++SEC/18.4
+
+---
+
+## Pagina 224/258 - Toma de servicio
+
+92
++SP/100
+93
+RJ45
+-XD09301
+MODLINK MSDD SINGLE COMBI INSERT
+USA NEMA 5-15
+1xRJ45 female/female
+4000-68000-4040000
+X2:OUT
+X2:IN
+X1
+PE
+14 AWG
+RD
+017-06
+14 AWG
+RDWH
+018-05
+14 AWG
+GNYE
+027-03
++SEC-PE_93
+/
++SEC/27.3
++SEC-N_93
+/
++SEC/18.4
++SEC-120VAC_93
+/
++SEC/17.4
+
+---
+
+## Pagina 225/258 - Distribuidor V102
+
++SA/93
+100.a
+100
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10001
+/100.a.1
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 Distribuidor V102
+DQ a
++SC-A03010
+X10
+Arranque sentido 2 Distribuidor V102
+DQ a
+-Q10001
+1,1...1,6A
+3RV2011-1AA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/100.a.4
+65
+66
+/100.8
+77
+78
+/100.a.5
+85
+86
+/100.8
+-W10001
+U1
+W1
+PE
+-M10001
+0,55 kW, 460 VAC
+M
+-X10001
+85
+86
+-Q10001
+/100.1
+A1
+A2
++SC-K10001
+24VDC
+12
+11
+14
+/100.5
+22
+21
+24
+/100.7
+65
+66
+-Q10001
+/100.1
+22
+21
+24
++SC-K10001
+/100.8
+250 V AC/DC
+12
+11
+14
++SC-K10001
+/100.8
+250 V AC/DC
+14 AWG
+BK
+002-16
+14 AWG
+BK
+002-04
+20 AWG
+BU
+100-08
+20 AWG
+BU
+100-09
+20 AWG
+BU
+100-07
+20 AWG
+BU
+100-06
+20 AWG
+BU
+100-04
+20 AWG
+BU
+100-05
+14 AWG
+BK
+100-01
+14 AWG
+BK
+100-02
+14 AWG
+BK
+100-03
+022-19
+14 AWG
+BK
+003-07
+14 AWG
+BK
+2.a-03
+022-32
+20 AWG
+BU
+021-45
++SEP-T_100
+/
++SEP/2.a.4
++SEP-S_100
+/
++SEP/2.6
++SEP-R_100
+/
++SEP/2.1
++SEC-0VDC_100
+/
++SEC/22.5
++SEC-24VDC.2_100
+/
++SEC/21.8
++SEP-PE_100 / +SEP/3.4
++SEC-0VDC_100_K10001
+/
++SEC/22.7
++SEC-0VDC_100_K10001 / 101.3
+
+---
+
+## Pagina 226/258 - Distribuidor V102
+
+100
+101
+100.a
++SC-A03007
+X10
+Confirmacion arranque sentido 1
+distribuidor V102
+24
+DI c
++SC-A03007
+X10
+Confirmacion arranque sentido 2
+distribuidor V102
+25
+DI c
++SC-A03007
+X10
+Falla electrica distribuidor V102
+26
+DI c
+57
+58
+-Q10001
+/100.1
+77
+78
+.3
+Coil 2
+.4
+-KM10001
+/100.1
+.3
+Coil 1
+.4
+-KM10001
+/100.1
+20 AWG
+BU
+100.a-04
+20 AWG
+BU
+021-16
+20 AWG
+BU
+100.a-02
+20 AWG
+BU
+100.a-03
+20 AWG
+BU
+100.a-05
+20 AWG
+BU
+100.a-06
+20 AWG
+BU
+100.a-01
+20 AWG
+BU
+021-15
++SEC-24VDC.1_100
+/
++SEC/21.4
+
+---
+
+## Pagina 227/258 - Compuertas electricas Distribucion de producto S1 / S2
+
+100.a
+101.a
+101
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10101
+/101.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque Compuerta Sentido 1
+Compuerta S1/S2
+DQ a
++SC-A03010
+X10
+Arranque Compuerta Sentido 2
+Compuerta S1/S2
+DQ a
+-Q10101
+1,1...1,6A
+3RV2011-1AA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/101.a.5
+66
+65
+/101.8
+77
+78
+/101.a.6
+85
+86
+/101.8
+-W10101
+66
+65
+-Q10101
+/101.1
+85
+86
+-Q10101
+/101.1
++SC-K10101
+24VDC
+2967060
+A1
+A2
+12
+11
+14
+/101.5
+22
+21
+24
+/101.6
+12
+11
+14
++SC-K10101
+/101.8
+250 V AC/DC
+22
+21
+24
++SC-K10101
+/101.8
+250 V AC/DC
+20 AWG
+BU
+101-14
+20 AWG
+BU
+101-15
+20 AWG
+BU
+101-06
+20 AWG
+BU
+101-10
+14 AWG
+BK
+002-17
+14 AWG
+BK
+002-05
+20 AWG
+BU
+101-07
+022-21
+14 AWG
+BK
+101-01
+14 AWG
+BK
+101-02
+14 AWG
+BK
+101-03
+14 AWG
+BK
+2.a-04
+20 AWG
+BU
+021-46
+022-20
+.3
+.4
+-KM10102
+/101.b.5
+.3
+.4
+-KM10103
+/101.b.7
+20 AWG
+BU
+101-08
+20 AWG
+BU
+101-11
+20 AWG
+BU
+101-09
+.3
+.4
+-KM10102
+/101.b.5
+.3
+.4
+-KM10103
+/101.b.7
+20 AWG
+BU
+101-12
+20 AWG
+BU
+101-13
+20 AWG
+BU
+101-05
+20 AWG
+BU
+101-04
++SEP-T_101
++SEP/2.a.4
++SEP-S_101
++SEP/2.6
++SEP-R_101
++SEP/2.1
++SEC-0VDC_101
++SEC/22.6
++SEC-0VDC_101 / 101.b.5
+T1.KM10101_101
+101.b.0
+T2.KM10101_101
+101.b.0
+T3.KM10101_101
+101.b.1
++SEC-24VDC.2_101
++SEC/21.8
++SEC-0VDC_100_K10001 / 102.3
++SEC-0VDC_100_K10001
+100.8
+
+---
+
+## Pagina 228/258 - Compuertas electricas Distribucion de producto S1 / S2
+
+101
+101.b
+101.a
++SC-A03007
+X10
+Confirmacion arranque sentido 1
+Compuerta S1 / S2
+31
+DI d
++SC-A03007
+X10
+Confirmacion arranque sentido 2
+Compuerta S1 / S2
+32
+DI d
++SC-A03007
+X10
+Falla electrica compuertas S1 / S2
+33
+DI d
+57
+58
+-Q10101
+/101.1
+77
+78
+.3
+Coil 1
+.4
+-KM10101
+/101.1
+.3
+Coil 2
+.4
+-KM10101
+/101.1
+20 AWG
+BU
+101.a-04
+20 AWG
+BU
+101.a-01
+20 AWG
+BU
+101.a-02
+20 AWG
+BU
+101.a-03
+20 AWG
+BU
+101.a-05
+20 AWG
+BU
+101.a-06
+20 AWG
+BU
+021-17
+20 AWG
+BU
+021-19
++SEC-24VDC.1_101
++SEC/21.4
++SEC-24VDC.1_101 / 101.c.1
+
+---
+
+## Pagina 229/258 - Compuertas electricas Distribucion de producto S1 / S2
+
+101.a
+101.c
+101.b
++SC-A03010
+X10
+Selección Compuerta S1
+DQ a
++SC-A03010
+X10
+Selección Compuerta S2
+DQ a
+-KM10102
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /101.b.0
+3/L2
+4/T2 /101.b.0
+5/L3
+6/T3 /101.b.1
+14
+13
+/101.c.2
+.2
+.1
+/101.b.7
+.2
+.1
+.4
+.3
+/101.5
+.4
+.3
+/101.6
+A1.
+A2.
+1/L1
+2/T1
+-KM10102
+/101.b.5
+3/L2
+4/T2
+5/L3
+6/T3
+-KM10103
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /101.b.2
+3/L2
+4/T2 /101.b.2
+5/L3
+6/T3 /101.b.2
+14
+13
+/101.c.3
+.2
+.1
+/101.b.5
+.2
+.1
+.4
+.3
+/101.5
+.4
+.3
+/101.7
+A1.
+A2.
+1/L1
+2/T1
+-KM10103
+/101.b.7
+3/L2
+4/T2
+5/L3
+6/T3
+-X10102
+-X10103
+U1
+V1
+W1
+PE
+-M10101
+0,55 kW, 460 VAC
+M
+U1
+V1
+W1
+PE
+-M10102
+0,55 kW, 460 VAC
+M
+.1
+.2
+-KM10103
+/101.b.7
+.1
+.2
+-KM10102
+/101.b.5
+14
+BK
+101.b-01
+14
+BK
+101.b-03
+14
+BK
+101.b-05
+14 AWG
+BK
+101.b-02
+14 AWG
+BK
+101.b-04
+14 AWG
+BK
+101.b-06
+14 AWG
+BK
+101.b-07
+14 AWG
+BK
+101.b-08
+14 AWG
+BK
+101.b-09
+20 AWG
+BU
+101.b-11
+20 AWG
+BU
+101.b-14
+20 AWG
+BU
+101.b-10
+20 AWG
+BU
+101.b-13
+14 AWG
+BK
+101-01
+14 AWG
+BK
+101-02
+14 AWG
+BK
+101-03
+14 AWG
+GNYE
+003-08
+14 AWG
+GNYE
+003-09
+022-21
+101.b-12
+T1.KM10101_101 / 101.1
+T2.KM10101_101 / 101.2
+T3.KM10101_101 / 101.2
++SEC-0VDC_101
+101.8
++SEP-PE_101_X10102 / +SEP/3.4
++SEP-PE_101_X10103 / +SEP/3.4
+
+---
+
+## Pagina 230/258 - Compuertas electricas Distribucion de producto S1 / S2
+
+101.b
+102
+101.c
++SC-A03007
+X10
+Confirmacion selección Compuerta S1
+27
+DI c
++SC-A03007
+X10
+Confirmacion selección Compuerta S2
+28
+DI c
+13
+NO
+14
+NO
+-KM10103
+/101.b.7
+13
+NO
+14
+NO
+-KM10102
+/101.b.5
+20 AWG
+BU
+101.c-01
+20 AWG
+BU
+021-19
+20 AWG
+BU
+101.c-02
+20 AWG
+BU
+101.c-03
++SEC-24VDC.1_101
+101.a.8
+
+---
+
+## Pagina 231/258 - Compuertas electricas Distribucion de producto S3 / S4
+
+101.c
+102.a
+102
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10201
+/102.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque Compuerta Sentido 1
+Compuerta S3/S4
+DQ b
+11
++SC-A03010
+X10
+Arranque Compuerta Sentido 2
+Compuerta S3/S4
+DQ b
+12
+-Q10201
+1,1...1,6A
+3RV2011-1AA10
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+I>
+I>
+I>
+57
+58
+/102.a.4
+66
+65
+/102.8
+77
+78
+/102.a.5
+85
+86
+/102.8
+-W10201
+66
+65
+-Q10201
+/102.1
+85
+86
+-Q10201
+/102.1
++SC-K10201
+24VDC
+2967060
+A1
+A2
+12
+11
+14
+/102.5
+22
+21
+24
+/102.6
+12
+11
+14
++SC-K10201
+/102.8
+250 V AC/DC
+22
+21
+24
++SC-K10201
+/102.8
+250 V AC/DC
+20 AWG
+BU
+102-14
+20 AWG
+BU
+102-15
+20 AWG
+BU
+102-06
+20 AWG
+BU
+102-10
+14 AWG
+BK
+002-06
+14 AWG
+BK
+002-18
+20 AWG
+BU
+102-11
+20 AWG
+BU
+102-07
+022-23
+14 AWG
+BK
+102-01
+14 AWG
+BK
+102-02
+14 AWG
+BK
+102-03
+14 AWG
+BK
+2.a-05
+20 AWG
+BU
+021-47
+022-22
+.3
+.4
+-KM10202
+/102.b.5
+.3
+.4
+-KM10203
+/102.b.7
+20 AWG
+BU
+102-08
+20 AWG
+BU
+102-09
+.3
+.4
+-KM10202
+/102.b.5
+.3
+.4
+-KM10203
+/102.b.7
+20 AWG
+BU
+102-12
+20 AWG
+BU
+102-13
+20 AWG
+BU
+102-05
+20 AWG
+BU
+102-04
++SEP-T_102
++SEP/2.a.4
++SEP-S_102
++SEP/2.6
++SEP-R_102
++SEP/2.2
++SEC-0VDC_102
++SEC/22.6
++SEC-0VDC_102 / 102.b.5
+T1.KM10201_102
+102.b.0
+T2.KM10201_102
+102.b.0
+T3.KM10201_102
+102.b.1
++SEC-24VDC.2_102
++SEC/21.8
++SEC-0VDC_100_K10001 / 103.3
++SEC-0VDC_100_K10001
+101.8
+
+---
+
+## Pagina 232/258 - Compuertas electricas Distribucion de producto S3 / S4
+
+102
+102.b
+102.a
++SC-A03007
+X10
+Confirmacion arranque sentido 1
+Compuerta S3 / S4
+36
+DI d
++SC-A03007
+X10
+Confirmacion arranque sentido 2
+Compuerta S3 / S4
+37
+DI d
++SC-A03007
+X10
+Falla electrica compuertas S3 / S4
+38
+DI d
+57
+58
+-Q10201
+/102.1
+77
+78
+.3
+Coil 1
+.4
+-KM10201
+/102.1
+.3
+Coil 2
+.4
+-KM10201
+/102.1
+20 AWG
+BU
+102.a-04
+20 AWG
+BU
+102.a-01
+20 AWG
+BU
+102.a-02
+20 AWG
+BU
+102.a-03
+20 AWG
+BU
+102.a-05
+20 AWG
+BU
+102.a-06
+20 AWG
+BU
+021-20
+20 AWG
+BU
+021-21
++SEC-24VDC.1_102
++SEC/21.4
++SEC-24VDC.1_102 / 102.c.1
+
+---
+
+## Pagina 233/258 - Compuertas electricas Distribucion de producto S3 / S4
+
+102.a
+102.c
+102.b
++SC-A03010
+X10
+Selección Compuerta S3
+DQ a
++SC-A03010
+X10
+Selección Compuerta S4
+DQ a
+-KM10202
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /102.b.0
+3/L2
+4/T2 /102.b.0
+5/L3
+6/T3 /102.b.1
+14
+13
+/102.c.2
+.2
+.1
+/102.b.7
+.2
+.1
+.4
+.3
+/102.5
+.4
+.3
+/102.6
+A1.
+A2.
+1/L1
+2/T1
+-KM10202
+/102.b.5
+3/L2
+4/T2
+5/L3
+6/T3
+-KM10203
+AC-3, 3KW/400V, 1S, DC 24V
+M. INTEGRIERTER DIODE
+3RT2015-1FB41
+A1
++
+A2
+-
+1/L1
+2/T1 /102.b.2
+3/L2
+4/T2 /102.b.2
+5/L3
+6/T3 /102.b.2
+14
+13
+/102.c.3
+.2
+.1
+/102.b.5
+.2
+.1
+.4
+.3
+/102.6
+.4
+.3
+/102.7
+A1.
+A2.
+1/L1
+2/T1
+-KM10203
+/102.b.7
+3/L2
+4/T2
+5/L3
+6/T3
+-X10202
+-X10203
+U1
+V1
+W1
+PE
+-M10201
+0,55 kW, 460 VAC
+M
+U1
+V1
+W1
+PE
+-M10202
+0,55 kW, 460 VAC
+M
+.1
+.2
+-KM10203
+/102.b.7
+.1
+.2
+-KM10202
+/102.b.5
+14
+BK
+102.b-01
+14
+BK
+102.b-03
+14
+BK
+102.b-05
+14 AWG
+BK
+102.b-02
+14 AWG
+BK
+102.b-04
+14 AWG
+BK
+102.b-06
+14 AWG
+BK
+102.b-07
+14 AWG
+BK
+102.b-08
+14 AWG
+BK
+102.b-09
+20 AWG
+BU
+102.b-11
+20 AWG
+BU
+102.b-14
+20 AWG
+BU
+102.b-10
+20 AWG
+BU
+102.b-13
+14 AWG
+BK
+102-01
+14 AWG
+BK
+102-02
+14 AWG
+BK
+102-03
+14 AWG
+GNYE
+003-10
+14 AWG
+BK
+003-11
+022-23
+102.b-12
+T1.KM10201_102 / 102.1
+T2.KM10201_102 / 102.2
+T3.KM10201_102 / 102.2
++SEC-0VDC_102
+102.8
++SEP-PE_102_X10202 / +SEP/3.4
++SEP-PE_102_X10203 / +SEP/3.5
+
+---
+
+## Pagina 234/258 - Compuertas electricas Distribucion de producto S3 / S4
+
+102.b
+103
+102.c
++SC-A03007
+X10
+Confirmacion selección Compuerta S3
+34
+DI d
++SC-A03007
+X10
+Confirmacion selección Compuerta S4
+35
+DI d
+13
+NO
+14
+NO
+-KM10203
+/102.b.7
+13
+NO
+14
+NO
+-KM10202
+/102.b.5
+20 AWG
+BU
+102.c-01
+20 AWG
+BU
+021-22
+20 AWG
+BU
+102.c-02
+20 AWG
+BU
+102.c-03
++SEC-24VDC.1_102
+102.a.8
+
+---
+
+## Pagina 235/258 - Distribuidor V302
+
+102.c
+103.a
+103
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10301
+/103.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 Distribuidor V302
+DQ b
+13
++SC-A03010
+X10
+Arranque sentido 2 Distribuidor V302
+DQ b
+14
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10301
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/103.a.4
+66
+65
+/103.8
+77
+78
+/103.a.5
+85
+86
+/103.8
+-W10301
+U1
+V1
+W1
+PE
+-M10301
+0,37 kW, 460 VAC
+M
+-X10301
+85
+86
+-Q10301
+/103.1
+A1
+A2
++SC-K10301
+24VDC
+2967060
+12
+11
+14
+/103.5
+22
+21
+24
+/103.7
+66
+65
+-Q10301
+/103.1
+22
+21
+24
++SC-K10301
+/103.8
+250 V AC/DC
+12
+11
+14
++SC-K10301
+/103.8
+250 V AC/DC
+20 AWG
+BU
+103-09
+20 AWG
+BU
+103-08
+14 AWG
+BK
+002-07
+14 AWG
+BK
+002-19
+20 AWG
+BU
+103-06
+20 AWG
+BU
+103-07
+20 AWG
+BU
+103-04
+20 AWG
+BU
+103-05
+14 AWG
+BK
+103-01
+14 AWG
+BK
+103-02
+14 AWG
+BK
+103-03
+022-24
+14 AWG
+GNYE
+003-12
+14 AWG
+BK
+2.a-06
+20 AWG
+BU
+021-48
++SEP-T_103
+/
++SEP/2.a.4
++SEP-S_103
+/
++SEP/2.6
++SEP-R_103
+/
++SEP/2.2
++SEC-0VDC_103
+/
++SEC/22.6
++SEC-24VDC.2_103
+/
++SEC/21.8
++SEP-PE_103 / +SEP/3.5
++SEC-0VDC_100_K10001 / 104.3
++SEC-0VDC_100_K10001
+/
+102.8
+
+---
+
+## Pagina 236/258 - Distribuidor V302
+
+103
+104
+103.a
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+distribuidor V301
+DI a
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+distribuidor V301
+DI a
++SC-A03008
+X10
+Falla electrica distribuidor V301
+DI a
+57
+58
+-Q10301
+/103.1
+77
+78
+.3
+Coil 2
+.4
+-KM10301
+/103.1
+.3
+Coil 1
+.4
+-KM10301
+/103.1
+20 AWG
+BU
+103.a-04
+20 AWG
+BU
+021-24
+20 AWG
+BU
+103.a-02
+20 AWG
+BU
+103.a-03
+20 AWG
+BU
+103.a-05
+20 AWG
+BU
+103.a-06
+20 AWG
+BU
+103.a-01
+20 AWG
+BU
+021-23
++SEC-24VDC.1_103
+/
++SEC/21.4
+
+---
+
+## Pagina 237/258 - Compuertas electrica Descarga CR01
+
+103.a
+104.a
+104
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10401
+/104.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga CR01
+DQ b
+15
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga CR01
+DQ b
+16
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10401
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/104.a.4
+66
+65
+/104.8
+77
+78
+/104.a.5
+85
+86
+/104.8
+-W10401
+U1
+V1
+W1
+PE
+-M10401
+0,37 kW, 460 VAC
+M
+-X10401
+85
+86
+-Q10401
+/104.1
+A1
+A2
++SC-K10401
+24VDC
+2967060
+12
+11
+14
+/104.5
+22
+21
+24
+/104.6
+66
+65
+-Q10401
+/104.1
+22
+21
+24
++SC-K10401
+/104.8
+250 V AC/DC
+12
+11
+14
++SC-K10401
+/104.8
+250 V AC/DC
+20 AWG
+BU
+104-09
+20 AWG
+BU
+104-08
+14 AWG
+BK
+002-08
+20 AWG
+BU
+104-06
+20 AWG
+BU
+104-07
+20 AWG
+BU
+104-04
+20 AWG
+BU
+104-05
+14 AWG
+BK
+104-01
+14 AWG
+BK
+104-02
+14 AWG
+BK
+104-03
+022-25
+14 AWG
+GNYE
+003-13
+14 AWG
+BK
+2.a-07
+14 AWG
+BK
+002-20
+021-49
++SEP-T_104
+/
++SEP/2.a.5
++SEP-S_104
+/
++SEP/2.7
++SEP-R_104
+/
++SEP/2.2
++SEC-0VDC_104
+/
++SEC/22.6
++SEP-PE_104 / +SEP/3.5
++SEC-0VDC_100_K10001
+/
+103.8
++SEC-24VDC.2_104
+/
++SEC/21.8
++SEC-0VDC_100_K10001 / 105.3
+
+---
+
+## Pagina 238/258 - Compuertas electrica Descarga CR01
+
+104
+105
+104.a
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga CR01
+DI a
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga CR01
+DI a
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+DI a
+57
+58
+-Q10401
+/104.1
+77
+78
+.3
+Coil 2
+.4
+-KM10401
+/104.1
+.3
+Coil 1
+.4
+-KM10401
+/104.1
+20 AWG
+BU
+104.a-04
+20 AWG
+BU
+104.a-01
+20 AWG
+BU
+104.a-02
+20 AWG
+BU
+104.a-03
+20 AWG
+BU
+104.a-05
+20 AWG
+BU
+104.a-06
+20 AWG
+BU
+021-25
+20 AWG
+BU
+021-26
++SEC-24VDC.1_104
+/
++SEC/21.5
+
+---
+
+## Pagina 239/258 - Compuertas electrica Descarga S1
+
+104.a
+105.a
+105
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10501
+/105.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga central S1
+DQ b
+17
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga central S1
+DQ b
+18
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10501
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/105.a.5
+66
+65
+/105.8
+77
+78
+/105.a.5
+85
+86
+/105.8
+-W10501
+U1
+V1
+W1
+PE
+-M10501
+0,37 kW, 460 VAC
+M
+-X10501
+85
+86
+-Q10501
+/105.1
+A1
+A2
++SC-K10501
+24VDC
+2967060
+12
+11
+14
+/105.5
+22
+21
+24
+/105.6
+66
+65
+-Q10501
+/105.1
+22
+21
+24
++SC-K10501
+/105.8
+250 V AC/DC
+12
+11
+14
++SC-K10501
+/105.8
+250 V AC/DC
+20 AWG
+BU
+105-09
+20 AWG
+BU
+105-08
+14 AWG
+BK
+002-09
+20 AWG
+BU
+105-06
+20 AWG
+BU
+105-07
+20 AWG
+BU
+105-04
+20 AWG
+BU
+105-05
+14 AWG
+BK
+105-01
+14 AWG
+BK
+105-02
+14 AWG
+BK
+105-03
+022-26
+14 AWG
+GNYE
+003-14
+14 AWG
+BK
+2.a-08
+14 AWG
+BK
+002-21
+20 AWG
+BU
+021-50
++SEP-T_105
+/
++SEP/2.a.5
++SEP-S_105
+/
++SEP/2.8
++SEP-R_105
+/
++SEP/2.2
++SEC-0VDC_105
+/
++SEC/22.6
++SEP-PE_105 / +SEP/3.6
++SEC-0VDC_100_K10001 / 106.3
++SEC-0VDC_100_K10001
+/
+104.8
++SEC-24VDC.2_105
+/
++SEC/21.8
+
+---
+
+## Pagina 240/258 - Compuertas electrica Descarga S1
+
+105
+106
+105.a
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga central S1
+DI a
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga central S1
+DI a
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+central S1
+11
+DI b
+57
+58
+-Q10501
+/105.1
+77
+78
+.3
+Coil 2
+.4
+-KM10501
+/105.1
+.3
+Coil 1
+.4
+-KM10501
+/105.1
+20 AWG
+BU
+105.a-04
+20 AWG
+BU
+105.a-01
+20 AWG
+BU
+105.a-02
+20 AWG
+BU
+105.a-03
+20 AWG
+BU
+105.a-05
+20 AWG
+BU
+105.a-06
+20 AWG
+BU
+021-27
+20 AWG
+BU
+021-28
++SEC-24VDC.1_105
+/
++SEC/21.5
+
+---
+
+## Pagina 241/258 - Compuertas electrica Descarga Central S2
+
+105.a
+106.a
+106
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10601
+/106.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga central S2
+DQ c
+21
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga central S2
+DQ c
+22
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10601
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/106.a.5
+65
+66
+/106.8
+77
+78
+/106.a.5
+85
+86
+/106.8
+-W10601
+U1
+V1
+W1
+PE
+-M10601
+0,37kW, 460 VAC
+M
+-X10601
+12
+11
+14
++SC-K10601
+/106.8
+250 V AC/DC
+65
+66
+-Q10601
+/106.1
+85
+86
+-Q10601
+/106.1
+A1
+A2
++SC-K10601
+24VDC
+2967060
+12
+11
+14
+/106.5
+22
+21
+24
+/106.6
+22
+21
+24
++SC-K10601
+/106.8
+250 V AC/DC
+14 AWG
+BK
+002-10
+14 AWG
+BK
+106-01
+14 AWG
+BK
+106-03
+14 AWG
+BK
+106-05
+20 AWG
+BU
+106-12
+20 AWG
+BU
+106-13
+20 AWG
+BU
+106-10
+20 AWG
+BU
+106-11
+20 AWG
+BU
+106-07
+20 AWG
+BU
+106-09
+14 AWG
+BK
+106-02
+14 AWG
+BK
+106-04
+14 AWG
+BK
+106-06
+106-08
+022-27
+14 AWG
+BK
+2.a-09
+14 AWG
+BK
+002-22
+14 AWG
+GNYE
+003-15
+20 AWG
+BU
+021-51
+106-08
++SEP-T_106
+/
++SEP/2.a.5
++SEP-S_106
+/
++SEP/2.8
++SEP-R_106
+/
++SEP/2.3
++SEC-0VDC_106
+/
++SEC/22.7
+R_106 / 106.b.0
+S_106 / 106.b.0
+T_106 / 106.b.0
++SEC-0VDC_106 / 106.b.4
++SEP-PE_106_X10601 / +SEP/3.6
++SEC-0VDC_100_K10001 / 106.b.4
++SEC-0VDC_100_K10001
+/
+105.8
++SEC-24VDC.2_106
+/
++SEC/21.9
++SEC-24VDC.2_106 / 106.b.4
+
+---
+
+## Pagina 242/258 - Compuertas electrica Descarga Central S2
+
+106
+106.b
+106.a
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga central S2
+12
+DI b
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga central S2
+13
+DI b
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+central S2
+14
+DI b
+57
+58
+-Q10601
+/106.1
+77
+78
+.3
+Coil 1
+.4
+-KM10601
+/106.1
+.3
+Coil 2
+.4
+-KM10601
+/106.1
+20 AWG
+BU
+106.a-04
+20 AWG
+BU
+106.a-01
+20 AWG
+BU
+106.a-02
+20 AWG
+BU
+106.a-03
+20 AWG
+BU
+106.a-05
+20 AWG
+BU
+106.a-06
+20 AWG
+BU
+021-29
+20 AWG
+BU
+021-30
++SEC-24VDC.1_106
+/
++SEC/21.5
++SEC-24VDC.1_106 / 106.c.1
+
+---
+
+## Pagina 243/258 - Compuertas electrica Descarga Lateral S2
+
+106.a
+106.c
+106.b
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10602
+/106.c.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga lateral S2
+DQ c
+23
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga lateral S2
+DQ c
+24
+12
+11
+14
++SC-K10602
+/106.b.8
+250 V AC/DC
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10602
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/106.c.4
+65
+66
+/106.b.8
+77
+78
+/106.c.5
+85
+86
+/106.b.8
+-W10602
+U1
+V1
+W1
+PE
+-M10602
+0,37 kW, 460 VAC
+M
+-X10602
+A1
+A2
++SC-K10602
+24VDC
+2967060
+12
+11
+14
+/106.b.5
+22
+21
+24
+/106.b.7
+65
+66
+-Q10602
+/106.b.1
+85
+86
+-Q10602
+/106.b.1
+22
+21
+24
++SC-K10602
+/106.b.8
+250 V AC/DC
+14 AWG
+BK
+106-01
+14 AWG
+BK
+106-03
+14 AWG
+BK
+106-05
+20 AWG
+BU
+106.b-08
+20 AWG
+BU
+106.b-09
+20 AWG
+BU
+106.b-06
+20 AWG
+BU
+106.b-07
+20 AWG
+BU
+106.b-04
+20 AWG
+BU
+106.b-05
+14 AWG
+BK
+106.b-01
+14 AWG
+BK
+106.b-02
+14 AWG
+BK
+106.b-03
+106-08
+14 AWG
+GNYE
+003-16
+20 AWG
+BU
+021-52
++SEC-0VDC_106
+/
+106.8
+R_106
+/
+106.3
+S_106
+/
+106.3
+T_106
+/
+106.3
++SEP-PE_106_X10602 / +SEP/3.6
++SEC-0VDC_100_K10001 / 107.3
++SEC-0VDC_100_K10001
+/
+106.8
++SEC-24VDC.2_106
+/
+106.8
+
+---
+
+## Pagina 244/258 - Compuertas electrica Descarga Lateral S2
+
+106.b
+107
+106.c
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga lateral S2
+15
+DI b
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga lateral S2
+16
+DI b
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+lateral S2
+17
+DI b
+57
+58
+-Q10602
+/106.b.1
+77
+78
+.3
+Coil 1
+.4
+-KM10602
+/106.b.1
+.3
+Coil_2
+.4
+-KM10602
+/106.b.1
+20 AWG
+BU
+106.c-04
+20 AWG
+BU
+106.c-01
+20 AWG
+BU
+021-32
+20 AWG
+BU
+106.c-02
+20 AWG
+BU
+106.c-03
+20 AWG
+BU
+106.c-05
+20 AWG
+BU
+106.c-06
+20 AWG
+BU
+021-31
+20 AWG
+BU
+021-32
++SEC-24VDC.1_106
+/
+106.a.8
+
+---
+
+## Pagina 245/258 - Compuertas electrica Descarga Central S3
+
+106.c
+107.a
+107
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10701
+/107.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga central S3
+DQ c
+25
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga central S3
+DQ c
+26
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10701
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/107.a.4
+65
+66
+/107.8
+77
+78
+/107.a.5
+85
+86
+/107.8
+-W10701
+U1
+V1
+W1
+PE
+-M10701
+0,37kW, 460 VAC
+M
+-X10701
+12
+11
+14
++SC-K10701
+/107.8
+250 V AC/DC
+22
+21
+24
++SC-K10701
+/107.8
+250 V AC/DC
+65
+66
+-Q10701
+/107.1
+85
+86
+-Q10701
+/107.1
+A1
+A2
++SC-K10701
+24VDC
+2967060
+12
+11
+14
+/107.5
+22
+21
+24
+/107.6
+20 AWG
+BU
+107-11
+20 AWG
+BU
+107-12
+14 AWG
+BK
+002-11
+14 AWG
+BK
+107-01
+14 AWG
+BK
+107-03
+14 AWG
+BK
+107-05
+20 AWG
+BU
+107-09
+20 AWG
+BU
+107-10
+20 AWG
+BU
+107-07
+20 AWG
+BU
+107-08
+14 AWG
+BK
+107-02
+14 AWG
+BK
+107-04
+14 AWG
+BK
+107-06
+022-29
+14 AWG
+GNYE
+003-17
+14 AWG
+BK
+2.a-10
+14 AWG
+BK
+002-23
+20 AWG
+BU
+021-53
+022-28
++SEP-T_107
+/
++SEP/2.a.5
++SEP-S_107
+/
++SEP/2.8
++SEP-R_107
+/
++SEP/2.3
++SEC-0VDC_107
+/
++SEC/22.7
+R_107 / 107.b.0
+S_107 / 107.b.0
+T_107 / 107.b.0
++SEC-0VDC_107 / 107.b.4
++SEP-PE_107_X10701 / +SEP/3.6
++SEC-0VDC_100_K10001 / 107.b.4
++SEC-0VDC_100_K10001
+/
+106.b.8
++SEC-24VDC.2_107
+/
++SEC/21.9
++SEC-24VDC.2_107 / 107.b.4
+
+---
+
+## Pagina 246/258 - Compuertas electrica Descarga Central S3
+
+107
+107.b
+107.a
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga central S3
+18
+DI b
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga central S3
+21
+DI c
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+central S3
+22
+DI c
+57
+58
+-Q10701
+/107.1
+77
+78
+.3
+Coil 1
+.4
+-KM10701
+/107.1
+.3
+Coil 2
+.4
+-KM10701
+/107.1
+20 AWG
+BU
+107.a-04
+20 AWG
+BU
+107.a-01
+20 AWG
+BU
+107.a-02
+20 AWG
+BU
+107.a-03
+20 AWG
+BU
+107.a-05
+20 AWG
+BU
+107.a-06
+20 AWG
+BU
+021-33
+20 AWG
+BU
+021-34
++SEC-24VDC.1_107
+/
++SEC/21.5
++SEC-24VDC.1_107 / 107.c.1
+
+---
+
+## Pagina 247/258 - Compuertas electrica Descarga Lateral S3
+
+107.a
+107.c
+107.b
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10702
+/107.c.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga lateral S3
+DQ c
+27
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga lateral S3
+DQ c
+28
+12
+11
+14
++SC-K10702
+/107.b.8
+250 V AC/DC
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10702
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/107.c.4
+65
+66
+/107.b.8
+77
+78
+/107.c.5
+85
+86
+/107.b.8
+-W10702
+U1
+V1
+W1
+PE
+-M10702
+0,37 kW, 460 VAC
+M
+-X10702
+A1
+A2
++SC-K10702
+24VDC
+2967060
+12
+11
+14
+/107.b.5
+22
+21
+24
+/107.b.7
+65
+66
+-Q10702
+/107.b.1
+85
+86
+-Q10702
+/107.b.1
+22
+21
+24
++SC-K10702
+/107.b.8
+250 V AC/DC
+20 AWG
+BU
+107.b-09
+20 AWG
+BU
+107.b-10
+14 AWG
+BK
+107-01
+14 AWG
+BK
+107-03
+14 AWG
+BK
+107-05
+20 AWG
+BU
+107.b-07
+20 AWG
+BU
+107.b-08
+20 AWG
+BU
+107.b-04
+20 AWG
+BU
+107.b-06
+14 AWG
+BK
+107.b-01
+14 AWG
+BK
+107.b-02
+14 AWG
+BK
+107.b-03
+022-29
+14 AWG
+GNYE
+107.b-05
+20 AWG
+BU
+021-54
++SEC-0VDC_107
+/
+107.8
+R_107
+/
+107.3
+S_107
+/
+107.3
+T_107
+/
+107.3
++SEP-PE_107_X10702 / 108.b.3
++SEC-0VDC_100_K10001 / 108.3
++SEC-0VDC_100_K10001
+/
+107.8
++SEC-24VDC.2_107
+/
+107.8
+
+---
+
+## Pagina 248/258 - Compuertas electrica Descarga Lateral S3
+
+107.b
+108
+107.c
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga lateral S3
+23
+DI c
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+lateral S3
+25
+DI c
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga lateral S3
+24
+DI c
+57
+58
+-Q10702
+/107.b.1
+77
+78
+.3
+Coil 1
+.4
+-KM10702
+/107.b.1
+.3
+Coil_2
+.4
+-KM10702
+/107.b.1
+20 AWG
+BU
+107.c-04
+20 AWG
+BU
+107.c-01
+20 AWG
+BU
+107.c-02
+20 AWG
+BU
+107.c-03
+20 AWG
+BU
+107.c-05
+20 AWG
+BU
+107.c-06
+20 AWG
+BU
+021-35
+20 AWG
+BU
+021-36
++SEC-24VDC.1_107
+/
+107.a.8
+
+---
+
+## Pagina 249/258 - Compuertas electrica Descarga Central S4
+
+107.c
+108.a
+108
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10801
+/108.a.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga central S4
+DQ d
+31
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga central S4
+DQ d
+32
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10801
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/108.a.4
+65
+66
+/108.8
+77
+78
+/108.a.5
+85
+86
+/108.8
+-W10801
+U1
+V1
+W1
+PE
+-M10801
+0,37kW, 460 VAC
+M
+-X10801
+12
+11
+14
++SC-K10801
+/108.8
+250 V AC/DC
+22
+21
+24
++SC-K10801
+/108.8
+250 V AC/DC
+65
+66
+-Q10801
+/108.1
+85
+86
+-Q10801
+/108.1
+A1
+A2
++SC-K10801
+24VDC
+2967060
+12
+11
+14
+/108.5
+22
+21
+24
+/108.6
+20 AWG
+BU
+108-11
+20 AWG
+BU
+108-12
+14 AWG
+BK
+002-12
+14 AWG
+BK
+108-01
+14 AWG
+BK
+108-03
+14 AWG
+BK
+108-05
+20 AWG
+BU
+108-09
+20 AWG
+BU
+108-10
+20 AWG
+BU
+108-07
+20 AWG
+BU
+108-08
+14 AWG
+BK
+108-02
+14 AWG
+BK
+108-04
+14 AWG
+BK
+108-06
+022-31
+14 AWG
+GNYE
+003-19
+14 AWG
+BK
+2.a-11
+14 AWG
+BK
+002-24
+20 AWG
+BU
+021-55
+022-30
++SEP-T_108
+/
++SEP/2.a.6
++SEP-S_108
+/
++SEP/2.8
++SEP-R_108
+/
++SEP/2.3
++SEC-0VDC_108
+/
++SEC/22.7
+R_108 / 108.b.0
+S_108 / 108.b.0
+T_108 / 108.b.0
++SEC-0VDC_108 / 108.b.4
++SEP-PE_108_X10801 / +SEP/3.7
++SEC-0VDC_100_K10001 / 108.b.4
++SEC-0VDC_100_K10001
+/
+107.b.8
++SEC-24VDC.2_108
+/
++SEC/21.9
++SEC-24VDC.2_108 / 108.b.4
+
+---
+
+## Pagina 250/258 - Compuertas electrica Descarga Central S4
+
+108
+108.b
+108.a
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga central S4
+26
+DI c
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga central S4
+27
+DI c
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+central S4
+28
+DI c
+57
+58
+-Q10801
+/108.1
+77
+78
+.3
+Coil 1
+.4
+-KM10801
+/108.1
+.3
+Coil 2
+.4
+-KM10801
+/108.1
+20 AWG
+BU
+108.a-04
+20 AWG
+BU
+108.a-01
+20 AWG
+BU
+108.a-02
+20 AWG
+BU
+108.a-03
+20 AWG
+BU
+108.a-05
+20 AWG
+BU
+108.a-06
+20 AWG
+BU
+021-37
+20 AWG
+BU
+021-38
++SEC-24VDC.1_108
+/
++SEC/21.5
++SEC-24VDC.1_108 / 108.c.1
+
+---
+
+## Pagina 251/258 - Compuertas electrica Descarga Lateral S4
+
+108.a
+108.c
+108.b
+SIEMENS
+A1
+A2
+21/1
+22/1
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+A1
+A2
+-KM10802
+/108.c.2
+AC-3, 3 kW/400 V, 24 V DC
+COMBINACION INVERSORA SIRIUS NG
+3RA2315-8XB30-1FB4
+21/2
+22/2
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+1/L1
+3/L2
+5/L3
+2/T1
+4/T2
+6/T3
+A2
++SC-A03010
+X10
+Arranque sentido 1 compuerta
+descarga lateral S4
+DQ d
+33
++SC-A03010
+X10
+Arranque sentido 2 compuerta
+descarga lateral S4
+DQ d
+34
+12
+11
+14
++SC-K10802
+/108.b.8
+250 V AC/DC
+1/L1
+2/T1
+3/L2
+4/T2
+5/L3
+6/T3
+-Q10802
+0,7...1A
+3RV2011-0JA10
+I>
+I>
+I>
+57
+58
+/108.c.4
+66
+65
+/108.b.8
+77
+78
+/108.c.5
+85
+86
+/108.b.8
+-W10802
+U1
+V1
+W1
+PE
+-M10802
+0,37 kW, 460 VAC
+M
+-X10802
+A1
+A2
++SC-K10802
+24VDC
+2967060
+12
+11
+14
+/108.b.5
+22
+21
+24
+/108.b.7
+66
+65
+-Q10802
+/108.b.1
+85
+86
+-Q10802
+/108.b.1
+22
+21
+24
++SC-K10802
+/108.b.8
+250 V AC/DC
+20 AWG
+BU
+108.b-08
+20 AWG
+BU
+108.b-09
+14 AWG
+BK
+108-01
+14 AWG
+BK
+108-03
+14 AWG
+BK
+108-05
+20 AWG
+BU
+108.b-06
+20 AWG
+BU
+108.b-07
+20 AWG
+BU
+108.b-04
+20 AWG
+BU
+108.b-05
+14 AWG
+BK
+108.b-01
+14 AWG
+BK
+108.b-02
+14 AWG
+BK
+108.b-03
+022-31
+14 AWG
+GNYE
+107.b-05
+20 AWG
+BU
+021-56
++SEC-0VDC_108
+/
+108.8
+R_108
+/
+108.3
+S_108
+/
+108.3
+T_108
+/
+108.3
++SEC-24VDC.2_108
+/
+108.8
++SEP-PE_107_X10702 / 107.b.3
++SEC-0VDC_100_K10001
+/
+108.8
+
+---
+
+## Pagina 252/258 - Compuertas electrica Descarga Lateral S4
+
+108.b
++&EAC/a
+108.c
++SC-A03008
+X10
+Confirmacion arranque sentido 1
+Compuerta descarga lateral S4
+31
+DI d
++SC-A03008
+X10
+Confirmacion arranque sentido 2
+Compuerta descarga lateral S4
+32
+DI d
++SC-A03008
+X10
+Falla electrica Compuerta descarga
+lateral S4
+33
+DI d
+57
+58
+-Q10802
+/108.b.1
+77
+78
+.3
+Coil 1
+.4
+-KM10802
+/108.b.1
+.3
+Coil_2
+.4
+-KM10802
+/108.b.1
+20 AWG
+BU
+108.c-04
+20 AWG
+BU
+108.c-01
+20 AWG
+BU
+021-40
+20 AWG
+BU
+108.c-02
+20 AWG
+BU
+108.c-03
+20 AWG
+BU
+108.c-05
+20 AWG
+BU
+108.c-06
+20 AWG
+BU
+021-39
+20 AWG
+BU
+021-40
++SEC-24VDC.1_108
+/
+108.a.8
+
+---
+
+## Pagina 253/258 - Portada
+
++SP&EAB/108.c
+b
+PLANOS MECANICOS
+TC
+
+---
+
+## Pagina 254/258 - Aparamenta puertas
+
+h
+b
+296 mm
+1000 mm
+150 mm 100 mm
+693 mm
+296 mm
+S03701
+S03702
+S02901
+P02901
+XD09201
+
+---
+
+## Pagina 255/258 - Doblefondo
+
+i
+h
+-U10   60 x 80 (W x H)    L: 459 mm
+-U11   60 x 80 (W x H)    L: 459 mm
+-U13   60 x 80 (W x H)    L: 1980 mm
+-U06   60 x 80 (W x H)    L: 460 mm
+-U04   60 x 80 (W x H)    L: 460 mm
+-U12   60 x 80 (W x H)    L: 459 mm
+-U14   100 x 80 (W x H)    L: 979 mm
+-U07   60 x 80 (W x H)    L: 1320 mm
+-U08   40 x 80 (W x H)    L: 190 mm
+-U02   60 x 80 (W x H)    L: 1977 mm
+-U03   60 x 80 (W x H)    L: 460 mm
+-U05   60 x 80 (W x H)    L: 460 mm
+-U09   60 x 80 (W x H)    L: 459 mm
+-U01   60 x 80 (W x H)    L: 1096 mm
+230 mm
+150 mm
+220 mm
+180 mm
+300 mm
+190 mm
+250 mm
+250 mm
+250 mm
+140 mm
+560 mm
+144 mm
+145 mm
+195 mm
+195 mm
+-U15   100 x 80 (W x H)    L: 560 mm
+-U16   100 x 80 (W x H)    L: 560 mm
+-U17   100 x 80 (W x H)    L: 560 mm
+90 mm
+90 mm
+90 mm
+120 mm
+Q01901
+T01901
+F01701
+F01702
+F02001
+F02002
+F02003
+F02004
+F02005
+F02006
+F02007
+S09201
+X01701
+X01801
+X02701
+X02001
+X02002
+X02003
+X02004
+X02201
+KM02901
+A03501
+A03601
+A03701
+KM03701
+K10001
+K10101
+K10201
+K10301
+K10401
+K10501
+K10601
+K10602
+K10701
+K10702
+K10801
+K10802
+A03001
+X03701
+X03702
+X03703
+X08401
+X05001
+X05901
+X06701
+X07901
+X10001
+X10102
+X10103
+X10202
+X10203
+X10301
+X10401
+X10501
+X10601
+X10602
+X10701
+X10702
+X10801
+X10802
+KM10102 KM10103 KM10202 KM10203
+KM10001
+KM10101
+KM10201
+KM10301
+Q10301
+Q10201
+Q10101
+Q10001
+KM10401
+KM10501
+KM10601
+KM10602
+Q10602
+Q10601
+Q10501
+Q10401
+Q10701
+Q10702
+Q10801
+Q10802
+KM10802
+KM10801
+KM10701
+KM10702
+X00101
+T01601
+Q01601
+Nota: Riel Din u equipo se instala centrado en el espacio horizontal (eje x) o vertical (eje y) a menos que se indique una distancia diferente en plano
+X04001
+
+---
+
+## Pagina 256/258 - Barraje de tierra
+
+h
+p
+195 mm
+460 mm
+440,5 mm
+Vista isometrica
+Vista Superior
+Soporte de barra ref. 9340030
+Carril de montaje ref. 8617720
+Barra de cobre 30 x 10 mm
+Perfil base vertical
+derecho delantero
+
+---
+
+## Pagina 257/258 - Superficies de montaje - Sistema Calefaccion
+
+=/II
+200 mm
+105 mm
+378 mm
+Chasis de montaje ref. 8617130
+Resistencia Calefaccion 250 W ref. 02811.9-00
+Zocalo tablero
+Instalado por el interior del bastidor
+Frente tablero
+Vista Lateral izquierdo Tablero
+Nota: Resistencia de calefaccion, centrada sobre riel DIN
+Lateral Izquierdo S5 (TC)
+Direccionador de aire ref. 252017 -  Ajustado a 45°
+
+---
+
+## Pagina 258/258 - Tablero Control (TC)
+
+=TC/p
+2200 mm
+200 mm
+1200 mm
+S5: TABLERO CONTROL + ARRANCADORES INVERSORES
+
+---
+
+## Pagina 259/258
+
+*(Pagina sin texto extraible - contiene dibujo tecnico)*
+
+---
+
+## Pagina 260/258
+
+*(Pagina sin texto extraible - contiene dibujo tecnico)*
+
+---
+
+## Pagina 261/258
+
+*(Pagina sin texto extraible - contiene dibujo tecnico)*
+
+---
+
