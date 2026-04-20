@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.vscode/
+*.log
+.env
+node_modules/
+backend/.pytest_cache/
+backend/.mypy_cache/

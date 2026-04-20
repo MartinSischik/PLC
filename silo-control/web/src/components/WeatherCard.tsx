@@ -1,4 +1,4 @@
-import { Sun, Cloud, CloudRain, CloudSnow, CloudLightning, Tornado } from 'lucide-react'
+import { Sun, Cloud, CloudRain, CloudSnow, CloudLightning, Tornado, Droplets } from 'lucide-react'
 import type { ForecastDay } from '../types'
 
 const iconMap: Record<string, typeof Sun> = {
@@ -48,10 +48,23 @@ export function WeatherCard({ day }: { day: ForecastDay }) {
         </div>
         {day.precipitation_mm !== null && day.precipitation_mm > 0 && (
           <div className="text-xs text-blue-500 font-medium">
-            💧 {day.precipitation_mm} mm
+            {day.precipitation_mm} mm
           </div>
         )}
       </div>
+
+      {/* Humidity row */}
+      {(day.humidity_day !== null || day.humidity_night !== null) && (
+        <div className="flex items-center gap-3 text-xs">
+          <Droplets size={12} className="text-blue-400" />
+          {day.humidity_day !== null && (
+            <span className="text-blue-600 font-medium">Dia: {day.humidity_day}%</span>
+          )}
+          {day.humidity_night !== null && (
+            <span className="text-blue-500 font-medium">Noche: {day.humidity_night}%</span>
+          )}
+        </div>
+      )}
 
       {day.narrative && (
         <p className="text-xs text-slate-500 leading-relaxed">{day.narrative}</p>

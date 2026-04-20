@@ -1,0 +1,122 @@
+MAIN 
+
+// ── 1. Escalar entradas analógicas → DB1 ──────────────────────────────
+IF NOT "AutomationConfig".use_external_sensors THEN
+    "ScaleAnalogInputs"();
+END_IF;
+
+// ── 2. Calcular promedios ─────────────────────────────────────────────
+#temp_sum := 0.0;
+#humid_sum := 0.0;
+#temp_count := 0;
+#humid_count := 0;
+
+FOR #i := 0 TO 15 DO
+    IF "SensorData".sensor[#i].active THEN
+        IF "SensorData".sensor[#i].temperature > 0.0 THEN
+            #temp_sum := #temp_sum + "SensorData".sensor[#i].temperature;
+            #temp_count := #temp_count + 1;
+        END_IF;
+        IF "SensorData".sensor[#i].humidity > 0.0 THEN
+            #humid_sum := #humid_sum + "SensorData".sensor[#i].humidity;
+            #humid_count := #humid_count + 1;
+        END_IF;
+    END_IF;
+END_FOR;
+
+IF #temp_count > 0 THEN
+    #temp_avg := #temp_sum / INT_TO_REAL(#temp_count);
+ELSE
+    #temp_avg := 0.0;
+END_IF;
+IF #humid_count > 0 THEN
+    #humid_avg := #humid_sum / INT_TO_REAL(#humid_count);
+ELSE
+    #humid_avg := 0.0;
+END_IF;
+
+// ── 3. Lógica de automatización ───────────────────────────────────────
+IF #temp_count > 0 OR #humid_count > 0 THEN
+    "AutomationLogic_Instance"(
+                               temp_avg := #temp_avg,
+                               humid_avg := #humid_avg,
+                               temp_max := "AutomationConfig".temp_max,
+                               humid_max := "AutomationConfig".humid_max
+    );
+END_IF;
+
+// ── 4. Control de motores
+// cmd_run es escrito por Python (AutomationService en AUTO)
+// o por el operador desde la UI (MANUAL).
+// FB2.motor_cmd ya no se usa aquí — Python gestiona la lógica.
+FOR #i := 0 TO 23 DO
+    IF NOT "MotorControl".motor[#i].enabled THEN
+        "MotorControl".motor[#i].is_running := FALSE;
+    ELSE
+        "MotorControl".motor[#i].is_running := "MotorControl".motor[#i].cmd_run;
+    END_IF;
+END_FOR;
+
+
+// ── 5. Alarma ─────────────────────────────────────────────────────────
+"AutomationConfig".alarm_active := FALSE;
+FOR #i := 0 TO 15 DO
+    IF "SensorData".sensor[#i].active THEN
+        IF "SensorData".sensor[#i].temperature > "AutomationConfig".temp_max
+            OR "SensorData".sensor[#i].humidity > "AutomationConfig".humid_max THEN
+            "AutomationConfig".alarm_active := TRUE;
+        END_IF;
+    END_IF;
+END_FOR;
+
+
+ScaleAnalogInputs
+
+// =============================================
+// FC1 — ScaleAnalogInputs
+// Convierte señales crudas del módulo AI a
+// valores de ingeniería y los escribe en DB1
+// =============================================
+// Rangos del módulo AI Siemens:
+//   4-20mA  → 0 a 27648 (valor crudo)
+//   PT100   → valor crudo depende del rango configurado
+//
+// Canal 0 (IW0): PT100 → Temperatura sensor[0]
+// Canal 2 (IW4): 4-20mA → Temperatura sensor[1]  
+// Canal 3 (IW6): 4-20mA → Humedad sensor[2]
+
+// ── Canal 0: PT100 → sensor[0].temperature ──
+// PT100 en Siemens: el valor crudo es temperatura × 10
+// Ejemplo: 250 = 25.0°C
+#raw_value := "Tag_1";
+#scaled := INT_TO_REAL(#raw_value) / 10.0;
+"SensorData".sensor[0].temperature := #scaled;
+"SensorData".sensor[0].active := TRUE;
+
+// ── Canal 2: 4-20mA → sensor[1].temperature ──
+// Escalado lineal: 0=0°C, 27648=100°C
+#raw_value := "Tag_2";
+#scaled := INT_TO_REAL(#raw_value) * 100.0 / 27648.0;
+"SensorData".sensor[1].temperature := #scaled;
+"SensorData".sensor[1].active := TRUE;
+
+// ── Canal 3: 4-20mA → sensor[2].humidity ──
+// Escalado lineal: 0=0%RH, 27648=100%RH
+#raw_value := "Tag_3";
+#scaled := INT_TO_REAL(#raw_value) * 100.0 / 27648.0;
+"SensorData".sensor[2].humidity := #scaled;
+"SensorData".sensor[2].active := TRUE;
+
+GateControl Array[0..21] of Byte
+
+MotorControl Array[0..23] of Struct 
+cmd_run
+is_running
+auto_mode
+enabled
+fault
+
+SensorData Array[0..15] of Struct
+temperature
+humidity
+active

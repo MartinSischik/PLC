@@ -1,0 +1,86 @@
+from app.config import (
+    SENSOR_COUNT,
+    MOTOR_COUNT,
+    GATE_COUNT,
+    DB_MONITOR,
+    MONITOR_STRIDE,
+    PLC_GATE_BLOCK_SIZE,
+    PLC_DB_GATES,
+    PLC_MOTOR_BLOCK_SIZE,
+    PLC_MOTOR_FLAGS_BYTE_OFFSET,
+)
+
+# Reuse current PLC contract as read-only base.
+DB_SENSORS = 1
+DB_MOTORS = 2
+DB_AUTOCONF = 3
+DB_GATES = PLC_DB_GATES
+
+SENSOR_BLOCK_SIZE = 10
+DB1_TOTAL_SIZE = SENSOR_COUNT * SENSOR_BLOCK_SIZE
+SENSOR_TEMPERATURE_OFFSET = 0
+SENSOR_HUMIDITY_OFFSET = 4
+SENSOR_ACTIVE_BYTE_OFFSET = 8
+SENSOR_ACTIVE_BIT = 0
+
+MOTOR_BLOCK_SIZE = PLC_MOTOR_BLOCK_SIZE
+DB2_TOTAL_SIZE = MOTOR_COUNT * MOTOR_BLOCK_SIZE
+MOTOR_FLAGS_BYTE_OFFSET = PLC_MOTOR_FLAGS_BYTE_OFFSET
+MOTOR_BIT_CMD_RUN = 0
+MOTOR_BIT_IS_RUNNING = 1
+MOTOR_BIT_AUTO_MODE = 2
+MOTOR_BIT_ENABLED = 3
+MOTOR_BIT_FAULT = 4
+
+DB3_TOTAL_SIZE = 14
+AUTOCONF_TEMP_MAX_OFFSET = 0
+AUTOCONF_TEMP_MIN_OFFSET = 4
+AUTOCONF_HUMID_MAX_OFFSET = 8
+AUTOCONF_FLAGS_BYTE_OFFSET = 12
+AUTOCONF_BIT_AUTO_GLOBAL = 0
+AUTOCONF_BIT_ALARM_ACTIVE = 1
+
+GATE_BLOCK_SIZE = PLC_GATE_BLOCK_SIZE
+DB13_TOTAL_SIZE = GATE_COUNT * GATE_BLOCK_SIZE
+GATE_BIT_CMD_OPEN = 0
+GATE_BIT_CMD_CLOSE = 1
+GATE_BIT_IS_OPEN = 2
+GATE_BIT_IS_CLOSED = 3
+GATE_BIT_IN_MOTION = 4
+GATE_BIT_FAULT = 5
+
+# Optional monitor DB extension for level and gas sensors from TIA.
+DB_MONITOR_LEVEL_GAS = DB_MONITOR
+DB_MONITOR_TOTAL_SIZE = MONITOR_STRIDE
+MONITOR_LEVEL_FLAGS_BYTE = 0
+MONITOR_LEVEL_HIGH_BIT = 0
+MONITOR_LEVEL_LOW_BIT = 1
+MONITOR_GAS_PPM_OFFSET = 4
+MONITOR_GAS_FLAGS_BYTE = 8
+MONITOR_GAS_ACTIVE_BIT = 0
+MONITOR_GAS_WARN_BIT = 1
+MONITOR_GAS_TRIP_BIT = 2
+
+
+def sensor_offset(index: int) -> int:
+    if not (0 <= index < SENSOR_COUNT):
+        raise ValueError(f"invalid sensor index: {index}")
+    return index * SENSOR_BLOCK_SIZE
+
+
+def motor_offset(index: int) -> int:
+    if not (0 <= index < MOTOR_COUNT):
+        raise ValueError(f"invalid motor index: {index}")
+    return index * MOTOR_BLOCK_SIZE
+
+
+def gate_offset(index: int) -> int:
+    if not (0 <= index < GATE_COUNT):
+        raise ValueError(f"invalid gate index: {index}")
+    return index * GATE_BLOCK_SIZE
+
+
+def monitor_offset(silo_index: int) -> int:
+    if silo_index < 0:
+        raise ValueError(f"invalid silo index: {silo_index}")
+    return silo_index * MONITOR_STRIDE

@@ -10,15 +10,12 @@ import httpx
 API_KEY = "cd2ec8a3256e45d2aec8a3256e45d24f"
 
 LOCATIONS = [
-    {"name": "San José",    "lat":  9.9281,  "lon": -84.0907},
-    {"name": "Liberia",     "lat": 10.6333,  "lon": -85.4333},
     {"name": "Limón",       "lat":  9.9900,  "lon": -83.0360},
-    {"name": "Puntarenas",  "lat":  9.9763,  "lon": -84.8327},
-    {"name": "Alajuela",    "lat": 10.0162,  "lon": -84.2144},
 ]
 
 FORECAST_DAYS = 5
-CACHE_TTL = 600  # 10 minutos
+CACHE_TTL = 600          # 10 minutos pronóstico
+CURRENT_CACHE_TTL = 300  # 5 minutos condiciones actuales
 
 WEATHER_ICONS: dict[int, str] = {
     1: "sunny", 2: "sunny",
@@ -34,6 +31,7 @@ WEATHER_ICONS: dict[int, str] = {
 
 # ── Caché en memoria ────────────────────────────────────────────────────
 _cache: dict[int, tuple[float, dict]] = {}
+_current_cache: tuple[float, dict] | None = None  # (timestamp, data)
 
 
 def get_locations() -> list[dict]:
@@ -77,6 +75,18 @@ async def get_forecast(location_index: int) -> Optional[dict]:
                 elif idx + 1 < len(codes) and codes[idx + 1] is not None:
                     icon_code = codes[idx + 1]
 
+            # Extract humidity from daypart data
+            humidity_day = None
+            humidity_night = None
+            if raw.get("daypart") and raw["daypart"][0].get("relativeHumidity"):
+                hum_list = raw["daypart"][0]["relativeHumidity"]
+                idx_d = i * 2
+                idx_n = i * 2 + 1
+                if idx_d < len(hum_list):
+                    humidity_day = hum_list[idx_d]
+                if idx_n < len(hum_list):
+                    humidity_night = hum_list[idx_n]
+
             days.append({
                 "day_name": raw.get("dayOfWeek", [None] * FORECAST_DAYS)[i],
                 "date": raw.get("validTimeLocal", [None] * FORECAST_DAYS)[i],
@@ -86,6 +96,8 @@ async def get_forecast(location_index: int) -> Optional[dict]:
                 "icon_name": WEATHER_ICONS.get(icon_code, "cloudy") if icon_code else "cloudy",
                 "precipitation_mm": raw.get("qpf", [None] * FORECAST_DAYS)[i],
                 "narrative": raw.get("narrative", [""] * FORECAST_DAYS)[i],
+                "humidity_day": humidity_day,
+                "humidity_night": humidity_night,
             })
 
         result = {
@@ -102,3 +114,36 @@ async def get_forecast(location_index: int) -> Optional[dict]:
         if location_index in _cache:
             return _cache[location_index][1]
         return None
+
+
+def get_current_conditions_sync() -> Optional[dict]:
+    """Retorna temperatura y humedad de hoy en Limón derivados del pronóstico cacheado.
+    Usa temp promedio (max+min)/2 del día 0 y humedad diurna del daypart 0."""
+    # El pronóstico (índice 0 = Limón) se renueva cada CACHE_TTL segundos.
+    # Extraemos el día 0 (hoy) para obtener los valores más recientes disponibles.
+    cached = _cache.get(0)
+    if cached is None:
+        return None
+    _, forecast = cached
+    days = forecast.get("days", [])
+    if not days:
+        return None
+    today = days[0]
+
+    t_max = today.get("temp_max")
+    t_min = today.get("temp_min")
+    temp: Optional[float] = None
+    if t_max is not None and t_min is not None:
+        temp = round((t_max + t_min) / 2.0, 1)
+    elif t_max is not None:
+        temp = float(t_max)
+    elif t_min is not None:
+        temp = float(t_min)
+
+    humid = today.get("humidity_day")
+
+    return {
+        "temperature": temp,
+        "humidity": humid,
+        "fetched_at": forecast.get("fetched_at", ""),
+    }

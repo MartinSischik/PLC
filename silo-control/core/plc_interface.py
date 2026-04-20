@@ -14,19 +14,23 @@ from dataclasses import dataclass
 from typing import Optional
 
 from core.db_offsets import (
-    DB_SENSORS, DB_MOTORS, DB_AUTOCONF,
+    DB_SENSORS, DB_MOTORS, DB_AUTOCONF, DB_GATES,
     SENSOR_BLOCK_SIZE, DB1_TOTAL_SIZE,
     MOTOR_BLOCK_SIZE, DB2_TOTAL_SIZE, DB3_TOTAL_SIZE,
+    GATE_BLOCK_SIZE, DB4_TOTAL_SIZE,
     SENSOR_TEMPERATURE_OFFSET, SENSOR_HUMIDITY_OFFSET,
     SENSOR_ACTIVE_BYTE_OFFSET, SENSOR_ACTIVE_BIT,
     MOTOR_BIT_CMD_RUN, MOTOR_BIT_IS_RUNNING,
     MOTOR_BIT_AUTO_MODE, MOTOR_BIT_ENABLED, MOTOR_BIT_FAULT,
+    GATE_BIT_CMD_OPEN, GATE_BIT_CMD_CLOSE,
+    GATE_BIT_IS_OPEN, GATE_BIT_IS_CLOSED,
+    GATE_BIT_IN_MOTION, GATE_BIT_FAULT,
     AUTOCONF_TEMP_MAX_OFFSET, AUTOCONF_TEMP_MIN_OFFSET,
     AUTOCONF_HUMID_MAX_OFFSET, AUTOCONF_FLAGS_BYTE_OFFSET,
     AUTOCONF_BIT_AUTO_GLOBAL, AUTOCONF_BIT_ALARM_ACTIVE,
-    sensor_offset, motor_offset,
+    sensor_offset, motor_offset, gate_offset,
 )
-from config import PLC_IP, PLC_RACK, PLC_SLOT, SENSOR_COUNT, MOTOR_COUNT
+from config import PLC_IP, PLC_RACK, PLC_SLOT, SENSOR_COUNT, MOTOR_COUNT, GATE_COUNT
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -51,6 +55,18 @@ class MotorStatus:
     auto_mode:  bool
     enabled:    bool
     fault:      bool
+
+
+@dataclass
+class GateStatus:
+    """Estado completo de una compuerta."""
+    index:     int
+    cmd_open:  bool
+    cmd_close: bool
+    is_open:   bool
+    is_closed: bool
+    in_motion: bool
+    fault:     bool
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -376,3 +392,92 @@ class SiloPLC:
             "auto_global":  snap7.util.get_bool(data, AUTOCONF_FLAGS_BYTE_OFFSET, AUTOCONF_BIT_AUTO_GLOBAL),
             "alarm_active": snap7.util.get_bool(data, AUTOCONF_FLAGS_BYTE_OFFSET, AUTOCONF_BIT_ALARM_ACTIVE),
         }
+
+    # ══════════════════════════════════════════════════════════════════════
+    # DB4 – GateControl: lectura
+    # ══════════════════════════════════════════════════════════════════════
+
+    def read_all_gates(self) -> list[GateStatus]:
+        """Lee todas las compuertas de DB4 en una sola operacion de red."""
+        if GATE_COUNT == 0 or DB4_TOTAL_SIZE == 0:
+            return []
+        with self._lock:
+            try:
+                data  = self._client.db_read(DB_GATES, 0, DB4_TOTAL_SIZE)
+                gates = []
+                for i in range(GATE_COUNT):
+                    offset = i * GATE_BLOCK_SIZE
+                    chunk  = data[offset: offset + GATE_BLOCK_SIZE]
+                    gates.append(self._parse_gate(i, chunk))
+                return gates
+            except Exception as e:
+                print(f"[PLC] Error leyendo compuertas: {e}")
+                if self._reconnect():
+                    try:
+                        data  = self._client.db_read(DB_GATES, 0, DB4_TOTAL_SIZE)
+                        gates = []
+                        for i in range(GATE_COUNT):
+                            offset = i * GATE_BLOCK_SIZE
+                            chunk  = data[offset: offset + GATE_BLOCK_SIZE]
+                            gates.append(self._parse_gate(i, chunk))
+                        return gates
+                    except Exception as e2:
+                        print(f"[PLC] Error tras reconexion (all gates): {e2}")
+                return []
+
+    def _parse_gate(self, index: int, data: bytearray) -> GateStatus:
+        return GateStatus(
+            index=index,
+            cmd_open  = snap7.util.get_bool(data, 0, GATE_BIT_CMD_OPEN),
+            cmd_close = snap7.util.get_bool(data, 0, GATE_BIT_CMD_CLOSE),
+            is_open   = snap7.util.get_bool(data, 0, GATE_BIT_IS_OPEN),
+            is_closed = snap7.util.get_bool(data, 0, GATE_BIT_IS_CLOSED),
+            in_motion = snap7.util.get_bool(data, 0, GATE_BIT_IN_MOTION),
+            fault     = snap7.util.get_bool(data, 0, GATE_BIT_FAULT),
+        )
+
+    # ══════════════════════════════════════════════════════════════════════
+    # DB4 – GateControl: escritura
+    # ══════════════════════════════════════════════════════════════════════
+
+    def _write_gate_bit(self, index: int, bit: int, value: bool) -> bool:
+        with self._lock:
+            try:
+                start = gate_offset(index)
+                data  = self._client.db_read(DB_GATES, start, GATE_BLOCK_SIZE)
+                snap7.util.set_bool(data, 0, bit, value)
+                self._client.db_write(DB_GATES, start, data)
+                return True
+            except Exception as e:
+                print(f"[PLC] Error escribiendo bit {bit} de compuerta {index}: {e}")
+                if self._reconnect():
+                    try:
+                        start = gate_offset(index)
+                        data  = self._client.db_read(DB_GATES, start, GATE_BLOCK_SIZE)
+                        snap7.util.set_bool(data, 0, bit, value)
+                        self._client.db_write(DB_GATES, start, data)
+                        return True
+                    except Exception as e2:
+                        print(f"[PLC] Error tras reconexion (gate bit {index}/{bit}): {e2}")
+                return False
+
+    def set_gate_open(self, index: int) -> bool:
+        """Abre compuerta: activa cmd_open, desactiva cmd_close."""
+        with self._lock:
+            ok1 = self._write_gate_bit(index, GATE_BIT_CMD_CLOSE, False)
+            ok2 = self._write_gate_bit(index, GATE_BIT_CMD_OPEN, True)
+            return ok1 and ok2
+
+    def set_gate_close(self, index: int) -> bool:
+        """Cierra compuerta: activa cmd_close, desactiva cmd_open."""
+        with self._lock:
+            ok1 = self._write_gate_bit(index, GATE_BIT_CMD_OPEN, False)
+            ok2 = self._write_gate_bit(index, GATE_BIT_CMD_CLOSE, True)
+            return ok1 and ok2
+
+    def set_gate_stop(self, index: int) -> bool:
+        """Detiene compuerta: desactiva ambos comandos."""
+        with self._lock:
+            ok1 = self._write_gate_bit(index, GATE_BIT_CMD_OPEN, False)
+            ok2 = self._write_gate_bit(index, GATE_BIT_CMD_CLOSE, False)
+            return ok1 and ok2

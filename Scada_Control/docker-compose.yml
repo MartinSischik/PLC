@@ -1,0 +1,27 @@
+services:
+  scada_control:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scada_control
+    restart: unless-stopped
+    ports:
+      - "8100:8100"
+    environment:
+      SCADA_PLC_IP: ${SCADA_PLC_IP:-192.168.0.1}
+      SCADA_PLC_RACK: ${SCADA_PLC_RACK:-0}
+      SCADA_PLC_SLOT: ${SCADA_PLC_SLOT:-1}
+      SCADA_DB_GATES: ${SCADA_DB_GATES:-13}
+      SCADA_MOTOR_BLOCK_SIZE: ${SCADA_MOTOR_BLOCK_SIZE:-2}
+      SCADA_MOTOR_FLAGS_BYTE_OFFSET: ${SCADA_MOTOR_FLAGS_BYTE_OFFSET:-0}
+      SCADA_REFRESH_SECONDS: ${SCADA_REFRESH_SECONDS:-1.0}
+      SCADA_DB_MONITOR: ${SCADA_DB_MONITOR:-100}
+      SCADA_MONITOR_STRIDE: ${SCADA_MONITOR_STRIDE:-16}
+      SCADA_GATE_BLOCK_SIZE: ${SCADA_GATE_BLOCK_SIZE:-1}
+      SCADA_CORS_ORIGINS: ${SCADA_CORS_ORIGINS:-http://localhost:8100,http://127.0.0.1:8100}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8100/api/health', timeout=5).read()"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 15s

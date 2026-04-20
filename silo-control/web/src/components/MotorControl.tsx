@@ -4,9 +4,10 @@ import { postMotorAction } from '../api'
 interface Props {
   config: MotorConfig
   status?: MotorStatus
+  runtimeHours?: number
 }
 
-export function MotorControl({ config, status }: Props) {
+export function MotorControl({ config, status, runtimeHours }: Props) {
   const s = status ?? {
     index: config.index,
     cmd_run: false,
@@ -16,7 +17,15 @@ export function MotorControl({ config, status }: Props) {
     fault: false,
   }
 
-  const isVFD = config.motor_type === 'vfd'
+  const typeBadge: Record<string, { bg: string; label: string }> = {
+    silo_fan: { bg: 'bg-blue-100 text-blue-700', label: 'FAN' },
+    rfan: { bg: 'bg-teal-100 text-teal-700', label: 'RFAN' },
+    barredora: { bg: 'bg-orange-100 text-orange-700', label: 'BAR' },
+    vfd: { bg: 'bg-pink-100 text-pink-700', label: 'VFD' },
+    soft_starter: { bg: 'bg-indigo-100 text-indigo-700', label: 'SS' },
+    contactor: { bg: 'bg-slate-100 text-slate-600', label: 'KM' },
+  }
+  const badge = typeBadge[config.motor_type] ?? typeBadge.contactor
 
   const send = async (action: 'command' | 'auto' | 'enabled', value: boolean) => {
     await postMotorAction(config.index, action, value)
@@ -27,13 +36,9 @@ export function MotorControl({ config, status }: Props) {
       {/* Header row */}
       <div className="flex items-center gap-2 flex-wrap">
         <span
-          className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-            isVFD
-              ? 'bg-pink-100 text-pink-700'
-              : 'bg-blue-100 text-blue-700'
-          }`}
+          className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${badge.bg}`}
         >
-          {isVFD ? 'VFD' : 'SS'}
+          {badge.label}
         </span>
         <span className="text-sm font-medium text-slate-700 flex-1 truncate">
           {config.label || `Motor ${config.index}`}
@@ -59,6 +64,11 @@ export function MotorControl({ config, status }: Props) {
         >
           {s.fault ? 'FALLA' : 'OK'}
         </span>
+        {runtimeHours !== undefined && (
+          <span className="text-[10px] text-slate-400 font-mono">
+            {runtimeHours.toFixed(1)}h
+          </span>
+        )}
       </div>
 
       {/* Buttons */}
@@ -85,10 +95,10 @@ export function MotorControl({ config, status }: Props) {
         </button>
         <button
           onClick={() => send('enabled', !s.enabled)}
-          className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-colors active:scale-95 ${
+          className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-colors active:scale-95 border-2 ${
             s.enabled
-              ? 'bg-slate-100 text-slate-600'
-              : 'bg-red-100 text-red-700'
+              ? 'bg-red-100 text-red-700 border-red-400'
+              : 'bg-emerald-100 text-emerald-700 border-emerald-400'
           }`}
         >
           {s.enabled ? 'DESH' : 'HAB'}

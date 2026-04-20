@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom'
-import { Activity, CloudSun } from 'lucide-react'
+import { Activity, CloudSun, ClipboardList, CalendarClock } from 'lucide-react'
 
 const tabs = [
   { to: '/scada', label: 'SCADA', icon: Activity },
+  { to: '/ordenes', label: 'Ordenes', icon: ClipboardList },
+  { to: '/scheduler', label: 'Programar', icon: CalendarClock },
   { to: '/weather', label: 'Clima', icon: CloudSun },
 ]
 
@@ -19,7 +21,7 @@ export function NavBar() {
             }`
           }
         >
-          <Icon size={22} />
+          <Icon size={20} />
           {label}
         </NavLink>
       ))}

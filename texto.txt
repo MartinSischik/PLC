@@ -1,0 +1,39 @@
+// sensor[0] temp
+#raw_value := %MW200;
+#scaled := INT_TO_REAL(#raw_value) / 10.0;
+"SensorData".sensor[0].temperature := #scaled;
+"SensorData".sensor[0].humidity := 0.0;
+"SensorData".sensor[0].active := TRUE;
+
+// sensor[1] humedad
+#raw_value := %MW202;
+#scaled := INT_TO_REAL(#raw_value) * 100.0 / 27648.0;
+IF #scaled < 0.0 THEN
+    #scaled := 0.0;
+END_IF;
+IF #scaled > 100.0 THEN
+    #scaled := 100.0;
+END_IF;
+"SensorData".sensor[1].temperature := 0.0;
+"SensorData".sensor[1].humidity := #scaled;
+"SensorData".sensor[1].active := TRUE;
+
+// sensor[2] temp
+#raw_value := %MW204;
+#scaled := INT_TO_REAL(#raw_value) / 10.0;
+"SensorData".sensor[2].temperature := #scaled;
+"SensorData".sensor[2].humidity := 0.0;
+"SensorData".sensor[2].active := TRUE;
+
+// sensor[3] humedad
+#raw_value := %MW206;
+#scaled := INT_TO_REAL(#raw_value) * 100.0 / 27648.0;
+IF #scaled < 0.0 THEN
+    #scaled := 0.0;
+END_IF;
+IF #scaled > 100.0 THEN
+    #scaled := 100.0;
+END_IF;
+"SensorData".sensor[3].temperature := 0.0;
+"SensorData".sensor[3].humidity := #scaled;
+"SensorData".sensor[3].active := TRUE;

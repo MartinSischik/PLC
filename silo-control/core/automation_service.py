@@ -15,6 +15,7 @@ import threading
 import time
 
 from core.plc_interface import SiloPLC
+from core.database import get_weather_thresholds
 from config import SILOS, SIMULATION_INTERVAL
 
 
@@ -32,9 +33,9 @@ class AutomationService:
         self._running = False
         self._thread: threading.Thread | None = None
 
-        # Mapa silo_index -> lista de motor indices
-        self._silo_motors: list[list[int]] = [
-            [m.index for m in silo.motors] for silo in SILOS
+        # Solo silo_fan — únicos motores controlados por automatización de temperatura
+        self._silo_fans: list[list[int]] = [
+            [m.index for m in silo.motors if m.motor_type == 'silo_fan'] for silo in SILOS
         ]
         # Mapa silo_index -> lista de sensor indices
         self._silo_sensors: list[list[int]] = [
@@ -77,46 +78,66 @@ class AutomationService:
         temp_max  = thresholds.get("temp_max",  35.0)
         humid_max = thresholds.get("humid_max", 70.0)
 
+        # Verificar condiciones meteorológicas exteriores → trigger independiente
+        weather_cfg = get_weather_thresholds()
+        weather_trigger = False
+        if weather_cfg["weather_auto_enabled"]:
+            try:
+                from api.weather_service import get_current_conditions_sync
+                current = get_current_conditions_sync()
+                if current is not None:
+                    t_out = current.get("temperature")
+                    h_out = current.get("humidity")
+                    if (t_out is not None and t_out > weather_cfg["ambient_temp_max"]) or \
+                       (h_out is not None and h_out > weather_cfg["ambient_humid_max"]):
+                        weather_trigger = True
+                        print(f"[AUTO] Trigger clima exterior activo "
+                              f"(T={t_out}°C H={h_out}%)")
+            except Exception as e:
+                print(f"[AUTO] Error leyendo clima exterior: {e}")
+
         # Indice sensor -> lectura para acceso rapido
         sensor_map = {s.index: s for s in sensors}
         motor_map  = {m.index: m for m in motors}
 
-        for silo_idx, (sensor_indices, motor_indices) in enumerate(
-            zip(self._silo_sensors, self._silo_motors)
+        for silo_idx, (sensor_indices, fan_indices) in enumerate(
+            zip(self._silo_sensors, self._silo_fans)
         ):
-            # Histéresis: se activa al superar el umbral,
-            # se desactiva solo cuando baja HYSTERESIS por debajo.
+            if not fan_indices:
+                continue
+
+            # ── Alarma de silo: cualquier sensor supera umbral (con histéresis) ──
             currently_alarm = self._alarm_state[silo_idx]
-            new_alarm = currently_alarm  # mantener estado por defecto
+            silo_alarm = currently_alarm
 
             for si in sensor_indices:
                 s = sensor_map.get(si)
                 if s is None or not s.active:
                     continue
-                has_temp  = s.temperature > 0
-                has_humid = s.humidity > 0
-                if not currently_alarm:
-                    if (has_temp and s.temperature > temp_max) or (has_humid and s.humidity > humid_max):
-                        new_alarm = True
-                        break
-                else:
-                    if (has_temp and s.temperature > (temp_max - HYSTERESIS)) or (has_humid and s.humidity > (humid_max - HYSTERESIS)):
-                        new_alarm = True
-                        break
-                    else:
-                        new_alarm = False
+                threshold_temp  = temp_max  if not currently_alarm else (temp_max  - HYSTERESIS)
+                threshold_humid = humid_max if not currently_alarm else (humid_max - HYSTERESIS)
+                if (s.temperature > 0 and s.temperature > threshold_temp) or \
+                   (s.humidity    > 0 and s.humidity    > threshold_humid):
+                    silo_alarm = True
+                    break
+            else:
+                # Ningún sensor superó el umbral → alarma silo se apaga
+                if currently_alarm:
+                    silo_alarm = False
 
-            self._alarm_state[silo_idx] = new_alarm
+            self._alarm_state[silo_idx] = silo_alarm
 
-            # Aplicar logica a cada motor del silo
-            for mi in motor_indices:
+            # ── Trigger final: alarma silo OR clima exterior ──
+            should_run = silo_alarm or weather_trigger
+
+            # ── Aplicar solo a silo_fans en AUTO + HAB ──
+            for mi in fan_indices:
                 m = motor_map.get(mi)
-                if m is None:
+                if m is None or not m.auto_mode or not m.enabled:
                     continue
-                if not m.auto_mode or not m.enabled:
-                    continue  # no tocar motores en manual o deshabilitados
-                if m.cmd_run != new_alarm:
-                    self._plc.set_motor_command(mi, new_alarm)
-                    state = "ARRANCAR" if new_alarm else "DETENER"
-                    print(f"[AUTO] Silo {silo_idx+1} motor {mi}: {state} "
-                          f"(alarma={new_alarm})")
+                if m.cmd_run != should_run:
+                    self._plc.set_motor_command(mi, should_run)
+                    state = "ARRANCAR" if should_run else "DETENER"
+                    reason = " [clima]" if weather_trigger and not silo_alarm else \
+                             " [silo]"  if silo_alarm else ""
+                    print(f"[AUTO] Silo {silo_idx+1} fan {mi}: {state}{reason}")

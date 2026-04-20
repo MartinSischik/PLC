@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scada_Control | Monitor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">SCADA</p>
+        <h1>Monitoreo Industrial</h1>
+      </div>
+      <div class="status-wrap">
+        <span id="plcStatus" class="status-pill disconnected">PLC OFFLINE</span>
+        <span id="wsStatus" class="status-pill disconnected">WS OFFLINE</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="summary-grid" id="summaryGrid">
+        <article class="summary-card">
+          <p class="summary-title">Silos</p>
+          <p class="summary-value" id="summarySilos">0</p>
+        </article>
+        <article class="summary-card">
+          <p class="summary-title">Sensores Activos</p>
+          <p class="summary-value" id="summarySensors">0 / 0</p>
+        </article>
+        <article class="summary-card">
+          <p class="summary-title">Alertas</p>
+          <p class="summary-value" id="summaryAlerts">0</p>
+        </article>
+        <article class="summary-card">
+          <p class="summary-title">Ultima Actualizacion</p>
+          <p class="summary-value small" id="summaryTime">--</p>
+        </article>
+      </section>
+
+      <section class="alerts-panel">
+        <div class="panel-head">
+          <h2>Alertas Activas</h2>
+          <span id="alertCount" class="count-badge">0</span>
+        </div>
+        <ul id="alertsList" class="alerts-list">
+          <li class="muted">Sin alertas por ahora.</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="panel-head">
+          <h2>Estado por Silo</h2>
+        </div>
+        <div id="silosGrid" class="silos-grid"></div>
+      </section>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

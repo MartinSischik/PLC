@@ -5,14 +5,15 @@
 #
 # Los tamanos de DB1 y DB2 se calculan dinamicamente a partir de config.py.
 
-from config import SENSOR_COUNT, MOTOR_COUNT
+from config import SENSOR_COUNT, MOTOR_COUNT, GATE_COUNT
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Numeros de Data Block
 # ══════════════════════════════════════════════════════════════════════════════
-DB_SENSORS  = 1   # DB1 – SensorData
-DB_MOTORS   = 2   # DB2 – MotorControl
-DB_AUTOCONF = 3   # DB3 – AutomationConfig
+DB_SENSORS  = 1    # DB1  – SensorData
+DB_MOTORS   = 2    # DB2  – MotorControl
+DB_AUTOCONF = 3    # DB3  – AutomationConfig
+DB_GATES    = 13   # DB13 – GateControl
 
 # ══════════════════════════════════════════════════════════════════════════════
 # DB1 – SensorData
@@ -112,3 +113,35 @@ AUTOCONF_HUMID_MAX_OFFSET    = 8    # REAL, 4 bytes
 AUTOCONF_FLAGS_BYTE_OFFSET   = 12   # byte que contiene los dos BOOLs
 AUTOCONF_BIT_AUTO_GLOBAL     = 0    # bit 0 del byte 12
 AUTOCONF_BIT_ALARM_ACTIVE    = 1    # bit 1 del byte 12
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# DB4 – GateControl
+# ══════════════════════════════════════════════════════════════════════════════
+# Cada compuerta ocupa 2 bytes (6 bits usados + padding):
+#   bit 0  cmd_open     BOOL  Comando abrir          (escribe Python)
+#   bit 1  cmd_close    BOOL  Comando cerrar         (escribe Python)
+#   bit 2  is_open      BOOL  Estado abierta         (escribe PLC / DI fin carrera)
+#   bit 3  is_closed    BOOL  Estado cerrada         (escribe PLC / DI fin carrera)
+#   bit 4  in_motion    BOOL  En movimiento          (escribe PLC)
+#   bit 5  fault        BOOL  Falla                  (escribe PLC)
+
+GATE_BLOCK_SIZE = 2   # 2 bytes por compuerta
+DB4_TOTAL_SIZE  = GATE_COUNT * GATE_BLOCK_SIZE
+
+GATE_BIT_CMD_OPEN  = 0
+GATE_BIT_CMD_CLOSE = 1
+GATE_BIT_IS_OPEN   = 2
+GATE_BIT_IS_CLOSED = 3
+GATE_BIT_IN_MOTION = 4
+GATE_BIT_FAULT     = 5
+
+
+def gate_offset(index: int) -> int:
+    """Retorna el byte de inicio de la compuerta[index] dentro de DB4."""
+    if not (0 <= index < GATE_COUNT):
+        raise ValueError(
+            f"Indice de compuerta invalido: {index}. "
+            f"Debe estar entre 0 y {GATE_COUNT - 1} (GATE_COUNT={GATE_COUNT})."
+        )
+    return index * GATE_BLOCK_SIZE

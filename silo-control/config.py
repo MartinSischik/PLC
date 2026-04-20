@@ -1,7 +1,7 @@
 # config.py
 # Configuracion global del monitor de silo para S7-1515-2 PN (TIA/PLCSIM).
 #
-# SISTEMA MODULAR: para cambiar la topologia (silos, sensores, motores)
+# SISTEMA MODULAR: para cambiar la topologia (silos, sensores, motores, compuertas)
 # solo editar la lista SILOS mas abajo.  Todo lo demas se deriva automaticamente.
 
 from dataclasses import dataclass, field
@@ -11,122 +11,180 @@ from dataclasses import dataclass, field
 
 @dataclass
 class SensorConfig:
-    """Configuracion de un sensor dentro de un silo.
-
-    Attributes:
-        index:         Indice global del sensor en DB1 (0..N).
-        label:         Etiqueta visible en la GUI (ej. "T0", "H1").
-        show_temp:     True si este sensor mide temperatura.
-        show_humidity: True si este sensor mide humedad.
-    """
+    """Sensor analogico (temperatura / humedad) en DB1."""
     index: int
     label: str
     show_temp: bool = True
     show_humidity: bool = False
 
 
+@dataclass
+class LevelSensorConfig:
+    """Sensor de nivel digital (HL = alto, LL = bajo)."""
+    label: str
+    sensor_type: str = "hl"  # "hl" | "ll"
+
+
 # ── Definicion de motores ─────────────────────────────────────────────────────
 
 @dataclass
 class MotorConfig:
-    """Configuracion de un motor dentro de un silo.
-
-    Attributes:
-        index:      Indice global del motor en DB2 (0..N).
-        label:      Etiqueta visible en la GUI (ej. "Ventilador 1").
-        motor_type: Tipo de arranque: "soft_starter" | "vfd".
+    """Motor controlado por PLC via DQ arranque + DI confirmacion/falla.
+    motor_type: "silo_fan" | "rfan" | "barredora" | "soft_starter" | "vfd" | "contactor"
     """
     index: int
     label: str = ""
-    motor_type: str = "soft_starter"   # "soft_starter" | "vfd"
+    motor_type: str = "contactor"
+
+
+# ── Definicion de compuertas ──────────────────────────────────────────────────
+
+@dataclass
+class GateConfig:
+    """Compuerta electrica motorizada.
+    Control: DQ abrir + DQ cerrar → DI fin de carrera.
+    gate_type: "distribucion" | "descarga_central" | "descarga_lateral"
+    """
+    index: int
+    label: str = ""
+    gate_type: str = "descarga_central"
 
 
 # ── Definicion de silos ──────────────────────────────────────────────────────
 
 @dataclass
 class SiloDefinition:
-    """Definicion de un silo: sus sensores y sus motores.
-
-    Attributes:
-        name:    Nombre del silo mostrado en la GUI.
-        sensors: Lista de SensorConfig asignados a este silo.
-        motors:  Lista de MotorConfig asignados a este silo.
-    """
+    """Definicion completa de un silo."""
     name: str
-    sensors: list = field(default_factory=list)   # list[SensorConfig]
-    motors: list = field(default_factory=list)     # list[MotorConfig]
+    sensors: list = field(default_factory=list)        # list[SensorConfig]
+    motors: list = field(default_factory=list)          # list[MotorConfig]
+    level_sensors: list = field(default_factory=list)   # list[LevelSensorConfig]
+    gates: list = field(default_factory=list)            # list[GateConfig]
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # CONFIGURACION DE SILOS — EDITAR AQUI PARA CAMBIAR LA TOPOLOGIA
 # ══════════════════════════════════════════════════════════════════════════════
-# Agregar/quitar silos, sensores o motores: solo modificar esta lista.
-# El resto del sistema se adapta automaticamente.
+#
+# Motores por silo (segun planos Proyecto IGL 25052025.pdf):
+#   - 2 Silo Fans    (18.5 kW, contactor KM, págs. 137-144)
+#   - 3 RFANs        (1.5 kW,  arranque directo, págs. 29-40)
+#   - 1 Barredora     (18.5 kW, contactor, S260R)
+#   Total: 6 motores/silo × 4 silos = 24 motores
+#
+# Compuertas por silo:
+#   - Distribución (DQ abrir/cerrar, DI fin carrera, págs. 227-234)
+#   - Descarga central (págs. 239-252)
+#   - Descarga lateral (S2, S3, S4 solamente)
+#
+# Indices de motor (DB2): 0..23
+#   S1: 0-5,  S2: 6-11,  S3: 12-17,  S4: 18-23
+#
+# Indices de compuerta (DB4): 0..N
+#   S1: 0-1,  S2: 2-4,  S3: 5-7,  S4: 8-10,  + CR01(11)
 
 SILOS: list = [
+    # ── SILO 1 ────────────────────────────────────────────────────────────
     SiloDefinition(
         name="Silo 1",
         sensors=[
-            SensorConfig(index=0, label="T0", show_temp=True,  show_humidity=False),
-            SensorConfig(index=1, label="H1", show_temp=False, show_humidity=True),
+            SensorConfig(index=0, label="T-S1", show_temp=True,  show_humidity=False),
+            SensorConfig(index=1, label="H-S1", show_temp=False, show_humidity=True),
         ],
-        motors=[MotorConfig(index=0, label="Motor 1 (32A)", motor_type="soft_starter")],
+        motors=[
+            # Silo Fans (18.5 kW, contactor) — págs. 137-138
+            MotorConfig(index=0,  label="Silo Fan 1",  motor_type="silo_fan"),
+            MotorConfig(index=1,  label="Silo Fan 2",  motor_type="silo_fan"),
+            # RFANs extractores (1.5 kW, arranque directo) — págs. 29-34
+            MotorConfig(index=2,  label="RFAN 01",     motor_type="rfan"),
+            MotorConfig(index=3,  label="RFAN 02",     motor_type="rfan"),
+            MotorConfig(index=4,  label="RFAN 03",     motor_type="rfan"),
+            # Barredora (18.5 kW) — S260R-S1
+            MotorConfig(index=5,  label="Barredora S1", motor_type="barredora"),
+        ],
+        level_sensors=[
+            LevelSensorConfig(label="HL-S1", sensor_type="hl"),
+            LevelSensorConfig(label="LL-S1", sensor_type="ll"),
+        ],
+        gates=[
+            GateConfig(index=0, label="Distrib. S1",    gate_type="distribucion"),
+            GateConfig(index=1, label="Descarga S1",    gate_type="descarga_central"),
+        ],
     ),
+    # ── SILO 2 ────────────────────────────────────────────────────────────
     SiloDefinition(
         name="Silo 2",
         sensors=[
-            SensorConfig(index=2, label="T2", show_temp=True,  show_humidity=False),
-            SensorConfig(index=3, label="H3", show_temp=False, show_humidity=True),
+            SensorConfig(index=2, label="T-S2", show_temp=True,  show_humidity=False),
+            SensorConfig(index=3, label="H-S2", show_temp=False, show_humidity=True),
         ],
-        motors=[MotorConfig(index=1, label="Motor 2 (38A)", motor_type="soft_starter")],
+        motors=[
+            MotorConfig(index=6,  label="Silo Fan 3",  motor_type="silo_fan"),
+            MotorConfig(index=7,  label="Silo Fan 4",  motor_type="silo_fan"),
+            MotorConfig(index=8,  label="RFAN 04",     motor_type="rfan"),
+            MotorConfig(index=9,  label="RFAN 05",     motor_type="rfan"),
+            MotorConfig(index=10, label="RFAN 06",     motor_type="rfan"),
+            MotorConfig(index=11, label="Barredora S2", motor_type="barredora"),
+        ],
+        level_sensors=[
+            LevelSensorConfig(label="HL-S2", sensor_type="hl"),
+            LevelSensorConfig(label="LL-S2", sensor_type="ll"),
+        ],
+        gates=[
+            GateConfig(index=2, label="Distrib. S2",         gate_type="distribucion"),
+            GateConfig(index=3, label="Descarga Central S2", gate_type="descarga_central"),
+            GateConfig(index=4, label="Descarga Lateral S2", gate_type="descarga_lateral"),
+        ],
     ),
+    # ── SILO 3 ────────────────────────────────────────────────────────────
     SiloDefinition(
         name="Silo 3",
         sensors=[
-            SensorConfig(index=4, label="T4", show_temp=True,  show_humidity=False),
-            SensorConfig(index=5, label="H5", show_temp=False, show_humidity=True),
+            SensorConfig(index=4, label="T-S3", show_temp=True,  show_humidity=False),
+            SensorConfig(index=5, label="H-S3", show_temp=False, show_humidity=True),
         ],
-        motors=[MotorConfig(index=2, label="Motor 3 (47A)", motor_type="soft_starter")],
+        motors=[
+            MotorConfig(index=12, label="Silo Fan 5",  motor_type="silo_fan"),
+            MotorConfig(index=13, label="Silo Fan 6",  motor_type="silo_fan"),
+            MotorConfig(index=14, label="RFAN 07",     motor_type="rfan"),
+            MotorConfig(index=15, label="RFAN 08",     motor_type="rfan"),
+            MotorConfig(index=16, label="RFAN 09",     motor_type="rfan"),
+            MotorConfig(index=17, label="Barredora S3", motor_type="barredora"),
+        ],
+        level_sensors=[
+            LevelSensorConfig(label="HL-S3", sensor_type="hl"),
+            LevelSensorConfig(label="LL-S3", sensor_type="ll"),
+        ],
+        gates=[
+            GateConfig(index=5, label="Distrib. S3",         gate_type="distribucion"),
+            GateConfig(index=6, label="Descarga Central S3", gate_type="descarga_central"),
+            GateConfig(index=7, label="Descarga Lateral S3", gate_type="descarga_lateral"),
+        ],
     ),
+    # ── SILO 4 ────────────────────────────────────────────────────────────
     SiloDefinition(
         name="Silo 4",
         sensors=[
-            SensorConfig(index=6, label="T6", show_temp=True,  show_humidity=False),
-            SensorConfig(index=7, label="H7", show_temp=False, show_humidity=True),
+            SensorConfig(index=6, label="T-S4", show_temp=True,  show_humidity=False),
+            SensorConfig(index=7, label="H-S4", show_temp=False, show_humidity=True),
         ],
-        motors=[MotorConfig(index=3, label="Motor 4 (47A)", motor_type="soft_starter")],
-    ),
-    SiloDefinition(
-        name="Silo 5",
-        sensors=[
-            SensorConfig(index=8,  label="T8",  show_temp=True,  show_humidity=False),
-            SensorConfig(index=9,  label="H9",  show_temp=False, show_humidity=True),
+        motors=[
+            MotorConfig(index=18, label="Silo Fan 7",  motor_type="silo_fan"),
+            MotorConfig(index=19, label="Silo Fan 8",  motor_type="silo_fan"),
+            MotorConfig(index=20, label="RFAN 10",     motor_type="rfan"),
+            MotorConfig(index=21, label="RFAN 11",     motor_type="rfan"),
+            MotorConfig(index=22, label="RFAN 12",     motor_type="rfan"),
+            MotorConfig(index=23, label="Barredora S4", motor_type="barredora"),
         ],
-        motors=[MotorConfig(index=4, label="Motor 5 (47A)", motor_type="soft_starter")],
-    ),
-    SiloDefinition(
-        name="Silo 6",
-        sensors=[
-            SensorConfig(index=10, label="T10", show_temp=True,  show_humidity=False),
-            SensorConfig(index=11, label="H11", show_temp=False, show_humidity=True),
+        level_sensors=[
+            LevelSensorConfig(label="HL-S4", sensor_type="hl"),
+            LevelSensorConfig(label="LL-S4", sensor_type="ll"),
         ],
-        motors=[MotorConfig(index=5, label="Motor 6 (77A)", motor_type="soft_starter")],
-    ),
-    SiloDefinition(
-        name="Silo 7",
-        sensors=[
-            SensorConfig(index=12, label="T12", show_temp=True,  show_humidity=False),
-            SensorConfig(index=13, label="H13", show_temp=False, show_humidity=True),
+        gates=[
+            GateConfig(index=8,  label="Distrib. S4",         gate_type="distribucion"),
+            GateConfig(index=9,  label="Descarga Central S4", gate_type="descarga_central"),
+            GateConfig(index=10, label="Descarga Lateral S4", gate_type="descarga_lateral"),
         ],
-        motors=[MotorConfig(index=6, label="Motor 7 (93A)", motor_type="soft_starter")],
-    ),
-    SiloDefinition(
-        name="Silo 8",
-        sensors=[
-            SensorConfig(index=14, label="T14", show_temp=True,  show_humidity=False),
-            SensorConfig(index=15, label="H15", show_temp=False, show_humidity=True),
-        ],
-        motors=[MotorConfig(index=7, label="Motor 8 VFD (90kW)", motor_type="vfd")],
     ),
 ]
 
@@ -136,14 +194,16 @@ SILOS: list = [
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _derive_counts() -> tuple:
-    """Calcula sensor_count y motor_count a partir de SILOS."""
+    """Calcula sensor_count, motor_count y gate_count a partir de SILOS."""
     all_sensor_indices = [s.index for silo in SILOS for s in silo.sensors]
     all_motor_indices  = [m.index for silo in SILOS for m in silo.motors]
+    all_gate_indices   = [g.index for silo in SILOS for g in silo.gates]
     sc = (max(all_sensor_indices) + 1) if all_sensor_indices else 0
     mc = (max(all_motor_indices)  + 1) if all_motor_indices  else 0
-    return sc, mc
+    gc = (max(all_gate_indices)   + 1) if all_gate_indices   else 0
+    return sc, mc, gc
 
-SENSOR_COUNT, MOTOR_COUNT = _derive_counts()
+SENSOR_COUNT, MOTOR_COUNT, GATE_COUNT = _derive_counts()
 
 
 # ── Conexion al PLC S7-1515-2 PN (Snap7 / PLCSIM) ──────────────────────────
@@ -176,22 +236,14 @@ TMS_TIMEOUT_SECONDS = 2.0
 # Editar este dict para mapear sensores TMS a slots de DB1.
 TMS_SENSOR_MAP: dict = {
     # db1_index: (modbus_register, "temp"|"hum")
-    0:  (0,  "temp"),   # T0  — Silo 1 temperatura
-    1:  (1,  "hum"),    # H1  — Silo 1 humedad
-    2:  (2,  "temp"),   # T2  — Silo 2 temperatura
-    3:  (3,  "hum"),    # H3  — Silo 2 humedad
-    4:  (4,  "temp"),   # T4  — Silo 3 temperatura
-    5:  (5,  "hum"),    # H5  — Silo 3 humedad
-    6:  (6,  "temp"),   # T6  — Silo 4 temperatura
-    7:  (7,  "hum"),    # H7  — Silo 4 humedad
-    8:  (8,  "temp"),   # T8  — Silo 5 temperatura
-    9:  (9,  "hum"),    # H9  — Silo 5 humedad
-    10: (10, "temp"),   # T10 — Silo 6 temperatura
-    11: (11, "hum"),    # H11 — Silo 6 humedad
-    12: (12, "temp"),   # T12 — Silo 7 temperatura
-    13: (13, "hum"),    # H13 — Silo 7 humedad
-    14: (14, "temp"),   # T14 — Silo 8 temperatura
-    15: (15, "hum"),    # H15 — Silo 8 humedad
+    0:  (0,  "temp"),   # T-S1  — Silo 1 temperatura
+    1:  (1,  "hum"),    # H-S1  — Silo 1 humedad
+    2:  (2,  "temp"),   # T-S2  — Silo 2 temperatura
+    3:  (3,  "hum"),    # H-S2  — Silo 2 humedad
+    4:  (4,  "temp"),   # T-S3  — Silo 3 temperatura
+    5:  (5,  "hum"),    # H-S3  — Silo 3 humedad
+    6:  (6,  "temp"),   # T-S4  — Silo 4 temperatura
+    7:  (7,  "hum"),    # H-S4  — Silo 4 humedad
 }
 
 # Escala y valor invalido de registros Modbus

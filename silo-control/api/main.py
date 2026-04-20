@@ -26,6 +26,10 @@ from core.tms6000_provider import Tms6000Provider
 from core.tms_bridge_service import TmsBridgeService
 from core.sim_temperature_service import SimTemperatureService
 from core.automation_service import AutomationService
+from core.database import init_db, get_all_silo_quality, get_motor_runtime_totals
+from api.weather_service import get_current_conditions_sync, get_forecast
+from core.scheduler_service import SchedulerService
+from core.runtime_tracker import RuntimeTracker
 from api.routes import router
 
 
@@ -35,18 +39,25 @@ def _read_plc_state(plc: SiloPLC) -> dict:
     """Lee todo el estado del PLC (bloqueante — ejecutar en thread)."""
     connected = plc.is_connected()
     if not connected:
+        current_weather = get_current_conditions_sync()
         return {
             "type": "scada_update",
             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
             "connected": False,
             "sensors": [],
             "motors": [],
+            "gates": [],
             "thresholds": None,
+            "quality": {},
+            "motor_runtime": {},
+            "current_weather": current_weather,
         }
 
     sensors = plc.read_all_sensors()
     motors = plc.read_all_motors()
+    gates = plc.read_all_gates()
     thresholds = plc.read_thresholds()
+    current_weather = get_current_conditions_sync()
 
     return {
         "type": "scada_update",
@@ -54,7 +65,11 @@ def _read_plc_state(plc: SiloPLC) -> dict:
         "connected": True,
         "sensors": [asdict(s) for s in sensors],
         "motors": [asdict(m) for m in motors],
+        "gates": [asdict(g) for g in gates],
         "thresholds": thresholds,
+        "quality": get_all_silo_quality(),
+        "motor_runtime": get_motor_runtime_totals(),
+        "current_weather": current_weather,
     }
 
 
@@ -89,12 +104,17 @@ async def _broadcast_loop(
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup: conectar PLC e iniciar servicios (misma lógica que main_gui.py)
+    # Startup: init DB + conectar PLC e iniciar servicios
+    init_db()
+    print("[API] SQLite inicializado.")
+
     print(f"[API] Conectando a PLC S7 en {PLC_IP}...")
     plc = SiloPLC(ip=PLC_IP, rack=PLC_RACK, slot=PLC_SLOT)
     bridge = None
     sim_service = None
     auto_service = None
+    scheduler = None
+    runtime_tracker = None
 
     if not plc.connect():
         print("[API] PLC no disponible. Backend arranca en modo desconectado.")
@@ -106,15 +126,29 @@ async def lifespan(app: FastAPI):
     elif SENSOR_SOURCE == "sim":
         sim_service = SimTemperatureService(plc=plc)
         sim_service.start()
-        # En simulacion, replicar la logica de FB2 (AutomationLogic del PLC)
         auto_service = AutomationService(plc=plc)
         auto_service.start()
+
+    # Scheduler and runtime tracker run in all modes
+    scheduler = SchedulerService(plc=plc)
+    scheduler.start()
+    runtime_tracker = RuntimeTracker(plc=plc)
+    runtime_tracker.start()
 
     app.state.plc = plc
     app.state.bridge = bridge
     app.state.sim_service = sim_service
     app.state.auto_service = auto_service
+    app.state.scheduler = scheduler
+    app.state.runtime_tracker = runtime_tracker
     app.state.ws_clients = set()
+
+    # Pre-cargar pronóstico para que current_weather esté disponible desde el inicio
+    try:
+        await get_forecast(0)
+        print("[API] Pronóstico pre-cargado.")
+    except Exception as e:
+        print(f"[API] No se pudo pre-cargar pronóstico: {e}")
 
     # Iniciar broadcast WebSocket
     stop_event = asyncio.Event()
@@ -131,6 +165,10 @@ async def lifespan(app: FastAPI):
         await broadcast_task
     except asyncio.CancelledError:
         pass
+    if scheduler is not None:
+        scheduler.stop()
+    if runtime_tracker is not None:
+        runtime_tracker.stop()
     if bridge is not None:
         bridge.stop()
     if sim_service is not None:

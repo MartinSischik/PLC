@@ -1,24 +1,18 @@
-import { useEffect, useState } from 'react'
-import { RefreshCw } from 'lucide-react'
-import type { WeatherLocation } from '../types'
-import { fetchWeatherLocations } from '../api'
+import { RefreshCw, Droplets } from 'lucide-react'
 import { useWeather } from '../hooks/useWeather'
-import { LocationSelector } from '../components/LocationSelector'
 import { WeatherCard } from '../components/WeatherCard'
 
 export function WeatherPage() {
-  const [locations, setLocations] = useState<WeatherLocation[]>([])
-  const [selected, setSelected] = useState(0)
-  const { data, loading, error, refresh } = useWeather(selected)
-
-  useEffect(() => {
-    fetchWeatherLocations().then(setLocations).catch(console.error)
-  }, [])
+  // Location 0 = Limon (now the only location)
+  const { data, loading, error, refresh } = useWeather(0)
 
   return (
     <div className="space-y-4 pb-20 pt-4">
       <div className="px-4 flex items-center justify-between">
-        <h2 className="text-lg font-bold text-slate-700">Pronóstico</h2>
+        <div>
+          <h2 className="text-lg font-bold text-slate-700">Clima - Limon</h2>
+          <p className="text-[10px] text-slate-400">Variable de control para humedad relativa</p>
+        </div>
         <button
           onClick={refresh}
           disabled={loading}
@@ -28,15 +22,31 @@ export function WeatherPage() {
         </button>
       </div>
 
-      {locations.length > 0 && (
-        <LocationSelector
-          locations={locations}
-          selected={selected}
-          onSelect={setSelected}
-        />
+      {/* Current humidity summary */}
+      {data && data.days.length > 0 && (
+        <div className="mx-4 bg-blue-50 rounded-xl p-4 border border-blue-100">
+          <div className="flex items-center gap-2 mb-2">
+            <Droplets size={18} className="text-blue-600" />
+            <span className="text-sm font-bold text-blue-800">Humedad Relativa Hoy</span>
+          </div>
+          <div className="flex gap-6">
+            <div>
+              <span className="text-[10px] text-blue-500 uppercase">Dia</span>
+              <div className="text-2xl font-bold text-blue-700">
+                {data.days[0].humidity_day !== null ? `${data.days[0].humidity_day}%` : '--'}
+              </div>
+            </div>
+            <div>
+              <span className="text-[10px] text-blue-500 uppercase">Noche</span>
+              <div className="text-2xl font-bold text-blue-700">
+                {data.days[0].humidity_night !== null ? `${data.days[0].humidity_night}%` : '--'}
+              </div>
+            </div>
+          </div>
+        </div>
       )}
 
-      {loading && (
+      {loading && !data && (
         <div className="text-center text-slate-400 py-12 text-sm">Cargando...</div>
       )}
 

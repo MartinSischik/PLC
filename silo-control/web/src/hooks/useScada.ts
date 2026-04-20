@@ -1,11 +1,15 @@
 import { createContext, useContext, useEffect, useRef, useState, useCallback } from 'react'
-import type { SensorReading, MotorStatus, Thresholds, ScadaUpdate } from '../types'
+import type { SensorReading, MotorStatus, GateStatus, Thresholds, ScadaUpdate, CurrentWeather } from '../types'
 import { getWsUrl } from '../api'
 
 export interface ScadaState {
   sensors: SensorReading[]
   motors: MotorStatus[]
+  gates: GateStatus[]
   thresholds: Thresholds | null
+  quality: Record<string, string>
+  motorRuntime: Record<string, number>
+  currentWeather: CurrentWeather | null
   connected: boolean
   wsConnected: boolean
 }
@@ -13,7 +17,11 @@ export interface ScadaState {
 const defaultState: ScadaState = {
   sensors: [],
   motors: [],
+  gates: [],
   thresholds: null,
+  quality: {},
+  motorRuntime: {},
+  currentWeather: null,
   connected: false,
   wsConnected: false,
 }
@@ -45,7 +53,11 @@ export function useScadaConnection(): ScadaState {
         setState({
           sensors: data.sensors,
           motors: data.motors,
+          gates: data.gates ?? [],
           thresholds: data.thresholds,
+          quality: data.quality ?? {},
+          motorRuntime: data.motor_runtime ?? {},
+          currentWeather: data.current_weather ?? null,
           connected: data.connected,
           wsConnected: true,
         })
